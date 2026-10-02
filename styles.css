@@ -361,7 +361,8 @@ img, video { display: block; }
 .footer-email:hover { border-color: #ffffff; }
 
 .social-list { list-style: none; padding: 0; margin: 36px 0 0; display: flex; flex-wrap: wrap; gap: 14px 32px; }
-.social-list li a { font-size: 16px; font-weight: 500; transition: opacity 0.3s ease; }
+.social-list li a { display: inline-flex; align-items: center; gap: 10px; font-size: 16px; font-weight: 500; transition: opacity 0.3s ease; }
+.social-icon { width: 18px; height: 18px; flex-shrink: 0; fill: currentColor; }
 .social-list li a:hover { opacity: 0.6; }
 
 .footer-newsletter { width: 100%; max-width: 500px; justify-self: end; }
