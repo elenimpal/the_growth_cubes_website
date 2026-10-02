@@ -144,8 +144,11 @@
       const illumProgressBar = document.getElementById('hww-progress-bar');
       const illumSteps = document.querySelectorAll('.hww-step-wrapper');
 
-      const footerShell = document.getElementById('footer-shell');
-      const footerMaskWrapper = document.getElementById('footer-mask-wrapper');
+      // FOOTER: pinned under the contact card; fall back to normal flow if it can't fit on screen
+      const siteFooter = document.getElementById('site-footer');
+      const syncFooterReveal = () => {
+        siteFooter.classList.toggle('is-static', siteFooter.offsetHeight > window.innerHeight);
+      };
 
       const handleScroll = () => {
         if (window.scrollY > 50) { header.classList.add('scrolled'); } else { header.classList.remove('scrolled'); }
@@ -205,21 +208,13 @@
              }
           });
         }
-
-        // FOOTER MASK
-        const footerRect = footerShell.getBoundingClientRect();
-        const footerMaxScroll = Math.max(1, footerShell.offsetHeight - window.innerHeight);
-        let footerProgress = 0;
-        if (footerRect.top <= 0) { footerProgress = Math.abs(footerRect.top) / footerMaxScroll; }
-        footerProgress = Math.max(0, Math.min(1, footerProgress));
-        const fTransStop = -50 + (footerProgress * 200); const fBlackStop = fTransStop - 50; 
-        const footerMaskStyle = `linear-gradient(to top, black ${fBlackStop}%, transparent ${fTransStop}%)`;
-        footerMaskWrapper.style.webkitMaskImage = footerMaskStyle; footerMaskWrapper.style.maskImage = footerMaskStyle;
       };
 
       syncHorizontalScrollStage();
+      syncFooterReveal();
       window.addEventListener('resize', () => {
         syncHorizontalScrollStage();
+        syncFooterReveal();
         handleScroll();
       });
       window.addEventListener('scroll', handleScroll);

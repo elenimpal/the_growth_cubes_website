@@ -180,19 +180,23 @@
       </div>
     </section>
 
+  </main>
+
+  <!-- CONTACT + FOOTER: the footer is pinned underneath and revealed as the contact card scrolls away -->
+  <div class="page-end">
     <!-- CONTACT SECTION -->
-    <section class="contact-glass-section" id="contact">
+    <section class="contact-glass-section" id="contact" aria-labelledby="contact-title">
       <div class="contact-split-container">
-        
+      
         <header class="contact-left">
-          <h2 class="contact-huge-title">READY TO<br>ENGINEER<br>YOUR GROWTH?</h2>
+          <h2 class="contact-huge-title" id="contact-title">READY TO<br>ENGINEER<br>YOUR GROWTH?</h2>
           <p class="contact-subtext">Tell us a bit about your goals and current setup. We'll review your details and get back to you to map out the next actionable steps.</p>
         </header>
 
         <div class="contact-right">
           <form class="glass-form-card" onsubmit="event.preventDefault(); alert('Transmission started!');">
             <div class="gf-grid">
-              
+            
               <div class="gf-input-group">
                 <label class="gf-label">Your Name</label>
                 <input type="text" class="gf-input" placeholder="e.g. John Doe" required>
@@ -224,41 +228,43 @@
       </div>
     </section>
 
-  </main>
+    <footer class="site-footer" id="site-footer">
+      <div class="footer-bg" aria-hidden="true">
+        <video class="footer-video js-optimized-video" src="./growth_cubes_video.webm" preload="none" autoplay loop muted playsinline></video>
+        <div class="footer-overlay"></div>
+      </div>
 
-  <section class="footer-shell" id="footer-shell" aria-label="Footer reveal">
-    <footer class="footer">
-      <div class="footer-mask-wrapper" id="footer-mask-wrapper">
-        <div class="footer-video-bg">
-          <video class="hero-video js-optimized-video" src="./growth_cubes_video.webm" preload="none" autoplay loop muted playsinline></video>
-          <div class="hero-overlay"></div>
-        </div>
-        <div class="footer-content">
-          <div class="footer-grid">
-            <div class="footer-col col-socials">
-              <a href="mailto:hello@thegrowthcubes.com" class="footer-link">hello@thegrowthcubes.com</a>
-              <ul class="social-list">
-                <li><a href="#">&rarr; Facebook</a></li>
-                <li><a href="#">&rarr; Instagram</a></li>
-                <li><a href="#">&rarr; TikTok</a></li>
-                <li><a href="#">&rarr; LinkedIn</a></li>
-              </ul>
-            </div>
-            <div class="footer-col col-newsletter">
-              <h3 class="newsletter-title">Less noise. More signal. Get our latest growth insights.</h3>
-              <form class="newsletter-form" onsubmit="event.preventDefault();">
-                <div class="input-group">
-                  <input type="email" placeholder="WORK EMAIL ADDRESS" required>
-                  <button type="submit">SUBSCRIBE</button>
-                </div>
-              </form>
-              <p class="footer-text">&copy; 2026 THE GROWTH CUBES.</p>
-            </div>
+      <div class="footer-inner">
+        <div class="footer-top">
+          <div class="footer-contact">
+            <p class="footer-eyebrow">Say hello</p>
+            <a href="mailto:hello@thegrowthcubes.com" class="footer-email">hello@thegrowthcubes.com</a>
+            <ul class="social-list">
+              <li><a href="#">&rarr; Facebook</a></li>
+              <li><a href="#">&rarr; Instagram</a></li>
+              <li><a href="#">&rarr; TikTok</a></li>
+              <li><a href="#">&rarr; LinkedIn</a></li>
+            </ul>
           </div>
+
+          <div class="footer-newsletter">
+            <h3 class="newsletter-title">Less noise. More signal. Get our latest growth insights.</h3>
+            <form class="newsletter-form" onsubmit="event.preventDefault();">
+              <div class="input-group">
+                <input type="email" placeholder="WORK EMAIL ADDRESS" aria-label="Work email address" required>
+                <button type="submit">SUBSCRIBE</button>
+              </div>
+            </form>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p>&copy; 2026 THE GROWTH CUBES.</p>
+          <a href="#hero-shell" class="back-to-top">Back to top &uarr;</a>
         </div>
       </div>
     </footer>
-  </section>
+  </div>
 
   <script src="./script.js" defer></script>
 </body>
