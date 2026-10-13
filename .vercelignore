@@ -1,0 +1,12 @@
+# Not part of the published website: audit evidence, test tooling and
+# files the pages no longer reference. They stay in git only.
+docs
+tools
+node_modules
+package.json
+package-lock.json
+.htmlvalidate.json
+README.md
+script.js
+growth_cubes_video.webm
+growth_cubes_poster.jpg
