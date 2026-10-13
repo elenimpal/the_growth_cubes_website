@@ -1,4 +1,13 @@
     document.addEventListener('DOMContentLoaded', () => {
+      const root = document.documentElement;
+      root.classList.add('js');
+      const motionPreference = window.matchMedia('(prefers-reduced-motion: reduce)');
+      let userPaused = false;
+      try { userPaused = localStorage.getItem('growth-motion-paused') === 'true'; } catch {}
+      const motionToggle = document.getElementById('motion-toggle');
+      const servicesToggle = document.getElementById('services-toggle');
+      const isStatic = () => root.classList.contains('motion-paused');
+      const isServicesList = () => isStatic() || root.classList.contains('services-list') || root.classList.contains('services-reflow');
       let globalCreamTop = window.innerHeight + 100;
       let globalCreamBottom = -100;
 
@@ -11,6 +20,7 @@
       resizeCanvas();
 
       window.addEventListener('mousemove', (e) => {
+        if (root.classList.contains('motion-paused')) return;
         if (e.target.closest('.h-card') || e.target.closest('.glass-form-card') || e.target.closest('button') || e.target.closest('a')) return;
         
         const isHoveringCream = !!(e.target.closest('.h-scroll-shell') || e.target.closest('.contact-glass-section'));
@@ -26,6 +36,7 @@
 
       const drawCursor = () => {
         ctx.clearRect(0, 0, canvas.width, canvas.height);
+        if (root.classList.contains('motion-paused')) { points = []; requestAnimationFrame(drawCursor); return; }
         points.forEach(p => p.age += 0.015); points = points.filter(p => p.age < 1); 
         points.forEach(p => {
           p.x += p.vx; p.y += p.vy;
@@ -42,7 +53,7 @@
       const videos = document.querySelectorAll('.js-optimized-video');
       const videoObserver = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
-          if (entry.isIntersecting) { entry.target.play().catch(e => {}); } 
+          if (entry.isIntersecting && !root.classList.contains('motion-paused')) { entry.target.play().catch(e => {}); }
           else { entry.target.pause(); }
         });
       }, { threshold: 0 }); 
@@ -53,12 +64,12 @@
       const lines = revealTextContainer.querySelectorAll('.reveal-line');
       const wordSpans = []; 
       lines.forEach(line => {
-        const text = line.innerText; line.innerHTML = ''; 
+        const text = line.textContent; line.textContent = '';
         const words = text.split(' ');
         words.forEach(word => {
           if(!word.trim()) return;
           const span = document.createElement('span'); span.className = 'reveal-word';
-          span.setAttribute('data-word', word); span.innerText = word; 
+          span.textContent = word;
           line.appendChild(span); line.appendChild(document.createTextNode(' ')); 
           wordSpans.push(span);
         });
@@ -95,22 +106,30 @@
       const mobileMenuToggle = document.getElementById('mobile-menu-toggle');
       const mainNav = document.getElementById('main-nav');
       
-      if(mobileMenuToggle && mainNav) {
-        const navLinks = mainNav.querySelectorAll('.nav-link');
-        
-        mobileMenuToggle.addEventListener('click', () => {
-          mobileMenuToggle.classList.toggle('is-active');
-          mainNav.classList.toggle('is-open');
-          mobileMenuToggle.setAttribute('aria-expanded', mainNav.classList.contains('is-open'));
+      if (mobileMenuToggle && mainNav) {
+        const mobile = window.matchMedia('(max-width: 900px)');
+        const setMenu = (open, restore = false) => {
+          mobileMenuToggle.classList.toggle('is-active', open);
+          mainNav.classList.toggle('is-open', open);
+          mobileMenuToggle.setAttribute('aria-expanded', String(open));
+          mobileMenuToggle.setAttribute('aria-label', open ? 'Close navigation' : 'Open navigation');
+          mainNav.inert = mobile.matches && !open;
+          if (restore) mobileMenuToggle.focus();
+        };
+        mobileMenuToggle.addEventListener('click', () => setMenu(!mainNav.classList.contains('is-open')));
+        mainNav.querySelectorAll('.nav-link').forEach(link => link.addEventListener('click', () => {
+          const target = document.querySelector(link.hash);
+          setMenu(false);
+          if (target) { target.tabIndex = -1; target.focus({ preventScroll: true }); }
+        }));
+        document.addEventListener('keydown', event => {
+          if (event.key === 'Escape' && mainNav.classList.contains('is-open')) setMenu(false, true);
         });
-        
-        navLinks.forEach(link => {
-          link.addEventListener('click', () => {
-            mobileMenuToggle.classList.remove('is-active');
-            mainNav.classList.remove('is-open');
-            mobileMenuToggle.setAttribute('aria-expanded', 'false');
-          });
-        });
+        mainNav.addEventListener('focusout', () => setTimeout(() => {
+          if (!mainNav.contains(document.activeElement) && document.activeElement !== mobileMenuToggle) setMenu(false);
+        }, 0));
+        mobile.addEventListener('change', () => setMenu(false));
+        setMenu(false);
       }
 
       // 6. GLOBAL SCROLL LOGIC
@@ -132,7 +151,7 @@
       };
 
       const syncHorizontalScrollStage = () => {
-        if (hScrollShell && hScrollTrack && window.innerWidth <= 900) {
+        if (hScrollShell && hScrollTrack && window.innerWidth <= 900 && !isServicesList()) {
           const horizontalDistance = getHorizontalTravel();
           hScrollShell.style.height = `${window.innerHeight + horizontalDistance}px`;
         } else if (hScrollShell) {
@@ -147,11 +166,20 @@
       // FOOTER: pinned under the contact card; fall back to normal flow if it can't fit on screen
       const siteFooter = document.getElementById('site-footer');
       const syncFooterReveal = () => {
-        siteFooter.classList.toggle('is-static', siteFooter.offsetHeight > window.innerHeight);
+        siteFooter.classList.toggle('is-static', siteFooter.offsetHeight > window.innerHeight || isStatic());
       };
 
       const handleScroll = () => {
         if (window.scrollY > 50) { header.classList.add('scrolled'); } else { header.classList.remove('scrolled'); }
+
+        if (isStatic()) {
+          heroMaskWrapper.style.maskImage = 'none';
+          heroMaskWrapper.style.webkitMaskImage = 'none';
+          hScrollTrack.style.transform = '';
+          illumProgressBar.style.height = '100%';
+          illumSteps.forEach(step => step.classList.add('is-illuminated'));
+          return;
+        }
 
         // HERO MASK
         const heroRect = heroShell.getBoundingClientRect();
@@ -177,7 +205,7 @@
         });
 
         // HORIZONTAL SCROLL LOGIC
-        if (hScrollShell && hScrollTrack) {
+        if (hScrollShell && hScrollTrack && !isServicesList()) {
           const hRect = hScrollShell.getBoundingClientRect();
           
           const hMaxScroll = Math.max(1, hScrollShell.offsetHeight - window.innerHeight);
@@ -210,9 +238,80 @@
         }
       };
 
+      const updateMotion = () => {
+        const paused = userPaused || motionPreference.matches;
+        root.classList.toggle('motion-paused', paused);
+        motionToggle.hidden = false;
+        motionToggle.setAttribute('aria-pressed', String(paused));
+        motionToggle.textContent = paused ? 'Motion paused' : 'Pause motion';
+        motionToggle.disabled = motionPreference.matches;
+        videos.forEach(video => {
+          if (paused) video.pause();
+          else if (video.getBoundingClientRect().bottom > 0 && video.getBoundingClientRect().top < innerHeight) video.play().catch(() => {});
+        });
+        syncHorizontalScrollStage(); syncFooterReveal(); handleScroll();
+        if (!paused) { syncReadingFit(); syncServicesFit(); }
+      };
+      motionToggle.addEventListener('click', () => {
+        userPaused = !userPaused;
+        try { localStorage.setItem('growth-motion-paused', String(userPaused)); } catch {}
+        updateMotion();
+      });
+      motionPreference.addEventListener('change', updateMotion);
+      servicesToggle.hidden = false;
+      servicesToggle.addEventListener('click', () => {
+        const list = root.classList.toggle('services-list');
+        servicesToggle.setAttribute('aria-pressed', String(list));
+        servicesToggle.textContent = list ? 'Use scrolling services view' : 'Read services as a list';
+        hScrollTrack.style.transform = ''; syncServicesFit(); syncHorizontalScrollStage(); handleScroll();
+      });
+      const syncReadingFit = () => {
+        if (isStatic()) return;
+        root.classList.remove('hero-reflow', 'reveal-reflow');
+        root.classList.toggle('hero-reflow', document.querySelector('.hero-content').scrollHeight + header.offsetHeight + 80 > document.querySelector('.hero').clientHeight);
+        const revealSticky = document.querySelector('.reveal-sticky');
+        root.classList.toggle('reveal-reflow', revealTextContainer.scrollHeight + 48 > revealSticky.clientHeight);
+      };
+      const syncServicesFit = () => {
+        if (isStatic() || root.classList.contains('services-list')) return;
+        root.classList.remove('services-reflow');
+        const style = getComputedStyle(hScrollSticky);
+        const cards = [...hScrollTrack.children];
+        const requiredHeight = hScrollTrack.offsetTop + Math.max(...cards.map(card => card.offsetHeight)) + parseFloat(style.paddingBottom);
+        root.classList.toggle('services-reflow', requiredHeight > hScrollSticky.clientHeight);
+        syncHorizontalScrollStage();
+        handleScroll();
+      };
+      // Arrow keys provide the same progression as vertical scrolling.
+      hScrollTrack.addEventListener('keydown', event => {
+        if (event.target !== hScrollTrack || isServicesList()) return;
+        const directions = { ArrowRight: 1, ArrowDown: 1, ArrowLeft: -1, ArrowUp: -1 };
+        if (!(event.key in directions) && event.key !== 'Home' && event.key !== 'End') return;
+        event.preventDefault();
+        const start = window.scrollY + hScrollShell.getBoundingClientRect().top;
+        const distance = Math.max(1, hScrollShell.offsetHeight - window.innerHeight);
+        const current = Math.max(0, Math.min(distance, window.scrollY - start));
+        const step = distance / Math.max(1, hScrollTrack.children.length - 1);
+        const progress = event.key === 'Home' ? 0 : event.key === 'End' ? distance : Math.max(0, Math.min(distance, current + directions[event.key] * step));
+        window.scrollTo({ top: start + progress, behavior: 'instant' });
+      });
+      // Focusing the gallery starts with its first card visible, without a clipped outline.
+      hScrollTrack.addEventListener('focus', () => {
+        if (!isServicesList() && hScrollShell.getBoundingClientRect().top > 0) {
+          window.scrollTo({ top: window.scrollY + hScrollShell.getBoundingClientRect().top, behavior: 'instant' });
+        }
+      });
+      const servicesResize = new ResizeObserver(syncServicesFit);
+      [...hScrollTrack.children, hScrollShell.querySelector('h2'), servicesToggle].forEach(element => servicesResize.observe(element));
+      const readingResize = new ResizeObserver(() => { syncReadingFit(); handleScroll(); });
+      [revealTextContainer, document.querySelector('.hero-content')].forEach(element => readingResize.observe(element));
+      updateMotion();
+      syncServicesFit();
       syncHorizontalScrollStage();
       syncFooterReveal();
       window.addEventListener('resize', () => {
+        syncReadingFit();
+        syncServicesFit();
         syncHorizontalScrollStage();
         syncFooterReveal();
         handleScroll();

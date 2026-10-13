@@ -1,0 +1,17 @@
+{
+  "name": "growth-cubes-accessibility-checks",
+  "private": true,
+  "engines": { "node": ">=24.8.0" },
+  "description": "Standalone audit tools; the website remains plain HTML/CSS/JavaScript.",
+  "scripts": {
+    "test:a11y": "node tools/accessibility/audit.cjs",
+    "test:lighthouse": "node tools/accessibility/lighthouse.cjs",
+    "test:html": "html-validate index.html el/index.html accessibility.html"
+  },
+  "devDependencies": {
+    "axe-core": "^4.14.0",
+    "html-validate": "^11.16.2",
+    "lighthouse": "^13.5.0",
+    "playwright": "^1.64.0"
+  }
+}

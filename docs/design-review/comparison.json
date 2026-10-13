@@ -1,0 +1,3057 @@
+{
+  "timestamp": "2026-10-13T16:43:53.307Z",
+  "sourceHashes": {
+    "index.html": "266c69004659da2912612669254b24316e50ba604969b7424d32320bf2e2676a",
+    "styles.css": "d67393a459428068c1c580bcc5388aea284eb2dc8d6f0fbed54aa4b2e45fd0dc",
+    "script.js": "9368dfbb6137d80c093fd3b9fd1040801d102a466e3165399e83728a88add7d3"
+  },
+  "reference": "a37e645",
+  "browser": "155.0.8059.40",
+  "checks": [
+    {
+      "name": "desktop: visible video plays",
+      "pass": true,
+      "detail": {
+        "paused": false,
+        "time": 2.045276,
+        "ready": 4,
+        "fit": "cover"
+      }
+    },
+    {
+      "name": "desktop: video time advances",
+      "pass": true
+    },
+    {
+      "name": "desktop reveal: no document overflow",
+      "pass": true
+    },
+    {
+      "name": "desktop reveal: default remains animated",
+      "pass": true,
+      "detail": "js"
+    },
+    {
+      "name": "desktop: word reveal runs",
+      "pass": true,
+      "detail": [
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "83.33333333333334%",
+        "0%",
+        "0%",
+        "0%",
+        "0%",
+        "0%",
+        "0%",
+        "0%"
+      ]
+    },
+    {
+      "name": "desktop services-start: no document overflow",
+      "pass": true
+    },
+    {
+      "name": "desktop services-start: default remains animated",
+      "pass": true,
+      "detail": "js"
+    },
+    {
+      "name": "desktop services-middle: no document overflow",
+      "pass": true
+    },
+    {
+      "name": "desktop services-middle: default remains animated",
+      "pass": true,
+      "detail": "js"
+    },
+    {
+      "name": "desktop: horizontal progression",
+      "pass": true,
+      "detail": "matrix(1, 0, 0, 1, -682, 0)"
+    },
+    {
+      "name": "desktop services-end: no document overflow",
+      "pass": true
+    },
+    {
+      "name": "desktop services-end: default remains animated",
+      "pass": true,
+      "detail": "js"
+    },
+    {
+      "name": "desktop timeline: no document overflow",
+      "pass": true
+    },
+    {
+      "name": "desktop timeline: default remains animated",
+      "pass": true,
+      "detail": "js"
+    },
+    {
+      "name": "desktop: timeline progresses and slides",
+      "pass": true,
+      "detail": [
+        {
+          "active": true,
+          "transform": "matrix(1, 0, 0, 1, 0, 0)",
+          "opacity": "1"
+        },
+        {
+          "active": true,
+          "transform": "matrix(1, 0, 0, 1, 0, 0)",
+          "opacity": "1"
+        },
+        {
+          "active": false,
+          "transform": "matrix(1, 0, 0, 1, 30, 0)",
+          "opacity": "1"
+        }
+      ]
+    },
+    {
+      "name": "desktop: keyboard reaches last card",
+      "pass": true,
+      "detail": {
+        "x": 868,
+        "y": 345.1875,
+        "width": 500,
+        "height": 490
+      }
+    },
+    {
+      "name": "desktop: keyboard returns to first card",
+      "pass": true,
+      "detail": {
+        "x": 72,
+        "y": 345.1875,
+        "width": 500,
+        "height": 490
+      }
+    },
+    {
+      "name": "desktop: optional list works",
+      "pass": true
+    },
+    {
+      "name": "desktop: scrolling view restored",
+      "pass": true
+    },
+    {
+      "name": "desktop: pause stops all videos",
+      "pass": true
+    },
+    {
+      "name": "desktop: pause disables transitions",
+      "pass": true
+    },
+    {
+      "name": "desktop: pause survives reload",
+      "pass": true
+    },
+    {
+      "name": "desktop: resume restores playback",
+      "pass": true
+    },
+    {
+      "name": "mobile: visible video plays",
+      "pass": true,
+      "detail": {
+        "paused": false,
+        "time": 17.040991,
+        "ready": 4,
+        "fit": "cover"
+      }
+    },
+    {
+      "name": "mobile: video time advances",
+      "pass": true
+    },
+    {
+      "name": "mobile reveal: no document overflow",
+      "pass": true
+    },
+    {
+      "name": "mobile reveal: default remains animated",
+      "pass": true,
+      "detail": "js"
+    },
+    {
+      "name": "mobile: word reveal runs",
+      "pass": true,
+      "detail": [
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%"
+      ]
+    },
+    {
+      "name": "mobile services-start: no document overflow",
+      "pass": true
+    },
+    {
+      "name": "mobile services-start: default remains animated",
+      "pass": true,
+      "detail": "js"
+    },
+    {
+      "name": "mobile services-middle: no document overflow",
+      "pass": true
+    },
+    {
+      "name": "mobile services-middle: default remains animated",
+      "pass": true,
+      "detail": "js"
+    },
+    {
+      "name": "mobile: horizontal progression",
+      "pass": true,
+      "detail": "matrix(1, 0, 0, 1, -664.016, 0)"
+    },
+    {
+      "name": "mobile services-end: no document overflow",
+      "pass": true
+    },
+    {
+      "name": "mobile services-end: default remains animated",
+      "pass": true,
+      "detail": "js"
+    },
+    {
+      "name": "mobile timeline: no document overflow",
+      "pass": true
+    },
+    {
+      "name": "mobile timeline: default remains animated",
+      "pass": true,
+      "detail": "js"
+    },
+    {
+      "name": "mobile: timeline progresses and slides",
+      "pass": true,
+      "detail": [
+        {
+          "active": true,
+          "transform": "matrix(1, 0, 0, 1, 0, 0)",
+          "opacity": "1"
+        },
+        {
+          "active": true,
+          "transform": "matrix(1, 0, 0, 1, 0, 0)",
+          "opacity": "1"
+        },
+        {
+          "active": false,
+          "transform": "matrix(1, 0, 0, 1, 30, 0)",
+          "opacity": "1"
+        }
+      ]
+    },
+    {
+      "name": "mobile: keyboard reaches last card",
+      "pass": true,
+      "detail": {
+        "x": 35.1875,
+        "y": 284.953125,
+        "width": 319.796875,
+        "height": 460
+      }
+    },
+    {
+      "name": "mobile: keyboard returns to first card",
+      "pass": true,
+      "detail": {
+        "x": 19.984375,
+        "y": 284.96875,
+        "width": 319.796875,
+        "height": 460
+      }
+    },
+    {
+      "name": "mobile: optional list works",
+      "pass": true
+    },
+    {
+      "name": "mobile: scrolling view restored",
+      "pass": true
+    },
+    {
+      "name": "mobile: pause stops all videos",
+      "pass": true
+    },
+    {
+      "name": "mobile: pause disables transitions",
+      "pass": true
+    },
+    {
+      "name": "mobile: pause survives reload",
+      "pass": true
+    },
+    {
+      "name": "mobile: resume restores playback",
+      "pass": true
+    },
+    {
+      "name": "Mobile menu Escape and focus",
+      "pass": true
+    },
+    {
+      "name": "Closed mobile menu inert",
+      "pass": true
+    },
+    {
+      "name": "narrow: no overflow",
+      "pass": true,
+      "detail": {
+        "classes": "js",
+        "overflow": false,
+        "cards": [
+          {
+            "height": 496,
+            "width": 262,
+            "scroll": 496
+          },
+          {
+            "height": 496,
+            "width": 262,
+            "scroll": 496
+          },
+          {
+            "height": 496,
+            "width": 262,
+            "scroll": 496
+          },
+          {
+            "height": 496,
+            "width": 262,
+            "scroll": 496
+          },
+          {
+            "height": 496,
+            "width": 262,
+            "scroll": 496
+          }
+        ]
+      }
+    },
+    {
+      "name": "narrow: reveal fits viewport or normal flow",
+      "pass": true
+    },
+    {
+      "name": "landscape: no overflow",
+      "pass": true,
+      "detail": {
+        "classes": "js services-reflow hero-reflow",
+        "overflow": false,
+        "cards": [
+          {
+            "height": 309,
+            "width": 352,
+            "scroll": 309
+          },
+          {
+            "height": 309,
+            "width": 352,
+            "scroll": 309
+          },
+          {
+            "height": 309,
+            "width": 352,
+            "scroll": 309
+          },
+          {
+            "height": 309,
+            "width": 352,
+            "scroll": 309
+          },
+          {
+            "height": 309,
+            "width": 352,
+            "scroll": 309
+          }
+        ]
+      }
+    },
+    {
+      "name": "landscape: reveal fits viewport or normal flow",
+      "pass": true
+    },
+    {
+      "name": "reflow: no overflow",
+      "pass": true,
+      "detail": {
+        "classes": "js services-reflow hero-reflow reveal-reflow",
+        "overflow": false,
+        "cards": [
+          {
+            "height": 328,
+            "width": 256,
+            "scroll": 328
+          },
+          {
+            "height": 328,
+            "width": 256,
+            "scroll": 328
+          },
+          {
+            "height": 347,
+            "width": 256,
+            "scroll": 347
+          },
+          {
+            "height": 328,
+            "width": 256,
+            "scroll": 328
+          },
+          {
+            "height": 345,
+            "width": 256,
+            "scroll": 345
+          }
+        ]
+      }
+    },
+    {
+      "name": "reflow: reveal fits viewport or normal flow",
+      "pass": true
+    },
+    {
+      "name": "tablet: no overflow",
+      "pass": true,
+      "detail": {
+        "classes": "js",
+        "overflow": false,
+        "cards": [
+          {
+            "height": 460,
+            "width": 360,
+            "scroll": 460
+          },
+          {
+            "height": 460,
+            "width": 360,
+            "scroll": 460
+          },
+          {
+            "height": 460,
+            "width": 360,
+            "scroll": 460
+          },
+          {
+            "height": 460,
+            "width": 360,
+            "scroll": 460
+          },
+          {
+            "height": 460,
+            "width": 360,
+            "scroll": 460
+          }
+        ]
+      }
+    },
+    {
+      "name": "tablet: reveal fits viewport or normal flow",
+      "pass": true
+    },
+    {
+      "name": "breakpoint-mobile: no overflow",
+      "pass": true,
+      "detail": {
+        "classes": "js",
+        "overflow": false,
+        "cards": [
+          {
+            "height": 460,
+            "width": 360,
+            "scroll": 460
+          },
+          {
+            "height": 460,
+            "width": 360,
+            "scroll": 460
+          },
+          {
+            "height": 460,
+            "width": 360,
+            "scroll": 460
+          },
+          {
+            "height": 460,
+            "width": 360,
+            "scroll": 460
+          },
+          {
+            "height": 460,
+            "width": 360,
+            "scroll": 460
+          }
+        ]
+      }
+    },
+    {
+      "name": "breakpoint-mobile: reveal fits viewport or normal flow",
+      "pass": true
+    },
+    {
+      "name": "breakpoint-desktop: no overflow",
+      "pass": true,
+      "detail": {
+        "classes": "js",
+        "overflow": false,
+        "cards": [
+          {
+            "height": 490,
+            "width": 500,
+            "scroll": 490
+          },
+          {
+            "height": 490,
+            "width": 500,
+            "scroll": 490
+          },
+          {
+            "height": 490,
+            "width": 500,
+            "scroll": 490
+          },
+          {
+            "height": 490,
+            "width": 500,
+            "scroll": 490
+          },
+          {
+            "height": 490,
+            "width": 500,
+            "scroll": 490
+          }
+        ]
+      }
+    },
+    {
+      "name": "breakpoint-desktop: reveal fits viewport or normal flow",
+      "pass": true
+    },
+    {
+      "name": "Live reduced motion pauses videos",
+      "pass": true
+    },
+    {
+      "name": "Live no-preference restores motion",
+      "pass": true
+    },
+    {
+      "name": "Forced colors reveal remains visible",
+      "pass": true
+    },
+    {
+      "name": "Text spacing services fit or reflow",
+      "pass": true
+    },
+    {
+      "name": "Enlarged text has fitting services fallback",
+      "pass": true
+    },
+    {
+      "name": "No JS: static services",
+      "pass": true
+    },
+    {
+      "name": "No JS: navigation visible",
+      "pass": true
+    },
+    {
+      "name": "First Tab reaches skip link",
+      "pass": true
+    },
+    {
+      "name": "Skip link focuses main",
+      "pass": true
+    },
+    {
+      "name": "Contact errors and focus preserved",
+      "pass": true
+    },
+    {
+      "name": "Reduced motion on first load never starts video",
+      "pass": true
+    },
+    {
+      "name": "No JavaScript errors",
+      "pass": true,
+      "detail": []
+    }
+  ],
+  "scans": [
+    {
+      "name": "desktop-timeline",
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "count": 76
+        }
+      ]
+    },
+    {
+      "name": "desktop-services",
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "count": 74
+        }
+      ]
+    },
+    {
+      "name": "desktop-list",
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "count": 76
+        }
+      ]
+    },
+    {
+      "name": "desktop-paused",
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "count": 27
+        }
+      ]
+    },
+    {
+      "name": "mobile-timeline",
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "count": 75
+        }
+      ]
+    },
+    {
+      "name": "mobile-services",
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "count": 74
+        }
+      ]
+    },
+    {
+      "name": "mobile-list",
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "count": 74
+        }
+      ]
+    },
+    {
+      "name": "mobile-paused",
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "count": 31
+        }
+      ]
+    },
+    {
+      "name": "narrow",
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "count": 73
+        }
+      ]
+    },
+    {
+      "name": "landscape",
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "count": 70
+        }
+      ]
+    },
+    {
+      "name": "reflow",
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "count": 30
+        }
+      ]
+    },
+    {
+      "name": "tablet",
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "count": 74
+        }
+      ]
+    },
+    {
+      "name": "breakpoint-mobile",
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "count": 75
+        }
+      ]
+    },
+    {
+      "name": "breakpoint-desktop",
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "count": 74
+        }
+      ]
+    },
+    {
+      "name": "reduced-motion",
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "count": 31
+        }
+      ]
+    },
+    {
+      "name": "text-spacing",
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "count": 73
+        }
+      ]
+    },
+    {
+      "name": "text-200-percent",
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "count": 34
+        }
+      ]
+    }
+  ],
+  "measurements": [
+    {
+      "name": "desktop",
+      "version": "original",
+      "stage": "hero",
+      "scrollY": 0,
+      "heroHeight": 900,
+      "heroContent": {
+        "x": 0,
+        "y": 260.234375,
+        "width": 1440,
+        "height": 379.515625,
+        "top": 260.234375,
+        "right": 1440,
+        "bottom": 639.75,
+        "left": 0
+      },
+      "classes": ""
+    },
+    {
+      "name": "desktop",
+      "version": "original",
+      "stage": "reveal",
+      "scrollY": 1440,
+      "heroHeight": 2250,
+      "revealHeight": 1350,
+      "mask": "linear-gradient(to top, transparent 150%, black 200%)",
+      "words": [
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "83.33333333333334%",
+        "0%",
+        "0%",
+        "0%",
+        "0%",
+        "0%",
+        "0%",
+        "0%"
+      ],
+      "servicesHeight": 2700,
+      "trackTransform": "matrix(1, 0, 0, 1, 0, 0)",
+      "cardSizes": [
+        {
+          "width": 500,
+          "height": 490
+        },
+        {
+          "width": 500,
+          "height": 490
+        },
+        {
+          "width": 500,
+          "height": 490
+        },
+        {
+          "width": 500,
+          "height": 490
+        },
+        {
+          "width": 500,
+          "height": 490
+        }
+      ],
+      "progress": "0%",
+      "timeline": [
+        {
+          "active": false,
+          "transform": "matrix(1, 0, 0, 1, 30, 0)",
+          "opacity": "0.3"
+        },
+        {
+          "active": false,
+          "transform": "matrix(1, 0, 0, 1, 30, 0)",
+          "opacity": "0.3"
+        },
+        {
+          "active": false,
+          "transform": "matrix(1, 0, 0, 1, 30, 0)",
+          "opacity": "0.3"
+        }
+      ],
+      "classes": "",
+      "overflow": false
+    },
+    {
+      "name": "desktop",
+      "version": "original",
+      "stage": "services-start",
+      "scrollY": 2700,
+      "heroHeight": 2250,
+      "revealHeight": 1350,
+      "mask": "linear-gradient(to top, transparent 150%, black 200%)",
+      "words": [
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%"
+      ],
+      "servicesHeight": 2700,
+      "trackTransform": "matrix(1, 0, 0, 1, 0, 0)",
+      "cardSizes": [
+        {
+          "width": 500,
+          "height": 490
+        },
+        {
+          "width": 500,
+          "height": 490
+        },
+        {
+          "width": 500,
+          "height": 490
+        },
+        {
+          "width": 500,
+          "height": 490
+        },
+        {
+          "width": 500,
+          "height": 490
+        }
+      ],
+      "progress": "0%",
+      "timeline": [
+        {
+          "active": false,
+          "transform": "matrix(1, 0, 0, 1, 30, 0)",
+          "opacity": "0.3"
+        },
+        {
+          "active": false,
+          "transform": "matrix(1, 0, 0, 1, 30, 0)",
+          "opacity": "0.3"
+        },
+        {
+          "active": false,
+          "transform": "matrix(1, 0, 0, 1, 30, 0)",
+          "opacity": "0.3"
+        }
+      ],
+      "classes": "",
+      "overflow": false
+    },
+    {
+      "name": "desktop",
+      "version": "original",
+      "stage": "services-middle",
+      "scrollY": 3600,
+      "heroHeight": 2250,
+      "revealHeight": 1350,
+      "mask": "linear-gradient(to top, transparent 150%, black 200%)",
+      "words": [
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%"
+      ],
+      "servicesHeight": 2700,
+      "trackTransform": "matrix(1, 0, 0, 1, -682, 0)",
+      "cardSizes": [
+        {
+          "width": 500,
+          "height": 490
+        },
+        {
+          "width": 500,
+          "height": 490
+        },
+        {
+          "width": 500,
+          "height": 490
+        },
+        {
+          "width": 500,
+          "height": 490
+        },
+        {
+          "width": 500,
+          "height": 490
+        }
+      ],
+      "progress": "0%",
+      "timeline": [
+        {
+          "active": false,
+          "transform": "matrix(1, 0, 0, 1, 30, 0)",
+          "opacity": "0.3"
+        },
+        {
+          "active": false,
+          "transform": "matrix(1, 0, 0, 1, 30, 0)",
+          "opacity": "0.3"
+        },
+        {
+          "active": false,
+          "transform": "matrix(1, 0, 0, 1, 30, 0)",
+          "opacity": "0.3"
+        }
+      ],
+      "classes": "",
+      "overflow": false
+    },
+    {
+      "name": "desktop",
+      "version": "original",
+      "stage": "services-end",
+      "scrollY": 4500,
+      "heroHeight": 2250,
+      "revealHeight": 1350,
+      "mask": "linear-gradient(to top, transparent 150%, black 200%)",
+      "words": [
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%"
+      ],
+      "servicesHeight": 2700,
+      "trackTransform": "matrix(1, 0, 0, 1, -1364, 0)",
+      "cardSizes": [
+        {
+          "width": 500,
+          "height": 490
+        },
+        {
+          "width": 500,
+          "height": 490
+        },
+        {
+          "width": 500,
+          "height": 490
+        },
+        {
+          "width": 500,
+          "height": 490
+        },
+        {
+          "width": 500,
+          "height": 490
+        }
+      ],
+      "progress": "0%",
+      "timeline": [
+        {
+          "active": false,
+          "transform": "matrix(1, 0, 0, 1, 30, 0)",
+          "opacity": "0.3"
+        },
+        {
+          "active": false,
+          "transform": "matrix(1, 0, 0, 1, 30, 0)",
+          "opacity": "0.3"
+        },
+        {
+          "active": false,
+          "transform": "matrix(1, 0, 0, 1, 30, 0)",
+          "opacity": "0.3"
+        }
+      ],
+      "classes": "",
+      "overflow": false
+    },
+    {
+      "name": "desktop",
+      "version": "original",
+      "stage": "timeline",
+      "scrollY": 5948,
+      "heroHeight": 2250,
+      "revealHeight": 1350,
+      "mask": "linear-gradient(to top, transparent 150%, black 200%)",
+      "words": [
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%"
+      ],
+      "servicesHeight": 2700,
+      "trackTransform": "matrix(1, 0, 0, 1, -1364, 0)",
+      "cardSizes": [
+        {
+          "width": 500,
+          "height": 490
+        },
+        {
+          "width": 500,
+          "height": 490
+        },
+        {
+          "width": 500,
+          "height": 490
+        },
+        {
+          "width": 500,
+          "height": 490
+        },
+        {
+          "width": 500,
+          "height": 490
+        }
+      ],
+      "progress": "49.3842%",
+      "timeline": [
+        {
+          "active": true,
+          "transform": "matrix(1, 0, 0, 1, 0, 0)",
+          "opacity": "1"
+        },
+        {
+          "active": true,
+          "transform": "matrix(1, 0, 0, 1, 0, 0)",
+          "opacity": "1"
+        },
+        {
+          "active": false,
+          "transform": "matrix(1, 0, 0, 1, 30, 0)",
+          "opacity": "0.3"
+        }
+      ],
+      "classes": "",
+      "overflow": false
+    },
+    {
+      "name": "desktop",
+      "version": "updated",
+      "stage": "hero",
+      "scrollY": 0,
+      "heroHeight": 900,
+      "heroContent": {
+        "x": 0,
+        "y": 260.234375,
+        "width": 1440,
+        "height": 379.515625,
+        "top": 260.234375,
+        "right": 1440,
+        "bottom": 639.75,
+        "left": 0
+      },
+      "classes": "js"
+    },
+    {
+      "name": "desktop",
+      "version": "updated",
+      "stage": "reveal",
+      "scrollY": 1440,
+      "heroHeight": 2250,
+      "revealHeight": 1350,
+      "mask": "linear-gradient(to top, transparent 150%, black 200%)",
+      "words": [
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "83.33333333333334%",
+        "0%",
+        "0%",
+        "0%",
+        "0%",
+        "0%",
+        "0%",
+        "0%"
+      ],
+      "servicesHeight": 2700,
+      "trackTransform": "matrix(1, 0, 0, 1, 0, 0)",
+      "cardSizes": [
+        {
+          "width": 500,
+          "height": 490
+        },
+        {
+          "width": 500,
+          "height": 490
+        },
+        {
+          "width": 500,
+          "height": 490
+        },
+        {
+          "width": 500,
+          "height": 490
+        },
+        {
+          "width": 500,
+          "height": 490
+        }
+      ],
+      "progress": "0%",
+      "timeline": [
+        {
+          "active": false,
+          "transform": "matrix(1, 0, 0, 1, 30, 0)",
+          "opacity": "1"
+        },
+        {
+          "active": false,
+          "transform": "matrix(1, 0, 0, 1, 30, 0)",
+          "opacity": "1"
+        },
+        {
+          "active": false,
+          "transform": "matrix(1, 0, 0, 1, 30, 0)",
+          "opacity": "1"
+        }
+      ],
+      "classes": "js",
+      "overflow": false
+    },
+    {
+      "name": "desktop",
+      "version": "updated",
+      "stage": "services-start",
+      "scrollY": 2700,
+      "heroHeight": 2250,
+      "revealHeight": 1350,
+      "mask": "linear-gradient(to top, transparent 150%, black 200%)",
+      "words": [
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%"
+      ],
+      "servicesHeight": 2700,
+      "trackTransform": "matrix(1, 0, 0, 1, 0, 0)",
+      "cardSizes": [
+        {
+          "width": 500,
+          "height": 490
+        },
+        {
+          "width": 500,
+          "height": 490
+        },
+        {
+          "width": 500,
+          "height": 490
+        },
+        {
+          "width": 500,
+          "height": 490
+        },
+        {
+          "width": 500,
+          "height": 490
+        }
+      ],
+      "progress": "0%",
+      "timeline": [
+        {
+          "active": false,
+          "transform": "matrix(1, 0, 0, 1, 30, 0)",
+          "opacity": "1"
+        },
+        {
+          "active": false,
+          "transform": "matrix(1, 0, 0, 1, 30, 0)",
+          "opacity": "1"
+        },
+        {
+          "active": false,
+          "transform": "matrix(1, 0, 0, 1, 30, 0)",
+          "opacity": "1"
+        }
+      ],
+      "classes": "js",
+      "overflow": false
+    },
+    {
+      "name": "desktop",
+      "version": "updated",
+      "stage": "services-middle",
+      "scrollY": 3600,
+      "heroHeight": 2250,
+      "revealHeight": 1350,
+      "mask": "linear-gradient(to top, transparent 150%, black 200%)",
+      "words": [
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%"
+      ],
+      "servicesHeight": 2700,
+      "trackTransform": "matrix(1, 0, 0, 1, -682, 0)",
+      "cardSizes": [
+        {
+          "width": 500,
+          "height": 490
+        },
+        {
+          "width": 500,
+          "height": 490
+        },
+        {
+          "width": 500,
+          "height": 490
+        },
+        {
+          "width": 500,
+          "height": 490
+        },
+        {
+          "width": 500,
+          "height": 490
+        }
+      ],
+      "progress": "0%",
+      "timeline": [
+        {
+          "active": false,
+          "transform": "matrix(1, 0, 0, 1, 30, 0)",
+          "opacity": "1"
+        },
+        {
+          "active": false,
+          "transform": "matrix(1, 0, 0, 1, 30, 0)",
+          "opacity": "1"
+        },
+        {
+          "active": false,
+          "transform": "matrix(1, 0, 0, 1, 30, 0)",
+          "opacity": "1"
+        }
+      ],
+      "classes": "js",
+      "overflow": false
+    },
+    {
+      "name": "desktop",
+      "version": "updated",
+      "stage": "services-end",
+      "scrollY": 4500,
+      "heroHeight": 2250,
+      "revealHeight": 1350,
+      "mask": "linear-gradient(to top, transparent 150%, black 200%)",
+      "words": [
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%"
+      ],
+      "servicesHeight": 2700,
+      "trackTransform": "matrix(1, 0, 0, 1, -1364, 0)",
+      "cardSizes": [
+        {
+          "width": 500,
+          "height": 490
+        },
+        {
+          "width": 500,
+          "height": 490
+        },
+        {
+          "width": 500,
+          "height": 490
+        },
+        {
+          "width": 500,
+          "height": 490
+        },
+        {
+          "width": 500,
+          "height": 490
+        }
+      ],
+      "progress": "0%",
+      "timeline": [
+        {
+          "active": false,
+          "transform": "matrix(1, 0, 0, 1, 30, 0)",
+          "opacity": "1"
+        },
+        {
+          "active": false,
+          "transform": "matrix(1, 0, 0, 1, 30, 0)",
+          "opacity": "1"
+        },
+        {
+          "active": false,
+          "transform": "matrix(1, 0, 0, 1, 30, 0)",
+          "opacity": "1"
+        }
+      ],
+      "classes": "js",
+      "overflow": false
+    },
+    {
+      "name": "desktop",
+      "version": "updated",
+      "stage": "timeline",
+      "scrollY": 5948,
+      "heroHeight": 2250,
+      "revealHeight": 1350,
+      "mask": "linear-gradient(to top, transparent 150%, black 200%)",
+      "words": [
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%"
+      ],
+      "servicesHeight": 2700,
+      "trackTransform": "matrix(1, 0, 0, 1, -1364, 0)",
+      "cardSizes": [
+        {
+          "width": 500,
+          "height": 490
+        },
+        {
+          "width": 500,
+          "height": 490
+        },
+        {
+          "width": 500,
+          "height": 490
+        },
+        {
+          "width": 500,
+          "height": 490
+        },
+        {
+          "width": 500,
+          "height": 490
+        }
+      ],
+      "progress": "49.3842%",
+      "timeline": [
+        {
+          "active": true,
+          "transform": "matrix(1, 0, 0, 1, 0, 0)",
+          "opacity": "1"
+        },
+        {
+          "active": true,
+          "transform": "matrix(1, 0, 0, 1, 0, 0)",
+          "opacity": "1"
+        },
+        {
+          "active": false,
+          "transform": "matrix(1, 0, 0, 1, 30, 0)",
+          "opacity": "1"
+        }
+      ],
+      "classes": "js",
+      "overflow": false
+    },
+    {
+      "name": "mobile",
+      "version": "original",
+      "stage": "hero",
+      "scrollY": 0,
+      "heroHeight": 844,
+      "heroContent": {
+        "x": 0,
+        "y": 331.609375,
+        "width": 390,
+        "height": 180.765625,
+        "top": 331.609375,
+        "right": 390,
+        "bottom": 512.375,
+        "left": 0
+      },
+      "classes": ""
+    },
+    {
+      "name": "mobile",
+      "version": "original",
+      "stage": "reveal",
+      "scrollY": 776,
+      "heroHeight": 1182,
+      "revealHeight": 928,
+      "mask": "linear-gradient(to top, transparent 150%, black 200%)",
+      "words": [
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%"
+      ],
+      "servicesHeight": 2172,
+      "trackTransform": "matrix(1, 0, 0, 1, 0, 0)",
+      "cardSizes": [
+        {
+          "width": 320,
+          "height": 460
+        },
+        {
+          "width": 320,
+          "height": 460
+        },
+        {
+          "width": 320,
+          "height": 460
+        },
+        {
+          "width": 320,
+          "height": 460
+        },
+        {
+          "width": 320,
+          "height": 460
+        }
+      ],
+      "progress": "0%",
+      "timeline": [
+        {
+          "active": false,
+          "transform": "matrix(1, 0, 0, 1, 30, 0)",
+          "opacity": "0.3"
+        },
+        {
+          "active": false,
+          "transform": "matrix(1, 0, 0, 1, 30, 0)",
+          "opacity": "0.3"
+        },
+        {
+          "active": false,
+          "transform": "matrix(1, 0, 0, 1, 30, 0)",
+          "opacity": "0.3"
+        }
+      ],
+      "classes": "",
+      "overflow": false
+    },
+    {
+      "name": "mobile",
+      "version": "original",
+      "stage": "services-start",
+      "scrollY": 1688,
+      "heroHeight": 1182,
+      "revealHeight": 928,
+      "mask": "linear-gradient(to top, transparent 150%, black 200%)",
+      "words": [
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%"
+      ],
+      "servicesHeight": 2172,
+      "trackTransform": "matrix(1, 0, 0, 1, -0.015625, 0)",
+      "cardSizes": [
+        {
+          "width": 320,
+          "height": 460
+        },
+        {
+          "width": 320,
+          "height": 460
+        },
+        {
+          "width": 320,
+          "height": 460
+        },
+        {
+          "width": 320,
+          "height": 460
+        },
+        {
+          "width": 320,
+          "height": 460
+        }
+      ],
+      "progress": "0%",
+      "timeline": [
+        {
+          "active": false,
+          "transform": "matrix(1, 0, 0, 1, 30, 0)",
+          "opacity": "0.3"
+        },
+        {
+          "active": false,
+          "transform": "matrix(1, 0, 0, 1, 30, 0)",
+          "opacity": "0.3"
+        },
+        {
+          "active": false,
+          "transform": "matrix(1, 0, 0, 1, 30, 0)",
+          "opacity": "0.3"
+        }
+      ],
+      "classes": "",
+      "overflow": false
+    },
+    {
+      "name": "mobile",
+      "version": "original",
+      "stage": "services-middle",
+      "scrollY": 2352,
+      "heroHeight": 1182,
+      "revealHeight": 928,
+      "mask": "linear-gradient(to top, transparent 150%, black 200%)",
+      "words": [
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%"
+      ],
+      "servicesHeight": 2172,
+      "trackTransform": "matrix(1, 0, 0, 1, -664.016, 0)",
+      "cardSizes": [
+        {
+          "width": 320,
+          "height": 460
+        },
+        {
+          "width": 320,
+          "height": 460
+        },
+        {
+          "width": 320,
+          "height": 460
+        },
+        {
+          "width": 320,
+          "height": 460
+        },
+        {
+          "width": 320,
+          "height": 460
+        }
+      ],
+      "progress": "0%",
+      "timeline": [
+        {
+          "active": false,
+          "transform": "matrix(1, 0, 0, 1, 30, 0)",
+          "opacity": "0.3"
+        },
+        {
+          "active": false,
+          "transform": "matrix(1, 0, 0, 1, 30, 0)",
+          "opacity": "0.3"
+        },
+        {
+          "active": false,
+          "transform": "matrix(1, 0, 0, 1, 30, 0)",
+          "opacity": "0.3"
+        }
+      ],
+      "classes": "",
+      "overflow": false
+    },
+    {
+      "name": "mobile",
+      "version": "original",
+      "stage": "services-end",
+      "scrollY": 3016,
+      "heroHeight": 1182,
+      "revealHeight": 928,
+      "mask": "linear-gradient(to top, transparent 150%, black 200%)",
+      "words": [
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%"
+      ],
+      "servicesHeight": 2172,
+      "trackTransform": "matrix(1, 0, 0, 1, -1328, 0)",
+      "cardSizes": [
+        {
+          "width": 320,
+          "height": 460
+        },
+        {
+          "width": 320,
+          "height": 460
+        },
+        {
+          "width": 320,
+          "height": 460
+        },
+        {
+          "width": 320,
+          "height": 460
+        },
+        {
+          "width": 320,
+          "height": 460
+        }
+      ],
+      "progress": "0%",
+      "timeline": [
+        {
+          "active": false,
+          "transform": "matrix(1, 0, 0, 1, 30, 0)",
+          "opacity": "0.3"
+        },
+        {
+          "active": false,
+          "transform": "matrix(1, 0, 0, 1, 30, 0)",
+          "opacity": "0.3"
+        },
+        {
+          "active": false,
+          "transform": "matrix(1, 0, 0, 1, 30, 0)",
+          "opacity": "0.3"
+        }
+      ],
+      "classes": "",
+      "overflow": false
+    },
+    {
+      "name": "mobile",
+      "version": "original",
+      "stage": "timeline",
+      "scrollY": 4201,
+      "heroHeight": 1182,
+      "revealHeight": 928,
+      "mask": "linear-gradient(to top, transparent 150%, black 200%)",
+      "words": [
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%"
+      ],
+      "servicesHeight": 2172,
+      "trackTransform": "matrix(1, 0, 0, 1, -1328, 0)",
+      "cardSizes": [
+        {
+          "width": 320,
+          "height": 460
+        },
+        {
+          "width": 320,
+          "height": 460
+        },
+        {
+          "width": 320,
+          "height": 460
+        },
+        {
+          "width": 320,
+          "height": 460
+        },
+        {
+          "width": 320,
+          "height": 460
+        }
+      ],
+      "progress": "49.2173%",
+      "timeline": [
+        {
+          "active": true,
+          "transform": "matrix(1, 0, 0, 1, 0, 0)",
+          "opacity": "1"
+        },
+        {
+          "active": true,
+          "transform": "matrix(1, 0, 0, 1, 0, 0)",
+          "opacity": "1"
+        },
+        {
+          "active": false,
+          "transform": "matrix(1, 0, 0, 1, 30, 0)",
+          "opacity": "0.3"
+        }
+      ],
+      "classes": "",
+      "overflow": false
+    },
+    {
+      "name": "mobile",
+      "version": "updated",
+      "stage": "hero",
+      "scrollY": 0,
+      "heroHeight": 844,
+      "heroContent": {
+        "x": 0,
+        "y": 331.609375,
+        "width": 390,
+        "height": 180.765625,
+        "top": 331.609375,
+        "right": 390,
+        "bottom": 512.375,
+        "left": 0
+      },
+      "classes": "js"
+    },
+    {
+      "name": "mobile",
+      "version": "updated",
+      "stage": "reveal",
+      "scrollY": 776,
+      "heroHeight": 1182,
+      "revealHeight": 928,
+      "mask": "linear-gradient(to top, transparent 150%, black 200%)",
+      "words": [
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%"
+      ],
+      "servicesHeight": 2172,
+      "trackTransform": "matrix(1, 0, 0, 1, 0, 0)",
+      "cardSizes": [
+        {
+          "width": 320,
+          "height": 460
+        },
+        {
+          "width": 320,
+          "height": 460
+        },
+        {
+          "width": 320,
+          "height": 460
+        },
+        {
+          "width": 320,
+          "height": 460
+        },
+        {
+          "width": 320,
+          "height": 460
+        }
+      ],
+      "progress": "0%",
+      "timeline": [
+        {
+          "active": false,
+          "transform": "matrix(1, 0, 0, 1, 30, 0)",
+          "opacity": "1"
+        },
+        {
+          "active": false,
+          "transform": "matrix(1, 0, 0, 1, 30, 0)",
+          "opacity": "1"
+        },
+        {
+          "active": false,
+          "transform": "matrix(1, 0, 0, 1, 30, 0)",
+          "opacity": "1"
+        }
+      ],
+      "classes": "js",
+      "overflow": false
+    },
+    {
+      "name": "mobile",
+      "version": "updated",
+      "stage": "services-start",
+      "scrollY": 1688,
+      "heroHeight": 1182,
+      "revealHeight": 928,
+      "mask": "linear-gradient(to top, transparent 150%, black 200%)",
+      "words": [
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%"
+      ],
+      "servicesHeight": 2172,
+      "trackTransform": "matrix(1, 0, 0, 1, -0.015625, 0)",
+      "cardSizes": [
+        {
+          "width": 320,
+          "height": 460
+        },
+        {
+          "width": 320,
+          "height": 460
+        },
+        {
+          "width": 320,
+          "height": 460
+        },
+        {
+          "width": 320,
+          "height": 460
+        },
+        {
+          "width": 320,
+          "height": 460
+        }
+      ],
+      "progress": "0%",
+      "timeline": [
+        {
+          "active": false,
+          "transform": "matrix(1, 0, 0, 1, 30, 0)",
+          "opacity": "1"
+        },
+        {
+          "active": false,
+          "transform": "matrix(1, 0, 0, 1, 30, 0)",
+          "opacity": "1"
+        },
+        {
+          "active": false,
+          "transform": "matrix(1, 0, 0, 1, 30, 0)",
+          "opacity": "1"
+        }
+      ],
+      "classes": "js",
+      "overflow": false
+    },
+    {
+      "name": "mobile",
+      "version": "updated",
+      "stage": "services-middle",
+      "scrollY": 2352,
+      "heroHeight": 1182,
+      "revealHeight": 928,
+      "mask": "linear-gradient(to top, transparent 150%, black 200%)",
+      "words": [
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%"
+      ],
+      "servicesHeight": 2172,
+      "trackTransform": "matrix(1, 0, 0, 1, -664.016, 0)",
+      "cardSizes": [
+        {
+          "width": 320,
+          "height": 460
+        },
+        {
+          "width": 320,
+          "height": 460
+        },
+        {
+          "width": 320,
+          "height": 460
+        },
+        {
+          "width": 320,
+          "height": 460
+        },
+        {
+          "width": 320,
+          "height": 460
+        }
+      ],
+      "progress": "0%",
+      "timeline": [
+        {
+          "active": false,
+          "transform": "matrix(1, 0, 0, 1, 30, 0)",
+          "opacity": "1"
+        },
+        {
+          "active": false,
+          "transform": "matrix(1, 0, 0, 1, 30, 0)",
+          "opacity": "1"
+        },
+        {
+          "active": false,
+          "transform": "matrix(1, 0, 0, 1, 30, 0)",
+          "opacity": "1"
+        }
+      ],
+      "classes": "js",
+      "overflow": false
+    },
+    {
+      "name": "mobile",
+      "version": "updated",
+      "stage": "services-end",
+      "scrollY": 3016,
+      "heroHeight": 1182,
+      "revealHeight": 928,
+      "mask": "linear-gradient(to top, transparent 150%, black 200%)",
+      "words": [
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%"
+      ],
+      "servicesHeight": 2172,
+      "trackTransform": "matrix(1, 0, 0, 1, -1328, 0)",
+      "cardSizes": [
+        {
+          "width": 320,
+          "height": 460
+        },
+        {
+          "width": 320,
+          "height": 460
+        },
+        {
+          "width": 320,
+          "height": 460
+        },
+        {
+          "width": 320,
+          "height": 460
+        },
+        {
+          "width": 320,
+          "height": 460
+        }
+      ],
+      "progress": "0%",
+      "timeline": [
+        {
+          "active": false,
+          "transform": "matrix(1, 0, 0, 1, 30, 0)",
+          "opacity": "1"
+        },
+        {
+          "active": false,
+          "transform": "matrix(1, 0, 0, 1, 30, 0)",
+          "opacity": "1"
+        },
+        {
+          "active": false,
+          "transform": "matrix(1, 0, 0, 1, 30, 0)",
+          "opacity": "1"
+        }
+      ],
+      "classes": "js",
+      "overflow": false
+    },
+    {
+      "name": "mobile",
+      "version": "updated",
+      "stage": "timeline",
+      "scrollY": 4210,
+      "heroHeight": 1182,
+      "revealHeight": 928,
+      "mask": "linear-gradient(to top, transparent 150%, black 200%)",
+      "words": [
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%",
+        "100%"
+      ],
+      "servicesHeight": 2172,
+      "trackTransform": "matrix(1, 0, 0, 1, -1328, 0)",
+      "cardSizes": [
+        {
+          "width": 320,
+          "height": 460
+        },
+        {
+          "width": 320,
+          "height": 460
+        },
+        {
+          "width": 320,
+          "height": 460
+        },
+        {
+          "width": 320,
+          "height": 460
+        },
+        {
+          "width": 320,
+          "height": 460
+        }
+      ],
+      "progress": "49.0788%",
+      "timeline": [
+        {
+          "active": true,
+          "transform": "matrix(1, 0, 0, 1, 0, 0)",
+          "opacity": "1"
+        },
+        {
+          "active": true,
+          "transform": "matrix(1, 0, 0, 1, 0, 0)",
+          "opacity": "1"
+        },
+        {
+          "active": false,
+          "transform": "matrix(1, 0, 0, 1, 30, 0)",
+          "opacity": "1"
+        }
+      ],
+      "classes": "js",
+      "overflow": false
+    },
+    {
+      "name": "narrow",
+      "classes": "js",
+      "overflow": false,
+      "cards": [
+        {
+          "height": 496,
+          "width": 262,
+          "scroll": 496
+        },
+        {
+          "height": 496,
+          "width": 262,
+          "scroll": 496
+        },
+        {
+          "height": 496,
+          "width": 262,
+          "scroll": 496
+        },
+        {
+          "height": 496,
+          "width": 262,
+          "scroll": 496
+        },
+        {
+          "height": 496,
+          "width": 262,
+          "scroll": 496
+        }
+      ]
+    },
+    {
+      "name": "landscape",
+      "classes": "js services-reflow hero-reflow",
+      "overflow": false,
+      "cards": [
+        {
+          "height": 309,
+          "width": 352,
+          "scroll": 309
+        },
+        {
+          "height": 309,
+          "width": 352,
+          "scroll": 309
+        },
+        {
+          "height": 309,
+          "width": 352,
+          "scroll": 309
+        },
+        {
+          "height": 309,
+          "width": 352,
+          "scroll": 309
+        },
+        {
+          "height": 309,
+          "width": 352,
+          "scroll": 309
+        }
+      ]
+    },
+    {
+      "name": "reflow",
+      "classes": "js services-reflow hero-reflow reveal-reflow",
+      "overflow": false,
+      "cards": [
+        {
+          "height": 328,
+          "width": 256,
+          "scroll": 328
+        },
+        {
+          "height": 328,
+          "width": 256,
+          "scroll": 328
+        },
+        {
+          "height": 347,
+          "width": 256,
+          "scroll": 347
+        },
+        {
+          "height": 328,
+          "width": 256,
+          "scroll": 328
+        },
+        {
+          "height": 345,
+          "width": 256,
+          "scroll": 345
+        }
+      ]
+    },
+    {
+      "name": "tablet",
+      "classes": "js",
+      "overflow": false,
+      "cards": [
+        {
+          "height": 460,
+          "width": 360,
+          "scroll": 460
+        },
+        {
+          "height": 460,
+          "width": 360,
+          "scroll": 460
+        },
+        {
+          "height": 460,
+          "width": 360,
+          "scroll": 460
+        },
+        {
+          "height": 460,
+          "width": 360,
+          "scroll": 460
+        },
+        {
+          "height": 460,
+          "width": 360,
+          "scroll": 460
+        }
+      ]
+    },
+    {
+      "name": "breakpoint-mobile",
+      "classes": "js",
+      "overflow": false,
+      "cards": [
+        {
+          "height": 460,
+          "width": 360,
+          "scroll": 460
+        },
+        {
+          "height": 460,
+          "width": 360,
+          "scroll": 460
+        },
+        {
+          "height": 460,
+          "width": 360,
+          "scroll": 460
+        },
+        {
+          "height": 460,
+          "width": 360,
+          "scroll": 460
+        },
+        {
+          "height": 460,
+          "width": 360,
+          "scroll": 460
+        }
+      ]
+    },
+    {
+      "name": "breakpoint-desktop",
+      "classes": "js",
+      "overflow": false,
+      "cards": [
+        {
+          "height": 490,
+          "width": 500,
+          "scroll": 490
+        },
+        {
+          "height": 490,
+          "width": 500,
+          "scroll": 490
+        },
+        {
+          "height": 490,
+          "width": 500,
+          "scroll": 490
+        },
+        {
+          "height": 490,
+          "width": 500,
+          "scroll": 490
+        },
+        {
+          "height": 490,
+          "width": 500,
+          "scroll": 490
+        }
+      ]
+    }
+  ]
+}

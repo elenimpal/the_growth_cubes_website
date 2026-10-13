@@ -1,0 +1,836 @@
+{
+  "timestamp": "2026-10-13T15:40:16.690Z",
+  "timezone": "Europe/Athens",
+  "environment": "darwin",
+  "browser": "155.0.8059.40",
+  "axeVersion": "4.10.3",
+  "playwrightVersion": "1.56.1",
+  "sourceHashes": {
+    "index.html": "9aea1b645f7d6a93f4ba6474a6e2f1aed71c1be1c8f68cd9afe5d5e0eda09566",
+    "accessibility.html": "e5a846143bf256d640f5973ed8c1a6703240a0041e6d3281331f04e3451c93f5",
+    "styles.css": "e6eca4d258d9c5cf5b860466af46368120fdcc20415d80d5c428bc0529ec7243",
+    "script.js": "d2008b8176abbe838bf9b1c40afd7b533111272853cccb5550c320b9ef332f6b",
+    "forms.js": "adac77e531af801a148856e8a4dd790c9afe2052ad7cf809037d138c4a4da627"
+  },
+  "scans": [
+    {
+      "name": "production-desktop",
+      "url": "https://www.thegrowthcubes.com/",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "violations": [
+        {
+          "id": "color-contrast",
+          "impact": "serious",
+          "count": 48,
+          "tags": [
+            "cat.color",
+            "wcag2aa",
+            "wcag143",
+            "TTv5",
+            "TT13.c",
+            "EN-301-549",
+            "EN-9.1.4.3",
+            "ACT"
+          ]
+        }
+      ],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "count": 32
+        },
+        {
+          "id": "video-caption",
+          "count": 1
+        }
+      ],
+      "overflow": {
+        "width": 1440,
+        "scrollWidth": 1440
+      }
+    },
+    {
+      "name": "production-mobile",
+      "url": "https://www.thegrowthcubes.com/",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "violations": [
+        {
+          "id": "color-contrast",
+          "impact": "serious",
+          "count": 44,
+          "tags": [
+            "cat.color",
+            "wcag2aa",
+            "wcag143",
+            "TTv5",
+            "TT13.c",
+            "EN-301-549",
+            "EN-9.1.4.3",
+            "ACT"
+          ]
+        }
+      ],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "count": 33
+        },
+        {
+          "id": "video-caption",
+          "count": 1
+        }
+      ],
+      "overflow": {
+        "width": 390,
+        "scrollWidth": 390
+      }
+    },
+    {
+      "name": "desktop",
+      "url": "http://127.0.0.1:59611",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "violations": [
+        {
+          "id": "color-contrast",
+          "impact": "serious",
+          "count": 6,
+          "tags": [
+            "cat.color",
+            "wcag2aa",
+            "wcag143",
+            "TTv5",
+            "TT13.c",
+            "EN-301-549",
+            "EN-9.1.4.3",
+            "ACT"
+          ]
+        }
+      ],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "count": 30
+        }
+      ],
+      "overflow": {
+        "width": 1440,
+        "scrollWidth": 1440
+      }
+    },
+    {
+      "name": "desktop-services-list",
+      "url": "http://127.0.0.1:59611",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "violations": [
+        {
+          "id": "color-contrast",
+          "impact": "serious",
+          "count": 6,
+          "tags": [
+            "cat.color",
+            "wcag2aa",
+            "wcag143",
+            "TTv5",
+            "TT13.c",
+            "EN-301-549",
+            "EN-9.1.4.3",
+            "ACT"
+          ]
+        }
+      ],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "count": 81
+        }
+      ],
+      "overflow": {
+        "width": 1440,
+        "scrollWidth": 1440
+      }
+    },
+    {
+      "name": "mobile-menu",
+      "url": "http://127.0.0.1:59611",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "violations": [
+        {
+          "id": "color-contrast",
+          "impact": "serious",
+          "count": 3,
+          "tags": [
+            "cat.color",
+            "wcag2aa",
+            "wcag143",
+            "TTv5",
+            "TT13.c",
+            "EN-301-549",
+            "EN-9.1.4.3",
+            "ACT"
+          ]
+        }
+      ],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "count": 61
+        }
+      ],
+      "overflow": {
+        "width": 390,
+        "scrollWidth": 390
+      }
+    },
+    {
+      "name": "mobile-320",
+      "url": "http://127.0.0.1:59611",
+      "viewport": {
+        "width": 320,
+        "height": 800
+      },
+      "violations": [
+        {
+          "id": "color-contrast",
+          "impact": "serious",
+          "count": 2,
+          "tags": [
+            "cat.color",
+            "wcag2aa",
+            "wcag143",
+            "TTv5",
+            "TT13.c",
+            "EN-301-549",
+            "EN-9.1.4.3",
+            "ACT"
+          ]
+        }
+      ],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "count": 59
+        }
+      ],
+      "overflow": {
+        "width": 320,
+        "scrollWidth": 320
+      }
+    },
+    {
+      "name": "mobile",
+      "url": "http://127.0.0.1:59611",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "violations": [
+        {
+          "id": "color-contrast",
+          "impact": "serious",
+          "count": 3,
+          "tags": [
+            "cat.color",
+            "wcag2aa",
+            "wcag143",
+            "TTv5",
+            "TT13.c",
+            "EN-301-549",
+            "EN-9.1.4.3",
+            "ACT"
+          ]
+        }
+      ],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "count": 58
+        }
+      ],
+      "overflow": {
+        "width": 390,
+        "scrollWidth": 390
+      }
+    },
+    {
+      "name": "tablet",
+      "url": "http://127.0.0.1:59611",
+      "viewport": {
+        "width": 768,
+        "height": 1024
+      },
+      "violations": [
+        {
+          "id": "color-contrast",
+          "impact": "serious",
+          "count": 6,
+          "tags": [
+            "cat.color",
+            "wcag2aa",
+            "wcag143",
+            "TTv5",
+            "TT13.c",
+            "EN-301-549",
+            "EN-9.1.4.3",
+            "ACT"
+          ]
+        }
+      ],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "count": 55
+        }
+      ],
+      "overflow": {
+        "width": 768,
+        "scrollWidth": 768
+      }
+    },
+    {
+      "name": "landscape",
+      "url": "http://127.0.0.1:59611",
+      "viewport": {
+        "width": 844,
+        "height": 390
+      },
+      "violations": [
+        {
+          "id": "color-contrast",
+          "impact": "serious",
+          "count": 6,
+          "tags": [
+            "cat.color",
+            "wcag2aa",
+            "wcag143",
+            "TTv5",
+            "TT13.c",
+            "EN-301-549",
+            "EN-9.1.4.3",
+            "ACT"
+          ]
+        }
+      ],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "count": 55
+        }
+      ],
+      "overflow": {
+        "width": 844,
+        "scrollWidth": 844
+      }
+    },
+    {
+      "name": "reflow-1280-at-400-percent-equivalent",
+      "url": "http://127.0.0.1:59611",
+      "viewport": {
+        "width": 320,
+        "height": 256
+      },
+      "violations": [
+        {
+          "id": "color-contrast",
+          "impact": "serious",
+          "count": 2,
+          "tags": [
+            "cat.color",
+            "wcag2aa",
+            "wcag143",
+            "TTv5",
+            "TT13.c",
+            "EN-301-549",
+            "EN-9.1.4.3",
+            "ACT"
+          ]
+        }
+      ],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "count": 59
+        }
+      ],
+      "overflow": {
+        "width": 320,
+        "scrollWidth": 320
+      }
+    },
+    {
+      "name": "text-spacing",
+      "url": "http://127.0.0.1:59611",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "violations": [
+        {
+          "id": "color-contrast",
+          "impact": "serious",
+          "count": 3,
+          "tags": [
+            "cat.color",
+            "wcag2aa",
+            "wcag143",
+            "TTv5",
+            "TT13.c",
+            "EN-301-549",
+            "EN-9.1.4.3",
+            "ACT"
+          ]
+        }
+      ],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "count": 58
+        }
+      ],
+      "overflow": {
+        "width": 390,
+        "scrollWidth": 390
+      }
+    },
+    {
+      "name": "text-resize-200-percent",
+      "url": "http://127.0.0.1:59611",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "violations": [
+        {
+          "id": "color-contrast",
+          "impact": "serious",
+          "count": 6,
+          "tags": [
+            "cat.color",
+            "wcag2aa",
+            "wcag143",
+            "TTv5",
+            "TT13.c",
+            "EN-301-549",
+            "EN-9.1.4.3",
+            "ACT"
+          ]
+        }
+      ],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "count": 53
+        }
+      ],
+      "overflow": {
+        "width": 1440,
+        "scrollWidth": 1440
+      }
+    },
+    {
+      "name": "reduced-motion",
+      "url": "http://127.0.0.1:59611",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "violations": [
+        {
+          "id": "color-contrast",
+          "impact": "serious",
+          "count": 6,
+          "tags": [
+            "cat.color",
+            "wcag2aa",
+            "wcag143",
+            "TTv5",
+            "TT13.c",
+            "EN-301-549",
+            "EN-9.1.4.3",
+            "ACT"
+          ]
+        }
+      ],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "count": 55
+        }
+      ],
+      "overflow": {
+        "width": 1440,
+        "scrollWidth": 1440
+      }
+    },
+    {
+      "name": "contact-invalid",
+      "url": "http://127.0.0.1:59611",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "violations": [
+        {
+          "id": "color-contrast",
+          "impact": "serious",
+          "count": 3,
+          "tags": [
+            "cat.color",
+            "wcag2aa",
+            "wcag143",
+            "TTv5",
+            "TT13.c",
+            "EN-301-549",
+            "EN-9.1.4.3",
+            "ACT"
+          ]
+        }
+      ],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "count": 62
+        }
+      ],
+      "overflow": {
+        "width": 390,
+        "scrollWidth": 390
+      }
+    },
+    {
+      "name": "contact-valid",
+      "url": "http://127.0.0.1:59611",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "violations": [
+        {
+          "id": "color-contrast",
+          "impact": "serious",
+          "count": 3,
+          "tags": [
+            "cat.color",
+            "wcag2aa",
+            "wcag143",
+            "TTv5",
+            "TT13.c",
+            "EN-301-549",
+            "EN-9.1.4.3",
+            "ACT"
+          ]
+        }
+      ],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "count": 60
+        }
+      ],
+      "overflow": {
+        "width": 390,
+        "scrollWidth": 390
+      }
+    },
+    {
+      "name": "newsletter-invalid",
+      "url": "http://127.0.0.1:59611",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "violations": [
+        {
+          "id": "color-contrast",
+          "impact": "serious",
+          "count": 3,
+          "tags": [
+            "cat.color",
+            "wcag2aa",
+            "wcag143",
+            "TTv5",
+            "TT13.c",
+            "EN-301-549",
+            "EN-9.1.4.3",
+            "ACT"
+          ]
+        }
+      ],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "count": 60
+        }
+      ],
+      "overflow": {
+        "width": 390,
+        "scrollWidth": 390
+      }
+    },
+    {
+      "name": "newsletter-valid",
+      "url": "http://127.0.0.1:59611",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "violations": [
+        {
+          "id": "color-contrast",
+          "impact": "serious",
+          "count": 3,
+          "tags": [
+            "cat.color",
+            "wcag2aa",
+            "wcag143",
+            "TTv5",
+            "TT13.c",
+            "EN-301-549",
+            "EN-9.1.4.3",
+            "ACT"
+          ]
+        }
+      ],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "count": 60
+        }
+      ],
+      "overflow": {
+        "width": 390,
+        "scrollWidth": 390
+      }
+    },
+    {
+      "name": "statement",
+      "url": "http://127.0.0.1:59611/accessibility.html",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "violations": [],
+      "incomplete": [],
+      "overflow": {
+        "width": 390,
+        "scrollWidth": 390
+      }
+    },
+    {
+      "name": "statement-desktop",
+      "url": "http://127.0.0.1:59611/accessibility.html",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "violations": [],
+      "incomplete": [],
+      "overflow": {
+        "width": 1440,
+        "scrollWidth": 1440
+      }
+    }
+  ],
+  "checks": [
+    {
+      "name": "desktop: no document horizontal overflow",
+      "pass": true,
+      "detail": {
+        "width": 1440,
+        "scrollWidth": 1440
+      }
+    },
+    {
+      "name": "Pausing motion pauses both videos",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Motion preference survives reload",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "desktop-services-list: no document horizontal overflow",
+      "pass": true,
+      "detail": {
+        "width": 1440,
+        "scrollWidth": 1440
+      }
+    },
+    {
+      "name": "mobile-menu: no document horizontal overflow",
+      "pass": true,
+      "detail": {
+        "width": 390,
+        "scrollWidth": 390
+      }
+    },
+    {
+      "name": "Escape closes mobile navigation and restores focus",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Closed mobile navigation is inert",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Keyboard enters opened menu",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "mobile-320: no document horizontal overflow",
+      "pass": true,
+      "detail": {
+        "width": 320,
+        "scrollWidth": 320
+      }
+    },
+    {
+      "name": "mobile: no document horizontal overflow",
+      "pass": true,
+      "detail": {
+        "width": 390,
+        "scrollWidth": 390
+      }
+    },
+    {
+      "name": "tablet: no document horizontal overflow",
+      "pass": true,
+      "detail": {
+        "width": 768,
+        "scrollWidth": 768
+      }
+    },
+    {
+      "name": "landscape: no document horizontal overflow",
+      "pass": true,
+      "detail": {
+        "width": 844,
+        "scrollWidth": 844
+      }
+    },
+    {
+      "name": "reflow-1280-at-400-percent-equivalent: no document horizontal overflow",
+      "pass": true,
+      "detail": {
+        "width": 320,
+        "scrollWidth": 320
+      }
+    },
+    {
+      "name": "text-spacing: no document horizontal overflow",
+      "pass": true,
+      "detail": {
+        "width": 390,
+        "scrollWidth": 390
+      }
+    },
+    {
+      "name": "text-resize-200-percent: no document horizontal overflow",
+      "pass": true,
+      "detail": {
+        "width": 1440,
+        "scrollWidth": 1440
+      }
+    },
+    {
+      "name": "reduced-motion: no document horizontal overflow",
+      "pass": true,
+      "detail": {
+        "width": 1440,
+        "scrollWidth": 1440
+      }
+    },
+    {
+      "name": "OS reduced-motion setting pauses videos",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "contact-invalid: no document horizontal overflow",
+      "pass": true,
+      "detail": {
+        "width": 390,
+        "scrollWidth": 390
+      }
+    },
+    {
+      "name": "Contact validation focuses first invalid field",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "contact-valid: no document horizontal overflow",
+      "pass": true,
+      "detail": {
+        "width": 390,
+        "scrollWidth": 390
+      }
+    },
+    {
+      "name": "Contact prepares an email draft without claiming delivery",
+      "pass": true,
+      "detail": "Your email draft is ready. Nothing has been sent. Use the link below to review and send it in your email app, or email hello@thegrowthcubes.com directly."
+    },
+    {
+      "name": "newsletter-invalid: no document horizontal overflow",
+      "pass": true,
+      "detail": {
+        "width": 390,
+        "scrollWidth": 390
+      }
+    },
+    {
+      "name": "newsletter-valid: no document horizontal overflow",
+      "pass": true,
+      "detail": {
+        "width": 390,
+        "scrollWidth": 390
+      }
+    },
+    {
+      "name": "statement: no document horizontal overflow",
+      "pass": true,
+      "detail": {
+        "width": 390,
+        "scrollWidth": 390
+      }
+    },
+    {
+      "name": "statement-desktop: no document horizontal overflow",
+      "pass": true,
+      "detail": {
+        "width": 1440,
+        "scrollWidth": 1440
+      }
+    },
+    {
+      "name": "Without JavaScript all services remain in normal flow",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "No local JavaScript runtime errors",
+      "pass": true,
+      "detail": []
+    }
+  ]
+}

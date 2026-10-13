@@ -1,0 +1,13 @@
+{
+  "timestamp": "2026-10-13T16:00:42.375864+00:00",
+  "tool": "html-validate",
+  "version": "11.16.2",
+  "command": "node node_modules/.bin/html-validate --formatter json index.html accessibility.html",
+  "files": [
+    "index.html",
+    "accessibility.html"
+  ],
+  "errors": 0,
+  "warnings": 0,
+  "results": []
+}

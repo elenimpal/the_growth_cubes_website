@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="en">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Original and restored design comparison</title>
+<style>
+body{margin:24px;background:#f4f0ea;color:#35111b;font:16px/1.5 system-ui}h1{font-size:26px}label{display:inline-block;margin:0 24px 20px 0}select{font:inherit;padding:8px}main{display:grid;grid-template-columns:1fr 1fr;gap:24px}figure{margin:0}figcaption{font-weight:700;margin-bottom:12px}img{width:100%;height:auto;border:1px solid #35111b}a{color:inherit}@media(max-width:700px){main{grid-template-columns:1fr}}:focus-visible{outline:3px solid #35111b;outline-offset:4px}
+</style>
+<h1>Original and restored design</h1>
+<p>Local development review against Git revision <code>a37e645</code>. Video frames are frozen at one second for comparison. Scroll interactions are tested separately in <a href="comparison.json">comparison.json</a>. This is not final production or DYPA compliance evidence.</p>
+<label>Viewport <select id="viewport"><option value="desktop">Desktop · 1440 × 900</option><option value="mobile">Phone · 390 × 844</option></select></label>
+<label>Section <select id="stage"><option value="hero">Hero</option><option value="reveal">Text reveal</option><option value="services-start">Services · start</option><option value="services-middle">Services · middle</option><option value="services-end">Services · end</option><option value="timeline">How We Work</option></select></label>
+<main><figure><figcaption>Original · a37e645</figcaption><img id="original" src="desktop-original-hero.png" alt="Original desktop hero"></figure><figure><figcaption>Updated · accessibility retained</figcaption><img id="updated" src="desktop-updated-hero.png" alt="Updated desktop hero"></figure></main>
+<script>
+const viewport=document.querySelector('#viewport'),stage=document.querySelector('#stage');
+function update(){for(const version of ['original','updated']){const img=document.querySelector('#'+version);img.src=`${viewport.value}-${version}-${stage.value}.png`;img.alt=`${version} ${viewport.value} ${stage.options[stage.selectedIndex].text}`;}}
+viewport.addEventListener('change',update);stage.addEventListener('change',update);
+</script>
+</html>

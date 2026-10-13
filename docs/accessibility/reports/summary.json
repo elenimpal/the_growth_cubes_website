@@ -1,0 +1,994 @@
+{
+  "timestamp": "2026-10-13T17:25:13.715Z",
+  "timezone": "Europe/Athens",
+  "environment": "darwin",
+  "browser": "155.0.8059.40",
+  "axeVersion": "4.14.0",
+  "playwrightVersion": "1.64.0",
+  "sourceHashes": {
+    "index.html": "23ce7868e98243fe752cbb4171805a5ecd1a2522e4c0a7bea067ae023c730a5c",
+    "el/index.html": "b5290b4f2cbe3557991429afa4c000903e1af0591e22ec611007de8a5b57662c",
+    "accessibility.html": "c642fb75de01b1aa2d58ac1cd0691199732ebaa9ce03e58de4cb76a410956231",
+    "styles.css": "b2bd339a582172fb36ae120196fca1c29103229dbb660237b19785143c4f0265",
+    "accessibility.css": "6348814dfd39eb397313714e73c92f288872ce1e987861727cd271ae176b6541",
+    "forms.js": "a18651551477d2e6d0ee3198d3cf7e236822c4678e15b118143357fd7d8aa011"
+  },
+  "scans": [
+    {
+      "name": "production-desktop",
+      "url": "https://www.thegrowthcubes.com/",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "violations": [
+        {
+          "id": "color-contrast",
+          "impact": "serious",
+          "count": 51,
+          "tags": [
+            "cat.color",
+            "wcag2aa",
+            "wcag143",
+            "TTv5",
+            "TT13.c",
+            "EN-301-549",
+            "EN-9.1.4.3",
+            "ACT",
+            "RGAAv4",
+            "RGAA-3.2.1"
+          ]
+        }
+      ],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "count": 29
+        },
+        {
+          "id": "video-caption",
+          "count": 1
+        }
+      ],
+      "overflow": {
+        "width": 1440,
+        "scrollWidth": 1440
+      }
+    },
+    {
+      "name": "production-mobile",
+      "url": "https://www.thegrowthcubes.com/",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "violations": [
+        {
+          "id": "color-contrast",
+          "impact": "serious",
+          "count": 47,
+          "tags": [
+            "cat.color",
+            "wcag2aa",
+            "wcag143",
+            "TTv5",
+            "TT13.c",
+            "EN-301-549",
+            "EN-9.1.4.3",
+            "ACT",
+            "RGAAv4",
+            "RGAA-3.2.1"
+          ]
+        }
+      ],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "count": 30
+        },
+        {
+          "id": "video-caption",
+          "count": 1
+        }
+      ],
+      "overflow": {
+        "width": 390,
+        "scrollWidth": 390
+      }
+    },
+    {
+      "name": "en-desktop",
+      "url": "http://127.0.0.1:62465/",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "count": 5
+        }
+      ],
+      "overflow": {
+        "width": 1440,
+        "scrollWidth": 1440
+      }
+    },
+    {
+      "name": "en-mobile-320",
+      "url": "http://127.0.0.1:62465/",
+      "viewport": {
+        "width": 320,
+        "height": 800
+      },
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "count": 5
+        }
+      ],
+      "overflow": {
+        "width": 320,
+        "scrollWidth": 320
+      }
+    },
+    {
+      "name": "en-mobile",
+      "url": "http://127.0.0.1:62465/",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "count": 5
+        }
+      ],
+      "overflow": {
+        "width": 390,
+        "scrollWidth": 390
+      }
+    },
+    {
+      "name": "en-tablet",
+      "url": "http://127.0.0.1:62465/",
+      "viewport": {
+        "width": 768,
+        "height": 1024
+      },
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "count": 5
+        }
+      ],
+      "overflow": {
+        "width": 768,
+        "scrollWidth": 768
+      }
+    },
+    {
+      "name": "en-landscape",
+      "url": "http://127.0.0.1:62465/",
+      "viewport": {
+        "width": 844,
+        "height": 390
+      },
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "count": 5
+        }
+      ],
+      "overflow": {
+        "width": 844,
+        "scrollWidth": 844
+      }
+    },
+    {
+      "name": "en-reflow-1280-at-400-percent-equivalent",
+      "url": "http://127.0.0.1:62465/",
+      "viewport": {
+        "width": 320,
+        "height": 256
+      },
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "count": 5
+        }
+      ],
+      "overflow": {
+        "width": 320,
+        "scrollWidth": 320
+      }
+    },
+    {
+      "name": "en-text-spacing",
+      "url": "http://127.0.0.1:62465/",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "count": 5
+        }
+      ],
+      "overflow": {
+        "width": 390,
+        "scrollWidth": 390
+      }
+    },
+    {
+      "name": "en-text-resize-200-percent",
+      "url": "http://127.0.0.1:62465/",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "count": 5
+        }
+      ],
+      "overflow": {
+        "width": 1440,
+        "scrollWidth": 1440
+      }
+    },
+    {
+      "name": "en-contact-invalid",
+      "url": "http://127.0.0.1:62465/",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "count": 5
+        }
+      ],
+      "overflow": {
+        "width": 390,
+        "scrollWidth": 390
+      }
+    },
+    {
+      "name": "en-contact-valid",
+      "url": "http://127.0.0.1:62465/",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "count": 5
+        }
+      ],
+      "overflow": {
+        "width": 390,
+        "scrollWidth": 390
+      }
+    },
+    {
+      "name": "en-newsletter-invalid",
+      "url": "http://127.0.0.1:62465/",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "count": 5
+        }
+      ],
+      "overflow": {
+        "width": 390,
+        "scrollWidth": 390
+      }
+    },
+    {
+      "name": "en-newsletter-valid",
+      "url": "http://127.0.0.1:62465/",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "count": 5
+        }
+      ],
+      "overflow": {
+        "width": 390,
+        "scrollWidth": 390
+      }
+    },
+    {
+      "name": "el-desktop",
+      "url": "http://127.0.0.1:62465/el/",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "count": 6
+        }
+      ],
+      "overflow": {
+        "width": 1440,
+        "scrollWidth": 1440
+      }
+    },
+    {
+      "name": "el-mobile-320",
+      "url": "http://127.0.0.1:62465/el/",
+      "viewport": {
+        "width": 320,
+        "height": 800
+      },
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "count": 6
+        }
+      ],
+      "overflow": {
+        "width": 320,
+        "scrollWidth": 320
+      }
+    },
+    {
+      "name": "el-mobile",
+      "url": "http://127.0.0.1:62465/el/",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "count": 6
+        }
+      ],
+      "overflow": {
+        "width": 390,
+        "scrollWidth": 390
+      }
+    },
+    {
+      "name": "el-tablet",
+      "url": "http://127.0.0.1:62465/el/",
+      "viewport": {
+        "width": 768,
+        "height": 1024
+      },
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "count": 6
+        }
+      ],
+      "overflow": {
+        "width": 768,
+        "scrollWidth": 768
+      }
+    },
+    {
+      "name": "el-landscape",
+      "url": "http://127.0.0.1:62465/el/",
+      "viewport": {
+        "width": 844,
+        "height": 390
+      },
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "count": 6
+        }
+      ],
+      "overflow": {
+        "width": 844,
+        "scrollWidth": 844
+      }
+    },
+    {
+      "name": "el-reflow-1280-at-400-percent-equivalent",
+      "url": "http://127.0.0.1:62465/el/",
+      "viewport": {
+        "width": 320,
+        "height": 256
+      },
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "count": 6
+        }
+      ],
+      "overflow": {
+        "width": 320,
+        "scrollWidth": 320
+      }
+    },
+    {
+      "name": "el-text-spacing",
+      "url": "http://127.0.0.1:62465/el/",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "count": 6
+        }
+      ],
+      "overflow": {
+        "width": 390,
+        "scrollWidth": 390
+      }
+    },
+    {
+      "name": "el-text-resize-200-percent",
+      "url": "http://127.0.0.1:62465/el/",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "count": 5
+        }
+      ],
+      "overflow": {
+        "width": 1440,
+        "scrollWidth": 1440
+      }
+    },
+    {
+      "name": "el-contact-invalid",
+      "url": "http://127.0.0.1:62465/el/",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "count": 6
+        }
+      ],
+      "overflow": {
+        "width": 390,
+        "scrollWidth": 390
+      }
+    },
+    {
+      "name": "el-contact-valid",
+      "url": "http://127.0.0.1:62465/el/",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "count": 6
+        }
+      ],
+      "overflow": {
+        "width": 390,
+        "scrollWidth": 390
+      }
+    },
+    {
+      "name": "el-newsletter-invalid",
+      "url": "http://127.0.0.1:62465/el/",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "count": 6
+        }
+      ],
+      "overflow": {
+        "width": 390,
+        "scrollWidth": 390
+      }
+    },
+    {
+      "name": "el-newsletter-valid",
+      "url": "http://127.0.0.1:62465/el/",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "count": 6
+        }
+      ],
+      "overflow": {
+        "width": 390,
+        "scrollWidth": 390
+      }
+    },
+    {
+      "name": "statement",
+      "url": "http://127.0.0.1:62465/accessibility.html",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "violations": [],
+      "incomplete": [],
+      "overflow": {
+        "width": 390,
+        "scrollWidth": 390
+      }
+    },
+    {
+      "name": "statement-desktop",
+      "url": "http://127.0.0.1:62465/accessibility.html",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "violations": [],
+      "incomplete": [],
+      "overflow": {
+        "width": 1440,
+        "scrollWidth": 1440
+      }
+    }
+  ],
+  "checks": [
+    {
+      "name": "en-desktop: no document horizontal overflow",
+      "pass": true,
+      "detail": {
+        "width": 1440,
+        "scrollWidth": 1440
+      }
+    },
+    {
+      "name": "en: page declares its language",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "en: no video, canvas or running animation",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "en: first Tab reaches skip link",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "en: skip link focuses main content",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "en: language link opens the el version",
+      "pass": true,
+      "detail": "http://127.0.0.1:62465/el/"
+    },
+    {
+      "name": "en-mobile-320: no document horizontal overflow",
+      "pass": true,
+      "detail": {
+        "width": 320,
+        "scrollWidth": 320
+      }
+    },
+    {
+      "name": "en-mobile-320: text blocks stay within viewport width",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "en-mobile: no document horizontal overflow",
+      "pass": true,
+      "detail": {
+        "width": 390,
+        "scrollWidth": 390
+      }
+    },
+    {
+      "name": "en-mobile: text blocks stay within viewport width",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "en-tablet: no document horizontal overflow",
+      "pass": true,
+      "detail": {
+        "width": 768,
+        "scrollWidth": 768
+      }
+    },
+    {
+      "name": "en-tablet: text blocks stay within viewport width",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "en-landscape: no document horizontal overflow",
+      "pass": true,
+      "detail": {
+        "width": 844,
+        "scrollWidth": 844
+      }
+    },
+    {
+      "name": "en-landscape: text blocks stay within viewport width",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "en-reflow-1280-at-400-percent-equivalent: no document horizontal overflow",
+      "pass": true,
+      "detail": {
+        "width": 320,
+        "scrollWidth": 320
+      }
+    },
+    {
+      "name": "en-reflow-1280-at-400-percent-equivalent: text blocks stay within viewport width",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "en-text-spacing: no document horizontal overflow",
+      "pass": true,
+      "detail": {
+        "width": 390,
+        "scrollWidth": 390
+      }
+    },
+    {
+      "name": "en-text-spacing: text blocks stay within viewport width",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "en-text-resize-200-percent: no document horizontal overflow",
+      "pass": true,
+      "detail": {
+        "width": 1440,
+        "scrollWidth": 1440
+      }
+    },
+    {
+      "name": "en-contact-invalid: no document horizontal overflow",
+      "pass": true,
+      "detail": {
+        "width": 390,
+        "scrollWidth": 390
+      }
+    },
+    {
+      "name": "en-contact-invalid: text blocks stay within viewport width",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "en: contact validation focuses first invalid field",
+      "pass": true,
+      "detail": "Please correct 3 fields before continuing."
+    },
+    {
+      "name": "en-contact-valid: no document horizontal overflow",
+      "pass": true,
+      "detail": {
+        "width": 390,
+        "scrollWidth": 390
+      }
+    },
+    {
+      "name": "en-contact-valid: text blocks stay within viewport width",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "en: contact prepares an email draft without claiming delivery",
+      "pass": true,
+      "detail": "Your email app should now open with the message ready. Nothing is sent until you press send there. If it did not open, use the link below or email info@thegrowthcubes.com directly."
+    },
+    {
+      "name": "en-newsletter-invalid: no document horizontal overflow",
+      "pass": true,
+      "detail": {
+        "width": 390,
+        "scrollWidth": 390
+      }
+    },
+    {
+      "name": "en-newsletter-invalid: text blocks stay within viewport width",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "en-newsletter-valid: no document horizontal overflow",
+      "pass": true,
+      "detail": {
+        "width": 390,
+        "scrollWidth": 390
+      }
+    },
+    {
+      "name": "en-newsletter-valid: text blocks stay within viewport width",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "en: newsletter prepares draft without claiming subscription",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "en: without JavaScript navigation and content stay visible",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "el-desktop: no document horizontal overflow",
+      "pass": true,
+      "detail": {
+        "width": 1440,
+        "scrollWidth": 1440
+      }
+    },
+    {
+      "name": "el: page declares its language",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "el: no video, canvas or running animation",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "el: first Tab reaches skip link",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "el: skip link focuses main content",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "el: language link opens the en version",
+      "pass": true,
+      "detail": "http://127.0.0.1:62465/"
+    },
+    {
+      "name": "el-mobile-320: no document horizontal overflow",
+      "pass": true,
+      "detail": {
+        "width": 320,
+        "scrollWidth": 320
+      }
+    },
+    {
+      "name": "el-mobile-320: text blocks stay within viewport width",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "el-mobile: no document horizontal overflow",
+      "pass": true,
+      "detail": {
+        "width": 390,
+        "scrollWidth": 390
+      }
+    },
+    {
+      "name": "el-mobile: text blocks stay within viewport width",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "el-tablet: no document horizontal overflow",
+      "pass": true,
+      "detail": {
+        "width": 768,
+        "scrollWidth": 768
+      }
+    },
+    {
+      "name": "el-tablet: text blocks stay within viewport width",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "el-landscape: no document horizontal overflow",
+      "pass": true,
+      "detail": {
+        "width": 844,
+        "scrollWidth": 844
+      }
+    },
+    {
+      "name": "el-landscape: text blocks stay within viewport width",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "el-reflow-1280-at-400-percent-equivalent: no document horizontal overflow",
+      "pass": true,
+      "detail": {
+        "width": 320,
+        "scrollWidth": 320
+      }
+    },
+    {
+      "name": "el-reflow-1280-at-400-percent-equivalent: text blocks stay within viewport width",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "el-text-spacing: no document horizontal overflow",
+      "pass": true,
+      "detail": {
+        "width": 390,
+        "scrollWidth": 390
+      }
+    },
+    {
+      "name": "el-text-spacing: text blocks stay within viewport width",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "el-text-resize-200-percent: no document horizontal overflow",
+      "pass": true,
+      "detail": {
+        "width": 1440,
+        "scrollWidth": 1440
+      }
+    },
+    {
+      "name": "el-contact-invalid: no document horizontal overflow",
+      "pass": true,
+      "detail": {
+        "width": 390,
+        "scrollWidth": 390
+      }
+    },
+    {
+      "name": "el-contact-invalid: text blocks stay within viewport width",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "el: contact validation focuses first invalid field",
+      "pass": true,
+      "detail": "Διορθώστε 3 πεδία για να συνεχίσετε."
+    },
+    {
+      "name": "el-contact-valid: no document horizontal overflow",
+      "pass": true,
+      "detail": {
+        "width": 390,
+        "scrollWidth": 390
+      }
+    },
+    {
+      "name": "el-contact-valid: text blocks stay within viewport width",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "el: contact prepares an email draft without claiming delivery",
+      "pass": true,
+      "detail": "Η εφαρμογή email σας θα πρέπει να ανοίξει με το μήνυμα έτοιμο. Δεν στέλνεται τίποτα μέχρι να πατήσετε αποστολή εκεί. Αν δεν άνοιξε, χρησιμοποιήστε τον παρακάτω σύνδεσμο ή γράψτε απευθείας στο info@thegrowthcubes.com."
+    },
+    {
+      "name": "el-newsletter-invalid: no document horizontal overflow",
+      "pass": true,
+      "detail": {
+        "width": 390,
+        "scrollWidth": 390
+      }
+    },
+    {
+      "name": "el-newsletter-invalid: text blocks stay within viewport width",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "el-newsletter-valid: no document horizontal overflow",
+      "pass": true,
+      "detail": {
+        "width": 390,
+        "scrollWidth": 390
+      }
+    },
+    {
+      "name": "el-newsletter-valid: text blocks stay within viewport width",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "el: newsletter prepares draft without claiming subscription",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "el: without JavaScript navigation and content stay visible",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "statement: no document horizontal overflow",
+      "pass": true,
+      "detail": {
+        "width": 390,
+        "scrollWidth": 390
+      }
+    },
+    {
+      "name": "statement: text blocks stay within viewport width",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "statement-desktop: no document horizontal overflow",
+      "pass": true,
+      "detail": {
+        "width": 1440,
+        "scrollWidth": 1440
+      }
+    },
+    {
+      "name": "No local JavaScript runtime errors",
+      "pass": true,
+      "detail": []
+    }
+  ]
+}

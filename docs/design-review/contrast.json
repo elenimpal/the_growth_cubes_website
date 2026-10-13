@@ -1,0 +1,65 @@
+{
+  "method": "WCAG sRGB relative luminance with conservative white video frame and layered alpha compositing. Validates color bounds, not every rendered/masked animation frame.",
+  "checks": [
+    {
+      "name": "Hero subtitle over white video plus original tint and text scrim",
+      "ratio": 5.165356505632383,
+      "minimum": 4.5,
+      "pass": true
+    },
+    {
+      "name": "Header over white video or cream section",
+      "ratio": 7.613459452214343,
+      "minimum": 4.5,
+      "pass": true
+    },
+    {
+      "name": "Unrevealed words",
+      "ratio": 7.227801414607641,
+      "minimum": 4.5,
+      "pass": true
+    },
+    {
+      "name": "Revealed words",
+      "ratio": 14.830057678455146,
+      "minimum": 4.5,
+      "pass": true
+    },
+    {
+      "name": "Timeline description without opacity dimming",
+      "ratio": 10.916522095270773,
+      "minimum": 4.5,
+      "pass": true
+    },
+    {
+      "name": "Timeline step numbers",
+      "ratio": 8.384267950717703,
+      "minimum": 4.5,
+      "pass": true
+    },
+    {
+      "name": "Services text at original 85% opacity",
+      "ratio": 10.93769117118978,
+      "minimum": 4.5,
+      "pass": true
+    },
+    {
+      "name": "Services text over brightest hover spotlight",
+      "ratio": 8.278226910571796,
+      "minimum": 4.5,
+      "pass": true
+    },
+    {
+      "name": "Pause control text",
+      "ratio": 14.830057678455146,
+      "minimum": 4.5,
+      "pass": true
+    },
+    {
+      "name": "Burgundy focus outline on cream gallery",
+      "ratio": 14.830057678455146,
+      "minimum": 3,
+      "pass": true
+    }
+  ]
+}
