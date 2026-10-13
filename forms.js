@@ -33,6 +33,9 @@ const validate = control => {
   error.textContent = invalid ? (control.validity.valueMissing ? text.required : text.email) : '';
   return !invalid;
 };
+// Browsers can leave a tall field partly below the screen when it is tabbed to;
+// bring the whole field into view (instant, no animation).
+controls.forEach(control => control.addEventListener('focus', () => control.scrollIntoView({ block: 'nearest' })));
 controls.forEach(control => control.addEventListener('input', () => {
   if (control.getAttribute('aria-invalid') === 'true') validate(control);
   draft.hidden = true;

@@ -473,6 +473,8 @@ main:focus {
   background: var(--burgundy-raised);
   color: var(--cream);
   font: inherit;
+  /* Breathing room when a field is scrolled into view on focus. */
+  scroll-margin-block: 1.5rem;
 }
 .field textarea {
   min-height: 8rem;
