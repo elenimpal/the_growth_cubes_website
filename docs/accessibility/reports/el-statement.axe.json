@@ -13,8 +13,8 @@
     "orientationAngle": 0,
     "orientationType": "landscape-primary"
   },
-  "timestamp": "2026-10-13T18:13:35.481Z",
-  "url": "http://127.0.0.1:59983/el/accessibility.html",
+  "timestamp": "2026-10-13T20:26:45.672Z",
+  "url": "http://127.0.0.1:60325/el/accessibility.html",
   "toolOptions": {
     "runOnly": {
       "type": "tag",
@@ -597,40 +597,6 @@
       "nodes": []
     },
     {
-      "id": "list",
-      "impact": null,
-      "tags": [
-        "cat.structure",
-        "wcag2a",
-        "wcag131",
-        "EN-301-549",
-        "EN-9.1.3.1",
-        "RGAAv4",
-        "RGAA-9.3.1"
-      ],
-      "description": "Ensure that lists are structured correctly",
-      "help": "<ul> and <ol> must only directly contain <li>, <script> or <template> elements",
-      "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/list?application=axeAPI",
-      "nodes": []
-    },
-    {
-      "id": "listitem",
-      "impact": null,
-      "tags": [
-        "cat.structure",
-        "wcag2a",
-        "wcag131",
-        "EN-301-549",
-        "EN-9.1.3.1",
-        "RGAAv4",
-        "RGAA-9.3.1"
-      ],
-      "description": "Ensure <li> elements are used semantically",
-      "help": "<li> elements must be contained in a <ul> or <ol>",
-      "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/listitem?application=axeAPI",
-      "nodes": []
-    },
-    {
       "id": "marquee",
       "impact": null,
       "tags": [
@@ -973,6 +939,46 @@
           "target": [
             ".brand"
           ]
+        },
+        {
+          "any": [],
+          "all": [
+            {
+              "id": "aria-allowed-attr",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "ARIA attributes are used correctly for the defined role"
+            },
+            {
+              "id": "aria-allowed-attr-elm",
+              "data": null,
+              "relatedNodes": [],
+              "message": "ARIA attributes are allowed for this element",
+              "impact": "critical"
+            },
+            {
+              "id": "aria-no-deprecated-attr",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "No deprecated ARIA attributes are used"
+            }
+          ],
+          "none": [
+            {
+              "id": "aria-unsupported-attr",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "ARIA attribute is supported"
+            }
+          ],
+          "impact": null,
+          "html": "<span class=\"lang-current\" aria-current=\"true\"><span aria-hidden=\"true\">🇬🇷</span> <span class=\"lang-short\">ΕΛ</span><span class=\"lang-full\">Ελληνικά</span></span>",
+          "target": [
+            ".lang-current"
+          ]
         }
       ]
     },
@@ -1008,6 +1014,24 @@
           "html": "<a class=\"brand\" href=\"/el/\" lang=\"en\" aria-label=\"The Growth Cubes — Αρχική σελίδα\">THE GROWTH CUBES</a>",
           "target": [
             ".brand"
+          ]
+        },
+        {
+          "any": [],
+          "all": [
+            {
+              "id": "aria-conditional-attr",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "ARIA attribute is allowed"
+            }
+          ],
+          "none": [],
+          "impact": null,
+          "html": "<span class=\"lang-current\" aria-current=\"true\"><span aria-hidden=\"true\">🇬🇷</span> <span class=\"lang-short\">ΕΛ</span><span class=\"lang-full\">Ελληνικά</span></span>",
+          "target": [
+            ".lang-current"
           ]
         }
       ]
@@ -1097,7 +1121,39 @@
           "impact": null,
           "html": "<span aria-hidden=\"true\">🇬🇧</span>",
           "target": [
-            "span[aria-hidden=\"true\"]"
+            ".lang-link > span[aria-hidden=\"true\"]"
+          ]
+        },
+        {
+          "any": [],
+          "all": [
+            {
+              "id": "focusable-modal-open",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "No focusable elements while a modal is open"
+            },
+            {
+              "id": "focusable-disabled",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "No focusable elements contained within element"
+            },
+            {
+              "id": "focusable-not-tabbable",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "No focusable elements contained within element"
+            }
+          ],
+          "none": [],
+          "impact": null,
+          "html": "<span aria-hidden=\"true\">🇬🇷</span>",
+          "target": [
+            ".lang-current > span[aria-hidden=\"true\"]"
           ]
         }
       ]
@@ -1134,6 +1190,24 @@
           "html": "<a class=\"brand\" href=\"/el/\" lang=\"en\" aria-label=\"The Growth Cubes — Αρχική σελίδα\">THE GROWTH CUBES</a>",
           "target": [
             ".brand"
+          ]
+        },
+        {
+          "any": [],
+          "all": [],
+          "none": [
+            {
+              "id": "aria-prohibited-attr",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "ARIA attribute is allowed"
+            }
+          ],
+          "impact": null,
+          "html": "<span class=\"lang-current\" aria-current=\"true\"><span aria-hidden=\"true\">🇬🇷</span> <span class=\"lang-short\">ΕΛ</span><span class=\"lang-full\">Ελληνικά</span></span>",
+          "target": [
+            ".lang-current"
           ]
         }
       ]
@@ -1185,6 +1259,38 @@
           "target": [
             ".brand"
           ]
+        },
+        {
+          "any": [],
+          "all": [
+            {
+              "id": "aria-valid-attr-value",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "ARIA attribute values are valid"
+            },
+            {
+              "id": "aria-errormessage",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "aria-errormessage exists and references elements visible to screen readers that use a supported aria-errormessage technique"
+            },
+            {
+              "id": "aria-level",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "aria-level values are valid"
+            }
+          ],
+          "none": [],
+          "impact": null,
+          "html": "<span class=\"lang-current\" aria-current=\"true\"><span aria-hidden=\"true\">🇬🇷</span> <span class=\"lang-short\">ΕΛ</span><span class=\"lang-full\">Ελληνικά</span></span>",
+          "target": [
+            ".lang-current"
+          ]
         }
       ]
     },
@@ -1220,6 +1326,24 @@
           "html": "<a class=\"brand\" href=\"/el/\" lang=\"en\" aria-label=\"The Growth Cubes — Αρχική σελίδα\">THE GROWTH CUBES</a>",
           "target": [
             ".brand"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "aria-valid-attr",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "ARIA attribute name is valid"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<span class=\"lang-current\" aria-current=\"true\"><span aria-hidden=\"true\">🇬🇷</span> <span class=\"lang-short\">ΕΛ</span><span class=\"lang-full\">Ελληνικά</span></span>",
+          "target": [
+            ".lang-current"
           ]
         }
       ]
@@ -1264,31 +1388,31 @@
                   ]
                 },
                 {
-                  "html": "<h2>Πρότυπα προσβασιμότητας</h2>",
+                  "html": "<h2>Κατάσταση συμμόρφωσης</h2>",
                   "target": [
                     "h2:nth-child(3)"
                   ]
                 },
                 {
-                  "html": "<h2>Τρέχουσα κατάσταση</h2>",
+                  "html": "<h2>Πώς αξιολογήθηκε ο ιστότοπος</h2>",
                   "target": [
                     "h2:nth-child(5)"
                   ]
                 },
                 {
-                  "html": "<h2>Πεδίο αξιολόγησης</h2>",
+                  "html": "<h2>Τι σημαίνει αυτό στην πράξη</h2>",
                   "target": [
-                    "h2:nth-child(8)"
+                    "h2:nth-child(9)"
                   ]
                 },
                 {
-                  "html": "<h2>Γνωστοί περιορισμοί</h2>",
+                  "html": "<h2>Σχόλια και επικοινωνία</h2>",
                   "target": [
-                    "h2:nth-child(10)"
+                    "h2:nth-child(11)"
                   ]
                 },
                 {
-                  "html": "<h2>Επικοινωνία και αναφορά προβλήματος</h2>",
+                  "html": "<h2>Σχετικά με τη δήλωση</h2>",
                   "target": [
                     "h2:nth-child(13)"
                   ]
@@ -1349,7 +1473,7 @@
                 "fgColor": "#ffffff",
                 "bgColor": "#35111b",
                 "contrastRatio": 16.83,
-                "fontSize": "12.0pt (16px)",
+                "fontSize": "10.5pt (14px)",
                 "fontWeight": "bold",
                 "expectedContrastRatio": "4.5:1"
               },
@@ -1386,9 +1510,34 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<a class=\"lang-link\" href=\"/accessibility.html\" lang=\"en\" hreflang=\"en\"><span aria-hidden=\"true\">🇬🇧</span> English</a>",
+          "html": "<span class=\"lang-short\">EN</span>",
           "target": [
-            ".lang-link"
+            ".lang-link > .lang-short"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#35111b",
+                "bgColor": "#f4f0ea",
+                "contrastRatio": 14.83,
+                "fontSize": "12.0pt (16px)",
+                "fontWeight": "bold",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has sufficient color contrast of 14.83"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<span class=\"lang-short\">ΕΛ</span>",
+          "target": [
+            ".lang-current > .lang-short"
           ]
         },
         {
@@ -1436,7 +1585,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<p class=\"intro\">\n        Στο <span lang=\"en\">The Growth Cubes</span> επιδιώκουμε ο ιστότοπός μας\n        να είναι προσβάσιμος και εύχρηστος για όλους, συμπεριλαμβανομένων των\n        ατόμων με αναπηρία.\n      </p>",
+          "html": "<p class=\"intro\">",
           "target": [
             ".intro"
           ]
@@ -1463,7 +1612,7 @@
           "impact": null,
           "html": "<span lang=\"en\">The Growth Cubes</span>",
           "target": [
-            ".intro > span"
+            ".intro > span[lang=\"en\"]"
           ]
         },
         {
@@ -1486,7 +1635,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<h2>Πρότυπα προσβασιμότητας</h2>",
+          "html": "<h2>Κατάσταση συμμόρφωσης</h2>",
           "target": [
             "h2:nth-child(3)"
           ]
@@ -1511,7 +1660,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<p>\n        Στόχος μας είναι η συμμόρφωση του ιστοτόπου με τις\n        <span lang=\"en\">Web Content Accessibility Guidelines (WCAG)</span> 2.1,\n        επίπεδο AA, και τις σχετικές απαιτήσεις του ευρωπαϊκού προτύπου EN 301\n        549.\n      </p>",
+          "html": "<p>",
           "target": [
             "p:nth-child(4)"
           ]
@@ -1536,9 +1685,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<span lang=\"en\">Web Content Accessibility Guidelines (WCAG)</span>",
+          "html": "<span lang=\"en\">Web Content Accessibility Guidelines, WCAG</span>",
           "target": [
-            "p:nth-child(4) > span"
+            "p:nth-child(4) > span[lang=\"en\"]"
           ]
         },
         {
@@ -1561,7 +1710,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<h2>Τρέχουσα κατάσταση</h2>",
+          "html": "<h2>Πώς αξιολογήθηκε ο ιστότοπος</h2>",
           "target": [
             "h2:nth-child(5)"
           ]
@@ -1586,7 +1735,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<p>\n        Έχουν πραγματοποιηθεί τεχνικές βελτιώσεις και αυτοματοποιημένοι έλεγχοι\n        προσβασιμότητας. Η συνολική αξιολόγηση της τελικής δημοσιευμένης έκδοσης\n        βρίσκεται σε εξέλιξη. Ως εκ τούτου, προς το παρόν δεν δηλώνεται πλήρης\n        συμμόρφωση με το επίπεδο AA.\n      </p>",
+          "html": "<p>",
           "target": [
             "p:nth-child(6)"
           ]
@@ -1611,34 +1760,209 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<p>\n        Η αρχική τεχνική αξιολόγηση πραγματοποιήθηκε στις\n        <time datetime=\"2026-10-13\">13 Οκτωβρίου 2026</time>. Η παρούσα δήλωση\n        θα επικαιροποιηθεί όταν ολοκληρωθεί η επαλήθευση της δημοσιευμένης\n        έκδοσης.\n      </p>",
-          "target": [
-            "p:nth-child(7)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
-                "fgColor": "#f4f0ea",
-                "bgColor": "#35111b",
-                "contrastRatio": 14.83,
-                "fontSize": "12.0pt (16px)",
-                "fontWeight": "normal",
-                "expectedContrastRatio": "4.5:1"
-              },
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has sufficient color contrast of 14.83"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
           "html": "<time datetime=\"2026-10-13\">13 Οκτωβρίου 2026</time>",
           "target": [
-            "time"
+            "p:nth-child(6) > time"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#f4f0ea",
+                "bgColor": "#35111b",
+                "contrastRatio": 14.83,
+                "fontSize": "12.0pt (16px)",
+                "fontWeight": "normal",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has sufficient color contrast of 14.83"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<li>\n          αυτοματοποιημένες σαρώσεις WCAG 2.1 A και AA κάθε σελίδας σε έξι\n          μεγέθη οθόνης, από οθόνη υπολογιστή έως μεγέθυνση 400%, με\n          μεγεθυμένο κείμενο, με αυξημένα διαστήματα κειμένου και με τη φόρμα\n          επικοινωνίας σε κάθε κατάστασή της·\n        </li>",
+          "target": [
+            "ul:nth-child(7) > li:nth-child(1)"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#f4f0ea",
+                "bgColor": "#35111b",
+                "contrastRatio": 14.83,
+                "fontSize": "12.0pt (16px)",
+                "fontWeight": "normal",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has sufficient color contrast of 14.83"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<li>\n          μετρήσεις προσβασιμότητας <span lang=\"en\">Google Lighthouse</span>\n          κάθε σελίδας, σε κινητό και σε υπολογιστή·\n        </li>",
+          "target": [
+            "ul:nth-child(7) > li:nth-child(2)"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#f4f0ea",
+                "bgColor": "#35111b",
+                "contrastRatio": 14.83,
+                "fontSize": "12.0pt (16px)",
+                "fontWeight": "normal",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has sufficient color contrast of 14.83"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<span lang=\"en\">Google Lighthouse</span>",
+          "target": [
+            "li:nth-child(2) > span[lang=\"en\"]"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#f4f0ea",
+                "bgColor": "#35111b",
+                "contrastRatio": 14.83,
+                "fontSize": "12.0pt (16px)",
+                "fontWeight": "normal",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has sufficient color contrast of 14.83"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<li>\n          πλήρη πλοήγηση κάθε σελίδας με το πληκτρολόγιο, με επιβεβαίωση ότι\n          κάθε σύνδεσμος, κουμπί και πεδίο φόρμας είναι προσβάσιμο και δείχνει\n          πού βρίσκεται η εστίαση·\n        </li>",
+          "target": [
+            "ul:nth-child(7) > li:nth-child(3)"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#f4f0ea",
+                "bgColor": "#35111b",
+                "contrastRatio": 14.83,
+                "fontSize": "12.0pt (16px)",
+                "fontWeight": "normal",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has sufficient color contrast of 14.83"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<li>\n          ελέγχους της δομής των σελίδων, των επικεφαλίδων, των εναλλακτικών\n          κειμένων, των ετικετών και των μηνυμάτων σφάλματος της φόρμας και της\n          χρωματικής αντίθεσης·\n        </li>",
+          "target": [
+            "ul:nth-child(7) > li:nth-child(4)"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#f4f0ea",
+                "bgColor": "#35111b",
+                "contrastRatio": 14.83,
+                "fontSize": "12.0pt (16px)",
+                "fontWeight": "normal",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has sufficient color contrast of 14.83"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<li>επικύρωση του κώδικα HTML κάθε σελίδας.</li>",
+          "target": [
+            "ul:nth-child(7) > li:nth-child(5)"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#f4f0ea",
+                "bgColor": "#35111b",
+                "contrastRatio": 14.83,
+                "fontSize": "12.0pt (16px)",
+                "fontWeight": "normal",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has sufficient color contrast of 14.83"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<p>\n        Δεν εντοπίστηκε καμία παράβαση. Κάθε σελίδα έλαβε βαθμολογία\n        προσβασιμότητας 100 στα 100 στο\n        <span lang=\"en\">Google Lighthouse</span>.\n      </p>",
+          "target": [
+            "p:nth-child(8)"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#f4f0ea",
+                "bgColor": "#35111b",
+                "contrastRatio": 14.83,
+                "fontSize": "12.0pt (16px)",
+                "fontWeight": "normal",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has sufficient color contrast of 14.83"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<span lang=\"en\">Google Lighthouse</span>",
+          "target": [
+            "p:nth-child(8) > span[lang=\"en\"]"
           ]
         },
         {
@@ -1661,9 +1985,209 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<h2>Πεδίο αξιολόγησης</h2>",
+          "html": "<h2>Τι σημαίνει αυτό στην πράξη</h2>",
           "target": [
-            "h2:nth-child(8)"
+            "h2:nth-child(9)"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#f4f0ea",
+                "bgColor": "#35111b",
+                "contrastRatio": 14.83,
+                "fontSize": "12.0pt (16px)",
+                "fontWeight": "normal",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has sufficient color contrast of 14.83"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<li>\n          Κάθε λειτουργία του ιστοτόπου είναι διαθέσιμη μόνο με το\n          πληκτρολόγιο.\n        </li>",
+          "target": [
+            "ul:nth-child(10) > li:nth-child(1)"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#f4f0ea",
+                "bgColor": "#35111b",
+                "contrastRatio": 14.83,
+                "fontSize": "12.0pt (16px)",
+                "fontWeight": "normal",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has sufficient color contrast of 14.83"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<li>\n          Ο σύνδεσμος «Μετάβαση στο κύριο περιεχόμενο» είναι το πρώτο στοιχείο\n          κάθε σελίδας, και το στοιχείο που έχει την εστίαση του πληκτρολογίου\n          επισημαίνεται πάντα με ευδιάκριτο περίγραμμα.\n        </li>",
+          "target": [
+            "ul:nth-child(10) > li:nth-child(2)"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#f4f0ea",
+                "bgColor": "#35111b",
+                "contrastRatio": 14.83,
+                "fontSize": "12.0pt (16px)",
+                "fontWeight": "normal",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has sufficient color contrast of 14.83"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<li>\n          Το κείμενο έχει ισχυρή αντίθεση με το φόντο του σε ολόκληρο τον\n          ιστότοπο.\n        </li>",
+          "target": [
+            "ul:nth-child(10) > li:nth-child(3)"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#f4f0ea",
+                "bgColor": "#35111b",
+                "contrastRatio": 14.83,
+                "fontSize": "12.0pt (16px)",
+                "fontWeight": "normal",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has sufficient color contrast of 14.83"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<li>\n          Το κείμενο μεγεθύνεται έως 200% και η σελίδα έως 400% χωρίς απώλεια\n          περιεχομένου και χωρίς οριζόντια κύλιση.\n        </li>",
+          "target": [
+            "ul:nth-child(10) > li:nth-child(4)"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#f4f0ea",
+                "bgColor": "#35111b",
+                "contrastRatio": 14.83,
+                "fontSize": "12.0pt (16px)",
+                "fontWeight": "normal",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has sufficient color contrast of 14.83"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<li>\n          Τίποτα στον ιστότοπο δεν κινείται, δεν αναβοσβήνει και δεν αναπαράγει\n          ήχο, και δεν υπάρχει κανένα χρονικό όριο.\n        </li>",
+          "target": [
+            "ul:nth-child(10) > li:nth-child(5)"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#f4f0ea",
+                "bgColor": "#35111b",
+                "contrastRatio": 14.83,
+                "fontSize": "12.0pt (16px)",
+                "fontWeight": "normal",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has sufficient color contrast of 14.83"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<li>\n          Οι επικεφαλίδες, οι περιοχές της σελίδας, οι εικόνες και τα πεδία\n          φόρμας είναι σημασμένα ώστε τα προγράμματα ανάγνωσης οθόνης να τα\n          ανακοινώνουν σωστά, και κάθε σελίδα δηλώνει τη γλώσσα της.\n        </li>",
+          "target": [
+            "li:nth-child(6)"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#f4f0ea",
+                "bgColor": "#35111b",
+                "contrastRatio": 14.83,
+                "fontSize": "12.0pt (16px)",
+                "fontWeight": "normal",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has sufficient color contrast of 14.83"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<li>\n          Η φόρμα επικοινωνίας έχει ορατές ετικέτες, επισημαίνει τα υποχρεωτικά\n          πεδία και εξηγεί κάθε σφάλμα με απλό κείμενο δίπλα στο αντίστοιχο\n          πεδίο.\n        </li>",
+          "target": [
+            "li:nth-child(7)"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#f4f0ea",
+                "bgColor": "#35111b",
+                "contrastRatio": 14.83,
+                "fontSize": "15.0pt (20px)",
+                "fontWeight": "bold",
+                "expectedContrastRatio": "3:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has sufficient color contrast of 14.83"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<h2>Σχόλια και επικοινωνία</h2>",
+          "target": [
+            "h2:nth-child(11)"
           ]
         },
         {
@@ -1687,158 +2211,8 @@
           "none": [],
           "impact": null,
           "html": "<p>",
-          "target": [
-            "p:nth-child(9)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
-                "fgColor": "#f4f0ea",
-                "bgColor": "#35111b",
-                "contrastRatio": 14.83,
-                "fontSize": "15.0pt (20px)",
-                "fontWeight": "bold",
-                "expectedContrastRatio": "3:1"
-              },
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has sufficient color contrast of 14.83"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<h2>Γνωστοί περιορισμοί</h2>",
-          "target": [
-            "h2:nth-child(10)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
-                "fgColor": "#f4f0ea",
-                "bgColor": "#35111b",
-                "contrastRatio": 14.83,
-                "fontSize": "12.0pt (16px)",
-                "fontWeight": "normal",
-                "expectedContrastRatio": "4.5:1"
-              },
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has sufficient color contrast of 14.83"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<p>",
-          "target": [
-            "p:nth-child(11)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
-                "fgColor": "#ffffff",
-                "bgColor": "#35111b",
-                "contrastRatio": 16.83,
-                "fontSize": "12.0pt (16px)",
-                "fontWeight": "normal",
-                "expectedContrastRatio": "4.5:1"
-              },
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has sufficient color contrast of 16.83"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<a href=\"mailto:info@thegrowthcubes.com\">info@thegrowthcubes.com</a>",
-          "target": [
-            "a[href=\"mailto:info@thegrowthcubes.com\"]"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
-                "fgColor": "#f4f0ea",
-                "bgColor": "#35111b",
-                "contrastRatio": 14.83,
-                "fontSize": "12.0pt (16px)",
-                "fontWeight": "normal",
-                "expectedContrastRatio": "4.5:1"
-              },
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has sufficient color contrast of 14.83"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<p>\n        Ιστότοποι τρίτων, στους οποίους ενδέχεται να παραπέμπουν σύνδεσμοι, δεν\n        καλύπτονται από την παρούσα δήλωση.\n      </p>",
           "target": [
             "p:nth-child(12)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
-                "fgColor": "#f4f0ea",
-                "bgColor": "#35111b",
-                "contrastRatio": 14.83,
-                "fontSize": "15.0pt (20px)",
-                "fontWeight": "bold",
-                "expectedContrastRatio": "3:1"
-              },
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has sufficient color contrast of 14.83"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<h2>Επικοινωνία και αναφορά προβλήματος</h2>",
-          "target": [
-            "h2:nth-child(13)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
-                "fgColor": "#f4f0ea",
-                "bgColor": "#35111b",
-                "contrastRatio": 14.83,
-                "fontSize": "12.0pt (16px)",
-                "fontWeight": "normal",
-                "expectedContrastRatio": "4.5:1"
-              },
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has sufficient color contrast of 14.83"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<p>",
-          "target": [
-            "p:nth-child(14)"
           ]
         },
         {
@@ -1863,7 +2237,32 @@
           "impact": null,
           "html": "<a href=\"mailto:info@thegrowthcubes.com?subject=Accessibility%20feedback\">info@thegrowthcubes.com</a>",
           "target": [
-            "p:nth-child(14) > a"
+            "p:nth-child(12) > a"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#f4f0ea",
+                "bgColor": "#35111b",
+                "contrastRatio": 14.83,
+                "fontSize": "15.0pt (20px)",
+                "fontWeight": "bold",
+                "expectedContrastRatio": "3:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has sufficient color contrast of 14.83"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<h2>Σχετικά με τη δήλωση</h2>",
+          "target": [
+            "h2:nth-child(13)"
           ]
         },
         {
@@ -1886,9 +2285,34 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<p>\n        Μπορείτε επίσης να ζητήσετε να σας δοθούν πληροφορίες του ιστοτόπου με\n        εναλλακτικό προσβάσιμο τρόπο.\n      </p>",
+          "html": "<p>\n        Η παρούσα δήλωση συντάχθηκε στις\n        <time datetime=\"2026-10-13\">13 Οκτωβρίου 2026</time>, βάσει αξιολόγησης\n        που πραγματοποίησε η επιχείρηση. Ο ιστότοπος ελέγχεται ξανά με την ίδια\n        διαδικασία πριν από τη δημοσίευση κάθε αλλαγής.\n      </p>",
           "target": [
-            "p:nth-child(15)"
+            "p:nth-child(14)"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#f4f0ea",
+                "bgColor": "#35111b",
+                "contrastRatio": 14.83,
+                "fontSize": "12.0pt (16px)",
+                "fontWeight": "normal",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has sufficient color contrast of 14.83"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<time datetime=\"2026-10-13\">13 Οκτωβρίου 2026</time>",
+          "target": [
+            "p:nth-child(14) > time"
           ]
         },
         {
@@ -1963,7 +2387,7 @@
           "impact": null,
           "html": "<span lang=\"en\">The Growth Cubes</span>",
           "target": [
-            "div > p > span"
+            "div > p > span[lang=\"en\"]"
           ]
         }
       ]
@@ -2148,32 +2572,7 @@
                 {
                   "html": "<p>",
                   "target": [
-                    "p:nth-child(11)"
-                  ]
-                }
-              ],
-              "impact": "serious",
-              "message": "Links can be distinguished from surrounding text by visual styling"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<a href=\"mailto:info@thegrowthcubes.com\">info@thegrowthcubes.com</a>",
-          "target": [
-            "a[href=\"mailto:info@thegrowthcubes.com\"]"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "link-in-text-block-style",
-              "data": null,
-              "relatedNodes": [
-                {
-                  "html": "<p>",
-                  "target": [
-                    "p:nth-child(14)"
+                    "p:nth-child(12)"
                   ]
                 }
               ],
@@ -2186,7 +2585,7 @@
           "impact": null,
           "html": "<a href=\"mailto:info@thegrowthcubes.com?subject=Accessibility%20feedback\">info@thegrowthcubes.com</a>",
           "target": [
-            "p:nth-child(14) > a"
+            "p:nth-child(12) > a"
           ]
         }
       ]
@@ -2294,7 +2693,7 @@
             }
           ],
           "impact": null,
-          "html": "<a class=\"lang-link\" href=\"/accessibility.html\" lang=\"en\" hreflang=\"en\"><span aria-hidden=\"true\">🇬🇧</span> English</a>",
+          "html": "<a href=\"/accessibility.html\" class=\"lang-link\" lang=\"en\" hreflang=\"en\"><span aria-hidden=\"true\">🇬🇧</span> <span class=\"lang-short\">EN</span><span class=\"lang-full\">English</span></a>",
           "target": [
             ".lang-link"
           ]
@@ -2320,35 +2719,9 @@
             }
           ],
           "impact": null,
-          "html": "<a href=\"mailto:info@thegrowthcubes.com\">info@thegrowthcubes.com</a>",
-          "target": [
-            "a[href=\"mailto:info@thegrowthcubes.com\"]"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "has-visible-text",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has text that is visible to screen readers"
-            }
-          ],
-          "all": [],
-          "none": [
-            {
-              "id": "focusable-no-name",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element is not in tab order or has accessible text"
-            }
-          ],
-          "impact": null,
           "html": "<a href=\"mailto:info@thegrowthcubes.com?subject=Accessibility%20feedback\">info@thegrowthcubes.com</a>",
           "target": [
-            "p:nth-child(14) > a"
+            "p:nth-child(12) > a"
           ]
         },
         {
@@ -2375,6 +2748,294 @@
           "html": "<a href=\"/el/\">← Επιστροφή στην αρχική σελίδα</a>",
           "target": [
             ".back-link > a[href$=\"el/\"]"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "list",
+      "impact": null,
+      "tags": [
+        "cat.structure",
+        "wcag2a",
+        "wcag131",
+        "EN-301-549",
+        "EN-9.1.3.1",
+        "RGAAv4",
+        "RGAA-9.3.1"
+      ],
+      "description": "Ensure that lists are structured correctly",
+      "help": "<ul> and <ol> must only directly contain <li>, <script> or <template> elements",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/list?application=axeAPI",
+      "nodes": [
+        {
+          "any": [],
+          "all": [],
+          "none": [
+            {
+              "id": "only-listitems",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "List element only has direct children that are allowed inside <li> elements"
+            }
+          ],
+          "impact": null,
+          "html": "<ul>",
+          "target": [
+            "ul:nth-child(7)"
+          ]
+        },
+        {
+          "any": [],
+          "all": [],
+          "none": [
+            {
+              "id": "only-listitems",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "List element only has direct children that are allowed inside <li> elements"
+            }
+          ],
+          "impact": null,
+          "html": "<ul>",
+          "target": [
+            "ul:nth-child(10)"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "listitem",
+      "impact": null,
+      "tags": [
+        "cat.structure",
+        "wcag2a",
+        "wcag131",
+        "EN-301-549",
+        "EN-9.1.3.1",
+        "RGAAv4",
+        "RGAA-9.3.1"
+      ],
+      "description": "Ensure <li> elements are used semantically",
+      "help": "<li> elements must be contained in a <ul> or <ol>",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/listitem?application=axeAPI",
+      "nodes": [
+        {
+          "any": [
+            {
+              "id": "listitem",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "List item has a <ul>, <ol> or role=\"list\" parent element"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<li>\n          αυτοματοποιημένες σαρώσεις WCAG 2.1 A και AA κάθε σελίδας σε έξι\n          μεγέθη οθόνης, από οθόνη υπολογιστή έως μεγέθυνση 400%, με\n          μεγεθυμένο κείμενο, με αυξημένα διαστήματα κειμένου και με τη φόρμα\n          επικοινωνίας σε κάθε κατάστασή της·\n        </li>",
+          "target": [
+            "ul:nth-child(7) > li:nth-child(1)"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "listitem",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "List item has a <ul>, <ol> or role=\"list\" parent element"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<li>\n          μετρήσεις προσβασιμότητας <span lang=\"en\">Google Lighthouse</span>\n          κάθε σελίδας, σε κινητό και σε υπολογιστή·\n        </li>",
+          "target": [
+            "ul:nth-child(7) > li:nth-child(2)"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "listitem",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "List item has a <ul>, <ol> or role=\"list\" parent element"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<li>\n          πλήρη πλοήγηση κάθε σελίδας με το πληκτρολόγιο, με επιβεβαίωση ότι\n          κάθε σύνδεσμος, κουμπί και πεδίο φόρμας είναι προσβάσιμο και δείχνει\n          πού βρίσκεται η εστίαση·\n        </li>",
+          "target": [
+            "ul:nth-child(7) > li:nth-child(3)"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "listitem",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "List item has a <ul>, <ol> or role=\"list\" parent element"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<li>\n          ελέγχους της δομής των σελίδων, των επικεφαλίδων, των εναλλακτικών\n          κειμένων, των ετικετών και των μηνυμάτων σφάλματος της φόρμας και της\n          χρωματικής αντίθεσης·\n        </li>",
+          "target": [
+            "ul:nth-child(7) > li:nth-child(4)"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "listitem",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "List item has a <ul>, <ol> or role=\"list\" parent element"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<li>επικύρωση του κώδικα HTML κάθε σελίδας.</li>",
+          "target": [
+            "ul:nth-child(7) > li:nth-child(5)"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "listitem",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "List item has a <ul>, <ol> or role=\"list\" parent element"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<li>\n          Κάθε λειτουργία του ιστοτόπου είναι διαθέσιμη μόνο με το\n          πληκτρολόγιο.\n        </li>",
+          "target": [
+            "ul:nth-child(10) > li:nth-child(1)"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "listitem",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "List item has a <ul>, <ol> or role=\"list\" parent element"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<li>\n          Ο σύνδεσμος «Μετάβαση στο κύριο περιεχόμενο» είναι το πρώτο στοιχείο\n          κάθε σελίδας, και το στοιχείο που έχει την εστίαση του πληκτρολογίου\n          επισημαίνεται πάντα με ευδιάκριτο περίγραμμα.\n        </li>",
+          "target": [
+            "ul:nth-child(10) > li:nth-child(2)"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "listitem",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "List item has a <ul>, <ol> or role=\"list\" parent element"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<li>\n          Το κείμενο έχει ισχυρή αντίθεση με το φόντο του σε ολόκληρο τον\n          ιστότοπο.\n        </li>",
+          "target": [
+            "ul:nth-child(10) > li:nth-child(3)"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "listitem",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "List item has a <ul>, <ol> or role=\"list\" parent element"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<li>\n          Το κείμενο μεγεθύνεται έως 200% και η σελίδα έως 400% χωρίς απώλεια\n          περιεχομένου και χωρίς οριζόντια κύλιση.\n        </li>",
+          "target": [
+            "ul:nth-child(10) > li:nth-child(4)"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "listitem",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "List item has a <ul>, <ol> or role=\"list\" parent element"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<li>\n          Τίποτα στον ιστότοπο δεν κινείται, δεν αναβοσβήνει και δεν αναπαράγει\n          ήχο, και δεν υπάρχει κανένα χρονικό όριο.\n        </li>",
+          "target": [
+            "ul:nth-child(10) > li:nth-child(5)"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "listitem",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "List item has a <ul>, <ol> or role=\"list\" parent element"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<li>\n          Οι επικεφαλίδες, οι περιοχές της σελίδας, οι εικόνες και τα πεδία\n          φόρμας είναι σημασμένα ώστε τα προγράμματα ανάγνωσης οθόνης να τα\n          ανακοινώνουν σωστά, και κάθε σελίδα δηλώνει τη γλώσσα της.\n        </li>",
+          "target": [
+            "li:nth-child(6)"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "listitem",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "List item has a <ul>, <ol> or role=\"list\" parent element"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<li>\n          Η φόρμα επικοινωνίας έχει ορατές ετικέτες, επισημαίνει τα υποχρεωτικά\n          πεδία και εξηγεί κάθε σφάλμα με απλό κείμενο δίπλα στο αντίστοιχο\n          πεδίο.\n        </li>",
+          "target": [
+            "li:nth-child(7)"
           ]
         }
       ]
@@ -2466,7 +3127,7 @@
             }
           ],
           "impact": null,
-          "html": "<a class=\"lang-link\" href=\"/accessibility.html\" lang=\"en\" hreflang=\"en\"><span aria-hidden=\"true\">🇬🇧</span> English</a>",
+          "html": "<a href=\"/accessibility.html\" class=\"lang-link\" lang=\"en\" hreflang=\"en\"><span aria-hidden=\"true\">🇬🇧</span> <span class=\"lang-short\">EN</span><span class=\"lang-full\">English</span></a>",
           "target": [
             ".lang-link"
           ]
@@ -2486,7 +3147,7 @@
           "impact": null,
           "html": "<span lang=\"en\">The Growth Cubes</span>",
           "target": [
-            ".intro > span"
+            ".intro > span[lang=\"en\"]"
           ]
         },
         {
@@ -2502,9 +3163,45 @@
             }
           ],
           "impact": null,
-          "html": "<span lang=\"en\">Web Content Accessibility Guidelines (WCAG)</span>",
+          "html": "<span lang=\"en\">Web Content Accessibility Guidelines, WCAG</span>",
           "target": [
-            "p:nth-child(4) > span"
+            "p:nth-child(4) > span[lang=\"en\"]"
+          ]
+        },
+        {
+          "any": [],
+          "all": [],
+          "none": [
+            {
+              "id": "valid-lang",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Value of lang attribute is included in the list of valid languages"
+            }
+          ],
+          "impact": null,
+          "html": "<span lang=\"en\">Google Lighthouse</span>",
+          "target": [
+            "li:nth-child(2) > span[lang=\"en\"]"
+          ]
+        },
+        {
+          "any": [],
+          "all": [],
+          "none": [
+            {
+              "id": "valid-lang",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Value of lang attribute is included in the list of valid languages"
+            }
+          ],
+          "impact": null,
+          "html": "<span lang=\"en\">Google Lighthouse</span>",
+          "target": [
+            "p:nth-child(8) > span[lang=\"en\"]"
           ]
         },
         {
@@ -2522,7 +3219,7 @@
           "impact": null,
           "html": "<span lang=\"en\">The Growth Cubes</span>",
           "target": [
-            "div > p > span"
+            "div > p > span[lang=\"en\"]"
           ]
         }
       ]

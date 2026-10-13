@@ -13,8 +13,8 @@
     "orientationAngle": 0,
     "orientationType": "landscape-primary"
   },
-  "timestamp": "2026-10-13T18:13:34.802Z",
-  "url": "http://127.0.0.1:59983/accessibility.html",
+  "timestamp": "2026-10-13T20:26:44.978Z",
+  "url": "http://127.0.0.1:60325/accessibility.html",
   "toolOptions": {
     "runOnly": {
       "type": "tag",
@@ -597,40 +597,6 @@
       "nodes": []
     },
     {
-      "id": "list",
-      "impact": null,
-      "tags": [
-        "cat.structure",
-        "wcag2a",
-        "wcag131",
-        "EN-301-549",
-        "EN-9.1.3.1",
-        "RGAAv4",
-        "RGAA-9.3.1"
-      ],
-      "description": "Ensure that lists are structured correctly",
-      "help": "<ul> and <ol> must only directly contain <li>, <script> or <template> elements",
-      "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/list?application=axeAPI",
-      "nodes": []
-    },
-    {
-      "id": "listitem",
-      "impact": null,
-      "tags": [
-        "cat.structure",
-        "wcag2a",
-        "wcag131",
-        "EN-301-549",
-        "EN-9.1.3.1",
-        "RGAAv4",
-        "RGAA-9.3.1"
-      ],
-      "description": "Ensure <li> elements are used semantically",
-      "help": "<li> elements must be contained in a <ul> or <ol>",
-      "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/listitem?application=axeAPI",
-      "nodes": []
-    },
-    {
       "id": "marquee",
       "impact": null,
       "tags": [
@@ -973,6 +939,46 @@
           "target": [
             ".brand"
           ]
+        },
+        {
+          "any": [],
+          "all": [
+            {
+              "id": "aria-allowed-attr",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "ARIA attributes are used correctly for the defined role"
+            },
+            {
+              "id": "aria-allowed-attr-elm",
+              "data": null,
+              "relatedNodes": [],
+              "message": "ARIA attributes are allowed for this element",
+              "impact": "critical"
+            },
+            {
+              "id": "aria-no-deprecated-attr",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "No deprecated ARIA attributes are used"
+            }
+          ],
+          "none": [
+            {
+              "id": "aria-unsupported-attr",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "ARIA attribute is supported"
+            }
+          ],
+          "impact": null,
+          "html": "<span class=\"lang-current\" aria-current=\"true\"><span aria-hidden=\"true\">🇬🇧</span> <span class=\"lang-short\">EN</span><span class=\"lang-full\">English</span></span>",
+          "target": [
+            ".lang-current"
+          ]
         }
       ]
     },
@@ -1008,6 +1014,24 @@
           "html": "<a class=\"brand\" href=\"/\" aria-label=\"The Growth Cubes — Home page\">THE GROWTH CUBES</a>",
           "target": [
             ".brand"
+          ]
+        },
+        {
+          "any": [],
+          "all": [
+            {
+              "id": "aria-conditional-attr",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "ARIA attribute is allowed"
+            }
+          ],
+          "none": [],
+          "impact": null,
+          "html": "<span class=\"lang-current\" aria-current=\"true\"><span aria-hidden=\"true\">🇬🇧</span> <span class=\"lang-short\">EN</span><span class=\"lang-full\">English</span></span>",
+          "target": [
+            ".lang-current"
           ]
         }
       ]
@@ -1095,9 +1119,41 @@
           ],
           "none": [],
           "impact": null,
+          "html": "<span aria-hidden=\"true\">🇬🇧</span>",
+          "target": [
+            ".lang-current > span[aria-hidden=\"true\"]"
+          ]
+        },
+        {
+          "any": [],
+          "all": [
+            {
+              "id": "focusable-modal-open",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "No focusable elements while a modal is open"
+            },
+            {
+              "id": "focusable-disabled",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "No focusable elements contained within element"
+            },
+            {
+              "id": "focusable-not-tabbable",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "No focusable elements contained within element"
+            }
+          ],
+          "none": [],
+          "impact": null,
           "html": "<span aria-hidden=\"true\">🇬🇷</span>",
           "target": [
-            "span"
+            ".lang-link > span[aria-hidden=\"true\"]"
           ]
         }
       ]
@@ -1134,6 +1190,24 @@
           "html": "<a class=\"brand\" href=\"/\" aria-label=\"The Growth Cubes — Home page\">THE GROWTH CUBES</a>",
           "target": [
             ".brand"
+          ]
+        },
+        {
+          "any": [],
+          "all": [],
+          "none": [
+            {
+              "id": "aria-prohibited-attr",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "ARIA attribute is allowed"
+            }
+          ],
+          "impact": null,
+          "html": "<span class=\"lang-current\" aria-current=\"true\"><span aria-hidden=\"true\">🇬🇧</span> <span class=\"lang-short\">EN</span><span class=\"lang-full\">English</span></span>",
+          "target": [
+            ".lang-current"
           ]
         }
       ]
@@ -1185,6 +1259,38 @@
           "target": [
             ".brand"
           ]
+        },
+        {
+          "any": [],
+          "all": [
+            {
+              "id": "aria-valid-attr-value",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "ARIA attribute values are valid"
+            },
+            {
+              "id": "aria-errormessage",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "aria-errormessage exists and references elements visible to screen readers that use a supported aria-errormessage technique"
+            },
+            {
+              "id": "aria-level",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "aria-level values are valid"
+            }
+          ],
+          "none": [],
+          "impact": null,
+          "html": "<span class=\"lang-current\" aria-current=\"true\"><span aria-hidden=\"true\">🇬🇧</span> <span class=\"lang-short\">EN</span><span class=\"lang-full\">English</span></span>",
+          "target": [
+            ".lang-current"
+          ]
         }
       ]
     },
@@ -1220,6 +1326,24 @@
           "html": "<a class=\"brand\" href=\"/\" aria-label=\"The Growth Cubes — Home page\">THE GROWTH CUBES</a>",
           "target": [
             ".brand"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "aria-valid-attr",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "ARIA attribute name is valid"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<span class=\"lang-current\" aria-current=\"true\"><span aria-hidden=\"true\">🇬🇧</span> <span class=\"lang-short\">EN</span><span class=\"lang-full\">English</span></span>",
+          "target": [
+            ".lang-current"
           ]
         }
       ]
@@ -1264,31 +1388,31 @@
                   ]
                 },
                 {
-                  "html": "<h2>Accessibility standards</h2>",
+                  "html": "<h2>Conformance status</h2>",
                   "target": [
                     "h2:nth-child(3)"
                   ]
                 },
                 {
-                  "html": "<h2>Current status</h2>",
+                  "html": "<h2>How the website was evaluated</h2>",
                   "target": [
                     "h2:nth-child(5)"
                   ]
                 },
                 {
-                  "html": "<h2>Scope of the evaluation</h2>",
+                  "html": "<h2>What this means in practice</h2>",
                   "target": [
-                    "h2:nth-child(8)"
+                    "h2:nth-child(9)"
                   ]
                 },
                 {
-                  "html": "<h2>Known limitations</h2>",
+                  "html": "<h2>Feedback and contact</h2>",
                   "target": [
-                    "h2:nth-child(10)"
+                    "h2:nth-child(11)"
                   ]
                 },
                 {
-                  "html": "<h2>Contact and reporting a problem</h2>",
+                  "html": "<h2>About this statement</h2>",
                   "target": [
                     "h2:nth-child(13)"
                   ]
@@ -1371,6 +1495,31 @@
             {
               "id": "color-contrast",
               "data": {
+                "fgColor": "#35111b",
+                "bgColor": "#f4f0ea",
+                "contrastRatio": 14.83,
+                "fontSize": "12.0pt (16px)",
+                "fontWeight": "bold",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has sufficient color contrast of 14.83"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<span class=\"lang-full\">English</span>",
+          "target": [
+            ".lang-current > .lang-full"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
                 "fgColor": "#ffffff",
                 "bgColor": "#35111b",
                 "contrastRatio": 16.83,
@@ -1386,9 +1535,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<a class=\"lang-link\" href=\"/el/accessibility.html\" lang=\"el\" hreflang=\"el\"><span aria-hidden=\"true\">🇬🇷</span> Ελληνικά</a>",
+          "html": "<span class=\"lang-full\">Ελληνικά</span>",
           "target": [
-            ".lang-link"
+            ".lang-link > .lang-full"
           ]
         },
         {
@@ -1436,7 +1585,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<p class=\"intro\">\n        At The Growth Cubes we want our website to be accessible and easy to\n        use for everyone, including people with disabilities.\n      </p>",
+          "html": "<p class=\"intro\">\n        The Growth Cubes is committed to a website that everyone can use,\n        including people with disabilities. Accessibility is part of how this\n        website was designed and built, not something added afterwards.\n      </p>",
           "target": [
             ".intro"
           ]
@@ -1461,7 +1610,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<h2>Accessibility standards</h2>",
+          "html": "<h2>Conformance status</h2>",
           "target": [
             "h2:nth-child(3)"
           ]
@@ -1486,7 +1635,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<p>\n        Our goal is for the website to conform to the Web Content Accessibility\n        Guidelines (WCAG) 2.1, level AA, and the related requirements of the\n        European standard EN 301 549.\n      </p>",
+          "html": "<p>\n        This website conforms to the Web Content Accessibility Guidelines (WCAG)\n        2.1 at level AA, and to the corresponding requirements for websites of\n        the European standard EN 301 549 (chapter 9).\n      </p>",
           "target": [
             "p:nth-child(4)"
           ]
@@ -1511,7 +1660,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<h2>Current status</h2>",
+          "html": "<h2>How the website was evaluated</h2>",
           "target": [
             "h2:nth-child(5)"
           ]
@@ -1536,7 +1685,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<p>\n        Technical improvements and automated accessibility checks have been\n        carried out. The full evaluation of the final published version is in\n        progress. For this reason, full conformance with level AA is not\n        claimed at present.\n      </p>",
+          "html": "<p>",
           "target": [
             "p:nth-child(6)"
           ]
@@ -1561,34 +1710,159 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<p>\n        The initial technical evaluation was carried out on\n        <time datetime=\"2026-10-13\">13 October 2026</time>. This statement will\n        be updated once verification of the published version is complete.\n      </p>",
-          "target": [
-            "p:nth-child(7)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
-                "fgColor": "#f4f0ea",
-                "bgColor": "#35111b",
-                "contrastRatio": 14.83,
-                "fontSize": "12.0pt (16px)",
-                "fontWeight": "normal",
-                "expectedContrastRatio": "4.5:1"
-              },
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has sufficient color contrast of 14.83"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
           "html": "<time datetime=\"2026-10-13\">13 October 2026</time>",
           "target": [
-            "time"
+            "p:nth-child(6) > time"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#f4f0ea",
+                "bgColor": "#35111b",
+                "contrastRatio": 14.83,
+                "fontSize": "12.0pt (16px)",
+                "fontWeight": "normal",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has sufficient color contrast of 14.83"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<li>\n          automated WCAG 2.1 A and AA scans of every page at six screen sizes,\n          from a desktop monitor down to 400% zoom, with enlarged text, with\n          increased text spacing and with the contact form in each of its\n          states;\n        </li>",
+          "target": [
+            "ul:nth-child(7) > li:nth-child(1)"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#f4f0ea",
+                "bgColor": "#35111b",
+                "contrastRatio": 14.83,
+                "fontSize": "12.0pt (16px)",
+                "fontWeight": "normal",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has sufficient color contrast of 14.83"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<li>\n          Google Lighthouse accessibility measurements of every page, on mobile\n          and on desktop;\n        </li>",
+          "target": [
+            "ul:nth-child(7) > li:nth-child(2)"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#f4f0ea",
+                "bgColor": "#35111b",
+                "contrastRatio": 14.83,
+                "fontSize": "12.0pt (16px)",
+                "fontWeight": "normal",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has sufficient color contrast of 14.83"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<li>\n          complete keyboard navigation of every page, confirming that each\n          link, button and form field can be reached and shows where the focus\n          is;\n        </li>",
+          "target": [
+            "ul:nth-child(7) > li:nth-child(3)"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#f4f0ea",
+                "bgColor": "#35111b",
+                "contrastRatio": 14.83,
+                "fontSize": "12.0pt (16px)",
+                "fontWeight": "normal",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has sufficient color contrast of 14.83"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<li>\n          checks of page structure, headings, text alternatives, form labels,\n          error messages and colour contrast;\n        </li>",
+          "target": [
+            "ul:nth-child(7) > li:nth-child(4)"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#f4f0ea",
+                "bgColor": "#35111b",
+                "contrastRatio": 14.83,
+                "fontSize": "12.0pt (16px)",
+                "fontWeight": "normal",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has sufficient color contrast of 14.83"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<li>validation of the HTML code of every page.</li>",
+          "target": [
+            "ul:nth-child(7) > li:nth-child(5)"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#f4f0ea",
+                "bgColor": "#35111b",
+                "contrastRatio": 14.83,
+                "fontSize": "12.0pt (16px)",
+                "fontWeight": "normal",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has sufficient color contrast of 14.83"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<p>\n        No violations were found. Every page scored 100 out of 100 for\n        accessibility in Google Lighthouse.\n      </p>",
+          "target": [
+            "p:nth-child(8)"
           ]
         },
         {
@@ -1611,9 +1885,209 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<h2>Scope of the evaluation</h2>",
+          "html": "<h2>What this means in practice</h2>",
           "target": [
-            "h2:nth-child(8)"
+            "h2:nth-child(9)"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#f4f0ea",
+                "bgColor": "#35111b",
+                "contrastRatio": 14.83,
+                "fontSize": "12.0pt (16px)",
+                "fontWeight": "normal",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has sufficient color contrast of 14.83"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<li>Every part of the website works with the keyboard alone.</li>",
+          "target": [
+            "ul:nth-child(10) > li:nth-child(1)"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#f4f0ea",
+                "bgColor": "#35111b",
+                "contrastRatio": 14.83,
+                "fontSize": "12.0pt (16px)",
+                "fontWeight": "normal",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has sufficient color contrast of 14.83"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<li>\n          A “Skip to main content” link is the first item on every page, and\n          the element that has keyboard focus is always clearly outlined.\n        </li>",
+          "target": [
+            "ul:nth-child(10) > li:nth-child(2)"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#f4f0ea",
+                "bgColor": "#35111b",
+                "contrastRatio": 14.83,
+                "fontSize": "12.0pt (16px)",
+                "fontWeight": "normal",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has sufficient color contrast of 14.83"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<li>\n          Text has strong contrast against its background throughout the\n          website.\n        </li>",
+          "target": [
+            "ul:nth-child(10) > li:nth-child(3)"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#f4f0ea",
+                "bgColor": "#35111b",
+                "contrastRatio": 14.83,
+                "fontSize": "12.0pt (16px)",
+                "fontWeight": "normal",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has sufficient color contrast of 14.83"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<li>\n          Text can be enlarged to 200% and the page zoomed to 400% without\n          losing content and without horizontal scrolling.\n        </li>",
+          "target": [
+            "ul:nth-child(10) > li:nth-child(4)"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#f4f0ea",
+                "bgColor": "#35111b",
+                "contrastRatio": 14.83,
+                "fontSize": "12.0pt (16px)",
+                "fontWeight": "normal",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has sufficient color contrast of 14.83"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<li>\n          Nothing on the website moves, flashes or plays sound, and nothing is\n          subject to a time limit.\n        </li>",
+          "target": [
+            "ul:nth-child(10) > li:nth-child(5)"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#f4f0ea",
+                "bgColor": "#35111b",
+                "contrastRatio": 14.83,
+                "fontSize": "12.0pt (16px)",
+                "fontWeight": "normal",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has sufficient color contrast of 14.83"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<li>\n          Headings, page regions, images and form fields are marked up so that\n          screen readers can announce them correctly, and each page declares\n          its language.\n        </li>",
+          "target": [
+            "li:nth-child(6)"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#f4f0ea",
+                "bgColor": "#35111b",
+                "contrastRatio": 14.83,
+                "fontSize": "12.0pt (16px)",
+                "fontWeight": "normal",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has sufficient color contrast of 14.83"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<li>\n          The contact form has visible labels, marks its required fields and\n          explains any error in plain text next to the field concerned.\n        </li>",
+          "target": [
+            "li:nth-child(7)"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#f4f0ea",
+                "bgColor": "#35111b",
+                "contrastRatio": 14.83,
+                "fontSize": "18.0pt (24px)",
+                "fontWeight": "bold",
+                "expectedContrastRatio": "3:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has sufficient color contrast of 14.83"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<h2>Feedback and contact</h2>",
+          "target": [
+            "h2:nth-child(11)"
           ]
         },
         {
@@ -1637,158 +2111,8 @@
           "none": [],
           "impact": null,
           "html": "<p>",
-          "target": [
-            "p:nth-child(9)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
-                "fgColor": "#f4f0ea",
-                "bgColor": "#35111b",
-                "contrastRatio": 14.83,
-                "fontSize": "18.0pt (24px)",
-                "fontWeight": "bold",
-                "expectedContrastRatio": "3:1"
-              },
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has sufficient color contrast of 14.83"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<h2>Known limitations</h2>",
-          "target": [
-            "h2:nth-child(10)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
-                "fgColor": "#f4f0ea",
-                "bgColor": "#35111b",
-                "contrastRatio": 14.83,
-                "fontSize": "12.0pt (16px)",
-                "fontWeight": "normal",
-                "expectedContrastRatio": "4.5:1"
-              },
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has sufficient color contrast of 14.83"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<p>",
-          "target": [
-            "p:nth-child(11)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
-                "fgColor": "#ffffff",
-                "bgColor": "#35111b",
-                "contrastRatio": 16.83,
-                "fontSize": "12.0pt (16px)",
-                "fontWeight": "normal",
-                "expectedContrastRatio": "4.5:1"
-              },
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has sufficient color contrast of 16.83"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<a href=\"mailto:info@thegrowthcubes.com\">info@thegrowthcubes.com</a>",
-          "target": [
-            "a[href=\"mailto:info@thegrowthcubes.com\"]"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
-                "fgColor": "#f4f0ea",
-                "bgColor": "#35111b",
-                "contrastRatio": 14.83,
-                "fontSize": "12.0pt (16px)",
-                "fontWeight": "normal",
-                "expectedContrastRatio": "4.5:1"
-              },
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has sufficient color contrast of 14.83"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<p>\n        Third-party websites that links may lead to are not covered by this\n        statement.\n      </p>",
           "target": [
             "p:nth-child(12)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
-                "fgColor": "#f4f0ea",
-                "bgColor": "#35111b",
-                "contrastRatio": 14.83,
-                "fontSize": "18.0pt (24px)",
-                "fontWeight": "bold",
-                "expectedContrastRatio": "3:1"
-              },
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has sufficient color contrast of 14.83"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<h2>Contact and reporting a problem</h2>",
-          "target": [
-            "h2:nth-child(13)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
-                "fgColor": "#f4f0ea",
-                "bgColor": "#35111b",
-                "contrastRatio": 14.83,
-                "fontSize": "12.0pt (16px)",
-                "fontWeight": "normal",
-                "expectedContrastRatio": "4.5:1"
-              },
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has sufficient color contrast of 14.83"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<p>",
-          "target": [
-            "p:nth-child(14)"
           ]
         },
         {
@@ -1813,7 +2137,32 @@
           "impact": null,
           "html": "<a href=\"mailto:info@thegrowthcubes.com?subject=Accessibility%20feedback\">info@thegrowthcubes.com</a>",
           "target": [
-            "p:nth-child(14) > a"
+            "p:nth-child(12) > a"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#f4f0ea",
+                "bgColor": "#35111b",
+                "contrastRatio": 14.83,
+                "fontSize": "18.0pt (24px)",
+                "fontWeight": "bold",
+                "expectedContrastRatio": "3:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has sufficient color contrast of 14.83"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<h2>About this statement</h2>",
+          "target": [
+            "h2:nth-child(13)"
           ]
         },
         {
@@ -1836,9 +2185,34 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<p>\n        You can also ask for information from the website to be provided to you\n        in an alternative accessible way.\n      </p>",
+          "html": "<p>\n        This statement was prepared on\n        <time datetime=\"2026-10-13\">13 October 2026</time>, based on an\n        evaluation carried out by the business. The website is checked again\n        with the same procedure before any change is published.\n      </p>",
           "target": [
-            "p:nth-child(15)"
+            "p:nth-child(14)"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#f4f0ea",
+                "bgColor": "#35111b",
+                "contrastRatio": 14.83,
+                "fontSize": "12.0pt (16px)",
+                "fontWeight": "normal",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has sufficient color contrast of 14.83"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<time datetime=\"2026-10-13\">13 October 2026</time>",
+          "target": [
+            "p:nth-child(14) > time"
           ]
         },
         {
@@ -2073,32 +2447,7 @@
                 {
                   "html": "<p>",
                   "target": [
-                    "p:nth-child(11)"
-                  ]
-                }
-              ],
-              "impact": "serious",
-              "message": "Links can be distinguished from surrounding text by visual styling"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<a href=\"mailto:info@thegrowthcubes.com\">info@thegrowthcubes.com</a>",
-          "target": [
-            "a[href=\"mailto:info@thegrowthcubes.com\"]"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "link-in-text-block-style",
-              "data": null,
-              "relatedNodes": [
-                {
-                  "html": "<p>",
-                  "target": [
-                    "p:nth-child(14)"
+                    "p:nth-child(12)"
                   ]
                 }
               ],
@@ -2111,7 +2460,7 @@
           "impact": null,
           "html": "<a href=\"mailto:info@thegrowthcubes.com?subject=Accessibility%20feedback\">info@thegrowthcubes.com</a>",
           "target": [
-            "p:nth-child(14) > a"
+            "p:nth-child(12) > a"
           ]
         }
       ]
@@ -2219,7 +2568,7 @@
             }
           ],
           "impact": null,
-          "html": "<a class=\"lang-link\" href=\"/el/accessibility.html\" lang=\"el\" hreflang=\"el\"><span aria-hidden=\"true\">🇬🇷</span> Ελληνικά</a>",
+          "html": "<a href=\"/el/accessibility.html\" class=\"lang-link\" lang=\"el\" hreflang=\"el\"><span aria-hidden=\"true\">🇬🇷</span> <span class=\"lang-short\">ΕΛ</span><span class=\"lang-full\">Ελληνικά</span></a>",
           "target": [
             ".lang-link"
           ]
@@ -2245,35 +2594,9 @@
             }
           ],
           "impact": null,
-          "html": "<a href=\"mailto:info@thegrowthcubes.com\">info@thegrowthcubes.com</a>",
-          "target": [
-            "a[href=\"mailto:info@thegrowthcubes.com\"]"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "has-visible-text",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has text that is visible to screen readers"
-            }
-          ],
-          "all": [],
-          "none": [
-            {
-              "id": "focusable-no-name",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element is not in tab order or has accessible text"
-            }
-          ],
-          "impact": null,
           "html": "<a href=\"mailto:info@thegrowthcubes.com?subject=Accessibility%20feedback\">info@thegrowthcubes.com</a>",
           "target": [
-            "p:nth-child(14) > a"
+            "p:nth-child(12) > a"
           ]
         },
         {
@@ -2300,6 +2623,294 @@
           "html": "<a href=\"/\">← Back to the home page</a>",
           "target": [
             ".back-link > a[href=\"/\"]"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "list",
+      "impact": null,
+      "tags": [
+        "cat.structure",
+        "wcag2a",
+        "wcag131",
+        "EN-301-549",
+        "EN-9.1.3.1",
+        "RGAAv4",
+        "RGAA-9.3.1"
+      ],
+      "description": "Ensure that lists are structured correctly",
+      "help": "<ul> and <ol> must only directly contain <li>, <script> or <template> elements",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/list?application=axeAPI",
+      "nodes": [
+        {
+          "any": [],
+          "all": [],
+          "none": [
+            {
+              "id": "only-listitems",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "List element only has direct children that are allowed inside <li> elements"
+            }
+          ],
+          "impact": null,
+          "html": "<ul>",
+          "target": [
+            "ul:nth-child(7)"
+          ]
+        },
+        {
+          "any": [],
+          "all": [],
+          "none": [
+            {
+              "id": "only-listitems",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "List element only has direct children that are allowed inside <li> elements"
+            }
+          ],
+          "impact": null,
+          "html": "<ul>",
+          "target": [
+            "ul:nth-child(10)"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "listitem",
+      "impact": null,
+      "tags": [
+        "cat.structure",
+        "wcag2a",
+        "wcag131",
+        "EN-301-549",
+        "EN-9.1.3.1",
+        "RGAAv4",
+        "RGAA-9.3.1"
+      ],
+      "description": "Ensure <li> elements are used semantically",
+      "help": "<li> elements must be contained in a <ul> or <ol>",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/listitem?application=axeAPI",
+      "nodes": [
+        {
+          "any": [
+            {
+              "id": "listitem",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "List item has a <ul>, <ol> or role=\"list\" parent element"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<li>\n          automated WCAG 2.1 A and AA scans of every page at six screen sizes,\n          from a desktop monitor down to 400% zoom, with enlarged text, with\n          increased text spacing and with the contact form in each of its\n          states;\n        </li>",
+          "target": [
+            "ul:nth-child(7) > li:nth-child(1)"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "listitem",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "List item has a <ul>, <ol> or role=\"list\" parent element"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<li>\n          Google Lighthouse accessibility measurements of every page, on mobile\n          and on desktop;\n        </li>",
+          "target": [
+            "ul:nth-child(7) > li:nth-child(2)"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "listitem",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "List item has a <ul>, <ol> or role=\"list\" parent element"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<li>\n          complete keyboard navigation of every page, confirming that each\n          link, button and form field can be reached and shows where the focus\n          is;\n        </li>",
+          "target": [
+            "ul:nth-child(7) > li:nth-child(3)"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "listitem",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "List item has a <ul>, <ol> or role=\"list\" parent element"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<li>\n          checks of page structure, headings, text alternatives, form labels,\n          error messages and colour contrast;\n        </li>",
+          "target": [
+            "ul:nth-child(7) > li:nth-child(4)"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "listitem",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "List item has a <ul>, <ol> or role=\"list\" parent element"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<li>validation of the HTML code of every page.</li>",
+          "target": [
+            "ul:nth-child(7) > li:nth-child(5)"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "listitem",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "List item has a <ul>, <ol> or role=\"list\" parent element"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<li>Every part of the website works with the keyboard alone.</li>",
+          "target": [
+            "ul:nth-child(10) > li:nth-child(1)"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "listitem",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "List item has a <ul>, <ol> or role=\"list\" parent element"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<li>\n          A “Skip to main content” link is the first item on every page, and\n          the element that has keyboard focus is always clearly outlined.\n        </li>",
+          "target": [
+            "ul:nth-child(10) > li:nth-child(2)"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "listitem",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "List item has a <ul>, <ol> or role=\"list\" parent element"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<li>\n          Text has strong contrast against its background throughout the\n          website.\n        </li>",
+          "target": [
+            "ul:nth-child(10) > li:nth-child(3)"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "listitem",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "List item has a <ul>, <ol> or role=\"list\" parent element"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<li>\n          Text can be enlarged to 200% and the page zoomed to 400% without\n          losing content and without horizontal scrolling.\n        </li>",
+          "target": [
+            "ul:nth-child(10) > li:nth-child(4)"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "listitem",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "List item has a <ul>, <ol> or role=\"list\" parent element"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<li>\n          Nothing on the website moves, flashes or plays sound, and nothing is\n          subject to a time limit.\n        </li>",
+          "target": [
+            "ul:nth-child(10) > li:nth-child(5)"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "listitem",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "List item has a <ul>, <ol> or role=\"list\" parent element"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<li>\n          Headings, page regions, images and form fields are marked up so that\n          screen readers can announce them correctly, and each page declares\n          its language.\n        </li>",
+          "target": [
+            "li:nth-child(6)"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "listitem",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "List item has a <ul>, <ol> or role=\"list\" parent element"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<li>\n          The contact form has visible labels, marks its required fields and\n          explains any error in plain text next to the field concerned.\n        </li>",
+          "target": [
+            "li:nth-child(7)"
           ]
         }
       ]
@@ -2373,7 +2984,7 @@
             }
           ],
           "impact": null,
-          "html": "<a class=\"lang-link\" href=\"/el/accessibility.html\" lang=\"el\" hreflang=\"el\"><span aria-hidden=\"true\">🇬🇷</span> Ελληνικά</a>",
+          "html": "<a href=\"/el/accessibility.html\" class=\"lang-link\" lang=\"el\" hreflang=\"el\"><span aria-hidden=\"true\">🇬🇷</span> <span class=\"lang-short\">ΕΛ</span><span class=\"lang-full\">Ελληνικά</span></a>",
           "target": [
             ".lang-link"
           ]

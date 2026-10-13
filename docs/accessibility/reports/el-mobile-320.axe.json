@@ -13,8 +13,8 @@
     "orientationAngle": 0,
     "orientationType": "landscape-primary"
   },
-  "timestamp": "2026-10-13T18:13:28.043Z",
-  "url": "http://127.0.0.1:59983/el/",
+  "timestamp": "2026-10-13T20:26:38.143Z",
+  "url": "http://127.0.0.1:60325/el/",
   "toolOptions": {
     "runOnly": {
       "type": "tag",
@@ -761,7 +761,7 @@
             }
           ],
           "impact": null,
-          "html": "<nav class=\"nav\" aria-label=\"Κύρια πλοήγηση\">",
+          "html": "<nav class=\"nav\" aria-label=\"Κύρια πλοήγηση\">\n        <ul>\n          <li><a href=\"#services\">Υπηρεσίες</a></li>\n          <li><a href=\"#how-we-work\">Μέθοδος</a></li>\n          <li><a href=\"#contact\">Επικοινωνία</a></li>\n        </ul>\n      </nav>",
           "target": [
             "nav"
           ]
@@ -801,7 +801,7 @@
             }
           ],
           "impact": null,
-          "html": "<span class=\"lang-current\" aria-current=\"true\"><span aria-hidden=\"true\">🇬🇷</span> Ελληνικά</span>",
+          "html": "<span class=\"lang-current\" aria-current=\"true\"><span aria-hidden=\"true\">🇬🇷</span> <span class=\"lang-short\">ΕΛ</span><span class=\"lang-full\">Ελληνικά</span></span>",
           "target": [
             ".lang-current"
           ]
@@ -1237,7 +1237,7 @@
           ],
           "none": [],
           "impact": null,
-          "html": "<nav class=\"nav\" aria-label=\"Κύρια πλοήγηση\">",
+          "html": "<nav class=\"nav\" aria-label=\"Κύρια πλοήγηση\">\n        <ul>\n          <li><a href=\"#services\">Υπηρεσίες</a></li>\n          <li><a href=\"#how-we-work\">Μέθοδος</a></li>\n          <li><a href=\"#contact\">Επικοινωνία</a></li>\n        </ul>\n      </nav>",
           "target": [
             "nav"
           ]
@@ -1255,7 +1255,7 @@
           ],
           "none": [],
           "impact": null,
-          "html": "<span class=\"lang-current\" aria-current=\"true\"><span aria-hidden=\"true\">🇬🇷</span> Ελληνικά</span>",
+          "html": "<span class=\"lang-current\" aria-current=\"true\"><span aria-hidden=\"true\">🇬🇷</span> <span class=\"lang-short\">ΕΛ</span><span class=\"lang-full\">Ελληνικά</span></span>",
           "target": [
             ".lang-current"
           ]
@@ -1789,7 +1789,7 @@
             }
           ],
           "impact": null,
-          "html": "<nav class=\"nav\" aria-label=\"Κύρια πλοήγηση\">",
+          "html": "<nav class=\"nav\" aria-label=\"Κύρια πλοήγηση\">\n        <ul>\n          <li><a href=\"#services\">Υπηρεσίες</a></li>\n          <li><a href=\"#how-we-work\">Μέθοδος</a></li>\n          <li><a href=\"#contact\">Επικοινωνία</a></li>\n        </ul>\n      </nav>",
           "target": [
             "nav"
           ]
@@ -1807,7 +1807,7 @@
             }
           ],
           "impact": null,
-          "html": "<span class=\"lang-current\" aria-current=\"true\"><span aria-hidden=\"true\">🇬🇷</span> Ελληνικά</span>",
+          "html": "<span class=\"lang-current\" aria-current=\"true\"><span aria-hidden=\"true\">🇬🇷</span> <span class=\"lang-short\">ΕΛ</span><span class=\"lang-full\">Ελληνικά</span></span>",
           "target": [
             ".lang-current"
           ]
@@ -2123,7 +2123,7 @@
           ],
           "none": [],
           "impact": null,
-          "html": "<nav class=\"nav\" aria-label=\"Κύρια πλοήγηση\">",
+          "html": "<nav class=\"nav\" aria-label=\"Κύρια πλοήγηση\">\n        <ul>\n          <li><a href=\"#services\">Υπηρεσίες</a></li>\n          <li><a href=\"#how-we-work\">Μέθοδος</a></li>\n          <li><a href=\"#contact\">Επικοινωνία</a></li>\n        </ul>\n      </nav>",
           "target": [
             "nav"
           ]
@@ -2155,7 +2155,7 @@
           ],
           "none": [],
           "impact": null,
-          "html": "<span class=\"lang-current\" aria-current=\"true\"><span aria-hidden=\"true\">🇬🇷</span> Ελληνικά</span>",
+          "html": "<span class=\"lang-current\" aria-current=\"true\"><span aria-hidden=\"true\">🇬🇷</span> <span class=\"lang-short\">ΕΛ</span><span class=\"lang-full\">Ελληνικά</span></span>",
           "target": [
             ".lang-current"
           ]
@@ -2511,7 +2511,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<nav class=\"nav\" aria-label=\"Κύρια πλοήγηση\">",
+          "html": "<nav class=\"nav\" aria-label=\"Κύρια πλοήγηση\">\n        <ul>\n          <li><a href=\"#services\">Υπηρεσίες</a></li>\n          <li><a href=\"#how-we-work\">Μέθοδος</a></li>\n          <li><a href=\"#contact\">Επικοινωνία</a></li>\n        </ul>\n      </nav>",
           "target": [
             "nav"
           ]
@@ -2529,7 +2529,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<span class=\"lang-current\" aria-current=\"true\"><span aria-hidden=\"true\">🇬🇷</span> Ελληνικά</span>",
+          "html": "<span class=\"lang-current\" aria-current=\"true\"><span aria-hidden=\"true\">🇬🇷</span> <span class=\"lang-short\">ΕΛ</span><span class=\"lang-full\">Ελληνικά</span></span>",
           "target": [
             ".lang-current"
           ]
@@ -2991,7 +2991,7 @@
                 "fgColor": "#f4f0ea",
                 "bgColor": "#35111b",
                 "contrastRatio": 14.83,
-                "fontSize": "11.3pt (15px)",
+                "fontSize": "9.0pt (12px)",
                 "fontWeight": "bold",
                 "expectedContrastRatio": "4.5:1"
               },
@@ -3053,7 +3053,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<a href=\"#how-we-work\">Πώς δουλεύουμε</a>",
+          "html": "<a href=\"#how-we-work\">Μέθοδος</a>",
           "target": [
             "a[href$=\"#how-we-work\"]"
           ]
@@ -3103,9 +3103,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<a href=\"/\" class=\"lang-link\" lang=\"en\" hreflang=\"en\"><span aria-hidden=\"true\">🇬🇧</span> English</a>",
+          "html": "<span class=\"lang-short\">EN</span>",
           "target": [
-            ".lang-link"
+            ".lang-link > .lang-short"
           ]
         },
         {
@@ -3128,9 +3128,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<span class=\"lang-current\" aria-current=\"true\"><span aria-hidden=\"true\">🇬🇷</span> Ελληνικά</span>",
+          "html": "<span class=\"lang-short\">ΕΛ</span>",
           "target": [
-            ".lang-current"
+            ".lang-current > .lang-short"
           ]
         },
         {
@@ -6021,7 +6021,7 @@
             }
           ],
           "impact": null,
-          "html": "<a href=\"#how-we-work\">Πώς δουλεύουμε</a>",
+          "html": "<a href=\"#how-we-work\">Μέθοδος</a>",
           "target": [
             "a[href$=\"#how-we-work\"]"
           ]
@@ -6073,7 +6073,7 @@
             }
           ],
           "impact": null,
-          "html": "<a href=\"/\" class=\"lang-link\" lang=\"en\" hreflang=\"en\"><span aria-hidden=\"true\">🇬🇧</span> English</a>",
+          "html": "<a href=\"/\" class=\"lang-link\" lang=\"en\" hreflang=\"en\"><span aria-hidden=\"true\">🇬🇧</span> <span class=\"lang-short\">EN</span><span class=\"lang-full\">English</span></a>",
           "target": [
             ".lang-link"
           ]
@@ -6239,7 +6239,7 @@
             }
           ],
           "impact": null,
-          "html": "<ul>",
+          "html": "<ul>\n          <li><a href=\"#services\">Υπηρεσίες</a></li>\n          <li><a href=\"#how-we-work\">Μέθοδος</a></li>\n          <li><a href=\"#contact\">Επικοινωνία</a></li>\n        </ul>",
           "target": [
             "nav > ul"
           ]
@@ -6419,7 +6419,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<li><a href=\"#how-we-work\">Πώς δουλεύουμε</a></li>",
+          "html": "<li><a href=\"#how-we-work\">Μέθοδος</a></li>",
           "target": [
             "nav > ul > li:nth-child(2)"
           ]
@@ -6440,24 +6440,6 @@
           "html": "<li><a href=\"#contact\">Επικοινωνία</a></li>",
           "target": [
             "nav > ul > li:nth-child(3)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "listitem",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "List item has a <ul>, <ol> or role=\"list\" parent element"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<li class=\"lang-switch\">\n            <a href=\"/\" class=\"lang-link\" lang=\"en\" hreflang=\"en\"><span aria-hidden=\"true\">🇬🇧</span> English</a>\n            <span class=\"lang-current\" aria-current=\"true\"><span aria-hidden=\"true\">🇬🇷</span> Ελληνικά</span>\n          </li>",
-          "target": [
-            ".lang-switch"
           ]
         },
         {
@@ -6947,7 +6929,7 @@
             }
           ],
           "impact": null,
-          "html": "<a href=\"/\" class=\"lang-link\" lang=\"en\" hreflang=\"en\"><span aria-hidden=\"true\">🇬🇧</span> English</a>",
+          "html": "<a href=\"/\" class=\"lang-link\" lang=\"en\" hreflang=\"en\"><span aria-hidden=\"true\">🇬🇧</span> <span class=\"lang-short\">EN</span><span class=\"lang-full\">English</span></a>",
           "target": [
             ".lang-link"
           ]

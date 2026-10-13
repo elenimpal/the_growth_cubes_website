@@ -13,8 +13,8 @@
     "orientationAngle": 0,
     "orientationType": "landscape-primary"
   },
-  "timestamp": "2026-10-13T18:13:24.758Z",
-  "url": "http://127.0.0.1:59983/",
+  "timestamp": "2026-10-13T20:26:34.860Z",
+  "url": "http://127.0.0.1:60325/",
   "toolOptions": {
     "runOnly": {
       "type": "tag",
@@ -785,7 +785,7 @@
             }
           ],
           "impact": null,
-          "html": "<span class=\"lang-current\" aria-current=\"true\" style=\"font-size: 26px;\"><span aria-hidden=\"true\" style=\"font-size: 26px;\">🇬🇧</span> English</span>",
+          "html": "<span class=\"lang-current\" aria-current=\"true\" style=\"font-size: 26px;\"><span aria-hidden=\"true\" style=\"font-size: 26px;\">🇬🇧</span> <span class=\"lang-short\" style=\"font-size: 26px;\">EN</span><span class=\"lang-full\" style=\"font-size: 26px;\">English</span></span>",
           "target": [
             ".lang-current"
           ]
@@ -1239,7 +1239,7 @@
           ],
           "none": [],
           "impact": null,
-          "html": "<span class=\"lang-current\" aria-current=\"true\" style=\"font-size: 26px;\"><span aria-hidden=\"true\" style=\"font-size: 26px;\">🇬🇧</span> English</span>",
+          "html": "<span class=\"lang-current\" aria-current=\"true\" style=\"font-size: 26px;\"><span aria-hidden=\"true\" style=\"font-size: 26px;\">🇬🇧</span> <span class=\"lang-short\" style=\"font-size: 26px;\">EN</span><span class=\"lang-full\" style=\"font-size: 26px;\">English</span></span>",
           "target": [
             ".lang-current"
           ]
@@ -1791,7 +1791,7 @@
             }
           ],
           "impact": null,
-          "html": "<span class=\"lang-current\" aria-current=\"true\" style=\"font-size: 26px;\"><span aria-hidden=\"true\" style=\"font-size: 26px;\">🇬🇧</span> English</span>",
+          "html": "<span class=\"lang-current\" aria-current=\"true\" style=\"font-size: 26px;\"><span aria-hidden=\"true\" style=\"font-size: 26px;\">🇬🇧</span> <span class=\"lang-short\" style=\"font-size: 26px;\">EN</span><span class=\"lang-full\" style=\"font-size: 26px;\">English</span></span>",
           "target": [
             ".lang-current"
           ]
@@ -2139,7 +2139,7 @@
           ],
           "none": [],
           "impact": null,
-          "html": "<span class=\"lang-current\" aria-current=\"true\" style=\"font-size: 26px;\"><span aria-hidden=\"true\" style=\"font-size: 26px;\">🇬🇧</span> English</span>",
+          "html": "<span class=\"lang-current\" aria-current=\"true\" style=\"font-size: 26px;\"><span aria-hidden=\"true\" style=\"font-size: 26px;\">🇬🇧</span> <span class=\"lang-short\" style=\"font-size: 26px;\">EN</span><span class=\"lang-full\" style=\"font-size: 26px;\">English</span></span>",
           "target": [
             ".lang-current"
           ]
@@ -2513,7 +2513,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<span class=\"lang-current\" aria-current=\"true\" style=\"font-size: 26px;\"><span aria-hidden=\"true\" style=\"font-size: 26px;\">🇬🇧</span> English</span>",
+          "html": "<span class=\"lang-current\" aria-current=\"true\" style=\"font-size: 26px;\"><span aria-hidden=\"true\" style=\"font-size: 26px;\">🇬🇧</span> <span class=\"lang-short\" style=\"font-size: 26px;\">EN</span><span class=\"lang-full\" style=\"font-size: 26px;\">English</span></span>",
           "target": [
             ".lang-current"
           ]
@@ -3167,7 +3167,7 @@
           ],
           "none": [],
           "impact": null,
-          "html": "<li class=\"lang-switch\" style=\"font-size: 34px;\">",
+          "html": "<div class=\"lang-switch\" style=\"font-size: 34px;\">",
           "target": [
             ".lang-switch"
           ]
@@ -3199,7 +3199,7 @@
           ],
           "none": [],
           "impact": null,
-          "html": "<span class=\"lang-current\" aria-current=\"true\" style=\"font-size: 26px;\"><span aria-hidden=\"true\" style=\"font-size: 26px;\">🇬🇧</span> English</span>",
+          "html": "<span class=\"lang-current\" aria-current=\"true\" style=\"font-size: 26px;\"><span aria-hidden=\"true\" style=\"font-size: 26px;\">🇬🇧</span> <span class=\"lang-short\" style=\"font-size: 26px;\">EN</span><span class=\"lang-full\" style=\"font-size: 26px;\">English</span></span>",
           "target": [
             ".lang-current"
           ]
@@ -3231,9 +3231,73 @@
           ],
           "none": [],
           "impact": null,
-          "html": "<a href=\"/el/\" class=\"lang-link\" lang=\"el\" hreflang=\"el\" style=\"font-size: 26px;\"><span aria-hidden=\"true\" style=\"font-size: 26px;\">🇬🇷</span> Ελληνικά</a>",
+          "html": "<span class=\"lang-full\" style=\"font-size: 26px;\">English</span>",
+          "target": [
+            ".lang-current > .lang-full"
+          ]
+        },
+        {
+          "any": [],
+          "all": [
+            {
+              "id": "important-letter-spacing",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Letter-spacing in the style attribute is not set to !important, or meets the minimum"
+            },
+            {
+              "id": "important-word-spacing",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "word-spacing in the style attribute is not set to !important, or meets the minimum"
+            },
+            {
+              "id": "important-line-height",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "line-height in the style attribute is not set to !important, or meets the minimum"
+            }
+          ],
+          "none": [],
+          "impact": null,
+          "html": "<a href=\"/el/\" class=\"lang-link\" lang=\"el\" hreflang=\"el\" style=\"font-size: 26px;\"><span aria-hidden=\"true\" style=\"font-size: 26px;\">🇬🇷</span> <span class=\"lang-short\" style=\"font-size: 26px;\">ΕΛ</span><span class=\"lang-full\" style=\"font-size: 26px;\">Ελληνικά</span></a>",
           "target": [
             ".lang-link"
+          ]
+        },
+        {
+          "any": [],
+          "all": [
+            {
+              "id": "important-letter-spacing",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Letter-spacing in the style attribute is not set to !important, or meets the minimum"
+            },
+            {
+              "id": "important-word-spacing",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "word-spacing in the style attribute is not set to !important, or meets the minimum"
+            },
+            {
+              "id": "important-line-height",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "line-height in the style attribute is not set to !important, or meets the minimum"
+            }
+          ],
+          "none": [],
+          "impact": null,
+          "html": "<span class=\"lang-full\" style=\"font-size: 26px;\">Ελληνικά</span>",
+          "target": [
+            ".lang-link > .lang-full"
           ]
         },
         {
@@ -3647,7 +3711,7 @@
           ],
           "none": [],
           "impact": null,
-          "html": "<p style=\"font-size: 64px;\">We don't just design for the web; we build digital ecosystems that generate measurable progress.</p>",
+          "html": "<p style=\"font-size: 64px;\">We don't just design for the web. We build digital ecosystems that generate measurable progress.</p>",
           "target": [
             ".intro > p:nth-child(3)"
           ]
@@ -6848,9 +6912,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<span class=\"lang-current\" aria-current=\"true\" style=\"font-size: 26px;\"><span aria-hidden=\"true\" style=\"font-size: 26px;\">🇬🇧</span> English</span>",
+          "html": "<span class=\"lang-full\" style=\"font-size: 26px;\">English</span>",
           "target": [
-            ".lang-current"
+            ".lang-current > .lang-full"
           ]
         },
         {
@@ -6873,9 +6937,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<a href=\"/el/\" class=\"lang-link\" lang=\"el\" hreflang=\"el\" style=\"font-size: 26px;\"><span aria-hidden=\"true\" style=\"font-size: 26px;\">🇬🇷</span> Ελληνικά</a>",
+          "html": "<span class=\"lang-full\" style=\"font-size: 26px;\">Ελληνικά</span>",
           "target": [
-            ".lang-link"
+            ".lang-link > .lang-full"
           ]
         },
         {
@@ -6948,7 +7012,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<p style=\"font-size: 64px;\">We don't just design for the web; we build digital ecosystems that generate measurable progress.</p>",
+          "html": "<p style=\"font-size: 64px;\">We don't just design for the web. We build digital ecosystems that generate measurable progress.</p>",
           "target": [
             ".intro > p:nth-child(3)"
           ]
@@ -7236,56 +7300,6 @@
                 "fgColor": "#f4f0ea",
                 "bgColor": "#35111b",
                 "contrastRatio": 14.83,
-                "fontSize": "45.6pt (60.8px)",
-                "fontWeight": "bold",
-                "expectedContrastRatio": "3:1"
-              },
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has sufficient color contrast of 14.83"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<h3 class=\"card-title\" style=\"font-size: 60.8px;\">Web Development</h3>",
-          "target": [
-            "article:nth-child(3) > .card-title"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
-                "fgColor": "#f4f0ea",
-                "bgColor": "#35111b",
-                "contrastRatio": 14.83,
-                "fontSize": "25.5pt (34px)",
-                "fontWeight": "normal",
-                "expectedContrastRatio": "3:1"
-              },
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has sufficient color contrast of 14.83"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<p class=\"card-text\" style=\"font-size: 34px;\">High-performance digital environments engineered for scale. We build seamless, lightning-fast interfaces that serve as your ultimate conversion engine, optimized for both users and search algorithms.</p>",
-          "target": [
-            "article:nth-child(3) > .card-text"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
-                "fgColor": "#f4f0ea",
-                "bgColor": "#35111b",
-                "contrastRatio": 14.83,
                 "fontSize": "25.5pt (34px)",
                 "fontWeight": "normal",
                 "expectedContrastRatio": "3:1"
@@ -7301,56 +7315,6 @@
           "html": "<li style=\"font-size: 34px;\">Custom Front-End Development</li>",
           "target": [
             "article:nth-child(3) > .card-list > li:nth-child(1)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
-                "fgColor": "#f4f0ea",
-                "bgColor": "#35111b",
-                "contrastRatio": 14.83,
-                "fontSize": "25.5pt (34px)",
-                "fontWeight": "normal",
-                "expectedContrastRatio": "3:1"
-              },
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has sufficient color contrast of 14.83"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<li style=\"font-size: 34px;\">UX/UI Wireframing &amp; Design</li>",
-          "target": [
-            "article:nth-child(3) > .card-list > li:nth-child(2)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
-                "fgColor": "#f4f0ea",
-                "bgColor": "#35111b",
-                "contrastRatio": 14.83,
-                "fontSize": "25.5pt (34px)",
-                "fontWeight": "normal",
-                "expectedContrastRatio": "3:1"
-              },
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has sufficient color contrast of 14.83"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<li style=\"font-size: 34px;\">Technical SEO &amp; Core Web Vitals</li>",
-          "target": [
-            "article:nth-child(3) > .card-list > li:nth-child(3)"
           ]
         },
         {
@@ -7486,81 +7450,6 @@
                 "fgColor": "#f4f0ea",
                 "bgColor": "#35111b",
                 "contrastRatio": 14.83,
-                "fontSize": "45.6pt (60.8px)",
-                "fontWeight": "bold",
-                "expectedContrastRatio": "3:1"
-              },
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has sufficient color contrast of 14.83"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<h3 class=\"card-title\" style=\"font-size: 60.8px;\">Performance Marketing</h3>",
-          "target": [
-            "article:nth-child(5) > .card-title"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
-                "fgColor": "#f4f0ea",
-                "bgColor": "#35111b",
-                "contrastRatio": 14.83,
-                "fontSize": "25.5pt (34px)",
-                "fontWeight": "normal",
-                "expectedContrastRatio": "3:1"
-              },
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has sufficient color contrast of 14.83"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<p class=\"card-text\" style=\"font-size: 34px;\">We distribute your message with mathematical precision. We design data-driven ad campaigns focused strictly on maximizing your return on ad spend, driving high-intent traffic that converts into revenue.</p>",
-          "target": [
-            "article:nth-child(5) > .card-text"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
-                "fgColor": "#f4f0ea",
-                "bgColor": "#35111b",
-                "contrastRatio": 14.83,
-                "fontSize": "25.5pt (34px)",
-                "fontWeight": "normal",
-                "expectedContrastRatio": "3:1"
-              },
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has sufficient color contrast of 14.83"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<li style=\"font-size: 34px;\">Google Search &amp; Meta Ads</li>",
-          "target": [
-            "article:nth-child(5) > .card-list > li:nth-child(1)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
-                "fgColor": "#f4f0ea",
-                "bgColor": "#35111b",
-                "contrastRatio": 14.83,
                 "fontSize": "25.5pt (34px)",
                 "fontWeight": "normal",
                 "expectedContrastRatio": "3:1"
@@ -7576,31 +7465,6 @@
           "html": "<li style=\"font-size: 34px;\">Conversion Rate Optimization (CRO)</li>",
           "target": [
             "article:nth-child(5) > .card-list > li:nth-child(2)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
-                "fgColor": "#f4f0ea",
-                "bgColor": "#35111b",
-                "contrastRatio": 14.83,
-                "fontSize": "25.5pt (34px)",
-                "fontWeight": "normal",
-                "expectedContrastRatio": "3:1"
-              },
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has sufficient color contrast of 14.83"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<li style=\"font-size: 34px;\">Analytics &amp; ROI Tracking</li>",
-          "target": [
-            "article:nth-child(5) > .card-list > li:nth-child(3)"
           ]
         },
         {
@@ -9418,7 +9282,7 @@
             }
           ],
           "impact": null,
-          "html": "<a href=\"/el/\" class=\"lang-link\" lang=\"el\" hreflang=\"el\" style=\"font-size: 26px;\"><span aria-hidden=\"true\" style=\"font-size: 26px;\">🇬🇷</span> Ελληνικά</a>",
+          "html": "<a href=\"/el/\" class=\"lang-link\" lang=\"el\" hreflang=\"el\" style=\"font-size: 26px;\"><span aria-hidden=\"true\" style=\"font-size: 26px;\">🇬🇷</span> <span class=\"lang-short\" style=\"font-size: 26px;\">ΕΛ</span><span class=\"lang-full\" style=\"font-size: 26px;\">Ελληνικά</span></a>",
           "target": [
             ".lang-link"
           ]
@@ -9785,24 +9649,6 @@
           "html": "<li style=\"font-size: 34px;\"><a href=\"#contact\" style=\"font-size: 26px;\">Contact</a></li>",
           "target": [
             "nav > ul > li:nth-child(3)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "listitem",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "List item has a <ul>, <ol> or role=\"list\" parent element"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<li class=\"lang-switch\" style=\"font-size: 34px;\">",
-          "target": [
-            ".lang-switch"
           ]
         },
         {
@@ -10274,7 +10120,7 @@
             }
           ],
           "impact": null,
-          "html": "<a href=\"/el/\" class=\"lang-link\" lang=\"el\" hreflang=\"el\" style=\"font-size: 26px;\"><span aria-hidden=\"true\" style=\"font-size: 26px;\">🇬🇷</span> Ελληνικά</a>",
+          "html": "<a href=\"/el/\" class=\"lang-link\" lang=\"el\" hreflang=\"el\" style=\"font-size: 26px;\"><span aria-hidden=\"true\" style=\"font-size: 26px;\">🇬🇷</span> <span class=\"lang-short\" style=\"font-size: 26px;\">ΕΛ</span><span class=\"lang-full\" style=\"font-size: 26px;\">Ελληνικά</span></a>",
           "target": [
             ".lang-link"
           ]
@@ -10447,6 +10293,262 @@
             ".hero-subtitle > span:nth-child(3)"
           ],
           "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "contrastRatio": 0,
+                "fontSize": "45.6pt (60.8px)",
+                "fontWeight": "bold",
+                "messageKey": "elmPartiallyObscured",
+                "expectedContrastRatio": "3:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<article class=\"card on-dark\" style=\"font-size: 34px;\">",
+                  "target": [
+                    "article:nth-child(3)"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element's background color could not be determined because it's partially obscured by another element"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<h3 class=\"card-title\" style=\"font-size: 60.8px;\">Web Development</h3>",
+          "target": [
+            "article:nth-child(3) > .card-title"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it's partially obscured by another element"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "contrastRatio": 0,
+                "fontSize": "25.5pt (34px)",
+                "fontWeight": "normal",
+                "messageKey": "elmPartiallyObscured",
+                "expectedContrastRatio": "3:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<article class=\"card on-dark\" style=\"font-size: 34px;\">",
+                  "target": [
+                    "article:nth-child(3)"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element's background color could not be determined because it's partially obscured by another element"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<p class=\"card-text\" style=\"font-size: 34px;\">High-performance digital environments engineered for scale. We build seamless, lightning-fast interfaces that serve as your ultimate conversion engine, optimized for both users and search algorithms.</p>",
+          "target": [
+            "article:nth-child(3) > .card-text"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it's partially obscured by another element"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "contrastRatio": 0,
+                "fontSize": "25.5pt (34px)",
+                "fontWeight": "normal",
+                "messageKey": "elmPartiallyObscured",
+                "expectedContrastRatio": "3:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<article class=\"card on-dark\" style=\"font-size: 34px;\">",
+                  "target": [
+                    "article:nth-child(3)"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element's background color could not be determined because it's partially obscured by another element"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<li style=\"font-size: 34px;\">UX/UI Wireframing &amp; Design</li>",
+          "target": [
+            "article:nth-child(3) > .card-list > li:nth-child(2)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it's partially obscured by another element"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "contrastRatio": 0,
+                "fontSize": "25.5pt (34px)",
+                "fontWeight": "normal",
+                "messageKey": "elmPartiallyObscured",
+                "expectedContrastRatio": "3:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<article class=\"card on-dark\" style=\"font-size: 34px;\">",
+                  "target": [
+                    "article:nth-child(3)"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element's background color could not be determined because it's partially obscured by another element"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<li style=\"font-size: 34px;\">Technical SEO &amp; Core Web Vitals</li>",
+          "target": [
+            "article:nth-child(3) > .card-list > li:nth-child(3)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it's partially obscured by another element"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "contrastRatio": 0,
+                "fontSize": "45.6pt (60.8px)",
+                "fontWeight": "bold",
+                "messageKey": "elmPartiallyObscured",
+                "expectedContrastRatio": "3:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<article class=\"card on-dark\" style=\"font-size: 34px;\">",
+                  "target": [
+                    "article:nth-child(5)"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element's background color could not be determined because it's partially obscured by another element"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<h3 class=\"card-title\" style=\"font-size: 60.8px;\">Performance Marketing</h3>",
+          "target": [
+            "article:nth-child(5) > .card-title"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it's partially obscured by another element"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "contrastRatio": 0,
+                "fontSize": "25.5pt (34px)",
+                "fontWeight": "normal",
+                "messageKey": "elmPartiallyObscured",
+                "expectedContrastRatio": "3:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<article class=\"card on-dark\" style=\"font-size: 34px;\">",
+                  "target": [
+                    "article:nth-child(5)"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element's background color could not be determined because it's partially obscured by another element"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<p class=\"card-text\" style=\"font-size: 34px;\">We distribute your message with mathematical precision. We design data-driven ad campaigns focused strictly on maximizing your return on ad spend, driving high-intent traffic that converts into revenue.</p>",
+          "target": [
+            "article:nth-child(5) > .card-text"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it's partially obscured by another element"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "contrastRatio": 0,
+                "fontSize": "25.5pt (34px)",
+                "fontWeight": "normal",
+                "messageKey": "elmPartiallyObscured",
+                "expectedContrastRatio": "3:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<article class=\"card on-dark\" style=\"font-size: 34px;\">",
+                  "target": [
+                    "article:nth-child(5)"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element's background color could not be determined because it's partially obscured by another element"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<li style=\"font-size: 34px;\">Google Search &amp; Meta Ads</li>",
+          "target": [
+            "article:nth-child(5) > .card-list > li:nth-child(1)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it's partially obscured by another element"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "contrastRatio": 0,
+                "fontSize": "25.5pt (34px)",
+                "fontWeight": "normal",
+                "messageKey": "elmPartiallyObscured",
+                "expectedContrastRatio": "3:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<article class=\"card on-dark\" style=\"font-size: 34px;\">",
+                  "target": [
+                    "article:nth-child(5)"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element's background color could not be determined because it's partially obscured by another element"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<li style=\"font-size: 34px;\">Analytics &amp; ROI Tracking</li>",
+          "target": [
+            "article:nth-child(5) > .card-list > li:nth-child(3)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it's partially obscured by another element"
         },
         {
           "any": [

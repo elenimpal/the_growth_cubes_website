@@ -60,16 +60,71 @@ a:focus-visible {
   justify-content: space-between;
   gap: 0.5rem 1.5rem;
 }
-.lang-link {
-  padding: 0.25rem 0.9rem;
+/* Language selector: the current language is filled, the other is a link. */
+.lang-switch {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  padding: 0.2rem;
   border: 1px solid #986775;
   border-radius: 999px;
   font-weight: 700;
-  text-decoration: none;
+}
+.lang-switch > * {
+  padding: 0.2rem 0.85rem;
+  border-radius: 999px;
   white-space: nowrap;
+}
+.lang-current {
+  background: #f4f0ea;
+  color: #35111b;
+}
+.lang-link {
+  text-decoration: none;
 }
 .lang-link:hover {
   text-decoration: underline;
+}
+.lang-short {
+  display: none;
+}
+/* Phones: short language codes keep the brand and the selector on one row. */
+@media (max-width: 30rem) {
+  .site-header .container {
+    flex-wrap: nowrap;
+    gap: 0.75rem;
+  }
+  .site-header .brand {
+    font-size: 0.875rem;
+    letter-spacing: 0.06em;
+  }
+  .lang-switch {
+    position: relative;
+    flex-shrink: 0;
+  }
+  .lang-switch > * {
+    padding-inline: 0.6rem;
+  }
+  .lang-short {
+    display: inline;
+  }
+  .lang-full {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip-path: inset(50%);
+    white-space: nowrap;
+  }
+}
+@media (max-width: 22.5rem) {
+  .site-header .brand {
+    font-size: 0.75rem;
+    letter-spacing: 0.03em;
+  }
+  .lang-switch > * {
+    padding-inline: 0.45rem;
+  }
 }
 .brand {
   font-weight: 700;
@@ -97,6 +152,13 @@ h2 {
 }
 p {
   margin: 0 0 1.1rem;
+}
+ul {
+  margin: 0 0 1.1rem;
+  padding-left: 1.25rem;
+}
+li {
+  margin-bottom: 0.5rem;
 }
 .intro {
   font-size: 1.12rem;

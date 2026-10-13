@@ -21,9 +21,9 @@ To add any of these, edit the text in `tools/accessibility/build-report.cjs` and
 - **Programme title, call number, ΑΔΑ and ΦΕΚ** on page 1 match your approval documents.
 - **`info@thegrowthcubes.com` works** and someone reads it. The report and the accessibility statement both name it as the contact for accessibility problems.
 
-## 3. Fix on the website before submitting
+## 3. Deploy the updated accessibility statement
 
-**The accessibility statement contradicts the report.** Both statement pages currently say that full conformance with level AA is not claimed and that some tests are pending. The report concludes that the site conforms to WCAG 2.1 AA. A reviewer who opens the statement will see the mismatch. Update `accessibility.html` and `el/accessibility.html` so their "current status" section matches the report, deploy, and re-run the evidence (step 4).
+Both statement pages (`accessibility.html`, `el/accessibility.html`) were rewritten on 13 October 2026 to state conformance with WCAG 2.1 AA and describe the evaluation, so they now agree with the report. The change is not live until you push it. After the deploy finishes, re-run the evidence and rebuild the report (step 4), because the published files will no longer match the commit the report cites.
 
 ## 4. Re-run if the site changes
 

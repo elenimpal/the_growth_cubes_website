@@ -106,13 +106,30 @@ main:focus {
   background: var(--burgundy);
   border-bottom: 1px solid var(--burgundy-raised);
 }
+/* The header stays in view only when the window is large enough to spare the
+   room. The rem units mean browser zoom and larger text switch it off, so it
+   never crowds a small or magnified screen. */
+@media (min-width: 64rem) and (min-height: 40rem) {
+  .site-header {
+    position: sticky;
+    top: 0;
+    z-index: 5;
+  }
+  /* Keep link targets and focused elements clear of the pinned header. */
+  html {
+    scroll-padding-top: 6rem;
+  }
+}
 .site-header .container {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  justify-content: space-between;
   gap: 0.75rem 2rem;
   padding-block: 1.25rem;
+}
+/* Wide screens: brand on the left, menu and language selector on the right. */
+.nav {
+  margin-left: auto;
 }
 .brand {
   font-size: 0.9375rem;
@@ -128,7 +145,7 @@ main:focus {
   gap: 0.25rem 1.75rem;
 }
 .nav a,
-.lang-current {
+.lang-switch > * {
   display: inline-block;
   padding-block: 0.4rem;
   font-size: 0.8125rem;
@@ -138,7 +155,8 @@ main:focus {
   text-decoration: none;
 }
 .brand:hover,
-.nav a:hover {
+.nav a:hover,
+.lang-link:hover {
   text-decoration: underline;
   text-underline-offset: 0.3em;
 }
@@ -159,6 +177,70 @@ main:focus {
 .lang-current {
   background: var(--cream);
   color: var(--burgundy);
+}
+.lang-short {
+  display: none;
+}
+/* Tablets and phones: brand and language selector share the first row, the
+   menu takes the full second row. */
+@media (max-width: 63.99rem) {
+  .site-header .container {
+    gap: 0.6rem 1rem;
+    padding-block: 0.9rem;
+  }
+  .lang-switch {
+    order: 2;
+    margin-left: auto;
+  }
+  .nav {
+    order: 3;
+    flex-basis: 100%;
+    margin-left: 0;
+    padding-top: 0.5rem;
+    border-top: 1px solid var(--burgundy-raised);
+  }
+}
+/* Phones: short language codes and tighter letter-spacing keep each row whole. */
+@media (max-width: 36rem) {
+  .nav ul {
+    justify-content: space-between;
+    gap: 0.25rem 1rem;
+  }
+  .brand {
+    font-size: 0.8125rem;
+    letter-spacing: 0.08em;
+  }
+  .nav a {
+    letter-spacing: 0.04em;
+  }
+  .lang-switch > * {
+    padding-inline: 0.55rem;
+    letter-spacing: 0.04em;
+  }
+  .lang-short {
+    display: inline;
+  }
+  .lang-full {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip-path: inset(50%);
+    white-space: nowrap;
+  }
+}
+/* The narrowest phones. */
+@media (max-width: 22.5rem) {
+  .brand {
+    font-size: 0.75rem;
+    letter-spacing: 0.04em;
+  }
+  .lang-switch > * {
+    padding-inline: 0.4rem;
+  }
+  .nav ul {
+    gap: 0.25rem 0.5rem;
+  }
 }
 
 /* --- Hero --- */
@@ -245,9 +327,13 @@ main:focus {
   gap: clamp(1rem, 2vw, 2rem);
   margin-top: clamp(2rem, 5vw, 4rem);
 }
+/* Title, text and list share rows across a line of cards, so the rule under
+   the titles and the lists line up even when one title wraps. */
 .card {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-row: span 3;
+  grid-template-rows: subgrid;
+  row-gap: 0;
   padding: clamp(1.5rem, 3vw, 2.75rem);
   border-radius: var(--radius-card);
   background: var(--burgundy);
@@ -267,7 +353,7 @@ main:focus {
 .card-list {
   display: grid;
   gap: 0.6rem;
-  margin-top: auto;
+  align-self: start;
 }
 .card-list li {
   position: relative;
