@@ -13,8 +13,8 @@
     "orientationAngle": 0,
     "orientationType": "landscape-primary"
   },
-  "timestamp": "2026-10-13T17:25:33.205Z",
-  "url": "http://127.0.0.1:62465/el/",
+  "timestamp": "2026-10-13T17:53:05.057Z",
+  "url": "http://127.0.0.1:51151/el/",
   "toolOptions": {
     "runOnly": {
       "type": "tag",
@@ -1041,7 +1041,7 @@
             }
           ],
           "impact": null,
-          "html": "<form class=\"form-card on-dark\" id=\"contact-form\" action=\"mailto:info@thegrowthcubes.com\" method=\"post\" enctype=\"text/plain\" aria-describedby=\"contact-help\" novalidate=\"\">",
+          "html": "<form class=\"form-card on-dark\" id=\"contact-form\" aria-describedby=\"contact-help\" novalidate=\"\">",
           "target": [
             "#contact-form"
           ]
@@ -1241,7 +1241,7 @@
             }
           ],
           "impact": null,
-          "html": "<form id=\"newsletter-form\" action=\"mailto:info@thegrowthcubes.com\" method=\"post\" enctype=\"text/plain\" aria-describedby=\"newsletter-help\" novalidate=\"\">",
+          "html": "<form id=\"newsletter-form\" aria-describedby=\"newsletter-help\" novalidate=\"\">",
           "target": [
             "#newsletter-form"
           ]
@@ -1443,7 +1443,7 @@
           ],
           "none": [],
           "impact": null,
-          "html": "<form class=\"form-card on-dark\" id=\"contact-form\" action=\"mailto:info@thegrowthcubes.com\" method=\"post\" enctype=\"text/plain\" aria-describedby=\"contact-help\" novalidate=\"\">",
+          "html": "<form class=\"form-card on-dark\" id=\"contact-form\" aria-describedby=\"contact-help\" novalidate=\"\">",
           "target": [
             "#contact-form"
           ]
@@ -1533,7 +1533,7 @@
           ],
           "none": [],
           "impact": null,
-          "html": "<form id=\"newsletter-form\" action=\"mailto:info@thegrowthcubes.com\" method=\"post\" enctype=\"text/plain\" aria-describedby=\"newsletter-help\" novalidate=\"\">",
+          "html": "<form id=\"newsletter-form\" aria-describedby=\"newsletter-help\" novalidate=\"\">",
           "target": [
             "#newsletter-form"
           ]
@@ -2049,7 +2049,7 @@
             }
           ],
           "impact": null,
-          "html": "<form class=\"form-card on-dark\" id=\"contact-form\" action=\"mailto:info@thegrowthcubes.com\" method=\"post\" enctype=\"text/plain\" aria-describedby=\"contact-help\" novalidate=\"\">",
+          "html": "<form class=\"form-card on-dark\" id=\"contact-form\" aria-describedby=\"contact-help\" novalidate=\"\">",
           "target": [
             "#contact-form"
           ]
@@ -2139,7 +2139,7 @@
             }
           ],
           "impact": null,
-          "html": "<form id=\"newsletter-form\" action=\"mailto:info@thegrowthcubes.com\" method=\"post\" enctype=\"text/plain\" aria-describedby=\"newsletter-help\" novalidate=\"\">",
+          "html": "<form id=\"newsletter-form\" aria-describedby=\"newsletter-help\" novalidate=\"\">",
           "target": [
             "#newsletter-form"
           ]
@@ -2567,7 +2567,7 @@
           ],
           "none": [],
           "impact": null,
-          "html": "<form class=\"form-card on-dark\" id=\"contact-form\" action=\"mailto:info@thegrowthcubes.com\" method=\"post\" enctype=\"text/plain\" aria-describedby=\"contact-help\" novalidate=\"\">",
+          "html": "<form class=\"form-card on-dark\" id=\"contact-form\" aria-describedby=\"contact-help\" novalidate=\"\">",
           "target": [
             "#contact-form"
           ]
@@ -2727,7 +2727,7 @@
           ],
           "none": [],
           "impact": null,
-          "html": "<form id=\"newsletter-form\" action=\"mailto:info@thegrowthcubes.com\" method=\"post\" enctype=\"text/plain\" aria-describedby=\"newsletter-help\" novalidate=\"\">",
+          "html": "<form id=\"newsletter-form\" aria-describedby=\"newsletter-help\" novalidate=\"\">",
           "target": [
             "#newsletter-form"
           ]
@@ -2921,7 +2921,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<form class=\"form-card on-dark\" id=\"contact-form\" action=\"mailto:info@thegrowthcubes.com\" method=\"post\" enctype=\"text/plain\" aria-describedby=\"contact-help\" novalidate=\"\">",
+          "html": "<form class=\"form-card on-dark\" id=\"contact-form\" aria-describedby=\"contact-help\" novalidate=\"\">",
           "target": [
             "#contact-form"
           ]
@@ -3011,7 +3011,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<form id=\"newsletter-form\" action=\"mailto:info@thegrowthcubes.com\" method=\"post\" enctype=\"text/plain\" aria-describedby=\"newsletter-help\" novalidate=\"\">",
+          "html": "<form id=\"newsletter-form\" aria-describedby=\"newsletter-help\" novalidate=\"\">",
           "target": [
             "#newsletter-form"
           ]
@@ -5715,7 +5715,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<a href=\"/accessibility.html\">Δήλωση προσβασιμότητας</a>",
+          "html": "<a href=\"/el/accessibility.html\">Δήλωση προσβασιμότητας</a>",
           "target": [
             "a[href$=\"accessibility.html\"]"
           ]
@@ -6961,7 +6961,7 @@
             }
           ],
           "impact": null,
-          "html": "<a href=\"/accessibility.html\">Δήλωση προσβασιμότητας</a>",
+          "html": "<a href=\"/el/accessibility.html\">Δήλωση προσβασιμότητας</a>",
           "target": [
             "a[href$=\"accessibility.html\"]"
           ]

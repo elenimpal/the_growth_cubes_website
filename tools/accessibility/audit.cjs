@@ -12,7 +12,7 @@ const types = {
   ".css": "text/css",
   ".js": "text/javascript",
   ".png": "image/png",
-  ".jpg": "image/jpeg",
+  ".jpg": "image/jpeg", ".svg": "image/svg+xml",
 };
 const server = http.createServer((req, res) => {
   const pathname = decodeURIComponent(
@@ -61,6 +61,7 @@ function check(name, pass, detail) {
     "index.html",
     "el/index.html",
     "accessibility.html",
+    "el/accessibility.html",
     "styles.css",
     "accessibility.css",
     "forms.js",
@@ -143,7 +144,8 @@ function check(name, pass, detail) {
         "el-desktop",
         "el-mobile-320",
         "el-contact-valid",
-        "statement",
+        "en-statement",
+        "el-statement",
         "production-desktop",
       ].includes(name)
     )
@@ -266,28 +268,6 @@ function check(name, pass, detail) {
         ),
       await page.locator("#contact-status").innerText()
     );
-    await scan(
-      id("newsletter-invalid"),
-      url,
-      { width: 390, height: 844 },
-      async () => page.locator("#newsletter-form button").click()
-    );
-    await scan(
-      id("newsletter-valid"),
-      url,
-      { width: 390, height: 844 },
-      async () => {
-        await page.locator("#newsletter-email").fill("test@example.com");
-        await page.locator("#newsletter-form button").click();
-      }
-    );
-    check(
-      `${lang}: newsletter prepares draft without claiming subscription`,
-      await page
-        .locator("#newsletter-email-draft")
-        .evaluate((e) => !e.hidden && e.href.startsWith("mailto:")),
-      null
-    );
     const nojs = await browser.newContext({
       javaScriptEnabled: false,
       viewport: { width: 390, height: 844 },
@@ -302,14 +282,26 @@ function check(name, pass, detail) {
     );
     await nojs.close();
   }
-  await scan("statement", `${base}/accessibility.html`, {
-    width: 390,
-    height: 844,
-  });
-  await scan("statement-desktop", `${base}/accessibility.html`, {
-    width: 1440,
-    height: 900,
-  });
+  for (const [lang, url] of [
+    ["en", `${base}/accessibility.html`],
+    ["el", `${base}/el/accessibility.html`],
+  ]) {
+    await scan(`${lang}-statement`, url, { width: 390, height: 844 });
+    await scan(`${lang}-statement-desktop`, url, { width: 1440, height: 900 });
+    check(
+      `${lang}: statement declares its language`,
+      (await page.locator("html").getAttribute("lang")) === lang,
+      null
+    );
+    const other = lang === "en" ? "el" : "en";
+    await page.locator(".lang-link").click();
+    check(
+      `${lang}: statement language link opens the ${other} statement`,
+      (await page.locator("html").getAttribute("lang")) === other &&
+        page.url().endsWith("accessibility.html"),
+      page.url()
+    );
+  }
   check("No local JavaScript runtime errors", errors.length === 0, errors);
   fs.writeFileSync(
     path.join(out, "summary.json"),

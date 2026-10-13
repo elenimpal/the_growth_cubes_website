@@ -13,8 +13,8 @@
     "orientationAngle": 0,
     "orientationType": "landscape-primary"
   },
-  "timestamp": "2026-10-13T17:25:27.239Z",
-  "url": "http://127.0.0.1:62465/el/",
+  "timestamp": "2026-10-13T18:13:28.788Z",
+  "url": "http://127.0.0.1:59983/el/",
   "toolOptions": {
     "runOnly": {
       "type": "tag",
@@ -1041,7 +1041,7 @@
             }
           ],
           "impact": null,
-          "html": "<form class=\"form-card on-dark\" id=\"contact-form\" action=\"mailto:info@thegrowthcubes.com\" method=\"post\" enctype=\"text/plain\" aria-describedby=\"contact-help\" novalidate=\"\">",
+          "html": "<form class=\"form-card on-dark\" id=\"contact-form\" aria-describedby=\"contact-help\" novalidate=\"\">",
           "target": [
             "#contact-form"
           ]
@@ -1204,86 +1204,6 @@
           "html": "<textarea id=\"contact-message\" name=\"message\" placeholder=\"Περιγράψτε το έργο σας, τις υπηρεσίες που σας ενδιαφέρουν και τι θέλετε να πετύχετε...\" aria-describedby=\"contact-message-error\" required=\"\"></textarea>",
           "target": [
             "#contact-message"
-          ]
-        },
-        {
-          "any": [],
-          "all": [
-            {
-              "id": "aria-allowed-attr",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "critical",
-              "message": "ARIA attributes are used correctly for the defined role"
-            },
-            {
-              "id": "aria-allowed-attr-elm",
-              "data": null,
-              "relatedNodes": [],
-              "message": "ARIA attributes are allowed for this element",
-              "impact": "critical"
-            },
-            {
-              "id": "aria-no-deprecated-attr",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "critical",
-              "message": "No deprecated ARIA attributes are used"
-            }
-          ],
-          "none": [
-            {
-              "id": "aria-unsupported-attr",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "critical",
-              "message": "ARIA attribute is supported"
-            }
-          ],
-          "impact": null,
-          "html": "<form id=\"newsletter-form\" action=\"mailto:info@thegrowthcubes.com\" method=\"post\" enctype=\"text/plain\" aria-describedby=\"newsletter-help\" novalidate=\"\">",
-          "target": [
-            "#newsletter-form"
-          ]
-        },
-        {
-          "any": [],
-          "all": [
-            {
-              "id": "aria-allowed-attr",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "critical",
-              "message": "ARIA attributes are used correctly for the defined role"
-            },
-            {
-              "id": "aria-allowed-attr-elm",
-              "data": null,
-              "relatedNodes": [],
-              "message": "ARIA attributes are allowed for this element",
-              "impact": "critical"
-            },
-            {
-              "id": "aria-no-deprecated-attr",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "critical",
-              "message": "No deprecated ARIA attributes are used"
-            }
-          ],
-          "none": [
-            {
-              "id": "aria-unsupported-attr",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "critical",
-              "message": "ARIA attribute is supported"
-            }
-          ],
-          "impact": null,
-          "html": "<input id=\"newsletter-email\" name=\"email\" type=\"email\" autocomplete=\"email\" placeholder=\"onoma@etaireia.gr\" aria-describedby=\"newsletter-email-error\" required=\"\">",
-          "target": [
-            "#newsletter-email"
           ]
         }
       ]
@@ -1443,7 +1363,7 @@
           ],
           "none": [],
           "impact": null,
-          "html": "<form class=\"form-card on-dark\" id=\"contact-form\" action=\"mailto:info@thegrowthcubes.com\" method=\"post\" enctype=\"text/plain\" aria-describedby=\"contact-help\" novalidate=\"\">",
+          "html": "<form class=\"form-card on-dark\" id=\"contact-form\" aria-describedby=\"contact-help\" novalidate=\"\">",
           "target": [
             "#contact-form"
           ]
@@ -1519,42 +1439,6 @@
           "target": [
             "#contact-message"
           ]
-        },
-        {
-          "any": [],
-          "all": [
-            {
-              "id": "aria-conditional-attr",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "ARIA attribute is allowed"
-            }
-          ],
-          "none": [],
-          "impact": null,
-          "html": "<form id=\"newsletter-form\" action=\"mailto:info@thegrowthcubes.com\" method=\"post\" enctype=\"text/plain\" aria-describedby=\"newsletter-help\" novalidate=\"\">",
-          "target": [
-            "#newsletter-form"
-          ]
-        },
-        {
-          "any": [],
-          "all": [
-            {
-              "id": "aria-conditional-attr",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "ARIA attribute is allowed"
-            }
-          ],
-          "none": [],
-          "impact": null,
-          "html": "<input id=\"newsletter-email\" name=\"email\" type=\"email\" autocomplete=\"email\" placeholder=\"onoma@etaireia.gr\" aria-describedby=\"newsletter-email-error\" required=\"\">",
-          "target": [
-            "#newsletter-email"
-          ]
         }
       ]
     },
@@ -1590,24 +1474,6 @@
           "html": "<p id=\"contact-status\" class=\"form-status\" role=\"status\"></p>",
           "target": [
             "#contact-status"
-          ]
-        },
-        {
-          "any": [],
-          "all": [],
-          "none": [
-            {
-              "id": "deprecatedrole",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "minor",
-              "message": "ARIA role is not deprecated"
-            }
-          ],
-          "impact": null,
-          "html": "<p id=\"newsletter-status\" class=\"form-status\" role=\"status\"></p>",
-          "target": [
-            "#newsletter-status"
           ]
         }
       ]
@@ -2049,7 +1915,7 @@
             }
           ],
           "impact": null,
-          "html": "<form class=\"form-card on-dark\" id=\"contact-form\" action=\"mailto:info@thegrowthcubes.com\" method=\"post\" enctype=\"text/plain\" aria-describedby=\"contact-help\" novalidate=\"\">",
+          "html": "<form class=\"form-card on-dark\" id=\"contact-form\" aria-describedby=\"contact-help\" novalidate=\"\">",
           "target": [
             "#contact-form"
           ]
@@ -2125,42 +1991,6 @@
           "target": [
             "#contact-message"
           ]
-        },
-        {
-          "any": [],
-          "all": [],
-          "none": [
-            {
-              "id": "aria-prohibited-attr",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "ARIA attribute is allowed"
-            }
-          ],
-          "impact": null,
-          "html": "<form id=\"newsletter-form\" action=\"mailto:info@thegrowthcubes.com\" method=\"post\" enctype=\"text/plain\" aria-describedby=\"newsletter-help\" novalidate=\"\">",
-          "target": [
-            "#newsletter-form"
-          ]
-        },
-        {
-          "any": [],
-          "all": [],
-          "none": [
-            {
-              "id": "aria-prohibited-attr",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "ARIA attribute is allowed"
-            }
-          ],
-          "impact": null,
-          "html": "<input id=\"newsletter-email\" name=\"email\" type=\"email\" autocomplete=\"email\" placeholder=\"onoma@etaireia.gr\" aria-describedby=\"newsletter-email-error\" required=\"\">",
-          "target": [
-            "#newsletter-email"
-          ]
         }
       ]
     },
@@ -2196,24 +2026,6 @@
           "html": "<p id=\"contact-status\" class=\"form-status\" role=\"status\"></p>",
           "target": [
             "#contact-status"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "aria-required-attr",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "critical",
-              "message": "All required ARIA attributes are present"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<p id=\"newsletter-status\" class=\"form-status\" role=\"status\"></p>",
-          "target": [
-            "#newsletter-status"
           ]
         }
       ]
@@ -2264,38 +2076,6 @@
           "html": "<p id=\"contact-status\" class=\"form-status\" role=\"status\"></p>",
           "target": [
             "#contact-status"
-          ]
-        },
-        {
-          "any": [],
-          "all": [],
-          "none": [
-            {
-              "id": "invalidrole",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "critical",
-              "message": "ARIA role is valid"
-            },
-            {
-              "id": "abstractrole",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "critical",
-              "message": "Abstract roles are not used"
-            },
-            {
-              "id": "unsupportedrole",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "critical",
-              "message": "ARIA role is supported"
-            }
-          ],
-          "impact": null,
-          "html": "<p id=\"newsletter-status\" class=\"form-status\" role=\"status\"></p>",
-          "target": [
-            "#newsletter-status"
           ]
         }
       ]
@@ -2567,7 +2347,7 @@
           ],
           "none": [],
           "impact": null,
-          "html": "<form class=\"form-card on-dark\" id=\"contact-form\" action=\"mailto:info@thegrowthcubes.com\" method=\"post\" enctype=\"text/plain\" aria-describedby=\"contact-help\" novalidate=\"\">",
+          "html": "<form class=\"form-card on-dark\" id=\"contact-form\" aria-describedby=\"contact-help\" novalidate=\"\">",
           "target": [
             "#contact-form"
           ]
@@ -2698,70 +2478,6 @@
           "html": "<textarea id=\"contact-message\" name=\"message\" placeholder=\"Περιγράψτε το έργο σας, τις υπηρεσίες που σας ενδιαφέρουν και τι θέλετε να πετύχετε...\" aria-describedby=\"contact-message-error\" required=\"\"></textarea>",
           "target": [
             "#contact-message"
-          ]
-        },
-        {
-          "any": [],
-          "all": [
-            {
-              "id": "aria-valid-attr-value",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "critical",
-              "message": "ARIA attribute values are valid"
-            },
-            {
-              "id": "aria-errormessage",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "critical",
-              "message": "aria-errormessage exists and references elements visible to screen readers that use a supported aria-errormessage technique"
-            },
-            {
-              "id": "aria-level",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "critical",
-              "message": "aria-level values are valid"
-            }
-          ],
-          "none": [],
-          "impact": null,
-          "html": "<form id=\"newsletter-form\" action=\"mailto:info@thegrowthcubes.com\" method=\"post\" enctype=\"text/plain\" aria-describedby=\"newsletter-help\" novalidate=\"\">",
-          "target": [
-            "#newsletter-form"
-          ]
-        },
-        {
-          "any": [],
-          "all": [
-            {
-              "id": "aria-valid-attr-value",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "critical",
-              "message": "ARIA attribute values are valid"
-            },
-            {
-              "id": "aria-errormessage",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "critical",
-              "message": "aria-errormessage exists and references elements visible to screen readers that use a supported aria-errormessage technique"
-            },
-            {
-              "id": "aria-level",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "critical",
-              "message": "aria-level values are valid"
-            }
-          ],
-          "none": [],
-          "impact": null,
-          "html": "<input id=\"newsletter-email\" name=\"email\" type=\"email\" autocomplete=\"email\" placeholder=\"onoma@etaireia.gr\" aria-describedby=\"newsletter-email-error\" required=\"\">",
-          "target": [
-            "#newsletter-email"
           ]
         }
       ]
@@ -2921,7 +2637,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<form class=\"form-card on-dark\" id=\"contact-form\" action=\"mailto:info@thegrowthcubes.com\" method=\"post\" enctype=\"text/plain\" aria-describedby=\"contact-help\" novalidate=\"\">",
+          "html": "<form class=\"form-card on-dark\" id=\"contact-form\" aria-describedby=\"contact-help\" novalidate=\"\">",
           "target": [
             "#contact-form"
           ]
@@ -2997,42 +2713,6 @@
           "target": [
             "#contact-message"
           ]
-        },
-        {
-          "any": [
-            {
-              "id": "aria-valid-attr",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "critical",
-              "message": "ARIA attribute name is valid"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<form id=\"newsletter-form\" action=\"mailto:info@thegrowthcubes.com\" method=\"post\" enctype=\"text/plain\" aria-describedby=\"newsletter-help\" novalidate=\"\">",
-          "target": [
-            "#newsletter-form"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "aria-valid-attr",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "critical",
-              "message": "ARIA attribute name is valid"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<input id=\"newsletter-email\" name=\"email\" type=\"email\" autocomplete=\"email\" placeholder=\"onoma@etaireia.gr\" aria-describedby=\"newsletter-email-error\" required=\"\">",
-          "target": [
-            "#newsletter-email"
-          ]
         }
       ]
     },
@@ -3106,24 +2786,6 @@
           "target": [
             "#contact-email"
           ]
-        },
-        {
-          "any": [],
-          "all": [
-            {
-              "id": "autocomplete-valid",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "the autocomplete attribute is correctly formatted"
-            }
-          ],
-          "none": [],
-          "impact": null,
-          "html": "<input id=\"newsletter-email\" name=\"email\" type=\"email\" autocomplete=\"email\" placeholder=\"onoma@etaireia.gr\" aria-describedby=\"newsletter-email-error\" required=\"\">",
-          "target": [
-            "#newsletter-email"
-          ]
         }
       ]
     },
@@ -3163,25 +2825,7 @@
           "impact": null,
           "html": "<button type=\"submit\" class=\"button\">Προετοιμασία <span lang=\"en\">email</span></button>",
           "target": [
-            "#contact-form > button"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "button-has-visible-text",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "critical",
-              "message": "Element has inner text that is visible to screen readers"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<button type=\"submit\" class=\"button\">Προετοιμασία αιτήματος</button>",
-          "target": [
-            ".newsletter-row > button"
+            "button"
           ]
         }
       ]
@@ -3289,12 +2933,6 @@
                   "html": "<h2 class=\"section-title contact-title\" id=\"contact-title\">Έτοιμοι να σχεδιάσουμε την ανάπτυξή σας;</h2>",
                   "target": [
                     "#contact-title"
-                  ]
-                },
-                {
-                  "html": "<h2 class=\"newsletter-title\">Λιγότερος θόρυβος. Περισσότερη ουσία. Λάβετε τα νέα μας για την ανάπτυξη.</h2>",
-                  "target": [
-                    ".newsletter-title"
                   ]
                 }
               ],
@@ -5167,7 +4805,7 @@
           "impact": null,
           "html": "<button type=\"submit\" class=\"button\">Προετοιμασία <span lang=\"en\">email</span></button>",
           "target": [
-            "#contact-form > button"
+            "button"
           ]
         },
         {
@@ -5228,7 +4866,7 @@
                 "fgColor": "#ffffff",
                 "bgColor": "#35111b",
                 "contrastRatio": 16.83,
-                "fontSize": "15.6pt (20.8px)",
+                "fontSize": "16.8pt (22.4px)",
                 "fontWeight": "bold",
                 "expectedContrastRatio": "3:1"
               },
@@ -5293,206 +4931,6 @@
           "html": "<span class=\"new-tab-note\">(ανοίγει σε νέα καρτέλα)</span>",
           "target": [
             ".new-tab-note"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
-                "fgColor": "#f4f0ea",
-                "bgColor": "#35111b",
-                "contrastRatio": 14.83,
-                "fontSize": "14.4pt (19.2px)",
-                "fontWeight": "bold",
-                "expectedContrastRatio": "3:1"
-              },
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has sufficient color contrast of 14.83"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<h2 class=\"newsletter-title\">Λιγότερος θόρυβος. Περισσότερη ουσία. Λάβετε τα νέα μας για την ανάπτυξη.</h2>",
-          "target": [
-            ".newsletter-title"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
-                "fgColor": "#f4f0ea",
-                "bgColor": "#35111b",
-                "contrastRatio": 14.83,
-                "fontSize": "12.8pt (17px)",
-                "fontWeight": "normal",
-                "expectedContrastRatio": "4.5:1"
-              },
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has sufficient color contrast of 14.83"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<p id=\"newsletter-help\">Γράψτε το <span lang=\"en\">email</span> σας και το κουμπί θα ανοίξει την εφαρμογή <span lang=\"en\">email</span> σας με έτοιμο αίτημα για ενημερώσεις.</p>",
-          "target": [
-            "#newsletter-help"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
-                "fgColor": "#f4f0ea",
-                "bgColor": "#35111b",
-                "contrastRatio": 14.83,
-                "fontSize": "12.8pt (17px)",
-                "fontWeight": "normal",
-                "expectedContrastRatio": "4.5:1"
-              },
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has sufficient color contrast of 14.83"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<span lang=\"en\">email</span>",
-          "target": [
-            "#newsletter-help > span[lang=\"en\"]:nth-child(1)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
-                "fgColor": "#f4f0ea",
-                "bgColor": "#35111b",
-                "contrastRatio": 14.83,
-                "fontSize": "12.8pt (17px)",
-                "fontWeight": "normal",
-                "expectedContrastRatio": "4.5:1"
-              },
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has sufficient color contrast of 14.83"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<span lang=\"en\">email</span>",
-          "target": [
-            "#newsletter-help > span[lang=\"en\"]:nth-child(2)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
-                "fgColor": "#f4f0ea",
-                "bgColor": "#35111b",
-                "contrastRatio": 14.83,
-                "fontSize": "10.5pt (14px)",
-                "fontWeight": "bold",
-                "expectedContrastRatio": "4.5:1"
-              },
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has sufficient color contrast of 14.83"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<label for=\"newsletter-email\">Επαγγελματικό <span lang=\"en\">email</span> (υποχρεωτικό)</label>",
-          "target": [
-            "label[for=\"newsletter-email\"]"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
-                "fgColor": "#f4f0ea",
-                "bgColor": "#35111b",
-                "contrastRatio": 14.83,
-                "fontSize": "10.5pt (14px)",
-                "fontWeight": "bold",
-                "expectedContrastRatio": "4.5:1"
-              },
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has sufficient color contrast of 14.83"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<span lang=\"en\">email</span>",
-          "target": [
-            "label[for=\"newsletter-email\"] > span[lang=\"en\"]"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
-                "fgColor": "#f4f0ea",
-                "bgColor": "#43202a",
-                "contrastRatio": 12.51,
-                "fontSize": "12.8pt (17px)",
-                "fontWeight": "normal",
-                "expectedContrastRatio": "4.5:1"
-              },
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has sufficient color contrast of 12.51"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<input id=\"newsletter-email\" name=\"email\" type=\"email\" autocomplete=\"email\" placeholder=\"onoma@etaireia.gr\" aria-describedby=\"newsletter-email-error\" required=\"\">",
-          "target": [
-            "#newsletter-email"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
-                "fgColor": "#35111b",
-                "bgColor": "#f4f0ea",
-                "contrastRatio": 14.83,
-                "fontSize": "11.3pt (15px)",
-                "fontWeight": "bold",
-                "expectedContrastRatio": "4.5:1"
-              },
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has sufficient color contrast of 14.83"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<button type=\"submit\" class=\"button\">Προετοιμασία αιτήματος</button>",
-          "target": [
-            ".newsletter-row > button"
           ]
         },
         {
@@ -5640,7 +5078,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<a href=\"/accessibility.html\">Δήλωση προσβασιμότητας</a>",
+          "html": "<a href=\"/el/accessibility.html\">Δήλωση προσβασιμότητας</a>",
           "target": [
             "a[href$=\"accessibility.html\"]"
           ]
@@ -5960,60 +5398,6 @@
           "target": [
             "#contact-message-error"
           ]
-        },
-        {
-          "any": [
-            {
-              "id": "duplicate-id-aria",
-              "data": "newsletter-help",
-              "relatedNodes": [],
-              "impact": "critical",
-              "message": "Document has no elements referenced with ARIA or labels that share the same id attribute"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<p id=\"newsletter-help\">Γράψτε το <span lang=\"en\">email</span> σας και το κουμπί θα ανοίξει την εφαρμογή <span lang=\"en\">email</span> σας με έτοιμο αίτημα για ενημερώσεις.</p>",
-          "target": [
-            "#newsletter-help"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "duplicate-id-aria",
-              "data": "newsletter-email",
-              "relatedNodes": [],
-              "impact": "critical",
-              "message": "Document has no elements referenced with ARIA or labels that share the same id attribute"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<input id=\"newsletter-email\" name=\"email\" type=\"email\" autocomplete=\"email\" placeholder=\"onoma@etaireia.gr\" aria-describedby=\"newsletter-email-error\" required=\"\">",
-          "target": [
-            "#newsletter-email"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "duplicate-id-aria",
-              "data": "newsletter-email-error",
-              "relatedNodes": [],
-              "impact": "critical",
-              "message": "Document has no elements referenced with ARIA or labels that share the same id attribute"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<span id=\"newsletter-email-error\" class=\"field-error\"></span>",
-          "target": [
-            "#newsletter-email-error"
-          ]
         }
       ]
     },
@@ -6133,31 +5517,6 @@
           "html": "<textarea id=\"contact-message\" name=\"message\" placeholder=\"Περιγράψτε το έργο σας, τις υπηρεσίες που σας ενδιαφέρουν και τι θέλετε να πετύχετε...\" aria-describedby=\"contact-message-error\" required=\"\"></textarea>",
           "target": [
             "#contact-message"
-          ]
-        },
-        {
-          "any": [],
-          "all": [],
-          "none": [
-            {
-              "id": "multiple-label",
-              "data": null,
-              "relatedNodes": [
-                {
-                  "html": "<label for=\"newsletter-email\">Επαγγελματικό <span lang=\"en\">email</span> (υποχρεωτικό)</label>",
-                  "target": [
-                    "label[for=\"newsletter-email\"]"
-                  ]
-                }
-              ],
-              "impact": "moderate",
-              "message": "Form field does not have multiple label elements"
-            }
-          ],
-          "impact": null,
-          "html": "<input id=\"newsletter-email\" name=\"email\" type=\"email\" autocomplete=\"email\" placeholder=\"onoma@etaireia.gr\" aria-describedby=\"newsletter-email-error\" required=\"\">",
-          "target": [
-            "#newsletter-email"
           ]
         }
       ]
@@ -6477,48 +5836,6 @@
           "html": "<textarea id=\"contact-message\" name=\"message\" placeholder=\"Περιγράψτε το έργο σας, τις υπηρεσίες που σας ενδιαφέρουν και τι θέλετε να πετύχετε...\" aria-describedby=\"contact-message-error\" required=\"\"></textarea>",
           "target": [
             "#contact-message"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "explicit-label",
-              "data": {
-                "explicitLabel": "Επαγγελματικό email (υποχρεωτικό)"
-              },
-              "relatedNodes": [
-                {
-                  "html": "<label for=\"newsletter-email\">Επαγγελματικό <span lang=\"en\">email</span> (υποχρεωτικό)</label>",
-                  "target": [
-                    "label[for=\"newsletter-email\"]"
-                  ]
-                }
-              ],
-              "impact": "critical",
-              "message": "Element has an explicit <label>"
-            },
-            {
-              "id": "non-empty-placeholder",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "critical",
-              "message": "Element has a placeholder attribute"
-            }
-          ],
-          "all": [],
-          "none": [
-            {
-              "id": "hidden-explicit-label",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "critical",
-              "message": "Form element has a visible explicit <label>"
-            }
-          ],
-          "impact": null,
-          "html": "<input id=\"newsletter-email\" name=\"email\" type=\"email\" autocomplete=\"email\" placeholder=\"onoma@etaireia.gr\" aria-describedby=\"newsletter-email-error\" required=\"\">",
-          "target": [
-            "#newsletter-email"
           ]
         }
       ]
@@ -6860,7 +6177,7 @@
             }
           ],
           "impact": null,
-          "html": "<a href=\"/accessibility.html\">Δήλωση προσβασιμότητας</a>",
+          "html": "<a href=\"/el/accessibility.html\">Δήλωση προσβασιμότητας</a>",
           "target": [
             "a[href$=\"accessibility.html\"]"
           ]
@@ -7557,25 +6874,7 @@
           "impact": null,
           "html": "<button type=\"submit\" class=\"button\">Προετοιμασία <span lang=\"en\">email</span></button>",
           "target": [
-            "#contact-form > button"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "no-focusable-content",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element does not have focusable descendants"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<button type=\"submit\" class=\"button\">Προετοιμασία αιτήματος</button>",
-          "target": [
-            ".newsletter-row > button"
+            "button"
           ]
         },
         {
@@ -7920,7 +7219,7 @@
           "impact": null,
           "html": "<span lang=\"en\">ROI</span>",
           "target": [
-            ".step:nth-child(3) > p > span[lang=\"en\"]:nth-child(2)"
+            "p > span[lang=\"en\"]:nth-child(2)"
           ]
         },
         {
@@ -7993,60 +7292,6 @@
           "html": "<span lang=\"en\">Instagram</span>",
           "target": [
             "a[target=\"_blank\"] > span[lang=\"en\"]"
-          ]
-        },
-        {
-          "any": [],
-          "all": [],
-          "none": [
-            {
-              "id": "valid-lang",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Value of lang attribute is included in the list of valid languages"
-            }
-          ],
-          "impact": null,
-          "html": "<span lang=\"en\">email</span>",
-          "target": [
-            "#newsletter-help > span[lang=\"en\"]:nth-child(1)"
-          ]
-        },
-        {
-          "any": [],
-          "all": [],
-          "none": [
-            {
-              "id": "valid-lang",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Value of lang attribute is included in the list of valid languages"
-            }
-          ],
-          "impact": null,
-          "html": "<span lang=\"en\">email</span>",
-          "target": [
-            "#newsletter-help > span[lang=\"en\"]:nth-child(2)"
-          ]
-        },
-        {
-          "any": [],
-          "all": [],
-          "none": [
-            {
-              "id": "valid-lang",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Value of lang attribute is included in the list of valid languages"
-            }
-          ],
-          "impact": null,
-          "html": "<span lang=\"en\">email</span>",
-          "target": [
-            "label[for=\"newsletter-email\"] > span[lang=\"en\"]"
           ]
         },
         {
@@ -8245,7 +7490,7 @@
           "impact": "serious",
           "html": "<span lang=\"en\">ROI</span>",
           "target": [
-            ".step:nth-child(3) > p > span[lang=\"en\"]:nth-child(2)"
+            "p > span[lang=\"en\"]:nth-child(2)"
           ],
           "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
         },

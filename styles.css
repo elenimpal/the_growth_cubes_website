@@ -71,6 +71,11 @@ a {
   outline: 3px solid var(--focus, var(--white));
   outline-offset: 3px;
 }
+/* Main only receives focus from the skip link; it is not a control, so it
+   needs no ring (the ring showed as a line above the footer). */
+main:focus {
+  outline: none;
+}
 
 .container {
   width: min(100% - 2 * var(--gutter), var(--content-width));
@@ -432,10 +437,13 @@ a {
 .site-footer {
   padding-block: var(--section-space) 2rem;
 }
+/* Email on the left, social links on the right; they stack when narrow. */
 .footer-top {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(min(100%, 22rem), 1fr));
-  gap: clamp(2.5rem, 6vw, 5rem);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 1.5rem 3rem;
 }
 .footer-eyebrow {
   margin-bottom: 0.75rem;
@@ -446,7 +454,7 @@ a {
 }
 .footer-email {
   color: var(--white);
-  font-size: clamp(1.3rem, 3.2vw, 2.6rem);
+  font-size: clamp(1.4rem, 4.6vw, 3.5rem);
   font-weight: 800;
   line-height: 1.2;
   letter-spacing: -0.02em;
@@ -458,7 +466,6 @@ a {
   display: flex;
   flex-wrap: wrap;
   gap: 0.75rem 2rem;
-  margin-top: 2rem;
 }
 .social-list a {
   display: inline-flex;
@@ -474,24 +481,6 @@ a {
   flex-shrink: 0;
   fill: currentColor;
 }
-.newsletter-title {
-  margin-bottom: 0.75rem;
-  font-size: clamp(1.2rem, 2vw, 1.4rem);
-  font-weight: 700;
-  line-height: 1.35;
-}
-.newsletter-row {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.75rem;
-}
-.newsletter-row input {
-  flex: 1 1 14rem;
-  width: auto;
-}
-.site-footer .field {
-  margin-top: 1.25rem;
-}
 /* Funding logo with the business details beside it; they stack when narrow. */
 .footer-legal {
   display: flex;
@@ -499,6 +488,8 @@ a {
   align-items: center;
   gap: 1.5rem clamp(1.5rem, 4vw, 3.5rem);
   margin-top: clamp(2.5rem, 5vw, 4rem);
+  padding-top: clamp(2rem, 4vw, 3rem);
+  border-top: 1px solid var(--rose);
 }
 .funding {
   flex: 1 1 22rem;

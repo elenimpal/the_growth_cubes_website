@@ -6,7 +6,7 @@
   "scripts": {
     "test:a11y": "node tools/accessibility/audit.cjs",
     "test:lighthouse": "node tools/accessibility/lighthouse.cjs",
-    "test:html": "html-validate index.html el/index.html accessibility.html"
+    "test:html": "html-validate index.html el/index.html accessibility.html el/accessibility.html"
   },
   "devDependencies": {
     "axe-core": "^4.14.0",

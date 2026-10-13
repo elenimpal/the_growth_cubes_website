@@ -26,7 +26,7 @@ const path = require("node:path");
           ".html": "text/html",
           ".css": "text/css",
           ".js": "text/javascript",
-          ".jpg": "image/jpeg",
+          ".jpg": "image/jpeg", ".svg": "image/svg+xml",
           ".png": "image/png",
         }[path.extname(file)] || "application/octet-stream"
       );
@@ -45,6 +45,10 @@ const path = require("node:path");
       [
         "statement",
         `http://127.0.0.1:${server.address().port}/accessibility.html`,
+      ],
+      [
+        "statement-el",
+        `http://127.0.0.1:${server.address().port}/el/accessibility.html`,
       ],
     ]) {
       const result = await lighthouse(url, {

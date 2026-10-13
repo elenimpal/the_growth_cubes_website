@@ -13,8 +13,8 @@
     "orientationAngle": 0,
     "orientationType": "landscape-primary"
   },
-  "timestamp": "2026-10-13T17:25:30.358Z",
-  "url": "http://127.0.0.1:62465/el/",
+  "timestamp": "2026-10-13T18:13:31.867Z",
+  "url": "http://127.0.0.1:59983/el/",
   "toolOptions": {
     "runOnly": {
       "type": "tag",
@@ -1025,7 +1025,7 @@
             }
           ],
           "impact": null,
-          "html": "<form class=\"form-card on-dark\" id=\"contact-form\" action=\"mailto:info@thegrowthcubes.com\" method=\"post\" enctype=\"text/plain\" aria-describedby=\"contact-help\" novalidate=\"\" style=\"font-size: 34px;\">",
+          "html": "<form class=\"form-card on-dark\" id=\"contact-form\" aria-describedby=\"contact-help\" novalidate=\"\" style=\"font-size: 34px;\">",
           "target": [
             "#contact-form"
           ]
@@ -1188,86 +1188,6 @@
           "html": "<textarea id=\"contact-message\" name=\"message\" placeholder=\"Περιγράψτε το έργο σας, τις υπηρεσίες που σας ενδιαφέρουν και τι θέλετε να πετύχετε...\" aria-describedby=\"contact-message-error\" required=\"\" style=\"font-size: 34px;\"></textarea>",
           "target": [
             "#contact-message"
-          ]
-        },
-        {
-          "any": [],
-          "all": [
-            {
-              "id": "aria-allowed-attr",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "critical",
-              "message": "ARIA attributes are used correctly for the defined role"
-            },
-            {
-              "id": "aria-allowed-attr-elm",
-              "data": null,
-              "relatedNodes": [],
-              "message": "ARIA attributes are allowed for this element",
-              "impact": "critical"
-            },
-            {
-              "id": "aria-no-deprecated-attr",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "critical",
-              "message": "No deprecated ARIA attributes are used"
-            }
-          ],
-          "none": [
-            {
-              "id": "aria-unsupported-attr",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "critical",
-              "message": "ARIA attribute is supported"
-            }
-          ],
-          "impact": null,
-          "html": "<form id=\"newsletter-form\" action=\"mailto:info@thegrowthcubes.com\" method=\"post\" enctype=\"text/plain\" aria-describedby=\"newsletter-help\" novalidate=\"\" style=\"font-size: 34px;\">",
-          "target": [
-            "#newsletter-form"
-          ]
-        },
-        {
-          "any": [],
-          "all": [
-            {
-              "id": "aria-allowed-attr",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "critical",
-              "message": "ARIA attributes are used correctly for the defined role"
-            },
-            {
-              "id": "aria-allowed-attr-elm",
-              "data": null,
-              "relatedNodes": [],
-              "message": "ARIA attributes are allowed for this element",
-              "impact": "critical"
-            },
-            {
-              "id": "aria-no-deprecated-attr",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "critical",
-              "message": "No deprecated ARIA attributes are used"
-            }
-          ],
-          "none": [
-            {
-              "id": "aria-unsupported-attr",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "critical",
-              "message": "ARIA attribute is supported"
-            }
-          ],
-          "impact": null,
-          "html": "<input id=\"newsletter-email\" name=\"email\" type=\"email\" autocomplete=\"email\" placeholder=\"onoma@etaireia.gr\" aria-describedby=\"newsletter-email-error\" required=\"\" style=\"font-size: 34px;\">",
-          "target": [
-            "#newsletter-email"
           ]
         }
       ]
@@ -1427,7 +1347,7 @@
           ],
           "none": [],
           "impact": null,
-          "html": "<form class=\"form-card on-dark\" id=\"contact-form\" action=\"mailto:info@thegrowthcubes.com\" method=\"post\" enctype=\"text/plain\" aria-describedby=\"contact-help\" novalidate=\"\" style=\"font-size: 34px;\">",
+          "html": "<form class=\"form-card on-dark\" id=\"contact-form\" aria-describedby=\"contact-help\" novalidate=\"\" style=\"font-size: 34px;\">",
           "target": [
             "#contact-form"
           ]
@@ -1503,42 +1423,6 @@
           "target": [
             "#contact-message"
           ]
-        },
-        {
-          "any": [],
-          "all": [
-            {
-              "id": "aria-conditional-attr",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "ARIA attribute is allowed"
-            }
-          ],
-          "none": [],
-          "impact": null,
-          "html": "<form id=\"newsletter-form\" action=\"mailto:info@thegrowthcubes.com\" method=\"post\" enctype=\"text/plain\" aria-describedby=\"newsletter-help\" novalidate=\"\" style=\"font-size: 34px;\">",
-          "target": [
-            "#newsletter-form"
-          ]
-        },
-        {
-          "any": [],
-          "all": [
-            {
-              "id": "aria-conditional-attr",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "ARIA attribute is allowed"
-            }
-          ],
-          "none": [],
-          "impact": null,
-          "html": "<input id=\"newsletter-email\" name=\"email\" type=\"email\" autocomplete=\"email\" placeholder=\"onoma@etaireia.gr\" aria-describedby=\"newsletter-email-error\" required=\"\" style=\"font-size: 34px;\">",
-          "target": [
-            "#newsletter-email"
-          ]
         }
       ]
     },
@@ -1574,24 +1458,6 @@
           "html": "<p id=\"contact-status\" class=\"form-status\" role=\"status\" style=\"font-size: 34px;\"></p>",
           "target": [
             "#contact-status"
-          ]
-        },
-        {
-          "any": [],
-          "all": [],
-          "none": [
-            {
-              "id": "deprecatedrole",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "minor",
-              "message": "ARIA role is not deprecated"
-            }
-          ],
-          "impact": null,
-          "html": "<p id=\"newsletter-status\" class=\"form-status\" role=\"status\" style=\"font-size: 34px;\"></p>",
-          "target": [
-            "#newsletter-status"
           ]
         }
       ]
@@ -2033,7 +1899,7 @@
             }
           ],
           "impact": null,
-          "html": "<form class=\"form-card on-dark\" id=\"contact-form\" action=\"mailto:info@thegrowthcubes.com\" method=\"post\" enctype=\"text/plain\" aria-describedby=\"contact-help\" novalidate=\"\" style=\"font-size: 34px;\">",
+          "html": "<form class=\"form-card on-dark\" id=\"contact-form\" aria-describedby=\"contact-help\" novalidate=\"\" style=\"font-size: 34px;\">",
           "target": [
             "#contact-form"
           ]
@@ -2109,42 +1975,6 @@
           "target": [
             "#contact-message"
           ]
-        },
-        {
-          "any": [],
-          "all": [],
-          "none": [
-            {
-              "id": "aria-prohibited-attr",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "ARIA attribute is allowed"
-            }
-          ],
-          "impact": null,
-          "html": "<form id=\"newsletter-form\" action=\"mailto:info@thegrowthcubes.com\" method=\"post\" enctype=\"text/plain\" aria-describedby=\"newsletter-help\" novalidate=\"\" style=\"font-size: 34px;\">",
-          "target": [
-            "#newsletter-form"
-          ]
-        },
-        {
-          "any": [],
-          "all": [],
-          "none": [
-            {
-              "id": "aria-prohibited-attr",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "ARIA attribute is allowed"
-            }
-          ],
-          "impact": null,
-          "html": "<input id=\"newsletter-email\" name=\"email\" type=\"email\" autocomplete=\"email\" placeholder=\"onoma@etaireia.gr\" aria-describedby=\"newsletter-email-error\" required=\"\" style=\"font-size: 34px;\">",
-          "target": [
-            "#newsletter-email"
-          ]
         }
       ]
     },
@@ -2180,24 +2010,6 @@
           "html": "<p id=\"contact-status\" class=\"form-status\" role=\"status\" style=\"font-size: 34px;\"></p>",
           "target": [
             "#contact-status"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "aria-required-attr",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "critical",
-              "message": "All required ARIA attributes are present"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<p id=\"newsletter-status\" class=\"form-status\" role=\"status\" style=\"font-size: 34px;\"></p>",
-          "target": [
-            "#newsletter-status"
           ]
         }
       ]
@@ -2248,38 +2060,6 @@
           "html": "<p id=\"contact-status\" class=\"form-status\" role=\"status\" style=\"font-size: 34px;\"></p>",
           "target": [
             "#contact-status"
-          ]
-        },
-        {
-          "any": [],
-          "all": [],
-          "none": [
-            {
-              "id": "invalidrole",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "critical",
-              "message": "ARIA role is valid"
-            },
-            {
-              "id": "abstractrole",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "critical",
-              "message": "Abstract roles are not used"
-            },
-            {
-              "id": "unsupportedrole",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "critical",
-              "message": "ARIA role is supported"
-            }
-          ],
-          "impact": null,
-          "html": "<p id=\"newsletter-status\" class=\"form-status\" role=\"status\" style=\"font-size: 34px;\"></p>",
-          "target": [
-            "#newsletter-status"
           ]
         }
       ]
@@ -2551,7 +2331,7 @@
           ],
           "none": [],
           "impact": null,
-          "html": "<form class=\"form-card on-dark\" id=\"contact-form\" action=\"mailto:info@thegrowthcubes.com\" method=\"post\" enctype=\"text/plain\" aria-describedby=\"contact-help\" novalidate=\"\" style=\"font-size: 34px;\">",
+          "html": "<form class=\"form-card on-dark\" id=\"contact-form\" aria-describedby=\"contact-help\" novalidate=\"\" style=\"font-size: 34px;\">",
           "target": [
             "#contact-form"
           ]
@@ -2682,70 +2462,6 @@
           "html": "<textarea id=\"contact-message\" name=\"message\" placeholder=\"Περιγράψτε το έργο σας, τις υπηρεσίες που σας ενδιαφέρουν και τι θέλετε να πετύχετε...\" aria-describedby=\"contact-message-error\" required=\"\" style=\"font-size: 34px;\"></textarea>",
           "target": [
             "#contact-message"
-          ]
-        },
-        {
-          "any": [],
-          "all": [
-            {
-              "id": "aria-valid-attr-value",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "critical",
-              "message": "ARIA attribute values are valid"
-            },
-            {
-              "id": "aria-errormessage",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "critical",
-              "message": "aria-errormessage exists and references elements visible to screen readers that use a supported aria-errormessage technique"
-            },
-            {
-              "id": "aria-level",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "critical",
-              "message": "aria-level values are valid"
-            }
-          ],
-          "none": [],
-          "impact": null,
-          "html": "<form id=\"newsletter-form\" action=\"mailto:info@thegrowthcubes.com\" method=\"post\" enctype=\"text/plain\" aria-describedby=\"newsletter-help\" novalidate=\"\" style=\"font-size: 34px;\">",
-          "target": [
-            "#newsletter-form"
-          ]
-        },
-        {
-          "any": [],
-          "all": [
-            {
-              "id": "aria-valid-attr-value",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "critical",
-              "message": "ARIA attribute values are valid"
-            },
-            {
-              "id": "aria-errormessage",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "critical",
-              "message": "aria-errormessage exists and references elements visible to screen readers that use a supported aria-errormessage technique"
-            },
-            {
-              "id": "aria-level",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "critical",
-              "message": "aria-level values are valid"
-            }
-          ],
-          "none": [],
-          "impact": null,
-          "html": "<input id=\"newsletter-email\" name=\"email\" type=\"email\" autocomplete=\"email\" placeholder=\"onoma@etaireia.gr\" aria-describedby=\"newsletter-email-error\" required=\"\" style=\"font-size: 34px;\">",
-          "target": [
-            "#newsletter-email"
           ]
         }
       ]
@@ -2905,7 +2621,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<form class=\"form-card on-dark\" id=\"contact-form\" action=\"mailto:info@thegrowthcubes.com\" method=\"post\" enctype=\"text/plain\" aria-describedby=\"contact-help\" novalidate=\"\" style=\"font-size: 34px;\">",
+          "html": "<form class=\"form-card on-dark\" id=\"contact-form\" aria-describedby=\"contact-help\" novalidate=\"\" style=\"font-size: 34px;\">",
           "target": [
             "#contact-form"
           ]
@@ -2981,42 +2697,6 @@
           "target": [
             "#contact-message"
           ]
-        },
-        {
-          "any": [
-            {
-              "id": "aria-valid-attr",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "critical",
-              "message": "ARIA attribute name is valid"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<form id=\"newsletter-form\" action=\"mailto:info@thegrowthcubes.com\" method=\"post\" enctype=\"text/plain\" aria-describedby=\"newsletter-help\" novalidate=\"\" style=\"font-size: 34px;\">",
-          "target": [
-            "#newsletter-form"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "aria-valid-attr",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "critical",
-              "message": "ARIA attribute name is valid"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<input id=\"newsletter-email\" name=\"email\" type=\"email\" autocomplete=\"email\" placeholder=\"onoma@etaireia.gr\" aria-describedby=\"newsletter-email-error\" required=\"\" style=\"font-size: 34px;\">",
-          "target": [
-            "#newsletter-email"
-          ]
         }
       ]
     },
@@ -3089,24 +2769,6 @@
           "html": "<input id=\"contact-email\" name=\"email\" type=\"email\" autocomplete=\"email\" placeholder=\"maria@example.gr\" aria-describedby=\"contact-email-error\" required=\"\" style=\"font-size: 34px;\">",
           "target": [
             "#contact-email"
-          ]
-        },
-        {
-          "any": [],
-          "all": [
-            {
-              "id": "autocomplete-valid",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "the autocomplete attribute is correctly formatted"
-            }
-          ],
-          "none": [],
-          "impact": null,
-          "html": "<input id=\"newsletter-email\" name=\"email\" type=\"email\" autocomplete=\"email\" placeholder=\"onoma@etaireia.gr\" aria-describedby=\"newsletter-email-error\" required=\"\" style=\"font-size: 34px;\">",
-          "target": [
-            "#newsletter-email"
           ]
         }
       ]
@@ -6099,7 +5761,7 @@
           "impact": null,
           "html": "<span lang=\"en\" style=\"font-size: 34px;\">ROI</span>",
           "target": [
-            ".step:nth-child(3) > p > span[lang=\"en\"]:nth-child(2)"
+            "p > span[lang=\"en\"]:nth-child(2)"
           ]
         },
         {
@@ -6289,7 +5951,7 @@
           ],
           "none": [],
           "impact": null,
-          "html": "<form class=\"form-card on-dark\" id=\"contact-form\" action=\"mailto:info@thegrowthcubes.com\" method=\"post\" enctype=\"text/plain\" aria-describedby=\"contact-help\" novalidate=\"\" style=\"font-size: 34px;\">",
+          "html": "<form class=\"form-card on-dark\" id=\"contact-form\" aria-describedby=\"contact-help\" novalidate=\"\" style=\"font-size: 34px;\">",
           "target": [
             "#contact-form"
           ]
@@ -6515,7 +6177,7 @@
           "impact": null,
           "html": "<div class=\"field\" style=\"font-size: 34px;\">",
           "target": [
-            ".form-grid > .field:nth-child(2)"
+            ".field:nth-child(2)"
           ]
         },
         {
@@ -6739,7 +6401,7 @@
           "impact": null,
           "html": "<button type=\"submit\" class=\"button\" style=\"font-size: 30px;\">Προετοιμασία <span lang=\"en\" style=\"font-size: 30px;\">email</span></button>",
           "target": [
-            "#contact-form > button"
+            "button"
           ]
         },
         {
@@ -6897,9 +6559,9 @@
           ],
           "none": [],
           "impact": null,
-          "html": "<div style=\"font-size: 34px;\">",
+          "html": "<div style=\"font-size: 34px;\">\n          <p class=\"footer-eyebrow\" style=\"font-size: 26px;\">Επικοινωνήστε μαζί μας</p>\n          <a href=\"mailto:info@thegrowthcubes.com\" class=\"footer-email\" style=\"font-size: 112px;\">info@thegrowthcubes.com</a>\n        </div>",
           "target": [
-            ".footer-top > div:nth-child(1)"
+            ".footer-top > div"
           ]
         },
         {
@@ -6961,7 +6623,7 @@
           ],
           "none": [],
           "impact": null,
-          "html": "<a href=\"mailto:info@thegrowthcubes.com\" class=\"footer-email\" style=\"font-size: 83.2px;\">info@thegrowthcubes.com</a>",
+          "html": "<a href=\"mailto:info@thegrowthcubes.com\" class=\"footer-email\" style=\"font-size: 112px;\">info@thegrowthcubes.com</a>",
           "target": [
             ".footer-email"
           ]
@@ -7124,358 +6786,6 @@
           "html": "<span class=\"new-tab-note\" style=\"font-size: 34px;\">(ανοίγει σε νέα καρτέλα)</span>",
           "target": [
             ".new-tab-note"
-          ]
-        },
-        {
-          "any": [],
-          "all": [
-            {
-              "id": "important-letter-spacing",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Letter-spacing in the style attribute is not set to !important, or meets the minimum"
-            },
-            {
-              "id": "important-word-spacing",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "word-spacing in the style attribute is not set to !important, or meets the minimum"
-            },
-            {
-              "id": "important-line-height",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "line-height in the style attribute is not set to !important, or meets the minimum"
-            }
-          ],
-          "none": [],
-          "impact": null,
-          "html": "<div style=\"font-size: 34px;\">",
-          "target": [
-            ".footer-top > div:nth-child(2)"
-          ]
-        },
-        {
-          "any": [],
-          "all": [
-            {
-              "id": "important-letter-spacing",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Letter-spacing in the style attribute is not set to !important, or meets the minimum"
-            },
-            {
-              "id": "important-word-spacing",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "word-spacing in the style attribute is not set to !important, or meets the minimum"
-            },
-            {
-              "id": "important-line-height",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "line-height in the style attribute is not set to !important, or meets the minimum"
-            }
-          ],
-          "none": [],
-          "impact": null,
-          "html": "<h2 class=\"newsletter-title\" style=\"font-size: 44.8px;\">Λιγότερος θόρυβος. Περισσότερη ουσία. Λάβετε τα νέα μας για την ανάπτυξη.</h2>",
-          "target": [
-            ".newsletter-title"
-          ]
-        },
-        {
-          "any": [],
-          "all": [
-            {
-              "id": "important-letter-spacing",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Letter-spacing in the style attribute is not set to !important, or meets the minimum"
-            },
-            {
-              "id": "important-word-spacing",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "word-spacing in the style attribute is not set to !important, or meets the minimum"
-            },
-            {
-              "id": "important-line-height",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "line-height in the style attribute is not set to !important, or meets the minimum"
-            }
-          ],
-          "none": [],
-          "impact": null,
-          "html": "<form id=\"newsletter-form\" action=\"mailto:info@thegrowthcubes.com\" method=\"post\" enctype=\"text/plain\" aria-describedby=\"newsletter-help\" novalidate=\"\" style=\"font-size: 34px;\">",
-          "target": [
-            "#newsletter-form"
-          ]
-        },
-        {
-          "any": [],
-          "all": [
-            {
-              "id": "important-letter-spacing",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Letter-spacing in the style attribute is not set to !important, or meets the minimum"
-            },
-            {
-              "id": "important-word-spacing",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "word-spacing in the style attribute is not set to !important, or meets the minimum"
-            },
-            {
-              "id": "important-line-height",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "line-height in the style attribute is not set to !important, or meets the minimum"
-            }
-          ],
-          "none": [],
-          "impact": null,
-          "html": "<p id=\"newsletter-help\" style=\"font-size: 34px;\">Γράψτε το <span lang=\"en\" style=\"font-size: 34px;\">email</span> σας και το κουμπί θα ανοίξει την εφαρμογή <span lang=\"en\" style=\"font-size: 34px;\">email</span> σας με έτοιμο αίτημα για ενημερώσεις.</p>",
-          "target": [
-            "#newsletter-help"
-          ]
-        },
-        {
-          "any": [],
-          "all": [
-            {
-              "id": "important-letter-spacing",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Letter-spacing in the style attribute is not set to !important, or meets the minimum"
-            },
-            {
-              "id": "important-word-spacing",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "word-spacing in the style attribute is not set to !important, or meets the minimum"
-            },
-            {
-              "id": "important-line-height",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "line-height in the style attribute is not set to !important, or meets the minimum"
-            }
-          ],
-          "none": [],
-          "impact": null,
-          "html": "<span lang=\"en\" style=\"font-size: 34px;\">email</span>",
-          "target": [
-            "#newsletter-help > span[lang=\"en\"]:nth-child(1)"
-          ]
-        },
-        {
-          "any": [],
-          "all": [
-            {
-              "id": "important-letter-spacing",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Letter-spacing in the style attribute is not set to !important, or meets the minimum"
-            },
-            {
-              "id": "important-word-spacing",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "word-spacing in the style attribute is not set to !important, or meets the minimum"
-            },
-            {
-              "id": "important-line-height",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "line-height in the style attribute is not set to !important, or meets the minimum"
-            }
-          ],
-          "none": [],
-          "impact": null,
-          "html": "<span lang=\"en\" style=\"font-size: 34px;\">email</span>",
-          "target": [
-            "#newsletter-help > span[lang=\"en\"]:nth-child(2)"
-          ]
-        },
-        {
-          "any": [],
-          "all": [
-            {
-              "id": "important-letter-spacing",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Letter-spacing in the style attribute is not set to !important, or meets the minimum"
-            },
-            {
-              "id": "important-word-spacing",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "word-spacing in the style attribute is not set to !important, or meets the minimum"
-            },
-            {
-              "id": "important-line-height",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "line-height in the style attribute is not set to !important, or meets the minimum"
-            }
-          ],
-          "none": [],
-          "impact": null,
-          "html": "<div class=\"field\" style=\"font-size: 34px;\">",
-          "target": [
-            "#newsletter-form > .field"
-          ]
-        },
-        {
-          "any": [],
-          "all": [
-            {
-              "id": "important-letter-spacing",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Letter-spacing in the style attribute is not set to !important, or meets the minimum"
-            },
-            {
-              "id": "important-word-spacing",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "word-spacing in the style attribute is not set to !important, or meets the minimum"
-            },
-            {
-              "id": "important-line-height",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "line-height in the style attribute is not set to !important, or meets the minimum"
-            }
-          ],
-          "none": [],
-          "impact": null,
-          "html": "<label for=\"newsletter-email\" style=\"font-size: 28px;\">Επαγγελματικό <span lang=\"en\" style=\"font-size: 28px;\">email</span> (υποχρεωτικό)</label>",
-          "target": [
-            "label[for=\"newsletter-email\"]"
-          ]
-        },
-        {
-          "any": [],
-          "all": [
-            {
-              "id": "important-letter-spacing",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Letter-spacing in the style attribute is not set to !important, or meets the minimum"
-            },
-            {
-              "id": "important-word-spacing",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "word-spacing in the style attribute is not set to !important, or meets the minimum"
-            },
-            {
-              "id": "important-line-height",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "line-height in the style attribute is not set to !important, or meets the minimum"
-            }
-          ],
-          "none": [],
-          "impact": null,
-          "html": "<span lang=\"en\" style=\"font-size: 28px;\">email</span>",
-          "target": [
-            "label[for=\"newsletter-email\"] > span[lang=\"en\"]"
-          ]
-        },
-        {
-          "any": [],
-          "all": [
-            {
-              "id": "important-letter-spacing",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Letter-spacing in the style attribute is not set to !important, or meets the minimum"
-            },
-            {
-              "id": "important-word-spacing",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "word-spacing in the style attribute is not set to !important, or meets the minimum"
-            },
-            {
-              "id": "important-line-height",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "line-height in the style attribute is not set to !important, or meets the minimum"
-            }
-          ],
-          "none": [],
-          "impact": null,
-          "html": "<div class=\"newsletter-row\" style=\"font-size: 34px;\">",
-          "target": [
-            ".newsletter-row"
-          ]
-        },
-        {
-          "any": [],
-          "all": [
-            {
-              "id": "important-letter-spacing",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Letter-spacing in the style attribute is not set to !important, or meets the minimum"
-            },
-            {
-              "id": "important-word-spacing",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "word-spacing in the style attribute is not set to !important, or meets the minimum"
-            },
-            {
-              "id": "important-line-height",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "line-height in the style attribute is not set to !important, or meets the minimum"
-            }
-          ],
-          "none": [],
-          "impact": null,
-          "html": "<button type=\"submit\" class=\"button\" style=\"font-size: 30px;\">Προετοιμασία αιτήματος</button>",
-          "target": [
-            ".newsletter-row > button"
           ]
         },
         {
@@ -7761,7 +7071,7 @@
           ],
           "none": [],
           "impact": null,
-          "html": "<a href=\"/accessibility.html\" style=\"font-size: 26px;\">Δήλωση προσβασιμότητας</a>",
+          "html": "<a href=\"/el/accessibility.html\" style=\"font-size: 26px;\">Δήλωση προσβασιμότητας</a>",
           "target": [
             "a[href$=\"accessibility.html\"]"
           ]
@@ -7836,25 +7146,7 @@
           "impact": null,
           "html": "<button type=\"submit\" class=\"button\" style=\"font-size: 30px;\">Προετοιμασία <span lang=\"en\" style=\"font-size: 30px;\">email</span></button>",
           "target": [
-            "#contact-form > button"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "button-has-visible-text",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "critical",
-              "message": "Element has inner text that is visible to screen readers"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<button type=\"submit\" class=\"button\" style=\"font-size: 30px;\">Προετοιμασία αιτήματος</button>",
-          "target": [
-            ".newsletter-row > button"
+            "button"
           ]
         }
       ]
@@ -7962,12 +7254,6 @@
                   "html": "<h2 class=\"section-title contact-title\" id=\"contact-title\" style=\"font-size: 158.4px;\">Έτοιμοι να σχεδιάσουμε την ανάπτυξή σας;</h2>",
                   "target": [
                     "#contact-title"
-                  ]
-                },
-                {
-                  "html": "<h2 class=\"newsletter-title\" style=\"font-size: 44.8px;\">Λιγότερος θόρυβος. Περισσότερη ουσία. Λάβετε τα νέα μας για την ανάπτυξη.</h2>",
-                  "target": [
-                    ".newsletter-title"
                   ]
                 }
               ],
@@ -9490,7 +8776,7 @@
           "impact": null,
           "html": "<span lang=\"en\" style=\"font-size: 34px;\">ROI</span>",
           "target": [
-            ".step:nth-child(3) > p > span[lang=\"en\"]:nth-child(2)"
+            "p > span[lang=\"en\"]:nth-child(2)"
           ]
         },
         {
@@ -9865,7 +9151,7 @@
           "impact": null,
           "html": "<button type=\"submit\" class=\"button\" style=\"font-size: 30px;\">Προετοιμασία <span lang=\"en\" style=\"font-size: 30px;\">email</span></button>",
           "target": [
-            "#contact-form > button"
+            "button"
           ]
         },
         {
@@ -9926,7 +9212,7 @@
                 "fgColor": "#ffffff",
                 "bgColor": "#35111b",
                 "contrastRatio": 16.83,
-                "fontSize": "62.4pt (83.2px)",
+                "fontSize": "84.0pt (112px)",
                 "fontWeight": "bold",
                 "expectedContrastRatio": "3:1"
               },
@@ -9938,7 +9224,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<a href=\"mailto:info@thegrowthcubes.com\" class=\"footer-email\" style=\"font-size: 83.2px;\">info@thegrowthcubes.com</a>",
+          "html": "<a href=\"mailto:info@thegrowthcubes.com\" class=\"footer-email\" style=\"font-size: 112px;\">info@thegrowthcubes.com</a>",
           "target": [
             ".footer-email"
           ]
@@ -9991,206 +9277,6 @@
           "html": "<span class=\"new-tab-note\" style=\"font-size: 34px;\">(ανοίγει σε νέα καρτέλα)</span>",
           "target": [
             ".new-tab-note"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
-                "fgColor": "#f4f0ea",
-                "bgColor": "#35111b",
-                "contrastRatio": 14.83,
-                "fontSize": "33.6pt (44.8px)",
-                "fontWeight": "bold",
-                "expectedContrastRatio": "3:1"
-              },
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has sufficient color contrast of 14.83"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<h2 class=\"newsletter-title\" style=\"font-size: 44.8px;\">Λιγότερος θόρυβος. Περισσότερη ουσία. Λάβετε τα νέα μας για την ανάπτυξη.</h2>",
-          "target": [
-            ".newsletter-title"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
-                "fgColor": "#f4f0ea",
-                "bgColor": "#35111b",
-                "contrastRatio": 14.83,
-                "fontSize": "25.5pt (34px)",
-                "fontWeight": "normal",
-                "expectedContrastRatio": "3:1"
-              },
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has sufficient color contrast of 14.83"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<p id=\"newsletter-help\" style=\"font-size: 34px;\">Γράψτε το <span lang=\"en\" style=\"font-size: 34px;\">email</span> σας και το κουμπί θα ανοίξει την εφαρμογή <span lang=\"en\" style=\"font-size: 34px;\">email</span> σας με έτοιμο αίτημα για ενημερώσεις.</p>",
-          "target": [
-            "#newsletter-help"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
-                "fgColor": "#f4f0ea",
-                "bgColor": "#35111b",
-                "contrastRatio": 14.83,
-                "fontSize": "25.5pt (34px)",
-                "fontWeight": "normal",
-                "expectedContrastRatio": "3:1"
-              },
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has sufficient color contrast of 14.83"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<span lang=\"en\" style=\"font-size: 34px;\">email</span>",
-          "target": [
-            "#newsletter-help > span[lang=\"en\"]:nth-child(1)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
-                "fgColor": "#f4f0ea",
-                "bgColor": "#35111b",
-                "contrastRatio": 14.83,
-                "fontSize": "25.5pt (34px)",
-                "fontWeight": "normal",
-                "expectedContrastRatio": "3:1"
-              },
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has sufficient color contrast of 14.83"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<span lang=\"en\" style=\"font-size: 34px;\">email</span>",
-          "target": [
-            "#newsletter-help > span[lang=\"en\"]:nth-child(2)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
-                "fgColor": "#f4f0ea",
-                "bgColor": "#35111b",
-                "contrastRatio": 14.83,
-                "fontSize": "21.0pt (28px)",
-                "fontWeight": "bold",
-                "expectedContrastRatio": "3:1"
-              },
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has sufficient color contrast of 14.83"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<label for=\"newsletter-email\" style=\"font-size: 28px;\">Επαγγελματικό <span lang=\"en\" style=\"font-size: 28px;\">email</span> (υποχρεωτικό)</label>",
-          "target": [
-            "label[for=\"newsletter-email\"]"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
-                "fgColor": "#f4f0ea",
-                "bgColor": "#35111b",
-                "contrastRatio": 14.83,
-                "fontSize": "21.0pt (28px)",
-                "fontWeight": "bold",
-                "expectedContrastRatio": "3:1"
-              },
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has sufficient color contrast of 14.83"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<span lang=\"en\" style=\"font-size: 28px;\">email</span>",
-          "target": [
-            "label[for=\"newsletter-email\"] > span[lang=\"en\"]"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
-                "fgColor": "#f4f0ea",
-                "bgColor": "#43202a",
-                "contrastRatio": 12.51,
-                "fontSize": "25.5pt (34px)",
-                "fontWeight": "normal",
-                "expectedContrastRatio": "3:1"
-              },
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has sufficient color contrast of 12.51"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<input id=\"newsletter-email\" name=\"email\" type=\"email\" autocomplete=\"email\" placeholder=\"onoma@etaireia.gr\" aria-describedby=\"newsletter-email-error\" required=\"\" style=\"font-size: 34px;\">",
-          "target": [
-            "#newsletter-email"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
-                "fgColor": "#35111b",
-                "bgColor": "#f4f0ea",
-                "contrastRatio": 14.83,
-                "fontSize": "22.5pt (30px)",
-                "fontWeight": "bold",
-                "expectedContrastRatio": "3:1"
-              },
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has sufficient color contrast of 14.83"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<button type=\"submit\" class=\"button\" style=\"font-size: 30px;\">Προετοιμασία αιτήματος</button>",
-          "target": [
-            ".newsletter-row > button"
           ]
         },
         {
@@ -10338,7 +9424,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<a href=\"/accessibility.html\" style=\"font-size: 26px;\">Δήλωση προσβασιμότητας</a>",
+          "html": "<a href=\"/el/accessibility.html\" style=\"font-size: 26px;\">Δήλωση προσβασιμότητας</a>",
           "target": [
             "a[href$=\"accessibility.html\"]"
           ]
@@ -10658,60 +9744,6 @@
           "target": [
             "#contact-message-error"
           ]
-        },
-        {
-          "any": [
-            {
-              "id": "duplicate-id-aria",
-              "data": "newsletter-help",
-              "relatedNodes": [],
-              "impact": "critical",
-              "message": "Document has no elements referenced with ARIA or labels that share the same id attribute"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<p id=\"newsletter-help\" style=\"font-size: 34px;\">Γράψτε το <span lang=\"en\" style=\"font-size: 34px;\">email</span> σας και το κουμπί θα ανοίξει την εφαρμογή <span lang=\"en\" style=\"font-size: 34px;\">email</span> σας με έτοιμο αίτημα για ενημερώσεις.</p>",
-          "target": [
-            "#newsletter-help"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "duplicate-id-aria",
-              "data": "newsletter-email",
-              "relatedNodes": [],
-              "impact": "critical",
-              "message": "Document has no elements referenced with ARIA or labels that share the same id attribute"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<input id=\"newsletter-email\" name=\"email\" type=\"email\" autocomplete=\"email\" placeholder=\"onoma@etaireia.gr\" aria-describedby=\"newsletter-email-error\" required=\"\" style=\"font-size: 34px;\">",
-          "target": [
-            "#newsletter-email"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "duplicate-id-aria",
-              "data": "newsletter-email-error",
-              "relatedNodes": [],
-              "impact": "critical",
-              "message": "Document has no elements referenced with ARIA or labels that share the same id attribute"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<span id=\"newsletter-email-error\" class=\"field-error\" style=\"font-size: 34px;\"></span>",
-          "target": [
-            "#newsletter-email-error"
-          ]
         }
       ]
     },
@@ -10831,31 +9863,6 @@
           "html": "<textarea id=\"contact-message\" name=\"message\" placeholder=\"Περιγράψτε το έργο σας, τις υπηρεσίες που σας ενδιαφέρουν και τι θέλετε να πετύχετε...\" aria-describedby=\"contact-message-error\" required=\"\" style=\"font-size: 34px;\"></textarea>",
           "target": [
             "#contact-message"
-          ]
-        },
-        {
-          "any": [],
-          "all": [],
-          "none": [
-            {
-              "id": "multiple-label",
-              "data": null,
-              "relatedNodes": [
-                {
-                  "html": "<label for=\"newsletter-email\" style=\"font-size: 28px;\">Επαγγελματικό <span lang=\"en\" style=\"font-size: 28px;\">email</span> (υποχρεωτικό)</label>",
-                  "target": [
-                    "label[for=\"newsletter-email\"]"
-                  ]
-                }
-              ],
-              "impact": "moderate",
-              "message": "Form field does not have multiple label elements"
-            }
-          ],
-          "impact": null,
-          "html": "<input id=\"newsletter-email\" name=\"email\" type=\"email\" autocomplete=\"email\" placeholder=\"onoma@etaireia.gr\" aria-describedby=\"newsletter-email-error\" required=\"\" style=\"font-size: 34px;\">",
-          "target": [
-            "#newsletter-email"
           ]
         }
       ]
@@ -11176,48 +10183,6 @@
           "target": [
             "#contact-message"
           ]
-        },
-        {
-          "any": [
-            {
-              "id": "explicit-label",
-              "data": {
-                "explicitLabel": "Επαγγελματικό email (υποχρεωτικό)"
-              },
-              "relatedNodes": [
-                {
-                  "html": "<label for=\"newsletter-email\" style=\"font-size: 28px;\">Επαγγελματικό <span lang=\"en\" style=\"font-size: 28px;\">email</span> (υποχρεωτικό)</label>",
-                  "target": [
-                    "label[for=\"newsletter-email\"]"
-                  ]
-                }
-              ],
-              "impact": "critical",
-              "message": "Element has an explicit <label>"
-            },
-            {
-              "id": "non-empty-placeholder",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "critical",
-              "message": "Element has a placeholder attribute"
-            }
-          ],
-          "all": [],
-          "none": [
-            {
-              "id": "hidden-explicit-label",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "critical",
-              "message": "Form element has a visible explicit <label>"
-            }
-          ],
-          "impact": null,
-          "html": "<input id=\"newsletter-email\" name=\"email\" type=\"email\" autocomplete=\"email\" placeholder=\"onoma@etaireia.gr\" aria-describedby=\"newsletter-email-error\" required=\"\" style=\"font-size: 34px;\">",
-          "target": [
-            "#newsletter-email"
-          ]
         }
       ]
     },
@@ -11506,7 +10471,7 @@
             }
           ],
           "impact": null,
-          "html": "<a href=\"mailto:info@thegrowthcubes.com\" class=\"footer-email\" style=\"font-size: 83.2px;\">info@thegrowthcubes.com</a>",
+          "html": "<a href=\"mailto:info@thegrowthcubes.com\" class=\"footer-email\" style=\"font-size: 112px;\">info@thegrowthcubes.com</a>",
           "target": [
             ".footer-email"
           ]
@@ -11558,7 +10523,7 @@
             }
           ],
           "impact": null,
-          "html": "<a href=\"/accessibility.html\" style=\"font-size: 26px;\">Δήλωση προσβασιμότητας</a>",
+          "html": "<a href=\"/el/accessibility.html\" style=\"font-size: 26px;\">Δήλωση προσβασιμότητας</a>",
           "target": [
             "a[href$=\"accessibility.html\"]"
           ]
@@ -12255,25 +11220,7 @@
           "impact": null,
           "html": "<button type=\"submit\" class=\"button\" style=\"font-size: 30px;\">Προετοιμασία <span lang=\"en\" style=\"font-size: 30px;\">email</span></button>",
           "target": [
-            "#contact-form > button"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "no-focusable-content",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element does not have focusable descendants"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<button type=\"submit\" class=\"button\" style=\"font-size: 30px;\">Προετοιμασία αιτήματος</button>",
-          "target": [
-            ".newsletter-row > button"
+            "button"
           ]
         },
         {
@@ -12618,7 +11565,7 @@
           "impact": null,
           "html": "<span lang=\"en\" style=\"font-size: 34px;\">ROI</span>",
           "target": [
-            ".step:nth-child(3) > p > span[lang=\"en\"]:nth-child(2)"
+            "p > span[lang=\"en\"]:nth-child(2)"
           ]
         },
         {
@@ -12691,60 +11638,6 @@
           "html": "<span lang=\"en\" style=\"font-size: 34px;\">Instagram</span>",
           "target": [
             "a[target=\"_blank\"] > span[lang=\"en\"]"
-          ]
-        },
-        {
-          "any": [],
-          "all": [],
-          "none": [
-            {
-              "id": "valid-lang",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Value of lang attribute is included in the list of valid languages"
-            }
-          ],
-          "impact": null,
-          "html": "<span lang=\"en\" style=\"font-size: 34px;\">email</span>",
-          "target": [
-            "#newsletter-help > span[lang=\"en\"]:nth-child(1)"
-          ]
-        },
-        {
-          "any": [],
-          "all": [],
-          "none": [
-            {
-              "id": "valid-lang",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Value of lang attribute is included in the list of valid languages"
-            }
-          ],
-          "impact": null,
-          "html": "<span lang=\"en\" style=\"font-size: 34px;\">email</span>",
-          "target": [
-            "#newsletter-help > span[lang=\"en\"]:nth-child(2)"
-          ]
-        },
-        {
-          "any": [],
-          "all": [],
-          "none": [
-            {
-              "id": "valid-lang",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Value of lang attribute is included in the list of valid languages"
-            }
-          ],
-          "impact": null,
-          "html": "<span lang=\"en\" style=\"font-size: 28px;\">email</span>",
-          "target": [
-            "label[for=\"newsletter-email\"] > span[lang=\"en\"]"
           ]
         },
         {
