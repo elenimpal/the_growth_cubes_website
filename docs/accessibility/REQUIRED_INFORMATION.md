@@ -1,6 +1,6 @@
 # Before you submit the accessibility report
 
-The report (`DYPA_Accessibility_Report_FINAL.pdf`) is built from the evidence run of 13 October 2026, 21:37, against the live site. These items need you before it goes to DYPA.
+The report (`DYPA_Accessibility_Report_FINAL.pdf`) is built from the evidence run of 13 October 2026, 23:31, against the live site. These items need you before it goes to DYPA.
 
 ## 1. Fill in
 
@@ -21,13 +21,13 @@ To add any of these, edit the text in `tools/accessibility/build-report.cjs` and
 - **Programme title, call number, ΑΔΑ and ΦΕΚ** on page 1 match your approval documents.
 - **`info@thegrowthcubes.com` works** and someone reads it. The report and the accessibility statement both name it as the contact for accessibility problems.
 
-## 3. Deploy the updated accessibility statement
+## 3. Accessibility statement
 
-Both statement pages (`accessibility.html`, `el/accessibility.html`) were rewritten on 13 October 2026 to state conformance with WCAG 2.1 AA and describe the evaluation, so they now agree with the report. The change is not live until you push it. After the deploy finishes, re-run the evidence and rebuild the report (step 4), because the published files will no longer match the commit the report cites.
+Both statement pages (`accessibility.html`, `el/accessibility.html`) now state conformance with WCAG 2.1 AA and describe the evaluation, so they agree with the report. They are live and were part of the 23:31 evidence run.
 
 ## 4. Re-run if the site changes
 
-The report states that the published files are identical to the audited version (commit `be7492d`). If you deploy any change before submitting:
+The report states that the published files are identical to the audited version (commit `2b7c9fc`). If you deploy any change before submitting:
 
 ```
 node tools/accessibility/production-evidence.cjs
@@ -39,7 +39,7 @@ The first command writes a new dated folder under `docs/accessibility/evidence/`
 ## 5. What to hand over
 
 - `DYPA_Accessibility_Report_FINAL.pdf` (signed).
-- On request: `ACCESSIBILITY_EVIDENCE_INDEX.md` and the folder `evidence/2026-10-13T18-37-03/`.
+- On request: `ACCESSIBILITY_EVIDENCE_INDEX.md` and the folder `evidence/2026-10-13T20-31-31/`.
 
 Do not include the older files in `docs/accessibility/` (`DYPA_EVIDENCE_PACKAGE.*`, `ACCESSIBILITY_AUDIT.md`, `OUTSTANDING_ITEMS.md`, `reports/` and the rest). They describe the previous animated version of the site and list open items that no longer apply.
 

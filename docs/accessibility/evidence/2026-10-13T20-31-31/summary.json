@@ -1,0 +1,1902 @@
+{
+  "site": "https://www.thegrowthcubes.com",
+  "started": "2026-10-13T20:31:31.640Z",
+  "timezone": "Europe/Athens",
+  "platform": "darwin",
+  "browser": "Chrome 155.0.8059.40",
+  "axeVersion": "4.14.0",
+  "playwrightVersion": "1.64.0",
+  "standard": "WCAG 2.1 A + AA (axe tags wcag2a, wcag2aa, wcag21a, wcag21aa)",
+  "files": [
+    {
+      "url": "https://www.thegrowthcubes.com/",
+      "status": 200,
+      "sha256": "d791439c96e6d006926b7bc5025460f893218a47184691435ce741c542429a1c",
+      "matchesRepository": true
+    },
+    {
+      "url": "https://www.thegrowthcubes.com/el/",
+      "status": 200,
+      "sha256": "c476cc0a64e16593031a122b39892e6a6e2d20c897cacd5c0a8575bcd745437b",
+      "matchesRepository": true
+    },
+    {
+      "url": "https://www.thegrowthcubes.com/accessibility.html",
+      "status": 200,
+      "sha256": "04640d99500864e1052a87a099481ecb0dca61393f41ed6060da9d00a1aca34d",
+      "matchesRepository": true
+    },
+    {
+      "url": "https://www.thegrowthcubes.com/el/accessibility.html",
+      "status": 200,
+      "sha256": "dc7fd4b985ead8a7c38941927672a22d13b6d167ed3e96b1d35f12e8285a6e1d",
+      "matchesRepository": true
+    },
+    {
+      "url": "https://www.thegrowthcubes.com/styles.css",
+      "status": 200,
+      "sha256": "da72a73479b39b7ca79d34d0abd80fb54a843585a95b4fea9832f0b5a9c73ae5",
+      "matchesRepository": true
+    },
+    {
+      "url": "https://www.thegrowthcubes.com/accessibility.css",
+      "status": 200,
+      "sha256": "bb8d34c7747302e7587cf463d5affed75aa457d4ec7c29ea820ee5780cace40e",
+      "matchesRepository": true
+    },
+    {
+      "url": "https://www.thegrowthcubes.com/forms.js",
+      "status": 200,
+      "sha256": "829ed5f563a8f9350de7b602928beaa0f0b1717e5217ddc77650dc8ecc2d545a",
+      "matchesRepository": true
+    },
+    {
+      "url": "https://www.thegrowthcubes.com/favicon.svg",
+      "status": 200,
+      "sha256": "2f5469d92530a35da6bbfcdf8c728e4e393550f71e4209000bfa5062f6522af1",
+      "matchesRepository": true
+    }
+  ],
+  "scans": [
+    {
+      "page": "home-en",
+      "state": "desktop-1440",
+      "viewport": "1440x900",
+      "violations": [],
+      "passes": 28,
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 5
+        }
+      ],
+      "horizontalScroll": false,
+      "clippedElements": 0
+    },
+    {
+      "page": "home-en",
+      "state": "tablet-768",
+      "viewport": "768x1024",
+      "violations": [],
+      "passes": 28,
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 5
+        }
+      ],
+      "horizontalScroll": false,
+      "clippedElements": 0
+    },
+    {
+      "page": "home-en",
+      "state": "mobile-390",
+      "viewport": "390x844",
+      "violations": [],
+      "passes": 28,
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 5
+        }
+      ],
+      "horizontalScroll": false,
+      "clippedElements": 0
+    },
+    {
+      "page": "home-en",
+      "state": "mobile-320",
+      "viewport": "320x800",
+      "violations": [],
+      "passes": 28,
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 5
+        }
+      ],
+      "horizontalScroll": false,
+      "clippedElements": 0
+    },
+    {
+      "page": "home-en",
+      "state": "landscape-844",
+      "viewport": "844x390",
+      "violations": [],
+      "passes": 28,
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 5
+        }
+      ],
+      "horizontalScroll": false,
+      "clippedElements": 0
+    },
+    {
+      "page": "home-en",
+      "state": "reflow-320x256",
+      "viewport": "320x256",
+      "violations": [],
+      "passes": 28,
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 5
+        }
+      ],
+      "horizontalScroll": false,
+      "clippedElements": 0
+    },
+    {
+      "page": "home-en",
+      "state": "text-spacing",
+      "viewport": "390x844",
+      "violations": [],
+      "passes": 28,
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 5
+        }
+      ],
+      "horizontalScroll": false,
+      "clippedElements": 0
+    },
+    {
+      "page": "home-en",
+      "state": "text-200-percent",
+      "viewport": "1440x900",
+      "violations": [],
+      "passes": 29,
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 13
+        }
+      ],
+      "horizontalScroll": false,
+      "clippedElements": 0
+    },
+    {
+      "page": "home-en",
+      "state": "form-errors",
+      "viewport": "390x844",
+      "violations": [],
+      "passes": 28,
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 5
+        }
+      ],
+      "horizontalScroll": false,
+      "clippedElements": 0
+    },
+    {
+      "page": "home-en",
+      "state": "form-completed",
+      "viewport": "390x844",
+      "violations": [],
+      "passes": 28,
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 5
+        }
+      ],
+      "horizontalScroll": false,
+      "clippedElements": 0
+    },
+    {
+      "page": "home-el",
+      "state": "desktop-1440",
+      "viewport": "1440x900",
+      "violations": [],
+      "passes": 28,
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 6
+        }
+      ],
+      "horizontalScroll": false,
+      "clippedElements": 0
+    },
+    {
+      "page": "home-el",
+      "state": "tablet-768",
+      "viewport": "768x1024",
+      "violations": [],
+      "passes": 28,
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 6
+        }
+      ],
+      "horizontalScroll": false,
+      "clippedElements": 0
+    },
+    {
+      "page": "home-el",
+      "state": "mobile-390",
+      "viewport": "390x844",
+      "violations": [],
+      "passes": 28,
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 6
+        }
+      ],
+      "horizontalScroll": false,
+      "clippedElements": 0
+    },
+    {
+      "page": "home-el",
+      "state": "mobile-320",
+      "viewport": "320x800",
+      "violations": [],
+      "passes": 28,
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 6
+        }
+      ],
+      "horizontalScroll": false,
+      "clippedElements": 0
+    },
+    {
+      "page": "home-el",
+      "state": "landscape-844",
+      "viewport": "844x390",
+      "violations": [],
+      "passes": 28,
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 6
+        }
+      ],
+      "horizontalScroll": false,
+      "clippedElements": 0
+    },
+    {
+      "page": "home-el",
+      "state": "reflow-320x256",
+      "viewport": "320x256",
+      "violations": [],
+      "passes": 28,
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 6
+        }
+      ],
+      "horizontalScroll": false,
+      "clippedElements": 0
+    },
+    {
+      "page": "home-el",
+      "state": "text-spacing",
+      "viewport": "390x844",
+      "violations": [],
+      "passes": 28,
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 6
+        }
+      ],
+      "horizontalScroll": false,
+      "clippedElements": 0
+    },
+    {
+      "page": "home-el",
+      "state": "text-200-percent",
+      "viewport": "1440x900",
+      "violations": [],
+      "passes": 29,
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 16
+        }
+      ],
+      "horizontalScroll": false,
+      "clippedElements": 0
+    },
+    {
+      "page": "home-el",
+      "state": "form-errors",
+      "viewport": "390x844",
+      "violations": [],
+      "passes": 28,
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 6
+        }
+      ],
+      "horizontalScroll": false,
+      "clippedElements": 0
+    },
+    {
+      "page": "home-el",
+      "state": "form-completed",
+      "viewport": "390x844",
+      "violations": [],
+      "passes": 28,
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 6
+        }
+      ],
+      "horizontalScroll": false,
+      "clippedElements": 0
+    },
+    {
+      "page": "statement-en",
+      "state": "desktop-1440",
+      "viewport": "1440x900",
+      "violations": [],
+      "passes": 19,
+      "incomplete": [],
+      "horizontalScroll": false,
+      "clippedElements": 0
+    },
+    {
+      "page": "statement-en",
+      "state": "tablet-768",
+      "viewport": "768x1024",
+      "violations": [],
+      "passes": 19,
+      "incomplete": [],
+      "horizontalScroll": false,
+      "clippedElements": 0
+    },
+    {
+      "page": "statement-en",
+      "state": "mobile-390",
+      "viewport": "390x844",
+      "violations": [],
+      "passes": 19,
+      "incomplete": [],
+      "horizontalScroll": false,
+      "clippedElements": 0
+    },
+    {
+      "page": "statement-en",
+      "state": "mobile-320",
+      "viewport": "320x800",
+      "violations": [],
+      "passes": 19,
+      "incomplete": [],
+      "horizontalScroll": false,
+      "clippedElements": 0
+    },
+    {
+      "page": "statement-en",
+      "state": "landscape-844",
+      "viewport": "844x390",
+      "violations": [],
+      "passes": 19,
+      "incomplete": [],
+      "horizontalScroll": false,
+      "clippedElements": 0
+    },
+    {
+      "page": "statement-en",
+      "state": "reflow-320x256",
+      "viewport": "320x256",
+      "violations": [],
+      "passes": 19,
+      "incomplete": [],
+      "horizontalScroll": false,
+      "clippedElements": 0
+    },
+    {
+      "page": "statement-en",
+      "state": "text-spacing",
+      "viewport": "390x844",
+      "violations": [],
+      "passes": 19,
+      "incomplete": [],
+      "horizontalScroll": false,
+      "clippedElements": 0
+    },
+    {
+      "page": "statement-en",
+      "state": "text-200-percent",
+      "viewport": "1440x900",
+      "violations": [],
+      "passes": 20,
+      "incomplete": [],
+      "horizontalScroll": false,
+      "clippedElements": 0
+    },
+    {
+      "page": "statement-el",
+      "state": "desktop-1440",
+      "viewport": "1440x900",
+      "violations": [],
+      "passes": 19,
+      "incomplete": [],
+      "horizontalScroll": false,
+      "clippedElements": 0
+    },
+    {
+      "page": "statement-el",
+      "state": "tablet-768",
+      "viewport": "768x1024",
+      "violations": [],
+      "passes": 19,
+      "incomplete": [],
+      "horizontalScroll": false,
+      "clippedElements": 0
+    },
+    {
+      "page": "statement-el",
+      "state": "mobile-390",
+      "viewport": "390x844",
+      "violations": [],
+      "passes": 19,
+      "incomplete": [],
+      "horizontalScroll": false,
+      "clippedElements": 0
+    },
+    {
+      "page": "statement-el",
+      "state": "mobile-320",
+      "viewport": "320x800",
+      "violations": [],
+      "passes": 19,
+      "incomplete": [],
+      "horizontalScroll": false,
+      "clippedElements": 0
+    },
+    {
+      "page": "statement-el",
+      "state": "landscape-844",
+      "viewport": "844x390",
+      "violations": [],
+      "passes": 19,
+      "incomplete": [],
+      "horizontalScroll": false,
+      "clippedElements": 0
+    },
+    {
+      "page": "statement-el",
+      "state": "reflow-320x256",
+      "viewport": "320x256",
+      "violations": [],
+      "passes": 19,
+      "incomplete": [],
+      "horizontalScroll": false,
+      "clippedElements": 0
+    },
+    {
+      "page": "statement-el",
+      "state": "text-spacing",
+      "viewport": "390x844",
+      "violations": [],
+      "passes": 19,
+      "incomplete": [],
+      "horizontalScroll": false,
+      "clippedElements": 0
+    },
+    {
+      "page": "statement-el",
+      "state": "text-200-percent",
+      "viewport": "1440x900",
+      "violations": [],
+      "passes": 20,
+      "incomplete": [],
+      "horizontalScroll": false,
+      "clippedElements": 0
+    }
+  ],
+  "keyboard": [
+    {
+      "page": "home-en",
+      "stops": [
+        {
+          "element": "a",
+          "name": "Skip to main content",
+          "focusRing": true,
+          "visibleShare": 1,
+          "obscured": false
+        },
+        {
+          "element": "a",
+          "name": "THE GROWTH CUBES",
+          "focusRing": true,
+          "visibleShare": 1,
+          "obscured": false
+        },
+        {
+          "element": "a",
+          "name": "SERVICES",
+          "focusRing": true,
+          "visibleShare": 1,
+          "obscured": false
+        },
+        {
+          "element": "a",
+          "name": "AGENCY",
+          "focusRing": true,
+          "visibleShare": 1,
+          "obscured": false
+        },
+        {
+          "element": "a",
+          "name": "CONTACT",
+          "focusRing": true,
+          "visibleShare": 1,
+          "obscured": false
+        },
+        {
+          "element": "a",
+          "name": "🇬🇷 ΕΛΛΗΝΙΚΑ",
+          "focusRing": true,
+          "visibleShare": 1,
+          "obscured": false
+        },
+        {
+          "element": "a",
+          "name": "info@thegrowthcubes.com",
+          "focusRing": true,
+          "visibleShare": 1,
+          "obscured": false
+        },
+        {
+          "element": "input",
+          "name": "YOUR NAME (REQUIRED)",
+          "focusRing": true,
+          "visibleShare": 1,
+          "obscured": false
+        },
+        {
+          "element": "input",
+          "name": "COMPANY",
+          "focusRing": true,
+          "visibleShare": 1,
+          "obscured": false
+        },
+        {
+          "element": "input",
+          "name": "EMAIL ADDRESS (REQUIRED)",
+          "focusRing": true,
+          "visibleShare": 1,
+          "obscured": false
+        },
+        {
+          "element": "textarea",
+          "name": "HOW CAN WE HELP? (REQUIRED)",
+          "focusRing": true,
+          "visibleShare": 1,
+          "obscured": false
+        },
+        {
+          "element": "button",
+          "name": "PREPARE EMAIL",
+          "focusRing": true,
+          "visibleShare": 1,
+          "obscured": false
+        },
+        {
+          "element": "a",
+          "name": "info@thegrowthcubes.com",
+          "focusRing": true,
+          "visibleShare": 1,
+          "obscured": false
+        },
+        {
+          "element": "a",
+          "name": "Instagram (opens in a new tab)",
+          "focusRing": true,
+          "visibleShare": 0.99,
+          "obscured": false
+        },
+        {
+          "element": "a",
+          "name": "ACCESSIBILITY STATEMENT",
+          "focusRing": true,
+          "visibleShare": 1,
+          "obscured": false
+        },
+        {
+          "element": "a",
+          "name": "BACK TO TOP ↑",
+          "focusRing": true,
+          "visibleShare": 1,
+          "obscured": false
+        }
+      ]
+    },
+    {
+      "page": "home-el",
+      "stops": [
+        {
+          "element": "a",
+          "name": "Μετάβαση στο κύριο περιεχόμενο",
+          "focusRing": true,
+          "visibleShare": 1,
+          "obscured": false
+        },
+        {
+          "element": "a",
+          "name": "THE GROWTH CUBES",
+          "focusRing": true,
+          "visibleShare": 1,
+          "obscured": false
+        },
+        {
+          "element": "a",
+          "name": "ΥΠΗΡΕΣΙΕΣ",
+          "focusRing": true,
+          "visibleShare": 1,
+          "obscured": false
+        },
+        {
+          "element": "a",
+          "name": "ΜΕΘΟΔΟΣ",
+          "focusRing": true,
+          "visibleShare": 1,
+          "obscured": false
+        },
+        {
+          "element": "a",
+          "name": "ΕΠΙΚΟΙΝΩΝΙΑ",
+          "focusRing": true,
+          "visibleShare": 1,
+          "obscured": false
+        },
+        {
+          "element": "a",
+          "name": "🇬🇧 ENGLISH",
+          "focusRing": true,
+          "visibleShare": 1,
+          "obscured": false
+        },
+        {
+          "element": "a",
+          "name": "info@thegrowthcubes.com",
+          "focusRing": true,
+          "visibleShare": 1,
+          "obscured": false
+        },
+        {
+          "element": "input",
+          "name": "ΟΝΟΜΑΤΕΠΩΝΥΜΟ (ΥΠΟΧΡΕΩΤΙΚΟ)",
+          "focusRing": true,
+          "visibleShare": 1,
+          "obscured": false
+        },
+        {
+          "element": "input",
+          "name": "ΕΤΑΙΡΕΙΑ",
+          "focusRing": true,
+          "visibleShare": 1,
+          "obscured": false
+        },
+        {
+          "element": "input",
+          "name": "ΔΙΕΥΘΥΝΣΗ EMAIL (ΥΠΟΧΡΕΩΤΙΚΟ)",
+          "focusRing": true,
+          "visibleShare": 1,
+          "obscured": false
+        },
+        {
+          "element": "textarea",
+          "name": "ΠΩΣ ΜΠΟΡΟΥΜΕ ΝΑ ΒΟΗΘΗΣΟΥΜΕ; (ΥΠΟΧΡΕΩΤΙΚΟ)",
+          "focusRing": true,
+          "visibleShare": 1,
+          "obscured": false
+        },
+        {
+          "element": "button",
+          "name": "ΠΡΟΕΤΟΙΜΑΣΙΑ EMAIL",
+          "focusRing": true,
+          "visibleShare": 1,
+          "obscured": false
+        },
+        {
+          "element": "a",
+          "name": "info@thegrowthcubes.com",
+          "focusRing": true,
+          "visibleShare": 1,
+          "obscured": false
+        },
+        {
+          "element": "a",
+          "name": "Instagram (ανοίγει σε νέα καρτέλα)",
+          "focusRing": true,
+          "visibleShare": 1,
+          "obscured": false
+        },
+        {
+          "element": "a",
+          "name": "ΔΗΛΩΣΗ ΠΡΟΣΒΑΣΙΜΟΤΗΤΑΣ",
+          "focusRing": true,
+          "visibleShare": 1,
+          "obscured": false
+        },
+        {
+          "element": "a",
+          "name": "ΕΠΙΣΤΡΟΦΗ ΣΤΗΝ ΚΟΡΥΦΗ ↑",
+          "focusRing": true,
+          "visibleShare": 1,
+          "obscured": false
+        }
+      ]
+    },
+    {
+      "page": "statement-en",
+      "stops": [
+        {
+          "element": "a",
+          "name": "Skip to main content",
+          "focusRing": true,
+          "visibleShare": 1,
+          "obscured": false
+        },
+        {
+          "element": "a",
+          "name": "The Growth Cubes — Home page",
+          "focusRing": true,
+          "visibleShare": 1,
+          "obscured": false
+        },
+        {
+          "element": "a",
+          "name": "🇬🇷 Ελληνικά",
+          "focusRing": true,
+          "visibleShare": 1,
+          "obscured": false
+        },
+        {
+          "element": "a",
+          "name": "info@thegrowthcubes.com",
+          "focusRing": true,
+          "visibleShare": 1,
+          "obscured": false
+        },
+        {
+          "element": "a",
+          "name": "← Back to the home page",
+          "focusRing": true,
+          "visibleShare": 1,
+          "obscured": false
+        }
+      ]
+    },
+    {
+      "page": "statement-el",
+      "stops": [
+        {
+          "element": "a",
+          "name": "Μετάβαση στο κύριο περιεχόμενο",
+          "focusRing": true,
+          "visibleShare": 1,
+          "obscured": false
+        },
+        {
+          "element": "a",
+          "name": "The Growth Cubes — Αρχική σελίδα",
+          "focusRing": true,
+          "visibleShare": 1,
+          "obscured": false
+        },
+        {
+          "element": "a",
+          "name": "🇬🇧 English",
+          "focusRing": true,
+          "visibleShare": 1,
+          "obscured": false
+        },
+        {
+          "element": "a",
+          "name": "info@thegrowthcubes.com",
+          "focusRing": true,
+          "visibleShare": 1,
+          "obscured": false
+        },
+        {
+          "element": "a",
+          "name": "← Επιστροφή στην αρχική σελίδα",
+          "focusRing": true,
+          "visibleShare": 1,
+          "obscured": false
+        }
+      ]
+    }
+  ],
+  "contrast": [
+    {
+      "page": "home-en",
+      "hero": [
+        {
+          "text": ".hero-title",
+          "color": "rgb(255, 255, 255)",
+          "worstBackground": [
+            99,
+            27,
+            47
+          ],
+          "ratio": 12.15,
+          "required": 3
+        },
+        {
+          "text": ".hero-subtitle",
+          "color": "rgb(244, 240, 234)",
+          "worstBackground": [
+            99,
+            27,
+            47
+          ],
+          "ratio": 10.7,
+          "required": 4.5
+        }
+      ]
+    },
+    {
+      "page": "home-el",
+      "hero": [
+        {
+          "text": ".hero-title",
+          "color": "rgb(255, 255, 255)",
+          "worstBackground": [
+            99,
+            27,
+            47
+          ],
+          "ratio": 12.15,
+          "required": 3
+        },
+        {
+          "text": ".hero-subtitle",
+          "color": "rgb(244, 240, 234)",
+          "worstBackground": [
+            99,
+            27,
+            47
+          ],
+          "ratio": 10.7,
+          "required": 4.5
+        }
+      ]
+    }
+  ],
+  "checks": [
+    {
+      "page": "all",
+      "name": "Published files are identical to the audited source files",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "page": "home-en",
+      "name": "desktop-1440: no horizontal scrolling and no content cut off",
+      "pass": true,
+      "detail": {
+        "overflow": false,
+        "clipped": 0
+      }
+    },
+    {
+      "page": "home-en",
+      "name": "tablet-768: no horizontal scrolling and no content cut off",
+      "pass": true,
+      "detail": {
+        "overflow": false,
+        "clipped": 0
+      }
+    },
+    {
+      "page": "home-en",
+      "name": "mobile-390: no horizontal scrolling and no content cut off",
+      "pass": true,
+      "detail": {
+        "overflow": false,
+        "clipped": 0
+      }
+    },
+    {
+      "page": "home-en",
+      "name": "mobile-320: no horizontal scrolling and no content cut off",
+      "pass": true,
+      "detail": {
+        "overflow": false,
+        "clipped": 0
+      }
+    },
+    {
+      "page": "home-en",
+      "name": "landscape-844: no horizontal scrolling and no content cut off",
+      "pass": true,
+      "detail": {
+        "overflow": false,
+        "clipped": 0
+      }
+    },
+    {
+      "page": "home-en",
+      "name": "reflow-320x256: no horizontal scrolling and no content cut off",
+      "pass": true,
+      "detail": {
+        "overflow": false,
+        "clipped": 0
+      }
+    },
+    {
+      "page": "home-en",
+      "name": "text-spacing: no horizontal scrolling and no content cut off",
+      "pass": true,
+      "detail": {
+        "overflow": false,
+        "clipped": 0
+      }
+    },
+    {
+      "page": "home-en",
+      "name": "text-200-percent: no horizontal scrolling and no content cut off",
+      "pass": true,
+      "detail": {
+        "overflow": false,
+        "clipped": 0
+      }
+    },
+    {
+      "page": "home-en",
+      "name": "Page declares its language",
+      "pass": true,
+      "detail": "en"
+    },
+    {
+      "page": "home-en",
+      "name": "Page has a descriptive title",
+      "pass": true,
+      "detail": "The Growth Cubes — Data-Driven Digital Agency Athens"
+    },
+    {
+      "page": "home-en",
+      "name": "Exactly one main heading and no skipped heading levels",
+      "pass": true,
+      "detail": {
+        "lang": "en",
+        "title": "The Growth Cubes — Data-Driven Digital Agency Athens",
+        "h1": 1,
+        "headingSkips": 0,
+        "imagesWithoutAlt": 0,
+        "landmarks": true,
+        "motion": 0,
+        "deadLinks": 0,
+        "unlabelledFields": 0,
+        "fieldsWithoutAutocomplete": 0
+      }
+    },
+    {
+      "page": "home-en",
+      "name": "Every image has a text alternative",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "page": "home-en",
+      "name": "Header, main content and footer regions are present",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "page": "home-en",
+      "name": "No video, animation or moving content",
+      "pass": true,
+      "detail": 0
+    },
+    {
+      "page": "home-en",
+      "name": "No empty or placeholder links",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "page": "home-en",
+      "name": "Every form field has a visible label",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "page": "home-en",
+      "name": "First Tab reaches the skip link",
+      "pass": true,
+      "detail": {
+        "element": "a",
+        "name": "Skip to main content",
+        "focusRing": true,
+        "visibleShare": 1,
+        "obscured": false
+      }
+    },
+    {
+      "page": "home-en",
+      "name": "Every link, button and field is reachable with the keyboard",
+      "pass": true,
+      "detail": {
+        "reached": 16,
+        "expected": 16
+      }
+    },
+    {
+      "page": "home-en",
+      "name": "Every keyboard stop shows a visible focus indicator",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "page": "home-en",
+      "name": "Focused elements are on screen and never covered by other content",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "page": "home-en",
+      "name": "Skip link moves focus to the main content",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "page": "home-en",
+      "name": "Language selector opens the el version of the same page",
+      "pass": true,
+      "detail": "https://www.thegrowthcubes.com/el/"
+    },
+    {
+      "page": "home-en",
+      "name": "form-errors: no horizontal scrolling and no content cut off",
+      "pass": true,
+      "detail": {
+        "overflow": false,
+        "clipped": 0
+      }
+    },
+    {
+      "page": "home-en",
+      "name": "Form errors are described in text and linked to their fields",
+      "pass": true,
+      "detail": {
+        "focusOnFirstError": true,
+        "errorTexts": [
+          "Please complete this required field.",
+          "Please complete this required field.",
+          "Please complete this required field."
+        ],
+        "status": "Please correct 3 fields before continuing.",
+        "statusRole": "status",
+        "described": true
+      }
+    },
+    {
+      "page": "home-en",
+      "name": "Focus moves to the first field that needs correction",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "page": "home-en",
+      "name": "Form result is announced to assistive technology",
+      "pass": true,
+      "detail": "Please correct 3 fields before continuing."
+    },
+    {
+      "page": "home-en",
+      "name": "form-completed: no horizontal scrolling and no content cut off",
+      "pass": true,
+      "detail": {
+        "overflow": false,
+        "clipped": 0
+      }
+    },
+    {
+      "page": "home-en",
+      "name": "Completed form prepares the email without false confirmation",
+      "pass": true,
+      "detail": 0
+    },
+    {
+      "page": "home-en",
+      "name": "Text over the hero photo meets the contrast requirement at its brightest point",
+      "pass": true,
+      "detail": [
+        {
+          "text": ".hero-title",
+          "color": "rgb(255, 255, 255)",
+          "worstBackground": [
+            99,
+            27,
+            47
+          ],
+          "ratio": 12.15,
+          "required": 3
+        },
+        {
+          "text": ".hero-subtitle",
+          "color": "rgb(244, 240, 234)",
+          "worstBackground": [
+            99,
+            27,
+            47
+          ],
+          "ratio": 10.7,
+          "required": 4.5
+        }
+      ]
+    },
+    {
+      "page": "home-el",
+      "name": "desktop-1440: no horizontal scrolling and no content cut off",
+      "pass": true,
+      "detail": {
+        "overflow": false,
+        "clipped": 0
+      }
+    },
+    {
+      "page": "home-el",
+      "name": "tablet-768: no horizontal scrolling and no content cut off",
+      "pass": true,
+      "detail": {
+        "overflow": false,
+        "clipped": 0
+      }
+    },
+    {
+      "page": "home-el",
+      "name": "mobile-390: no horizontal scrolling and no content cut off",
+      "pass": true,
+      "detail": {
+        "overflow": false,
+        "clipped": 0
+      }
+    },
+    {
+      "page": "home-el",
+      "name": "mobile-320: no horizontal scrolling and no content cut off",
+      "pass": true,
+      "detail": {
+        "overflow": false,
+        "clipped": 0
+      }
+    },
+    {
+      "page": "home-el",
+      "name": "landscape-844: no horizontal scrolling and no content cut off",
+      "pass": true,
+      "detail": {
+        "overflow": false,
+        "clipped": 0
+      }
+    },
+    {
+      "page": "home-el",
+      "name": "reflow-320x256: no horizontal scrolling and no content cut off",
+      "pass": true,
+      "detail": {
+        "overflow": false,
+        "clipped": 0
+      }
+    },
+    {
+      "page": "home-el",
+      "name": "text-spacing: no horizontal scrolling and no content cut off",
+      "pass": true,
+      "detail": {
+        "overflow": false,
+        "clipped": 0
+      }
+    },
+    {
+      "page": "home-el",
+      "name": "text-200-percent: no horizontal scrolling and no content cut off",
+      "pass": true,
+      "detail": {
+        "overflow": false,
+        "clipped": 0
+      }
+    },
+    {
+      "page": "home-el",
+      "name": "Page declares its language",
+      "pass": true,
+      "detail": "el"
+    },
+    {
+      "page": "home-el",
+      "name": "Page has a descriptive title",
+      "pass": true,
+      "detail": "The Growth Cubes — Ψηφιακή εταιρεία με οδηγό τα δεδομένα, Αθήνα"
+    },
+    {
+      "page": "home-el",
+      "name": "Exactly one main heading and no skipped heading levels",
+      "pass": true,
+      "detail": {
+        "lang": "el",
+        "title": "The Growth Cubes — Ψηφιακή εταιρεία με οδηγό τα δεδομένα, Αθήνα",
+        "h1": 1,
+        "headingSkips": 0,
+        "imagesWithoutAlt": 0,
+        "landmarks": true,
+        "motion": 0,
+        "deadLinks": 0,
+        "unlabelledFields": 0,
+        "fieldsWithoutAutocomplete": 0
+      }
+    },
+    {
+      "page": "home-el",
+      "name": "Every image has a text alternative",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "page": "home-el",
+      "name": "Header, main content and footer regions are present",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "page": "home-el",
+      "name": "No video, animation or moving content",
+      "pass": true,
+      "detail": 0
+    },
+    {
+      "page": "home-el",
+      "name": "No empty or placeholder links",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "page": "home-el",
+      "name": "Every form field has a visible label",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "page": "home-el",
+      "name": "First Tab reaches the skip link",
+      "pass": true,
+      "detail": {
+        "element": "a",
+        "name": "Μετάβαση στο κύριο περιεχόμενο",
+        "focusRing": true,
+        "visibleShare": 1,
+        "obscured": false
+      }
+    },
+    {
+      "page": "home-el",
+      "name": "Every link, button and field is reachable with the keyboard",
+      "pass": true,
+      "detail": {
+        "reached": 16,
+        "expected": 16
+      }
+    },
+    {
+      "page": "home-el",
+      "name": "Every keyboard stop shows a visible focus indicator",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "page": "home-el",
+      "name": "Focused elements are on screen and never covered by other content",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "page": "home-el",
+      "name": "Skip link moves focus to the main content",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "page": "home-el",
+      "name": "Language selector opens the en version of the same page",
+      "pass": true,
+      "detail": "https://www.thegrowthcubes.com/"
+    },
+    {
+      "page": "home-el",
+      "name": "form-errors: no horizontal scrolling and no content cut off",
+      "pass": true,
+      "detail": {
+        "overflow": false,
+        "clipped": 0
+      }
+    },
+    {
+      "page": "home-el",
+      "name": "Form errors are described in text and linked to their fields",
+      "pass": true,
+      "detail": {
+        "focusOnFirstError": true,
+        "errorTexts": [
+          "Συμπληρώστε αυτό το υποχρεωτικό πεδίο.",
+          "Συμπληρώστε αυτό το υποχρεωτικό πεδίο.",
+          "Συμπληρώστε αυτό το υποχρεωτικό πεδίο."
+        ],
+        "status": "Διορθώστε 3 πεδία για να συνεχίσετε.",
+        "statusRole": "status",
+        "described": true
+      }
+    },
+    {
+      "page": "home-el",
+      "name": "Focus moves to the first field that needs correction",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "page": "home-el",
+      "name": "Form result is announced to assistive technology",
+      "pass": true,
+      "detail": "Διορθώστε 3 πεδία για να συνεχίσετε."
+    },
+    {
+      "page": "home-el",
+      "name": "form-completed: no horizontal scrolling and no content cut off",
+      "pass": true,
+      "detail": {
+        "overflow": false,
+        "clipped": 0
+      }
+    },
+    {
+      "page": "home-el",
+      "name": "Completed form prepares the email without false confirmation",
+      "pass": true,
+      "detail": 0
+    },
+    {
+      "page": "home-el",
+      "name": "Text over the hero photo meets the contrast requirement at its brightest point",
+      "pass": true,
+      "detail": [
+        {
+          "text": ".hero-title",
+          "color": "rgb(255, 255, 255)",
+          "worstBackground": [
+            99,
+            27,
+            47
+          ],
+          "ratio": 12.15,
+          "required": 3
+        },
+        {
+          "text": ".hero-subtitle",
+          "color": "rgb(244, 240, 234)",
+          "worstBackground": [
+            99,
+            27,
+            47
+          ],
+          "ratio": 10.7,
+          "required": 4.5
+        }
+      ]
+    },
+    {
+      "page": "statement-en",
+      "name": "desktop-1440: no horizontal scrolling and no content cut off",
+      "pass": true,
+      "detail": {
+        "overflow": false,
+        "clipped": 0
+      }
+    },
+    {
+      "page": "statement-en",
+      "name": "tablet-768: no horizontal scrolling and no content cut off",
+      "pass": true,
+      "detail": {
+        "overflow": false,
+        "clipped": 0
+      }
+    },
+    {
+      "page": "statement-en",
+      "name": "mobile-390: no horizontal scrolling and no content cut off",
+      "pass": true,
+      "detail": {
+        "overflow": false,
+        "clipped": 0
+      }
+    },
+    {
+      "page": "statement-en",
+      "name": "mobile-320: no horizontal scrolling and no content cut off",
+      "pass": true,
+      "detail": {
+        "overflow": false,
+        "clipped": 0
+      }
+    },
+    {
+      "page": "statement-en",
+      "name": "landscape-844: no horizontal scrolling and no content cut off",
+      "pass": true,
+      "detail": {
+        "overflow": false,
+        "clipped": 0
+      }
+    },
+    {
+      "page": "statement-en",
+      "name": "reflow-320x256: no horizontal scrolling and no content cut off",
+      "pass": true,
+      "detail": {
+        "overflow": false,
+        "clipped": 0
+      }
+    },
+    {
+      "page": "statement-en",
+      "name": "text-spacing: no horizontal scrolling and no content cut off",
+      "pass": true,
+      "detail": {
+        "overflow": false,
+        "clipped": 0
+      }
+    },
+    {
+      "page": "statement-en",
+      "name": "text-200-percent: no horizontal scrolling and no content cut off",
+      "pass": true,
+      "detail": {
+        "overflow": false,
+        "clipped": 0
+      }
+    },
+    {
+      "page": "statement-en",
+      "name": "Page declares its language",
+      "pass": true,
+      "detail": "en"
+    },
+    {
+      "page": "statement-en",
+      "name": "Page has a descriptive title",
+      "pass": true,
+      "detail": "Accessibility statement | The Growth Cubes"
+    },
+    {
+      "page": "statement-en",
+      "name": "Exactly one main heading and no skipped heading levels",
+      "pass": true,
+      "detail": {
+        "lang": "en",
+        "title": "Accessibility statement | The Growth Cubes",
+        "h1": 1,
+        "headingSkips": 0,
+        "imagesWithoutAlt": 0,
+        "landmarks": true,
+        "motion": 0,
+        "deadLinks": 0,
+        "unlabelledFields": 0,
+        "fieldsWithoutAutocomplete": 0
+      }
+    },
+    {
+      "page": "statement-en",
+      "name": "Every image has a text alternative",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "page": "statement-en",
+      "name": "Header, main content and footer regions are present",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "page": "statement-en",
+      "name": "No video, animation or moving content",
+      "pass": true,
+      "detail": 0
+    },
+    {
+      "page": "statement-en",
+      "name": "No empty or placeholder links",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "page": "statement-en",
+      "name": "Every form field has a visible label",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "page": "statement-en",
+      "name": "First Tab reaches the skip link",
+      "pass": true,
+      "detail": {
+        "element": "a",
+        "name": "Skip to main content",
+        "focusRing": true,
+        "visibleShare": 1,
+        "obscured": false
+      }
+    },
+    {
+      "page": "statement-en",
+      "name": "Every link, button and field is reachable with the keyboard",
+      "pass": true,
+      "detail": {
+        "reached": 5,
+        "expected": 5
+      }
+    },
+    {
+      "page": "statement-en",
+      "name": "Every keyboard stop shows a visible focus indicator",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "page": "statement-en",
+      "name": "Focused elements are on screen and never covered by other content",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "page": "statement-en",
+      "name": "Skip link moves focus to the main content",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "page": "statement-en",
+      "name": "Language selector opens the el version of the same page",
+      "pass": true,
+      "detail": "https://www.thegrowthcubes.com/el/accessibility.html"
+    },
+    {
+      "page": "statement-el",
+      "name": "desktop-1440: no horizontal scrolling and no content cut off",
+      "pass": true,
+      "detail": {
+        "overflow": false,
+        "clipped": 0
+      }
+    },
+    {
+      "page": "statement-el",
+      "name": "tablet-768: no horizontal scrolling and no content cut off",
+      "pass": true,
+      "detail": {
+        "overflow": false,
+        "clipped": 0
+      }
+    },
+    {
+      "page": "statement-el",
+      "name": "mobile-390: no horizontal scrolling and no content cut off",
+      "pass": true,
+      "detail": {
+        "overflow": false,
+        "clipped": 0
+      }
+    },
+    {
+      "page": "statement-el",
+      "name": "mobile-320: no horizontal scrolling and no content cut off",
+      "pass": true,
+      "detail": {
+        "overflow": false,
+        "clipped": 0
+      }
+    },
+    {
+      "page": "statement-el",
+      "name": "landscape-844: no horizontal scrolling and no content cut off",
+      "pass": true,
+      "detail": {
+        "overflow": false,
+        "clipped": 0
+      }
+    },
+    {
+      "page": "statement-el",
+      "name": "reflow-320x256: no horizontal scrolling and no content cut off",
+      "pass": true,
+      "detail": {
+        "overflow": false,
+        "clipped": 0
+      }
+    },
+    {
+      "page": "statement-el",
+      "name": "text-spacing: no horizontal scrolling and no content cut off",
+      "pass": true,
+      "detail": {
+        "overflow": false,
+        "clipped": 0
+      }
+    },
+    {
+      "page": "statement-el",
+      "name": "text-200-percent: no horizontal scrolling and no content cut off",
+      "pass": true,
+      "detail": {
+        "overflow": false,
+        "clipped": 0
+      }
+    },
+    {
+      "page": "statement-el",
+      "name": "Page declares its language",
+      "pass": true,
+      "detail": "el"
+    },
+    {
+      "page": "statement-el",
+      "name": "Page has a descriptive title",
+      "pass": true,
+      "detail": "Δήλωση προσβασιμότητας | The Growth Cubes"
+    },
+    {
+      "page": "statement-el",
+      "name": "Exactly one main heading and no skipped heading levels",
+      "pass": true,
+      "detail": {
+        "lang": "el",
+        "title": "Δήλωση προσβασιμότητας | The Growth Cubes",
+        "h1": 1,
+        "headingSkips": 0,
+        "imagesWithoutAlt": 0,
+        "landmarks": true,
+        "motion": 0,
+        "deadLinks": 0,
+        "unlabelledFields": 0,
+        "fieldsWithoutAutocomplete": 0
+      }
+    },
+    {
+      "page": "statement-el",
+      "name": "Every image has a text alternative",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "page": "statement-el",
+      "name": "Header, main content and footer regions are present",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "page": "statement-el",
+      "name": "No video, animation or moving content",
+      "pass": true,
+      "detail": 0
+    },
+    {
+      "page": "statement-el",
+      "name": "No empty or placeholder links",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "page": "statement-el",
+      "name": "Every form field has a visible label",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "page": "statement-el",
+      "name": "First Tab reaches the skip link",
+      "pass": true,
+      "detail": {
+        "element": "a",
+        "name": "Μετάβαση στο κύριο περιεχόμενο",
+        "focusRing": true,
+        "visibleShare": 1,
+        "obscured": false
+      }
+    },
+    {
+      "page": "statement-el",
+      "name": "Every link, button and field is reachable with the keyboard",
+      "pass": true,
+      "detail": {
+        "reached": 5,
+        "expected": 5
+      }
+    },
+    {
+      "page": "statement-el",
+      "name": "Every keyboard stop shows a visible focus indicator",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "page": "statement-el",
+      "name": "Focused elements are on screen and never covered by other content",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "page": "statement-el",
+      "name": "Skip link moves focus to the main content",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "page": "statement-el",
+      "name": "Language selector opens the en version of the same page",
+      "pass": true,
+      "detail": "https://www.thegrowthcubes.com/accessibility.html"
+    },
+    {
+      "page": "all",
+      "name": "No JavaScript or loading errors on any page",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "page": "home-en",
+      "name": "Content and navigation work with JavaScript disabled",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "page": "home-el",
+      "name": "Content and navigation work with JavaScript disabled",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "page": "all",
+      "name": "HTML validation: no errors and no warnings",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "page": "all",
+      "name": "Lighthouse accessibility score is 100 on every page, mobile and desktop",
+      "pass": true,
+      "detail": [
+        100,
+        100,
+        100,
+        100,
+        100,
+        100,
+        100,
+        100
+      ]
+    }
+  ],
+  "commit": "2b7c9fc9fa05033816298a77b23702ac00126891",
+  "htmlValidation": [],
+  "htmlValidatorVersion": "11.16.2",
+  "lighthouse": [
+    {
+      "page": "home-en",
+      "mode": "mobile",
+      "fetchTime": "2026-10-13T20:32:16.616Z",
+      "performance": 99,
+      "accessibility": 100,
+      "bestPractices": 100,
+      "seo": 100,
+      "failedAudits": []
+    },
+    {
+      "page": "home-en",
+      "mode": "desktop",
+      "fetchTime": "2026-10-13T20:32:22.758Z",
+      "performance": 100,
+      "accessibility": 100,
+      "bestPractices": 100,
+      "seo": 100,
+      "failedAudits": []
+    },
+    {
+      "page": "home-el",
+      "mode": "mobile",
+      "fetchTime": "2026-10-13T20:32:28.761Z",
+      "performance": 99,
+      "accessibility": 100,
+      "bestPractices": 100,
+      "seo": 100,
+      "failedAudits": []
+    },
+    {
+      "page": "home-el",
+      "mode": "desktop",
+      "fetchTime": "2026-10-13T20:32:34.631Z",
+      "performance": 100,
+      "accessibility": 100,
+      "bestPractices": 100,
+      "seo": 100,
+      "failedAudits": []
+    },
+    {
+      "page": "statement-en",
+      "mode": "mobile",
+      "fetchTime": "2026-10-13T20:32:40.620Z",
+      "performance": 100,
+      "accessibility": 100,
+      "bestPractices": 100,
+      "seo": 100,
+      "failedAudits": []
+    },
+    {
+      "page": "statement-en",
+      "mode": "desktop",
+      "fetchTime": "2026-10-13T20:32:46.368Z",
+      "performance": 100,
+      "accessibility": 100,
+      "bestPractices": 100,
+      "seo": 100,
+      "failedAudits": []
+    },
+    {
+      "page": "statement-el",
+      "mode": "mobile",
+      "fetchTime": "2026-10-13T20:32:52.151Z",
+      "performance": 100,
+      "accessibility": 100,
+      "bestPractices": 100,
+      "seo": 100,
+      "failedAudits": []
+    },
+    {
+      "page": "statement-el",
+      "mode": "desktop",
+      "fetchTime": "2026-10-13T20:32:57.857Z",
+      "performance": 100,
+      "accessibility": 100,
+      "bestPractices": 100,
+      "seo": 100,
+      "failedAudits": []
+    }
+  ],
+  "lighthouseVersion": "13.5.0",
+  "finished": "2026-10-13T20:33:02.463Z",
+  "summary": {
+    "axeScans": 36,
+    "axeScansWithViolations": 0,
+    "axeRulesPassedTotal": 868,
+    "checks": 108,
+    "checksPassed": 108,
+    "keyboardStops": 42
+  }
+}

@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-10-13T20:26:26.965Z",
+  "timestamp": "2026-10-13T20:30:33.481Z",
   "timezone": "Europe/Athens",
   "environment": "darwin",
   "browser": "155.0.8059.40",
@@ -10,9 +10,9 @@
     "el/index.html": "c476cc0a64e16593031a122b39892e6a6e2d20c897cacd5c0a8575bcd745437b",
     "accessibility.html": "04640d99500864e1052a87a099481ecb0dca61393f41ed6060da9d00a1aca34d",
     "el/accessibility.html": "dc7fd4b985ead8a7c38941927672a22d13b6d167ed3e96b1d35f12e8285a6e1d",
-    "styles.css": "44676464743c208e8aa055d3a8919e4f806a5ed53cc105867cf1f6046673f340",
+    "styles.css": "da72a73479b39b7ca79d34d0abd80fb54a843585a95b4fea9832f0b5a9c73ae5",
     "accessibility.css": "bb8d34c7747302e7587cf463d5affed75aa457d4ec7c29ea820ee5780cace40e",
-    "forms.js": "fa2e7c50c060cc522a2f16dc6fb38b42b626c7c6595786e9610d98c592435b39"
+    "forms.js": "829ed5f563a8f9350de7b602928beaa0f0b1717e5217ddc77650dc8ecc2d545a"
   },
   "scans": [
     {
@@ -55,7 +55,7 @@
     },
     {
       "name": "en-desktop",
-      "url": "http://127.0.0.1:60325/",
+      "url": "http://127.0.0.1:63615/",
       "viewport": {
         "width": 1440,
         "height": 900
@@ -74,7 +74,7 @@
     },
     {
       "name": "en-mobile-320",
-      "url": "http://127.0.0.1:60325/",
+      "url": "http://127.0.0.1:63615/",
       "viewport": {
         "width": 320,
         "height": 800
@@ -93,7 +93,7 @@
     },
     {
       "name": "en-mobile",
-      "url": "http://127.0.0.1:60325/",
+      "url": "http://127.0.0.1:63615/",
       "viewport": {
         "width": 390,
         "height": 844
@@ -112,7 +112,7 @@
     },
     {
       "name": "en-tablet",
-      "url": "http://127.0.0.1:60325/",
+      "url": "http://127.0.0.1:63615/",
       "viewport": {
         "width": 768,
         "height": 1024
@@ -131,7 +131,7 @@
     },
     {
       "name": "en-landscape",
-      "url": "http://127.0.0.1:60325/",
+      "url": "http://127.0.0.1:63615/",
       "viewport": {
         "width": 844,
         "height": 390
@@ -150,7 +150,7 @@
     },
     {
       "name": "en-reflow-1280-at-400-percent-equivalent",
-      "url": "http://127.0.0.1:60325/",
+      "url": "http://127.0.0.1:63615/",
       "viewport": {
         "width": 320,
         "height": 256
@@ -169,7 +169,7 @@
     },
     {
       "name": "en-text-spacing",
-      "url": "http://127.0.0.1:60325/",
+      "url": "http://127.0.0.1:63615/",
       "viewport": {
         "width": 390,
         "height": 844
@@ -188,7 +188,7 @@
     },
     {
       "name": "en-text-resize-200-percent",
-      "url": "http://127.0.0.1:60325/",
+      "url": "http://127.0.0.1:63615/",
       "viewport": {
         "width": 1440,
         "height": 900
@@ -207,7 +207,7 @@
     },
     {
       "name": "en-contact-invalid",
-      "url": "http://127.0.0.1:60325/",
+      "url": "http://127.0.0.1:63615/",
       "viewport": {
         "width": 390,
         "height": 844
@@ -226,7 +226,7 @@
     },
     {
       "name": "en-contact-valid",
-      "url": "http://127.0.0.1:60325/",
+      "url": "http://127.0.0.1:63615/",
       "viewport": {
         "width": 390,
         "height": 844
@@ -245,7 +245,7 @@
     },
     {
       "name": "el-desktop",
-      "url": "http://127.0.0.1:60325/el/",
+      "url": "http://127.0.0.1:63615/el/",
       "viewport": {
         "width": 1440,
         "height": 900
@@ -264,7 +264,7 @@
     },
     {
       "name": "el-mobile-320",
-      "url": "http://127.0.0.1:60325/el/",
+      "url": "http://127.0.0.1:63615/el/",
       "viewport": {
         "width": 320,
         "height": 800
@@ -283,7 +283,7 @@
     },
     {
       "name": "el-mobile",
-      "url": "http://127.0.0.1:60325/el/",
+      "url": "http://127.0.0.1:63615/el/",
       "viewport": {
         "width": 390,
         "height": 844
@@ -302,7 +302,7 @@
     },
     {
       "name": "el-tablet",
-      "url": "http://127.0.0.1:60325/el/",
+      "url": "http://127.0.0.1:63615/el/",
       "viewport": {
         "width": 768,
         "height": 1024
@@ -321,7 +321,7 @@
     },
     {
       "name": "el-landscape",
-      "url": "http://127.0.0.1:60325/el/",
+      "url": "http://127.0.0.1:63615/el/",
       "viewport": {
         "width": 844,
         "height": 390
@@ -340,7 +340,7 @@
     },
     {
       "name": "el-reflow-1280-at-400-percent-equivalent",
-      "url": "http://127.0.0.1:60325/el/",
+      "url": "http://127.0.0.1:63615/el/",
       "viewport": {
         "width": 320,
         "height": 256
@@ -359,7 +359,7 @@
     },
     {
       "name": "el-text-spacing",
-      "url": "http://127.0.0.1:60325/el/",
+      "url": "http://127.0.0.1:63615/el/",
       "viewport": {
         "width": 390,
         "height": 844
@@ -378,7 +378,7 @@
     },
     {
       "name": "el-text-resize-200-percent",
-      "url": "http://127.0.0.1:60325/el/",
+      "url": "http://127.0.0.1:63615/el/",
       "viewport": {
         "width": 1440,
         "height": 900
@@ -397,7 +397,7 @@
     },
     {
       "name": "el-contact-invalid",
-      "url": "http://127.0.0.1:60325/el/",
+      "url": "http://127.0.0.1:63615/el/",
       "viewport": {
         "width": 390,
         "height": 844
@@ -416,7 +416,7 @@
     },
     {
       "name": "el-contact-valid",
-      "url": "http://127.0.0.1:60325/el/",
+      "url": "http://127.0.0.1:63615/el/",
       "viewport": {
         "width": 390,
         "height": 844
@@ -435,7 +435,7 @@
     },
     {
       "name": "en-statement",
-      "url": "http://127.0.0.1:60325/accessibility.html",
+      "url": "http://127.0.0.1:63615/accessibility.html",
       "viewport": {
         "width": 390,
         "height": 844
@@ -449,7 +449,7 @@
     },
     {
       "name": "en-statement-desktop",
-      "url": "http://127.0.0.1:60325/accessibility.html",
+      "url": "http://127.0.0.1:63615/accessibility.html",
       "viewport": {
         "width": 1440,
         "height": 900
@@ -463,7 +463,7 @@
     },
     {
       "name": "el-statement",
-      "url": "http://127.0.0.1:60325/el/accessibility.html",
+      "url": "http://127.0.0.1:63615/el/accessibility.html",
       "viewport": {
         "width": 390,
         "height": 844
@@ -477,7 +477,7 @@
     },
     {
       "name": "el-statement-desktop",
-      "url": "http://127.0.0.1:60325/el/accessibility.html",
+      "url": "http://127.0.0.1:63615/el/accessibility.html",
       "viewport": {
         "width": 1440,
         "height": 900
@@ -522,7 +522,7 @@
     {
       "name": "en: language link opens the el version",
       "pass": true,
-      "detail": "http://127.0.0.1:60325/el/"
+      "detail": "http://127.0.0.1:63615/el/"
     },
     {
       "name": "en-mobile-320: no document horizontal overflow",
@@ -682,7 +682,7 @@
     {
       "name": "el: language link opens the en version",
       "pass": true,
-      "detail": "http://127.0.0.1:60325/"
+      "detail": "http://127.0.0.1:63615/"
     },
     {
       "name": "el-mobile-320: no document horizontal overflow",
@@ -840,7 +840,7 @@
     {
       "name": "en: statement language link opens the el statement",
       "pass": true,
-      "detail": "http://127.0.0.1:60325/el/accessibility.html"
+      "detail": "http://127.0.0.1:63615/el/accessibility.html"
     },
     {
       "name": "el-statement: no document horizontal overflow",
@@ -871,7 +871,7 @@
     {
       "name": "el: statement language link opens the en statement",
       "pass": true,
-      "detail": "http://127.0.0.1:60325/accessibility.html"
+      "detail": "http://127.0.0.1:63615/accessibility.html"
     },
     {
       "name": "No local JavaScript runtime errors",

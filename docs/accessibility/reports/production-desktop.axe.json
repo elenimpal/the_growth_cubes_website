@@ -13,7 +13,7 @@
     "orientationAngle": 0,
     "orientationType": "landscape-primary"
   },
-  "timestamp": "2026-10-13T20:26:28.197Z",
+  "timestamp": "2026-10-13T20:30:34.803Z",
   "url": "https://www.thegrowthcubes.com/",
   "toolOptions": {
     "runOnly": {
@@ -761,7 +761,7 @@
             }
           ],
           "impact": null,
-          "html": "<nav class=\"nav\" aria-label=\"Primary navigation\">",
+          "html": "<nav class=\"nav\" aria-label=\"Primary navigation\">\n        <ul>\n          <li><a href=\"#services\">Services</a></li>\n          <li><a href=\"#how-we-work\">Agency</a></li>\n          <li><a href=\"#contact\">Contact</a></li>\n        </ul>\n      </nav>",
           "target": [
             "nav"
           ]
@@ -801,7 +801,7 @@
             }
           ],
           "impact": null,
-          "html": "<span class=\"lang-current\" aria-current=\"true\"><span aria-hidden=\"true\">🇬🇧</span> English</span>",
+          "html": "<span class=\"lang-current\" aria-current=\"true\"><span aria-hidden=\"true\">🇬🇧</span> <span class=\"lang-short\">EN</span><span class=\"lang-full\">English</span></span>",
           "target": [
             ".lang-current"
           ]
@@ -1237,7 +1237,7 @@
           ],
           "none": [],
           "impact": null,
-          "html": "<nav class=\"nav\" aria-label=\"Primary navigation\">",
+          "html": "<nav class=\"nav\" aria-label=\"Primary navigation\">\n        <ul>\n          <li><a href=\"#services\">Services</a></li>\n          <li><a href=\"#how-we-work\">Agency</a></li>\n          <li><a href=\"#contact\">Contact</a></li>\n        </ul>\n      </nav>",
           "target": [
             "nav"
           ]
@@ -1255,7 +1255,7 @@
           ],
           "none": [],
           "impact": null,
-          "html": "<span class=\"lang-current\" aria-current=\"true\"><span aria-hidden=\"true\">🇬🇧</span> English</span>",
+          "html": "<span class=\"lang-current\" aria-current=\"true\"><span aria-hidden=\"true\">🇬🇧</span> <span class=\"lang-short\">EN</span><span class=\"lang-full\">English</span></span>",
           "target": [
             ".lang-current"
           ]
@@ -1789,7 +1789,7 @@
             }
           ],
           "impact": null,
-          "html": "<nav class=\"nav\" aria-label=\"Primary navigation\">",
+          "html": "<nav class=\"nav\" aria-label=\"Primary navigation\">\n        <ul>\n          <li><a href=\"#services\">Services</a></li>\n          <li><a href=\"#how-we-work\">Agency</a></li>\n          <li><a href=\"#contact\">Contact</a></li>\n        </ul>\n      </nav>",
           "target": [
             "nav"
           ]
@@ -1807,7 +1807,7 @@
             }
           ],
           "impact": null,
-          "html": "<span class=\"lang-current\" aria-current=\"true\"><span aria-hidden=\"true\">🇬🇧</span> English</span>",
+          "html": "<span class=\"lang-current\" aria-current=\"true\"><span aria-hidden=\"true\">🇬🇧</span> <span class=\"lang-short\">EN</span><span class=\"lang-full\">English</span></span>",
           "target": [
             ".lang-current"
           ]
@@ -2123,7 +2123,7 @@
           ],
           "none": [],
           "impact": null,
-          "html": "<nav class=\"nav\" aria-label=\"Primary navigation\">",
+          "html": "<nav class=\"nav\" aria-label=\"Primary navigation\">\n        <ul>\n          <li><a href=\"#services\">Services</a></li>\n          <li><a href=\"#how-we-work\">Agency</a></li>\n          <li><a href=\"#contact\">Contact</a></li>\n        </ul>\n      </nav>",
           "target": [
             "nav"
           ]
@@ -2155,7 +2155,7 @@
           ],
           "none": [],
           "impact": null,
-          "html": "<span class=\"lang-current\" aria-current=\"true\"><span aria-hidden=\"true\">🇬🇧</span> English</span>",
+          "html": "<span class=\"lang-current\" aria-current=\"true\"><span aria-hidden=\"true\">🇬🇧</span> <span class=\"lang-short\">EN</span><span class=\"lang-full\">English</span></span>",
           "target": [
             ".lang-current"
           ]
@@ -2511,7 +2511,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<nav class=\"nav\" aria-label=\"Primary navigation\">",
+          "html": "<nav class=\"nav\" aria-label=\"Primary navigation\">\n        <ul>\n          <li><a href=\"#services\">Services</a></li>\n          <li><a href=\"#how-we-work\">Agency</a></li>\n          <li><a href=\"#contact\">Contact</a></li>\n        </ul>\n      </nav>",
           "target": [
             "nav"
           ]
@@ -2529,7 +2529,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<span class=\"lang-current\" aria-current=\"true\"><span aria-hidden=\"true\">🇬🇧</span> English</span>",
+          "html": "<span class=\"lang-current\" aria-current=\"true\"><span aria-hidden=\"true\">🇬🇧</span> <span class=\"lang-short\">EN</span><span class=\"lang-full\">English</span></span>",
           "target": [
             ".lang-current"
           ]
@@ -3103,9 +3103,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<span class=\"lang-current\" aria-current=\"true\"><span aria-hidden=\"true\">🇬🇧</span> English</span>",
+          "html": "<span class=\"lang-full\">English</span>",
           "target": [
-            ".lang-current"
+            ".lang-current > .lang-full"
           ]
         },
         {
@@ -3128,9 +3128,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<a href=\"/el/\" class=\"lang-link\" lang=\"el\" hreflang=\"el\"><span aria-hidden=\"true\">🇬🇷</span> Ελληνικά</a>",
+          "html": "<span class=\"lang-full\">Ελληνικά</span>",
           "target": [
-            ".lang-link"
+            ".lang-link > .lang-full"
           ]
         },
         {
@@ -5673,7 +5673,7 @@
             }
           ],
           "impact": null,
-          "html": "<a href=\"/el/\" class=\"lang-link\" lang=\"el\" hreflang=\"el\"><span aria-hidden=\"true\">🇬🇷</span> Ελληνικά</a>",
+          "html": "<a href=\"/el/\" class=\"lang-link\" lang=\"el\" hreflang=\"el\"><span aria-hidden=\"true\">🇬🇷</span> <span class=\"lang-short\">ΕΛ</span><span class=\"lang-full\">Ελληνικά</span></a>",
           "target": [
             ".lang-link"
           ]
@@ -5839,7 +5839,7 @@
             }
           ],
           "impact": null,
-          "html": "<ul>",
+          "html": "<ul>\n          <li><a href=\"#services\">Services</a></li>\n          <li><a href=\"#how-we-work\">Agency</a></li>\n          <li><a href=\"#contact\">Contact</a></li>\n        </ul>",
           "target": [
             "nav > ul"
           ]
@@ -6040,24 +6040,6 @@
           "html": "<li><a href=\"#contact\">Contact</a></li>",
           "target": [
             "nav > ul > li:nth-child(3)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "listitem",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "List item has a <ul>, <ol> or role=\"list\" parent element"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<li class=\"lang-switch\">\n            <span class=\"lang-current\" aria-current=\"true\"><span aria-hidden=\"true\">🇬🇧</span> English</span>\n            <a href=\"/el/\" class=\"lang-link\" lang=\"el\" hreflang=\"el\"><span aria-hidden=\"true\">🇬🇷</span> Ελληνικά</a>\n          </li>",
-          "target": [
-            ".lang-switch"
           ]
         },
         {
@@ -6529,7 +6511,7 @@
             }
           ],
           "impact": null,
-          "html": "<a href=\"/el/\" class=\"lang-link\" lang=\"el\" hreflang=\"el\"><span aria-hidden=\"true\">🇬🇷</span> Ελληνικά</a>",
+          "html": "<a href=\"/el/\" class=\"lang-link\" lang=\"el\" hreflang=\"el\"><span aria-hidden=\"true\">🇬🇷</span> <span class=\"lang-short\">ΕΛ</span><span class=\"lang-full\">Ελληνικά</span></a>",
           "target": [
             ".lang-link"
           ]
