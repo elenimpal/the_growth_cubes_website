@@ -11,9 +11,6 @@ const run = process.argv[2] || runs.at(-1);
 const ev = `evidence/${run}`;
 const s = JSON.parse(fs.readFileSync(path.join(docs, ev, "summary.json"), "utf8"));
 
-const date = new Date(s.started);
-const greekDate = date.toLocaleDateString("el-GR", { day: "numeric", month: "long", year: "numeric", timeZone: "Europe/Athens" });
-const greekTime = date.toLocaleTimeString("el-GR", { hour: "2-digit", minute: "2-digit", hour12: false, timeZone: "Europe/Athens" });
 const lh = (page, mode) => s.lighthouse.find((l) => l.page === page && l.mode === mode);
 const allLh = (key) => s.lighthouse.every((l) => l[key] === 100) ? "100/100" : `${Math.min(...s.lighthouse.map((l) => l[key]))}–100/100`;
 const hero = s.contrast[0].hero;
@@ -117,7 +114,7 @@ const html = `<!DOCTYPE html>
   .figure-box span { font-size: 8.5pt; line-height: 1.3; display: block; }
   figure { margin: 3.5mm 0 0; break-inside: avoid; }
   figure img { display: block; width: 100%; border: 0.5pt solid #777; }
-  figure.narrow { width: 55%; margin-inline: auto; }
+  figure.narrow { width: 66%; margin-inline: auto; }
   figure.crop img { height: 58mm; object-fit: cover; object-position: center 62%; }
   figure.fit img { height: 58mm; object-fit: contain; background: #f4f0ea; }
   .annex tr { break-inside: avoid; }
@@ -128,10 +125,6 @@ const html = `<!DOCTYPE html>
   .small { font-size: 9pt; }
   table.criteria { font-size: 8.3pt; line-height: 1.35; }
   table.criteria th, table.criteria td { padding: 1.1mm 1.6mm; }
-  .sign { display: grid; grid-template-columns: 1fr 1fr; gap: 12mm; margin-top: 9mm; }
-  .sign div { padding-top: 14mm; border-bottom: 0.5pt solid #111; }
-  .sign span { display: block; margin-top: 1.5mm; font-size: 8.5pt; }
-  .fill { padding: 0 1mm; border-bottom: 0.5pt dotted #111; }
   a { color: inherit; }
   @media screen { body { background: #e9e9e9; } .page { width: 210mm; min-height: 297mm; margin: 8mm auto; padding: 17mm; background: #fff; } }
 </style>
@@ -140,7 +133,6 @@ const html = `<!DOCTYPE html>
 
 <div class="page">
   <header class="cover-head">
-    <p class="kicker">Τεχνική έκθεση · ${greekDate}</p>
     <h1>Έκθεση Ελέγχου Προσβασιμότητας Ιστοσελίδας</h1>
     <p class="subtitle"><span lang="en">The Growth Cubes</span> — www.thegrowthcubes.com</p>
   </header>
@@ -152,8 +144,6 @@ const html = `<!DOCTYPE html>
       <tr><th scope="row">Πρόγραμμα</th><td>«Ολοκληρωμένο Πρόγραμμα ενίσχυσης της νέας επιχειρηματικότητας για ανέργους ηλικίας 18–29 ετών με έμφαση στις γυναίκες και στην ψηφιακή και πράσινη οικονομία»</td></tr>
       <tr><th scope="row">Δημόσια Πρόσκληση</th><td>ΔΥΠΑ, Πρόσκληση 6/2026 · ΑΔΑ 95Ω04691Ω2-836 · ΦΕΚ Β΄ 729/12.02.2026</td></tr>
       <tr><th scope="row">Πρότυπα ελέγχου</th><td>WCAG 2.1, επίπεδα A και AA · EN 301 549, κεφάλαιο 9 (ιστοσελίδες)</td></tr>
-      <tr><th scope="row">Ημερομηνία ελέγχου</th><td>${greekDate}, ώρα ${greekTime} (δημοσιευμένη έκδοση)</td></tr>
-      <tr><th scope="row">Συντάκτης</th><td><span class="fill">[ονοματεπώνυμο και ιδιότητα — προς συμπλήρωση]</span></td></tr>
     </table>
   </section>
 
@@ -171,7 +161,7 @@ const html = `<!DOCTYPE html>
 
   <figure class="narrow">
     <img src="${ev}/screenshot-home-el-desktop.png" alt="Η αρχική σελίδα της ελληνικής έκδοσης: κεφαλίδα με πλοήγηση και επιλογή γλώσσας, και ο τίτλος The Growth Cubes.">
-    <figcaption>Εικόνα 1. Η ελληνική αρχική σελίδα, όπως ήταν δημοσιευμένη κατά τον έλεγχο (${greekDate}).</figcaption>
+    <figcaption>Εικόνα 1. Η ελληνική αρχική σελίδα.</figcaption>
   </figure>
 </div>
 
@@ -232,11 +222,11 @@ const html = `<!DOCTYPE html>
 
   <figure>
     <img src="${ev}/screenshot-lighthouse-home-el-desktop.png" alt="Αναφορά Lighthouse για το www.thegrowthcubes.com/el/ σε υπολογιστή: Performance ${lh("home-el", "desktop").performance}, Accessibility ${lh("home-el", "desktop").accessibility}, Best Practices ${lh("home-el", "desktop").bestPractices}, SEO ${lh("home-el", "desktop").seo}.">
-    <figcaption>Εικόνα 2. <span lang="en">Google Lighthouse ${s.lighthouseVersion}</span>, ελληνική αρχική σελίδα, υπολογιστής, ${greekDate}. Προσβασιμότητα: ${lh("home-el", "desktop").accessibility}/100.</figcaption>
+    <figcaption>Εικόνα 2. <span lang="en">Google Lighthouse ${s.lighthouseVersion}</span>, ελληνική αρχική σελίδα, υπολογιστής. Προσβασιμότητα: ${lh("home-el", "desktop").accessibility}/100.</figcaption>
   </figure>
   <figure>
     <img src="${ev}/screenshot-lighthouse-home-el-mobile.png" alt="Αναφορά Lighthouse για το www.thegrowthcubes.com/el/ σε κινητό: Performance ${lh("home-el", "mobile").performance}, Accessibility ${lh("home-el", "mobile").accessibility}, Best Practices ${lh("home-el", "mobile").bestPractices}, SEO ${lh("home-el", "mobile").seo}.">
-    <figcaption>Εικόνα 3. <span lang="en">Google Lighthouse ${s.lighthouseVersion}</span>, ελληνική αρχική σελίδα, κινητό, ${greekDate}. Προσβασιμότητα: ${lh("home-el", "mobile").accessibility}/100.</figcaption>
+    <figcaption>Εικόνα 3. <span lang="en">Google Lighthouse ${s.lighthouseVersion}</span>, ελληνική αρχική σελίδα, κινητό. Προσβασιμότητα: ${lh("home-el", "mobile").accessibility}/100.</figcaption>
   </figure>
   <figure style="width:40%">
     <img src="evidence/supplied-by-owner/axe-devtools-production.png" alt="Οθόνη του εργαλείου axe DevTools για το https://www.thegrowthcubes.com/ με επιλεγμένο το WCAG 2.1 AA: Total issues 0.">
@@ -299,7 +289,7 @@ const html = `<!DOCTYPE html>
   <section>
     <h2>6. Συνολική αξιολόγηση</h2>
     <p>Από τα ${criteria.length} κριτήρια επιτυχίας των επιπέδων A και AA του WCAG 2.1, τα ${satisfied} έχουν εφαρμογή στην ιστοσελίδα και <strong>ικανοποιούνται όλα</strong>. Τα υπόλοιπα ${notApplicable} δεν έχουν εφαρμογή, επειδή αφορούν περιεχόμενο που η ιστοσελίδα δεν διαθέτει (ήχο, βίντεο, κινούμενο περιεχόμενο, χρονικά όρια, συναλλαγές). Η αναλυτική εικόνα ανά κριτήριο δίνεται στο Παράρτημα Α.</p>
-    <p>Με βάση τα αποτελέσματα του ελέγχου της ${greekDate}, η ιστοσελίδα www.thegrowthcubes.com αξιολογείται ως <strong>σύμφωνη με το WCAG 2.1 επιπέδου AA</strong> και με τις απαιτήσεις του κεφαλαίου 9 του προτύπου EN 301 549, και συνεπώς ανταποκρίνεται στις απαιτήσεις προσβασιμότητας της Δημόσιας Πρόσκλησης 6/2026.</p>
+    <p>Με βάση τα αποτελέσματα του ελέγχου, η ιστοσελίδα www.thegrowthcubes.com αξιολογείται ως <strong>σύμφωνη με το WCAG 2.1 επιπέδου AA</strong> και με τις απαιτήσεις του κεφαλαίου 9 του προτύπου EN 301 549, και συνεπώς ανταποκρίνεται στις απαιτήσεις προσβασιμότητας της Δημόσιας Πρόσκλησης 6/2026.</p>
     <p>Η επιχείρηση δεσμεύεται να διατηρεί το επίπεδο αυτό: κάθε αλλαγή στην ιστοσελίδα ελέγχεται με την ίδια διαδικασία πριν από τη δημοσίευσή της, και κάθε αναφορά επισκέπτη μέσω της Δήλωσης Προσβασιμότητας εξετάζεται κατά προτεραιότητα.</p>
   </section>
 
@@ -319,10 +309,6 @@ const html = `<!DOCTYPE html>
     <p class="small" style="margin-top:2mm">Η παρούσα έκθεση αποτελεί τεχνική τεκμηρίωση του δικαιούχου, βασισμένη στους ελέγχους που περιγράφονται στην ενότητα 3.</p>
   </section>
 
-  <div class="sign">
-    <div><span>Ο συντάκτης της έκθεσης (ονοματεπώνυμο, ιδιότητα, υπογραφή)</span></div>
-    <div><span>Η δικαιούχος — Ελένη Μπαλαμώτη (υπογραφή, ημερομηνία)</span></div>
-  </div>
 </div>
 
 <div class="page annex">

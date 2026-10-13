@@ -6,9 +6,6 @@ The report (`DYPA_Accessibility_Report_FINAL.pdf`) is built from the evidence ru
 
 | Item | Where it appears | Status |
 |---|---|---|
-| Report author: full name and professional capacity | Page 1 table ("Συντάκτης") and signature line on page 5 | Missing |
-| Author signature | Page 5 | Missing |
-| Beneficiary signature and date | Page 5 | Missing |
 | Beneficiary address: city and postcode | Page 1 table (currently "Κώστα Βάρναλη 16") | Missing |
 | Funding decision or OPSKE reference number, if DYPA expects it on supporting documents | Not in the report yet | Confirm whether needed |
 
@@ -38,7 +35,7 @@ The first command writes a new dated folder under `docs/accessibility/evidence/`
 
 ## 5. What to hand over
 
-- `DYPA_Accessibility_Report_FINAL.pdf` (signed).
+- `DYPA_Accessibility_Report_FINAL.pdf`. It carries no author, signature or date fields, by your decision.
 - On request: `ACCESSIBILITY_EVIDENCE_INDEX.md` and the folder `evidence/2026-10-13T20-31-31/`.
 
 Do not include the older files in `docs/accessibility/` (`DYPA_EVIDENCE_PACKAGE.*`, `ACCESSIBILITY_AUDIT.md`, `OUTSTANDING_ITEMS.md`, `reports/` and the rest). They describe the previous animated version of the site and list open items that no longer apply.
