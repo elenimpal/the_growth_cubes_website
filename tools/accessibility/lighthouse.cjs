@@ -50,6 +50,14 @@ const path = require("node:path");
         "statement-el",
         `http://127.0.0.1:${server.address().port}/el/accessibility.html`,
       ],
+      [
+        "privacy",
+        `http://127.0.0.1:${server.address().port}/privacy.html`,
+      ],
+      [
+        "privacy-el",
+        `http://127.0.0.1:${server.address().port}/el/privacy.html`,
+      ],
     ]) {
       const result = await lighthouse(url, {
         port: chrome.port,

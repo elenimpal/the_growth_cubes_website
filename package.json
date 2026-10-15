@@ -4,9 +4,10 @@
   "engines": { "node": ">=24.8.0" },
   "description": "Standalone audit tools; the website remains plain HTML/CSS/JavaScript.",
   "scripts": {
+    "accessibility-test": "npm run test:html && npm run test:a11y && npm run test:lighthouse",
     "test:a11y": "node tools/accessibility/audit.cjs",
     "test:lighthouse": "node tools/accessibility/lighthouse.cjs",
-    "test:html": "html-validate index.html el/index.html accessibility.html el/accessibility.html"
+    "test:html": "html-validate index.html el/index.html accessibility.html el/accessibility.html privacy.html el/privacy.html"
   },
   "devDependencies": {
     "axe-core": "^4.14.0",

@@ -62,15 +62,26 @@ function check(name, pass, detail) {
     "el/index.html",
     "accessibility.html",
     "el/accessibility.html",
+    "privacy.html",
+    "el/privacy.html",
     "styles.css",
     "accessibility.css",
+    "consent.css",
     "forms.js",
+    "consent.js",
   ])
     results.sourceHashes[name] = crypto
       .createHash("sha256")
       .update(fs.readFileSync(path.join(root, name)))
       .digest("hex");
+  // A first visit opens the blocking cookie dialog. Most scans check the page
+  // itself, so they start with analytics already rejected (which also keeps
+  // Google Tag Manager from loading); the dialog has its own checks below.
+  const consentChoice = { analytics: false, date: Date.now() };
   const page = await browser.newPage();
+  await page.addInitScript((choice) => {
+    localStorage.setItem("gtc-consent", JSON.stringify(choice));
+  }, consentChoice);
   const errors = [];
   page.on("pageerror", (error) => errors.push(error.message));
   async function scan(name, url, viewport, setup) {
@@ -146,6 +157,10 @@ function check(name, pass, detail) {
         "el-contact-valid",
         "en-statement",
         "el-statement",
+        "en-privacy",
+        "el-privacy",
+        "en-consent-mobile-320",
+        "el-consent-mobile-320",
         "production-desktop",
       ].includes(name)
     )
@@ -301,6 +316,79 @@ function check(name, pass, detail) {
         page.url().endsWith("accessibility.html"),
       page.url()
     );
+  }
+  for (const [lang, url] of [
+    ["en", `${base}/privacy.html`],
+    ["el", `${base}/el/privacy.html`],
+  ]) {
+    await scan(`${lang}-privacy`, url, { width: 390, height: 844 });
+    await scan(`${lang}-privacy-desktop`, url, { width: 1440, height: 900 });
+    check(
+      `${lang}: privacy policy declares its language`,
+      (await page.locator("html").getAttribute("lang")) === lang,
+      null
+    );
+  }
+  // Cookie consent dialog, reopened from the footer, then a true first visit.
+  for (const [lang, url] of [
+    ["en", `${base}/`],
+    ["el", `${base}/el/`],
+  ]) {
+    for (const [size, viewport] of [
+      ["mobile-320", { width: 320, height: 640 }],
+      ["desktop", { width: 1440, height: 900 }],
+    ])
+      await scan(`${lang}-consent-${size}`, url, viewport, () =>
+        page.locator(".consent-settings").click()
+      );
+    const fresh = await browser.newPage({
+      viewport: { width: 390, height: 844 },
+    });
+    const google = [];
+    fresh.on("request", (request) => {
+      if (request.url().includes("googletagmanager.com")) google.push(request.url());
+    });
+    fresh.on("pageerror", (error) => errors.push(error.message));
+    await fresh.goto(url, { waitUntil: "networkidle" });
+    check(
+      `${lang}: first visit opens the cookie dialog with focus on its heading`,
+      await fresh.evaluate(
+        () =>
+          document.querySelector(".consent-dialog")?.open &&
+          document.activeElement?.id === "consent-title"
+      ),
+      null
+    );
+    await fresh.keyboard.press("Escape");
+    check(
+      `${lang}: Escape does not dismiss the cookie dialog before a choice`,
+      await fresh.evaluate(() => document.querySelector(".consent-dialog").open),
+      null
+    );
+    await fresh.locator('.consent-dialog button[value="reject"]').click();
+    check(
+      `${lang}: rejecting closes the dialog and Google Tag Manager never loads`,
+      (await fresh.evaluate(
+        () =>
+          !document.querySelector(".consent-dialog").open &&
+          JSON.parse(localStorage.getItem("gtc-consent")).analytics === false
+      )) && google.length === 0,
+      google
+    );
+    await fresh.close();
+  }
+  for (const [lang, url] of [
+    ["en", `${base}/privacy.html`],
+    ["el", `${base}/el/privacy.html`],
+  ]) {
+    const fresh = await browser.newPage();
+    await fresh.goto(url, { waitUntil: "networkidle" });
+    check(
+      `${lang}: privacy policy stays readable without opening the cookie dialog`,
+      await fresh.evaluate(() => !document.querySelector(".consent-dialog").open),
+      null
+    );
+    await fresh.close();
   }
   check("No local JavaScript runtime errors", errors.length === 0, errors);
   fs.writeFileSync(

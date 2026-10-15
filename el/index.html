@@ -2,6 +2,34 @@
 <html lang="el">
 <head>
 <meta charset="utf-8">
+<!-- Google Tag Manager: loads only after the visitor accepts analytics in the consent dialog (consent.js) -->
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag() { dataLayer.push(arguments); }
+gtag('consent', 'default', { ad_storage: 'denied', ad_user_data: 'denied', ad_personalization: 'denied', analytics_storage: 'denied' });
+window.gtcConsent = {
+  key: 'gtc-consent',
+  maxAge: 365 * 24 * 60 * 60 * 1000, // ask again after 12 months
+  read: function () {
+    try {
+      var choice = JSON.parse(localStorage.getItem(this.key));
+      return choice && Date.now() - choice.date < this.maxAge ? choice : null;
+    } catch (e) { return null; }
+  },
+  loadGtm: function () {
+    gtag('consent', 'update', { analytics_storage: 'granted' });
+    if (this.loaded) return;
+    this.loaded = true;
+    (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-MR7SD8HN');
+  }
+};
+if ((gtcConsent.read() || {}).analytics) gtcConsent.loadGtm();
+</script>
+<!-- End Google Tag Manager -->
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="description" content="Το The Growth Cubes είναι μια ψηφιακή εταιρεία στην Αθήνα με οδηγό τα δεδομένα, που ενώνει το δημιουργικό όραμα με την ακριβή εκτέλεση.">
 <title>The Growth Cubes — Ψηφιακή εταιρεία με οδηγό τα δεδομένα, Αθήνα</title>
@@ -11,6 +39,7 @@
 <link rel="alternate" hreflang="x-default" href="https://www.thegrowthcubes.com/">
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
 <link rel="stylesheet" href="/styles.css">
+<link rel="stylesheet" href="/consent.css">
 </head>
 <body class="on-dark">
   <a class="skip-link" href="#main-content">Μετάβαση στο κύριο περιεχόμενο</a>
@@ -197,11 +226,14 @@
       <div class="footer-bottom">
         <p>&copy; 2026 <span lang="en">The Growth Cubes</span>.</p>
         <a href="/el/accessibility.html">Δήλωση προσβασιμότητας</a>
+        <a href="/el/privacy.html">Πολιτική απορρήτου</a>
+        <button type="button" class="consent-settings" hidden>Ρυθμίσεις cookies</button>
         <a href="#top">Επιστροφή στην κορυφή <span aria-hidden="true">&uarr;</span></a>
       </div>
     </div>
   </footer>
 
+  <script src="/consent.js" defer></script>
   <script src="/forms.js" defer></script>
 </body>
 </html>

@@ -1,4 +1,5 @@
-/* Independent stylesheet for accessibility.html. No scripts or animations. */
+/* Independent stylesheet for the accessibility statement and privacy policy
+   pages. No animations; the only script is the cookie consent dialog. */
 :root {
   color-scheme: dark;
 }
@@ -172,6 +173,12 @@ li {
 }
 .site-footer p {
   margin: 0;
+}
+.footer-links {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0.5rem 2rem;
 }
 @media (max-width: 420px) {
   .container {
