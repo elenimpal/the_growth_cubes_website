@@ -30,6 +30,15 @@ window.gtcConsent = {
 if ((gtcConsent.read() || {}).analytics) gtcConsent.loadGtm();
 </script>
 <!-- End Google Tag Manager -->
+<!-- Accessibility settings chosen in the panel (a11y-widget.js), applied before the page is drawn -->
+<script>
+try {
+  var a11y = JSON.parse(localStorage.getItem('gtc-a11y')) || {};
+  ['text', 'contrast', 'links', 'readable', 'cursor'].forEach(function (name) {
+    if (a11y[name]) document.documentElement.setAttribute('data-a11y-' + name, a11y[name]);
+  });
+} catch (e) {}
+</script>
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="description" content="The Growth Cubes is a data-driven digital agency in Athens bridging creative vision and precise execution.">
 <title>The Growth Cubes — Data-Driven Digital Agency Athens</title>
@@ -40,6 +49,7 @@ if ((gtcConsent.read() || {}).analytics) gtcConsent.loadGtm();
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
 <link rel="stylesheet" href="/styles.css">
 <link rel="stylesheet" href="/consent.css">
+<link rel="stylesheet" href="/a11y-widget.css">
 </head>
 <body class="on-dark">
   <a class="skip-link" href="#main-content">Skip to main content</a>
@@ -233,7 +243,8 @@ if ((gtcConsent.read() || {}).analytics) gtcConsent.loadGtm();
     </div>
   </footer>
 
-  <script src="/consent.js" defer></script>
-  <script src="/forms.js" defer></script>
+  <script type="module" src="/consent.js"></script>
+  <script type="module" src="/a11y-widget.js"></script>
+  <script type="module" src="/forms.js"></script>
 </body>
 </html>

@@ -30,6 +30,15 @@
     if ((gtcConsent.read() || {}).analytics) gtcConsent.loadGtm();
     </script>
     <!-- End Google Tag Manager -->
+    <!-- Accessibility settings chosen in the panel (a11y-widget.js), applied before the page is drawn -->
+    <script>
+    try {
+      var a11y = JSON.parse(localStorage.getItem('gtc-a11y')) || {};
+      ['text', 'contrast', 'links', 'readable', 'cursor'].forEach(function (name) {
+        if (a11y[name]) document.documentElement.setAttribute('data-a11y-' + name, a11y[name]);
+      });
+    } catch (e) {}
+    </script>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta
       name="description"
@@ -54,6 +63,7 @@
     <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
     <link rel="stylesheet" href="/accessibility.css" />
     <link rel="stylesheet" href="/consent.css" />
+    <link rel="stylesheet" href="/a11y-widget.css" />
   </head>
   <body>
     <a class="skip-link" href="#main-content">Μετάβαση στο κύριο περιεχόμενο</a>
@@ -163,6 +173,23 @@
         </li>
       </ul>
 
+      <h2>Ρυθμίσεις προσβασιμότητας</h2>
+      <p>
+        Το στρογγυλό κουμπί με το σύμβολο προσβασιμότητας, κάτω
+        αριστερά σε κάθε σελίδα (στην κορυφή της σελίδας σε μικρές ή
+        μεγεθυμένες οθόνες), ανοίγει προαιρετικές ρυθμίσεις
+        εμφάνισης: μέγεθος κειμένου έως 200%, υψηλή αντίθεση,
+        επισήμανση συνδέσμων, ευανάγνωστη γραμματοσειρά με
+        μεγαλύτερα διαστήματα, μεγάλο δείκτη ποντικιού και ανάγνωση
+        της σελίδας φωναχτά με τη φωνή της συσκευής σας. Οι επιλογές
+        σας ισχύουν σε όλες τις σελίδες και αποθηκεύονται μόνο στο
+        πρόγραμμα περιήγησής σας. Οι ρυθμίσεις είναι πρόσθετη
+        διευκόλυνση: ο ιστότοπος πληροί το πρότυπο και χωρίς αυτές,
+        και λειτουργεί το ίδιο με το δικό σας πρόγραμμα ανάγνωσης
+        οθόνης, το πληκτρολόγιο και τη μεγέθυνση του προγράμματος
+        περιήγησης.
+      </p>
+
       <h2>Σχόλια και επικοινωνία</h2>
       <p>
         Αν αντιμετωπίσετε δυσκολία πρόσβασης σε κάποια πληροφορία ή λειτουργία
@@ -192,6 +219,7 @@
         <button type="button" class="consent-settings" hidden>Ρυθμίσεις cookies</button>
       </div>
     </footer>
-    <script src="/consent.js" defer></script>
+    <script type="module" src="/consent.js"></script>
+    <script type="module" src="/a11y-widget.js"></script>
   </body>
 </html>

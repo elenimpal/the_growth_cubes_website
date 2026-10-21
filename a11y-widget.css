@@ -1,0 +1,367 @@
+/* Accessibility settings button and panel (a11y-widget.js), and the display
+   preferences it sets on <html>. Shared by every page, so colours are stated
+   here rather than taken from styles.css or accessibility.css. */
+.a11y-widget {
+  position: fixed;
+  z-index: 20;
+  left: 1rem;
+  bottom: 1rem;
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: flex-start;
+  gap: 0.75rem;
+  font: 400 0.9375rem/1.5 Inter, ui-sans-serif, system-ui, -apple-system,
+    BlinkMacSystemFont, "Segoe UI", sans-serif;
+  text-align: left;
+  text-transform: none;
+  letter-spacing: normal;
+}
+/* While floating, focused elements and the end of the page stay clear of it. */
+@media (min-height: 30.01rem) {
+  html {
+    scroll-padding-bottom: 5.5rem;
+  }
+  body {
+    padding-bottom: 4.5rem;
+  }
+}
+/* On short or magnified screens it sits at the top of the page instead of
+   covering a large part of a small window. */
+@media (max-height: 30rem) {
+  .a11y-widget {
+    position: static;
+    flex-direction: column;
+    padding: 0.75rem 1rem 0;
+  }
+  .a11y-panel {
+    max-height: none;
+  }
+}
+
+.a11y-widget svg {
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+.a11y-widget svg .fill {
+  fill: currentColor;
+  stroke: none;
+}
+.a11y-widget :focus-visible {
+  outline: 3px solid #fff;
+  outline-offset: 2px;
+}
+
+/* The round button sits over both burgundy and cream sections, so it carries
+   both colours, and so does its focus ring. */
+.a11y-toggle {
+  display: grid;
+  place-items: center;
+  width: 3.25rem;
+  height: 3.25rem;
+  padding: 0;
+  border: 2px solid #35111b;
+  border-radius: 50%;
+  background: #f4f0ea;
+  color: #35111b;
+  box-shadow: 0 0 0 2px #f4f0ea, 0 4px 14px rgb(0 0 0 / 0.35);
+  cursor: pointer;
+}
+.a11y-toggle svg {
+  width: 2.125rem;
+  height: 2.125rem;
+  stroke-width: 1.6;
+}
+.a11y-toggle:hover {
+  background: #fff;
+}
+.a11y-toggle[aria-expanded="true"] {
+  border-color: #f4f0ea;
+  background: #35111b;
+  color: #f4f0ea;
+}
+.a11y-widget .a11y-toggle:focus-visible {
+  outline: 3px solid #fff;
+  outline-offset: 2px;
+  box-shadow: 0 0 0 2px #f4f0ea, 0 0 0 8px #35111b;
+}
+
+.a11y-panel {
+  box-sizing: border-box;
+  width: min(100vw - 2rem, 22rem);
+  max-height: calc(100dvh - 6rem);
+  overflow: auto;
+  padding: 1.25rem;
+  border: 1px solid #b9828e;
+  border-radius: 24px;
+  background: #35111b;
+  color: #f4f0ea;
+  box-shadow: 0 12px 40px rgb(0 0 0 / 0.45);
+}
+.a11y-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+  margin-bottom: 1rem;
+}
+.a11y-panel h2 {
+  margin: 0;
+  color: #fff;
+  font-size: 1.125rem;
+  line-height: 1.3;
+}
+.a11y-close {
+  display: grid;
+  flex: none;
+  place-items: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  padding: 0;
+  border: 1px solid #b9828e;
+  border-radius: 50%;
+  background: none;
+  color: inherit;
+  cursor: pointer;
+}
+.a11y-close svg {
+  width: 1.25rem;
+  height: 1.25rem;
+}
+
+/* Text size: native radio buttons, drawn as one row of choices. */
+.a11y-size {
+  min-width: 0;
+  margin: 0 0 1rem;
+  padding: 0;
+  border: 0;
+}
+.a11y-size legend {
+  margin-bottom: 0.5rem;
+  padding: 0;
+  font-weight: 700;
+}
+.a11y-size div {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 0.375rem;
+}
+.a11y-size label {
+  position: relative;
+}
+.a11y-size input {
+  position: absolute;
+  inset: 0;
+  margin: 0;
+  opacity: 0;
+}
+.a11y-size span {
+  display: block;
+  padding: 0.5rem 0;
+  border: 1px solid #b9828e;
+  border-radius: 999px;
+  font-weight: 700;
+  text-align: center;
+  cursor: pointer;
+}
+.a11y-size input:checked + span {
+  border-color: #f4f0ea;
+  background: #f4f0ea;
+  color: #35111b;
+}
+.a11y-size input:focus-visible + span {
+  outline: 3px solid #fff;
+  outline-offset: 2px;
+}
+
+/* On/off settings: toggle buttons; the ✓ repeats the state shown by colour. */
+.a11y-options {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+.a11y-option {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.5rem;
+  min-height: 5.25rem;
+  padding: 0.75rem;
+  border: 1px solid #b9828e;
+  border-radius: 16px;
+  background: #43202a;
+  color: inherit;
+  font: inherit;
+  font-weight: 600;
+  line-height: 1.3;
+  text-align: left;
+  cursor: pointer;
+}
+.a11y-option svg {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+.a11y-option[aria-pressed="true"] {
+  border-color: #f4f0ea;
+  background: #f4f0ea;
+  color: #35111b;
+}
+.a11y-option[aria-pressed="true"]::after {
+  content: "✓" / "";
+  position: absolute;
+  top: 0.5rem;
+  right: 0.75rem;
+  font-weight: 800;
+}
+.a11y-option:hover,
+.a11y-size span:hover,
+.a11y-close:hover {
+  border-color: #fff;
+}
+
+.a11y-reset {
+  width: 100%;
+  padding: 0.65rem 1rem;
+  border: 2px solid #f4f0ea;
+  border-radius: 999px;
+  background: none;
+  color: inherit;
+  font: inherit;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.a11y-reset:hover {
+  background: #f4f0ea;
+  color: #35111b;
+}
+.a11y-note {
+  margin: 1rem 0 0;
+  font-size: 0.875rem;
+}
+.a11y-note a {
+  color: #fff;
+  font-weight: 600;
+  text-decoration: underline;
+  text-underline-offset: 0.2em;
+}
+
+/* The block being read aloud. */
+.a11y-reading {
+  outline: 3px dashed currentColor;
+  outline-offset: 0.25rem;
+}
+
+/* --- Preferences, set on <html> by the panel --- */
+html[data-a11y-text="125"] {
+  font-size: 125%;
+}
+html[data-a11y-text="150"] {
+  font-size: 150%;
+}
+html[data-a11y-text="200"] {
+  font-size: 200%;
+}
+/* Larger text needs the room the pinned header takes up (styles.css). */
+html[data-a11y-text] {
+  scroll-padding-top: 0;
+}
+html[data-a11y-text] .site-header {
+  position: static;
+}
+/* The layouts switch at widths set for normal text, so on a phone enlarged text
+   would push long words and the header row past the screen edge. */
+html[data-a11y-text] body,
+html[data-a11y-text] body * {
+  overflow-wrap: anywhere;
+}
+html[data-a11y-text] .site-header .container {
+  flex-wrap: wrap;
+}
+
+/* High contrast: white on black, links yellow, the photo removed. Decorative
+   markers (::before/::after) keep their own colours. */
+html[data-a11y-contrast] {
+  color-scheme: dark;
+}
+html[data-a11y-contrast] * {
+  background-color: #000 !important;
+  background-image: none !important;
+  color: #fff !important;
+  border-color: #fff !important;
+  box-shadow: none !important;
+  text-shadow: none !important;
+}
+html[data-a11y-contrast] *::before,
+html[data-a11y-contrast] *::after {
+  color: #fff !important;
+  border-color: #fff !important;
+}
+html[data-a11y-contrast] a,
+html[data-a11y-contrast] a * {
+  color: #ff0 !important;
+}
+html[data-a11y-contrast] ::placeholder {
+  color: #ccc !important;
+}
+html[data-a11y-contrast] img {
+  background-color: #fff !important;
+}
+html[data-a11y-contrast] :focus-visible {
+  outline-color: #ff0 !important;
+}
+/* Boxes that stood out by their background alone keep a visible edge. */
+html[data-a11y-contrast] :is(.card, .form-card, .a11y-panel) {
+  outline: 2px solid #fff;
+  outline-offset: -2px;
+}
+html[data-a11y-contrast] .a11y-option[aria-pressed="true"],
+html[data-a11y-contrast] .a11y-option[aria-pressed="true"] *,
+html[data-a11y-contrast] .a11y-option[aria-pressed="true"]::after,
+html[data-a11y-contrast] .a11y-size input:checked + span {
+  border-color: #ff0 !important;
+  background-color: #ff0 !important;
+  color: #000 !important;
+}
+
+/* Highlighted links: black underlined text on yellow. */
+html[data-a11y-links] a {
+  background-color: #ff0 !important;
+  color: #000 !important;
+  text-decoration: underline !important;
+  text-decoration-thickness: 0.12em !important;
+  text-underline-offset: 0.2em !important;
+}
+html[data-a11y-links] a * {
+  background-color: transparent !important;
+  color: inherit !important;
+}
+
+/* Readable font: a wide sans-serif with Greek letters, extra spacing and no
+   capitals-only text. Within the spacing WCAG 1.4.12 requires pages to take. */
+html[data-a11y-readable] body,
+html[data-a11y-readable] body * {
+  font-family: Verdana, Tahoma, "Segoe UI", ui-sans-serif, sans-serif !important;
+  font-style: normal !important;
+  letter-spacing: 0.05em !important;
+  word-spacing: 0.16em !important;
+  line-height: 1.6 !important;
+  text-transform: none !important;
+}
+
+/* Large cursor: a 48px arrow with a white edge, visible on any background. */
+html[data-a11y-cursor],
+html[data-a11y-cursor] * {
+  cursor: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='48' height='48' viewBox='0 0 24 24'%3E%3Cpath d='M4 2l15 11.5-6.6.9 3.9 7.4-2.9 1.5-3.9-7.5L4 20z' fill='%23000' stroke='%23fff' stroke-width='1.2' stroke-linejoin='round'/%3E%3C/svg%3E") 8 4, auto !important;
+}
+
+@media print {
+  .a11y-widget {
+    display: none;
+  }
+}

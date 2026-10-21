@@ -30,6 +30,15 @@
     if ((gtcConsent.read() || {}).analytics) gtcConsent.loadGtm();
     </script>
     <!-- End Google Tag Manager -->
+    <!-- Accessibility settings chosen in the panel (a11y-widget.js), applied before the page is drawn -->
+    <script>
+    try {
+      var a11y = JSON.parse(localStorage.getItem('gtc-a11y')) || {};
+      ['text', 'contrast', 'links', 'readable', 'cursor'].forEach(function (name) {
+        if (a11y[name]) document.documentElement.setAttribute('data-a11y-' + name, a11y[name]);
+      });
+    } catch (e) {}
+    </script>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta
       name="description"
@@ -54,6 +63,7 @@
     <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
     <link rel="stylesheet" href="/accessibility.css" />
     <link rel="stylesheet" href="/consent.css" />
+    <link rel="stylesheet" href="/a11y-widget.css" />
   </head>
   <body data-consent-prompt="off">
     <a class="skip-link" href="#main-content">Μετάβαση στο κύριο περιεχόμενο</a>
@@ -148,6 +158,17 @@
           μετά σας ρωτάμε ξανά.
         </li>
         <li>
+          <strong lang="en">gtc-a11y</strong>: αποθηκεύεται στο
+          πρόγραμμα περιήγησής σας από τον ιστότοπο, μόνο αν
+          αλλάξετε κάποια επιλογή στις ρυθμίσεις προσβασιμότητας,
+          για να διατηρούνται οι επιλογές σας (όπως το μέγεθος
+          κειμένου ή η υψηλή αντίθεση) σε κάθε σελίδα. Είναι
+          απολύτως απαραίτητο για τη λειτουργία που ζητήσατε και
+          δεν απαιτεί συγκατάθεση. Διατηρείται μέχρι να επιλέξετε
+          «Επαναφορά» ή να διαγράψετε τα δεδομένα του προγράμματος
+          περιήγησης.
+        </li>
+        <li>
           <strong lang="en">_ga και _ga_*</strong>: cookies του
           <span lang="en">Google Analytics</span>, μόνο αν το αποδεχτείτε, για
           να ξεχωρίζουν οι επισκέψεις και να αναγνωρίζονται οι επισκέπτες που
@@ -236,6 +257,7 @@
         <button type="button" class="consent-settings" hidden>Ρυθμίσεις cookies</button>
       </div>
     </footer>
-    <script src="/consent.js" defer></script>
+    <script type="module" src="/consent.js"></script>
+    <script type="module" src="/a11y-widget.js"></script>
   </body>
 </html>

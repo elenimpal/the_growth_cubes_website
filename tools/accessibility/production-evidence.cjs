@@ -21,7 +21,7 @@ const pages = [
   { id: "statement-en", lang: "en", path: "/accessibility.html", file: "accessibility.html" },
   { id: "statement-el", lang: "el", path: "/el/accessibility.html", file: "el/accessibility.html" },
 ];
-const assets = ["styles.css", "accessibility.css", "forms.js", "favicon.svg"];
+const assets = ["styles.css", "accessibility.css", "forms.js", "consent.js", "consent.css", "a11y-widget.js", "a11y-widget.css", "favicon.svg"];
 const viewports = [
   ["desktop-1440", 1440, 900],
   ["tablet-768", 768, 1024],
@@ -62,7 +62,11 @@ const check = (page, name, pass, detail = null) => checks.push({ page, name, pas
   results.commit = execFileSync("git", ["rev-parse", "HEAD"], { cwd: root }).toString().trim();
   check("all", "Published files are identical to the audited source files", results.files.every((f) => f.status === 200 && f.matchesRepository));
 
-  const page = await browser.newPage();
+  // A visitor who has already answered the cookie question (rejected): the
+  // consent dialog is modal and would otherwise cover every page under test.
+  const context = await browser.newContext();
+  await context.addInitScript(() => localStorage.setItem("gtc-consent", JSON.stringify({ analytics: false, date: Date.now() })));
+  const page = await context.newPage();
   const consoleErrors = [];
   page.on("pageerror", (e) => consoleErrors.push(e.message));
   page.on("console", (m) => m.type() === "error" && consoleErrors.push(m.text()));
@@ -165,7 +169,9 @@ const check = (page, name, pass, detail = null) => checks.push({ page, name, pas
       stops.push(stop);
     }
     results.keyboard.push({ page: p.id, stops });
-    const expected = await page.locator("a[href], button, input, textarea").count();
+    // Controls inside closed containers (the accessibility panel, the cookie
+    // dialog) are correctly out of the tab order until they are opened.
+    const expected = await page.locator("a[href], button, input, textarea").evaluateAll((all) => all.filter((e) => e.checkVisibility()).length);
     check(p.id, "First Tab reaches the skip link", /skip|Μετάβαση/i.test(stops[0]?.name || ""), stops[0]);
     check(p.id, "Every link, button and field is reachable with the keyboard", stops.length === expected, { reached: stops.length, expected });
     check(p.id, "Every keyboard stop shows a visible focus indicator", stops.every((s) => s.focusRing), stops.filter((s) => !s.focusRing));

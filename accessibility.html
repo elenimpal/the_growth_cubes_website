@@ -30,6 +30,15 @@
     if ((gtcConsent.read() || {}).analytics) gtcConsent.loadGtm();
     </script>
     <!-- End Google Tag Manager -->
+    <!-- Accessibility settings chosen in the panel (a11y-widget.js), applied before the page is drawn -->
+    <script>
+    try {
+      var a11y = JSON.parse(localStorage.getItem('gtc-a11y')) || {};
+      ['text', 'contrast', 'links', 'readable', 'cursor'].forEach(function (name) {
+        if (a11y[name]) document.documentElement.setAttribute('data-a11y-' + name, a11y[name]);
+      });
+    } catch (e) {}
+    </script>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta
       name="description"
@@ -54,6 +63,7 @@
     <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
     <link rel="stylesheet" href="/accessibility.css" />
     <link rel="stylesheet" href="/consent.css" />
+    <link rel="stylesheet" href="/a11y-widget.css" />
   </head>
   <body>
     <a class="skip-link" href="#main-content">Skip to main content</a>
@@ -149,6 +159,20 @@
         </li>
       </ul>
 
+      <h2>Accessibility settings</h2>
+      <p>
+        The round button with the accessibility symbol, at the
+        bottom left of every page (at the top of the page on small
+        or magnified screens), opens optional display settings: text
+        size up to 200%, high contrast, highlighted links, a
+        readable font with wider spacing, a large mouse pointer, and
+        reading the page aloud with your device’s voice. Your
+        choices apply to every page and are kept in your browser
+        only. The settings are an addition: the website meets the
+        standard without them, and it works the same with your own
+        screen reader, keyboard and browser zoom.
+      </p>
+
       <h2>Feedback and contact</h2>
       <p>
         If you have difficulty accessing any information or feature of this
@@ -178,6 +202,7 @@
         <button type="button" class="consent-settings" hidden>Cookie settings</button>
       </div>
     </footer>
-    <script src="/consent.js" defer></script>
+    <script type="module" src="/consent.js"></script>
+    <script type="module" src="/a11y-widget.js"></script>
   </body>
 </html>
