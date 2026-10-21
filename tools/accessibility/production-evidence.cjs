@@ -114,6 +114,21 @@ const check = (page, name, pass, detail = null) => checks.push({ page, name, pas
         all.forEach((e, i) => (e.style.fontSize = `${sizes[i] * 2}px`));
       })
     );
+    // Accessibility settings panel: open as it first appears, then with high
+    // contrast and highlighted links chosen (saved, and kept after a reload).
+    const openPanel = async (settings) => {
+      if (settings) {
+        await page.evaluate((v) => localStorage.setItem("gtc-a11y", JSON.stringify(v)), settings);
+        await page.reload({ waitUntil: "networkidle" });
+      }
+      await page.locator(".a11y-toggle").click();
+    };
+    await scan(p, "a11y-panel", 1440, 900, () => openPanel());
+    await page.screenshot({ path: path.join(out, `screenshot-${p.id}-a11y-panel.png`) });
+    await scan(p, "a11y-contrast", 1440, 900, () => openPanel({ contrast: "on", links: "on" }));
+    await page.screenshot({ path: path.join(out, `screenshot-${p.id}-a11y-contrast.png`) });
+    check(p.id, "Accessibility settings are applied and kept after the page reloads", await page.evaluate(() => document.documentElement.dataset.a11yContrast === "on" && document.documentElement.dataset.a11yLinks === "on"));
+    await page.evaluate(() => localStorage.removeItem("gtc-a11y"));
 
     // Structure and keyboard, on a clean desktop load.
     await page.setViewportSize({ width: 1440, height: 900 });
@@ -178,6 +193,17 @@ const check = (page, name, pass, detail = null) => checks.push({ page, name, pas
     // WCAG asks that a focused element is not hidden by other content; the visible
     // share of each stop is recorded in the keyboard log for reference.
     check(p.id, "Focused elements are on screen and never covered by other content", stops.every((s) => s.visibleShare > 0.5 && !s.obscured), stops.filter((s) => s.visibleShare <= 0.5 || s.obscured));
+    // The accessibility settings button comes right after the skip link.
+    await page.goto(site + p.path);
+    await page.keyboard.press("Tab");
+    await page.keyboard.press("Tab");
+    const toggle = page.locator(".a11y-toggle");
+    const panelKeys = { secondStop: await toggle.evaluate((e) => e === document.activeElement) };
+    await page.keyboard.press("Enter");
+    panelKeys.opensWithEnter = (await toggle.getAttribute("aria-expanded")) === "true" && (await page.locator("#a11y-panel").isVisible());
+    await page.keyboard.press("Escape");
+    panelKeys.closesWithEscape = (await toggle.getAttribute("aria-expanded")) === "false" && (await toggle.evaluate((e) => e === document.activeElement));
+    check(p.id, "Accessibility settings button is the second keyboard stop and opens and closes with Enter and Escape", Object.values(panelKeys).every(Boolean), panelKeys);
     await page.goto(site + p.path);
     await page.keyboard.press("Tab");
     await page.keyboard.press("Enter");
