@@ -2,32 +2,13 @@
 <html lang="el">
   <head>
     <meta charset="utf-8" />
-    <!-- Google Tag Manager: loads only after the visitor accepts analytics in the consent dialog (consent.js) -->
+    <!-- Google Tag Manager: Cookiebot in GTM manages consent. -->
     <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
-    gtag('consent', 'default', { ad_storage: 'denied', ad_user_data: 'denied', ad_personalization: 'denied', analytics_storage: 'denied' });
-    window.gtcConsent = {
-      key: 'gtc-consent',
-      maxAge: 365 * 24 * 60 * 60 * 1000, // ask again after 12 months
-      read: function () {
-        try {
-          var choice = JSON.parse(localStorage.getItem(this.key));
-          return choice && Date.now() - choice.date < this.maxAge ? choice : null;
-        } catch (e) { return null; }
-      },
-      loadGtm: function () {
-        gtag('consent', 'update', { analytics_storage: 'granted' });
-        if (this.loaded) return;
-        this.loaded = true;
-        (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-        })(window,document,'script','dataLayer','GTM-MR7SD8HN');
-      }
-    };
-    if ((gtcConsent.read() || {}).analytics) gtcConsent.loadGtm();
+    (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-MR7SD8HN');
     </script>
     <!-- End Google Tag Manager -->
     <!-- Accessibility settings chosen in the panel (a11y-widget.js), applied before the page is drawn -->
@@ -65,7 +46,7 @@
     <link rel="stylesheet" href="/consent.css" />
     <link rel="stylesheet" href="/a11y-widget.css" />
   </head>
-  <body data-consent-prompt="off">
+  <body>
     <a class="skip-link" href="#main-content">Μετάβαση στο κύριο περιεχόμενο</a>
     <header class="site-header">
       <div class="container">
@@ -127,9 +108,11 @@
         κατά προσέγγιση τοποθεσία τους (χώρα ή πόλη). Το
         <span lang="en">Google Analytics</span> δεν καταγράφει και δεν
         αποθηκεύει διευθύνσεις IP. Εμείς βλέπουμε μόνο στατιστικά, όχι ποιος
-        είστε. Αν δεν το αποδεχτείτε, το <span lang="en">Google Tag
-        Manager</span> και το <span lang="en">Google Analytics</span> δεν
-        φορτώνονται καθόλου. Νομική βάση: η συγκατάθεσή σας (άρθρο 6 παρ. 1
+        είστε. Το <span lang="en">Google Tag Manager</span> φορτώνεται μόλις
+        ανοίξετε μια σελίδα, ώστε το <span lang="en">Cookiebot</span> να
+        εμφανίζει το πλαίσιο συγκατάθεσης και να διαχειρίζεται τις επιλογές
+        σας. Το <span lang="en">Cookiebot</span> ενημερώνει τα εργαλεία της
+        <span lang="en">Google</span> για αυτές τις επιλογές. Νομική βάση: η συγκατάθεσή σας (άρθρο 6 παρ. 1
         στοιχ. α΄ ΓΚΠΔ και άρθρο 4 παρ. 5 του ν. 3471/2006). Τα στατιστικά
         διατηρούνται για 14 μήνες και στη συνέχεια διαγράφονται αυτόματα.
       </p>
@@ -151,11 +134,10 @@
       </p>
       <ul>
         <li>
-          <strong lang="en">gtc-consent</strong>: αποθηκεύεται στο πρόγραμμα
-          περιήγησής σας από τον ιστότοπο για να θυμάται την επιλογή σας για τα
-          cookies, ώστε να μη σας ρωτάμε ξανά σε κάθε σελίδα. Είναι απολύτως
-          απαραίτητο και δεν απαιτεί συγκατάθεση. Διατηρείται για 12 μήνες και
-          μετά σας ρωτάμε ξανά.
+          <strong lang="en">Cookiebot</strong>: διαχειρίζεται τις επιλογές σας
+          για τα cookies και τις θυμάται με το δικό του cookie συγκατάθεσης.
+          Το πλαίσιο του <span lang="en">Cookiebot</span> παρέχει πληροφορίες
+          για τα cookies και τις διαθέσιμες επιλογές συγκατάθεσης.
         </li>
         <li>
           <strong lang="en">gtc-a11y</strong>: αποθηκεύεται στο
@@ -177,9 +159,9 @@
       </ul>
       <p>
         Μπορείτε να αλλάξετε την επιλογή σας οποιαδήποτε στιγμή από τις
-        «Ρυθμίσεις cookies» στο κάτω μέρος κάθε σελίδας. Αν ανακαλέσετε τη
-        συγκατάθεσή σας, το <span lang="en">Google Analytics</span> σταματά και
-        τα cookies του διαγράφονται. Μπορείτε επίσης να μπλοκάρετε ή να
+        «Ρυθμίσεις cookies» στο κάτω μέρος κάθε σελίδας, όταν είναι διαθέσιμο
+        το <span lang="en">Cookiebot</span>. Το <span lang="en">Cookiebot</span>
+        διαχειρίζεται τις αλλαγές στη συγκατάθεσή σας. Μπορείτε επίσης να μπλοκάρετε ή να
         διαγράψετε cookies από τις ρυθμίσεις του προγράμματος περιήγησής σας.
       </p>
 
@@ -188,7 +170,8 @@
         <li>
           Η <span lang="en">Google Ireland Limited</span> παρέχει για λογαριασμό
           μας το <span lang="en">Google Analytics</span> και το
-          <span lang="en">Google Tag Manager</span>, μόνο αν τα αποδεχτείτε.
+          <span lang="en">Google Tag Manager</span>. Το
+          <span lang="en">Cookiebot</span> παρέχει τη διαχείριση συγκατάθεσης.
         </li>
         <li>Η <span lang="en">Vercel Inc.</span> φιλοξενεί τον ιστότοπο.</li>
         <li>
@@ -245,7 +228,7 @@
         παράδειγμα με την προσθήκη νέου εργαλείου, θα ενημερώσουμε αυτή τη
         σελίδα και, όπου χρειάζεται, θα ζητήσουμε ξανά τη συγκατάθεσή σας.
         Τελευταία ενημέρωση:
-        <time datetime="2026-10-15">15 Οκτωβρίου 2026</time>.
+        <time datetime="2026-11-04">4 Νοεμβρίου 2026</time>.
       </p>
 
       <p class="back-link"><a href="/el/">← Επιστροφή στην αρχική σελίδα</a></p>

@@ -2,32 +2,13 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<!-- Google Tag Manager: loads only after the visitor accepts analytics in the consent dialog (consent.js) -->
+<!-- Google Tag Manager: Cookiebot in GTM manages consent. -->
 <script>
-window.dataLayer = window.dataLayer || [];
-function gtag() { dataLayer.push(arguments); }
-gtag('consent', 'default', { ad_storage: 'denied', ad_user_data: 'denied', ad_personalization: 'denied', analytics_storage: 'denied' });
-window.gtcConsent = {
-  key: 'gtc-consent',
-  maxAge: 365 * 24 * 60 * 60 * 1000, // ask again after 12 months
-  read: function () {
-    try {
-      var choice = JSON.parse(localStorage.getItem(this.key));
-      return choice && Date.now() - choice.date < this.maxAge ? choice : null;
-    } catch (e) { return null; }
-  },
-  loadGtm: function () {
-    gtag('consent', 'update', { analytics_storage: 'granted' });
-    if (this.loaded) return;
-    this.loaded = true;
-    (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-    })(window,document,'script','dataLayer','GTM-MR7SD8HN');
-  }
-};
-if ((gtcConsent.read() || {}).analytics) gtcConsent.loadGtm();
+(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-MR7SD8HN');
 </script>
 <!-- End Google Tag Manager -->
 <!-- Accessibility settings chosen in the panel (a11y-widget.js), applied before the page is drawn -->

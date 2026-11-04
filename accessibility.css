@@ -1,5 +1,5 @@
 /* Independent stylesheet for the accessibility statement and privacy policy
-   pages. No animations; the only script is the cookie consent dialog. */
+   pages. No animations. */
 :root {
   color-scheme: dark;
 }

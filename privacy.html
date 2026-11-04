@@ -2,32 +2,13 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <!-- Google Tag Manager: loads only after the visitor accepts analytics in the consent dialog (consent.js) -->
+    <!-- Google Tag Manager: Cookiebot in GTM manages consent. -->
     <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
-    gtag('consent', 'default', { ad_storage: 'denied', ad_user_data: 'denied', ad_personalization: 'denied', analytics_storage: 'denied' });
-    window.gtcConsent = {
-      key: 'gtc-consent',
-      maxAge: 365 * 24 * 60 * 60 * 1000, // ask again after 12 months
-      read: function () {
-        try {
-          var choice = JSON.parse(localStorage.getItem(this.key));
-          return choice && Date.now() - choice.date < this.maxAge ? choice : null;
-        } catch (e) { return null; }
-      },
-      loadGtm: function () {
-        gtag('consent', 'update', { analytics_storage: 'granted' });
-        if (this.loaded) return;
-        this.loaded = true;
-        (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-        })(window,document,'script','dataLayer','GTM-MR7SD8HN');
-      }
-    };
-    if ((gtcConsent.read() || {}).analytics) gtcConsent.loadGtm();
+    (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-MR7SD8HN');
     </script>
     <!-- End Google Tag Manager -->
     <!-- Accessibility settings chosen in the panel (a11y-widget.js), applied before the page is drawn -->
@@ -65,7 +46,7 @@
     <link rel="stylesheet" href="/consent.css" />
     <link rel="stylesheet" href="/a11y-widget.css" />
   </head>
-  <body data-consent-prompt="off">
+  <body>
     <a class="skip-link" href="#main-content">Skip to main content</a>
     <header class="site-header">
       <div class="container">
@@ -116,8 +97,10 @@
         how long, how visitors found the website, what type of device and
         browser they use, and their approximate location (country or city).
         Google Analytics does not log or store IP addresses. We see only
-        statistics, not who you are. If you do not accept, Google Tag Manager
-        and Google Analytics are not loaded at all. Legal basis: your consent
+        statistics, not who you are. Google Tag Manager loads when you open
+        a page so that Cookiebot can display the consent banner and manage
+        your choices. Cookiebot communicates those choices to Google tags.
+        Legal basis for analytics: your consent
         (Article 6(1)(a) GDPR and Article 4(5) of Greek Law 3471/2006). The
         statistics are kept for 14 months and then deleted automatically.
       </p>
@@ -134,10 +117,9 @@
       <p>The website uses only the following. Nothing is used for advertising.</p>
       <ul>
         <li>
-          <strong>gtc-consent</strong>: stored in your browser by this website
-          to remember your cookie choice, so that you are not asked again on
-          every page. It is strictly necessary and does not require consent.
-          It is kept for 12 months, after which you are asked again.
+          <strong>Cookiebot</strong>: manages your cookie choices and remembers
+          them using its own consent cookie. The Cookiebot banner provides
+          information about the cookies and consent options.
         </li>
         <li>
           <strong>gtc-a11y</strong>: stored in your browser by
@@ -156,8 +138,8 @@
       </ul>
       <p>
         You can change your choice at any time with “Cookie settings” at the
-        bottom of every page. If you withdraw your consent, Google Analytics
-        stops and its cookies are deleted. You can also block or delete
+        bottom of every page when Cookiebot is available. Cookiebot manages
+        updates to your consent. You can also block or delete
         cookies in your browser settings.
       </p>
 
@@ -165,7 +147,7 @@
       <ul>
         <li>
           Google Ireland Limited provides Google Analytics and Google Tag
-          Manager on our behalf, only if you accept them.
+          Manager on our behalf. Cookiebot provides consent management.
         </li>
         <li>Vercel Inc. hosts the website.</li>
         <li>Our email provider stores the messages we exchange with you.</li>
@@ -213,7 +195,7 @@
         If we change how we use personal data, for example by adding a new
         tool, we will update this page and, where needed, ask for your consent
         again. Last updated on
-        <time datetime="2026-10-15">15 October 2026</time>.
+        <time datetime="2026-11-04">4 November 2026</time>.
       </p>
 
       <p class="back-link"><a href="/">← Back to the home page</a></p>

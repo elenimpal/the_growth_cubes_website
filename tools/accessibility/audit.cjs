@@ -74,14 +74,10 @@ function check(name, pass, detail) {
       .createHash("sha256")
       .update(fs.readFileSync(path.join(root, name)))
       .digest("hex");
-  // A first visit opens the blocking cookie dialog. Most scans check the page
-  // itself, so they start with analytics already rejected (which also keeps
-  // Google Tag Manager from loading); the dialog has its own checks below.
-  const consentChoice = { analytics: false, date: Date.now() };
+  // Audit local UI independently of the remotely managed GTM/Cookiebot banner.
+  // The integration is checked with a controlled GTM response below.
   const page = await browser.newPage();
-  await page.addInitScript((choice) => {
-    localStorage.setItem("gtc-consent", JSON.stringify(choice));
-  }, consentChoice);
+  await page.route('https://www.googletagmanager.com/**', route => route.abort());
   const errors = [];
   page.on("pageerror", (error) => errors.push(error.message));
   async function scan(name, url, viewport, setup) {
@@ -159,8 +155,6 @@ function check(name, pass, detail) {
         "el-statement",
         "en-privacy",
         "el-privacy",
-        "en-consent-mobile-320",
-        "el-consent-mobile-320",
         "production-desktop",
       ].includes(name)
     )
@@ -329,65 +323,35 @@ function check(name, pass, detail) {
       null
     );
   }
-  // Cookie consent dialog, reopened from the footer, then a true first visit.
-  for (const [lang, url] of [
-    ["en", `${base}/`],
-    ["el", `${base}/el/`],
-  ]) {
-    for (const [size, viewport] of [
-      ["mobile-320", { width: 320, height: 640 }],
-      ["desktop", { width: 1440, height: 900 }],
-    ])
-      await scan(`${lang}-consent-${size}`, url, viewport, () =>
-        page.locator(".consent-settings").click()
-      );
-    const fresh = await browser.newPage({
-      viewport: { width: 390, height: 844 },
-    });
-    const google = [];
-    fresh.on("request", (request) => {
-      if (request.url().includes("googletagmanager.com")) google.push(request.url());
-    });
-    fresh.on("pageerror", (error) => errors.push(error.message));
-    await fresh.goto(url, { waitUntil: "networkidle" });
-    check(
-      `${lang}: first visit opens the cookie dialog with focus on its heading`,
-      await fresh.evaluate(
-        () =>
-          document.querySelector(".consent-dialog")?.open &&
-          document.activeElement?.id === "consent-title"
-      ),
-      null
-    );
-    await fresh.keyboard.press("Escape");
-    check(
-      `${lang}: Escape does not dismiss the cookie dialog before a choice`,
-      await fresh.evaluate(() => document.querySelector(".consent-dialog").open),
-      null
-    );
-    await fresh.locator('.consent-dialog button[value="reject"]').click();
-    check(
-      `${lang}: rejecting closes the dialog and Google Tag Manager never loads`,
-      (await fresh.evaluate(
-        () =>
-          !document.querySelector(".consent-dialog").open &&
-          JSON.parse(localStorage.getItem("gtc-consent")).analytics === false
-      )) && google.length === 0,
-      google
-    );
-    await fresh.close();
-  }
-  for (const [lang, url] of [
-    ["en", `${base}/privacy.html`],
-    ["el", `${base}/el/privacy.html`],
-  ]) {
+  // Verify all pages load GTM without relying on the retired consent choice,
+  // and that the footer bridge works when Cookiebot arrives asynchronously.
+  for (const pathname of ["/", "/el/", "/privacy.html", "/el/privacy.html", "/accessibility.html", "/el/accessibility.html"]) {
     const fresh = await browser.newPage();
-    await fresh.goto(url, { waitUntil: "networkidle" });
-    check(
-      `${lang}: privacy policy stays readable without opening the cookie dialog`,
-      await fresh.evaluate(() => !document.querySelector(".consent-dialog").open),
-      null
-    );
+    const google = [];
+    await fresh.route('https://www.googletagmanager.com/**', route => {
+      google.push(route.request().url());
+      return route.fulfill({ contentType: 'application/javascript', body: '' });
+    });
+    await fresh.addInitScript(() => {
+      // An existing rejection must no longer prevent GTM from loading.
+      localStorage.setItem('gtc-consent', JSON.stringify({ analytics: false, date: Date.now() }));
+    });
+    fresh.on("pageerror", error => errors.push(error.message));
+    await fresh.goto(`${base}${pathname}`, { waitUntil: "networkidle" });
+    check(`${pathname}: GTM loads immediately despite a legacy rejection`,
+      google.length === 1 && google[0].includes('id=GTM-MR7SD8HN'), google);
+    check(`${pathname}: no custom consent dialog or API remains`,
+      await fresh.evaluate(() => !document.querySelector('.consent-dialog') && !window.gtcConsent), null);
+    check(`${pathname}: settings stay hidden until Cookiebot is ready`,
+      await fresh.locator('.consent-settings').isHidden(), null);
+    await fresh.evaluate(() => {
+      window.renewCalls = 0;
+      window.Cookiebot = { renew: () => { window.renewCalls++; } };
+      window.dispatchEvent(new Event('CookiebotOnConsentReady'));
+    });
+    await fresh.locator('.consent-settings').click();
+    check(`${pathname}: footer opens Cookiebot settings`,
+      await fresh.evaluate(() => window.renewCalls === 1), null);
     await fresh.close();
   }
   check("No local JavaScript runtime errors", errors.length === 0, errors);
