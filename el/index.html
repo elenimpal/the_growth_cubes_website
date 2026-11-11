@@ -159,32 +159,33 @@ try {
         </div>
 
         <form class="form-card on-dark" id="contact-form" aria-describedby="contact-help">
-          <p id="contact-help">Τα πεδία με την ένδειξη (υποχρεωτικό) πρέπει να συμπληρωθούν. Το κουμπί ανοίγει την εφαρμογή <span lang="en">email</span> σας με το μήνυμα έτοιμο για αποστολή. Μπορείτε επίσης να γράψετε στο <a href="mailto:info@thegrowthcubes.com">info@thegrowthcubes.com</a>.</p>
+          <p id="contact-help">Τα πεδία με την ένδειξη (υποχρεωτικό) πρέπει να συμπληρωθούν. Με την υποβολή της φόρμας, το αίτημά σας αποστέλλεται απευθείας στο The Growth Cubes. Μπορείτε επίσης να γράψετε στο <a href="mailto:info@thegrowthcubes.com">info@thegrowthcubes.com</a>.</p>
           <div class="form-grid">
             <div class="field">
               <label for="contact-name">Ονοματεπώνυμο (υποχρεωτικό)</label>
-              <input id="contact-name" name="name" type="text" autocomplete="name" placeholder="π.χ. Μαρία Παπαδοπούλου" aria-describedby="contact-name-error" required>
+              <input id="contact-name" name="name" type="text" maxlength="100" autocomplete="name" placeholder="π.χ. Μαρία Παπαδοπούλου" aria-describedby="contact-name-error" required>
               <span id="contact-name-error" class="field-error"></span>
             </div>
             <div class="field">
               <label for="contact-company">Εταιρεία</label>
-              <input id="contact-company" name="company" type="text" autocomplete="organization" placeholder="π.χ. Παράδειγμα ΑΕ" aria-describedby="contact-company-error">
+              <input id="contact-company" name="company" type="text" maxlength="120" autocomplete="organization" placeholder="π.χ. Παράδειγμα ΑΕ" aria-describedby="contact-company-error">
               <span id="contact-company-error" class="field-error"></span>
             </div>
             <div class="field field-wide">
               <label for="contact-email">Διεύθυνση <span lang="en">email</span> (υποχρεωτικό)</label>
-              <input id="contact-email" name="email" type="email" autocomplete="email" placeholder="maria@example.gr" aria-describedby="contact-email-error" required>
+              <input id="contact-email" name="email" type="email" maxlength="254" autocomplete="email" placeholder="maria@example.gr" aria-describedby="contact-email-error" required>
               <span id="contact-email-error" class="field-error"></span>
             </div>
             <div class="field field-wide">
               <label for="contact-message">Πώς μπορούμε να βοηθήσουμε; (υποχρεωτικό)</label>
-              <textarea id="contact-message" name="message" placeholder="Περιγράψτε το έργο σας, τις υπηρεσίες που σας ενδιαφέρουν και τι θέλετε να πετύχετε..." aria-describedby="contact-message-error" required></textarea>
+              <textarea id="contact-message" name="message" minlength="10" maxlength="3000" placeholder="Περιγράψτε το έργο σας, τις υπηρεσίες που σας ενδιαφέρουν και τι θέλετε να πετύχετε..." aria-describedby="contact-message-error" required></textarea>
               <span id="contact-message-error" class="field-error"></span>
             </div>
           </div>
-          <button type="submit" class="button">Προετοιμασία <span lang="en">email</span></button>
+          <div class="contact-honeypot" aria-hidden="true"><label for="contact-website">Leave this field empty</label><input id="contact-website" name="website" type="text" tabindex="-1" autocomplete="off"></div>
+          <button type="submit" class="button">Αποστολή μηνύματος</button>
           <p id="contact-status" class="form-status" role="status"></p>
-          <a id="contact-email-draft" class="email-draft" hidden>Άνοιγμα προσχεδίου <span lang="en">email</span></a>
+          
         </form>
       </div>
     </section>
