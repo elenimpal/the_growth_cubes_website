@@ -97,9 +97,69 @@ export async function POST(request) {
       }),
       signal: AbortSignal.timeout(8000)
     });
-    // The provider accepted the message for delivery. Inbox receipt is a separate QA check.
+    // The provider accepted the agency inquiry for delivery.
+    // A visitor acknowledgment is independent and must never invalidate this success.
     if (!response.ok) return json(502, { error: 'email_provider_error' });
-    return json(200, { ok: true, accepted: true });
+
+    let acknowledgmentAccepted = false;
+    if (process.env.CONTACT_AUTO_ACK_ENABLED === 'true') {
+      const confirmation = locale === 'el'
+        ? [
+            'Γεια σας,',
+            '',
+            'Σας ευχαριστούμε που επικοινωνήσατε με το The Growth Cubes.',
+            'Λάβαμε το μήνυμά σας και θα εξετάσουμε το αίτημά σας.',
+            'Θα επικοινωνήσουμε μαζί σας μέσω email.',
+            '',
+            'Με εκτίμηση,',
+            'The Growth Cubes',
+            '',
+            'Αυτό είναι ένα αυτοματοποιημένο μήνυμα επιβεβαίωσης παραλαβής.',
+            'Δεν αποτελεί εγγραφή σε ενημερωτικό δελτίο (newsletter).',
+            'Εάν δεν υποβάλατε εσείς το αίτημα, μπορείτε να αγνοήσετε αυτό το email.'
+          ].join('\n')
+        : [
+            'Hello,',
+            '',
+            'Thank you for contacting The Growth Cubes.',
+            'We received your message and will review your inquiry.',
+            'We will get back to you by email.',
+            '',
+            'Best regards,',
+            'The Growth Cubes',
+            '',
+            'This is an automated acknowledgment of your inquiry.',
+            'It does not subscribe you to our newsletter.',
+            'If you did not submit this request, you can ignore this email.'
+          ].join('\n');
+
+      try {
+        // Separate idempotency keys for the agency inquiry and visitor acknowledgment.
+        // Keep this best-effort call shorter than the browser's total request timeout.
+        const ack = await fetch('https://api.resend.com/emails', {
+          method: 'POST',
+          headers: {
+            'Authorization': 'Bearer ' + key,
+            'Content-Type': 'application/json',
+            'Idempotency-Key': 'contact-ack/' + id
+          },
+          body: JSON.stringify({
+            from,
+            to: [email],
+            reply_to: [to],
+            subject: locale === 'el'
+              ? 'Λάβαμε το μήνυμά σας — The Growth Cubes'
+              : 'We received your message — The Growth Cubes',
+            text: confirmation
+          }),
+          signal: AbortSignal.timeout(2500)
+        });
+        acknowledgmentAccepted = ack.ok;
+      } catch {
+        // The agency inquiry is already accepted. Do not falsely report failure.
+      }
+    }
+    return json(200, { ok: true, accepted: true, acknowledgment_accepted: acknowledgmentAccepted });
   } catch {
     return json(502, { error: 'email_provider_unavailable' });
   }
