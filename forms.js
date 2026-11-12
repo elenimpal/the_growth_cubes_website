@@ -4,6 +4,9 @@ const translations = {
   en: {
     required: 'Please complete this required field.',
     email: 'Please enter a valid email address, such as name@example.com.',
+    messageTooShort: 'Please write at least 10 characters describing your inquiry.',
+    invalid: 'Please check this field and try again.',
+    rateLimited: 'Too many submissions. Please try again in a few minutes.'
     fix: count => `Please correct ${count} ${count === 1 ? 'field' : 'fields'} before continuing.`,
     sending: 'Sending your message…',
     sent: 'Your inquiry has been submitted. Thank you — we will get back to you.',
@@ -14,6 +17,9 @@ const translations = {
   el: {
     required: 'Συμπληρώστε αυτό το υποχρεωτικό πεδίο.',
     email: 'Εισαγάγετε μια έγκυρη διεύθυνση email, για παράδειγμα name@example.com.',
+    messageTooShort: 'Περιγράψτε το αίτημά σας με τουλάχιστον 10 χαρακτήρες.',
+    invalid: 'Ελέγξτε αυτό το πεδίο και δοκιμάστε ξανά.',
+    rateLimited: 'Έχουν γίνει πολλές υποβολές. Δοκιμάστε ξανά σε λίγα λεπτά.'
     fix: count => count === 1 ? 'Διορθώστε 1 πεδίο για να συνεχίσετε.' : `Διορθώστε ${count} πεδία για να συνεχίσετε.`,
     sending: 'Αποστολή μηνύματος…',
     sent: 'Το αίτημά σας υποβλήθηκε. Ευχαριστούμε — θα επικοινωνήσουμε μαζί σας.',
@@ -28,16 +34,24 @@ const form = document.getElementById('contact-form');
 if (form) {
   const status = document.getElementById('contact-status');
   const button = form.querySelector('button[type="submit"]');
-  const controls = [...form.querySelectorAll('input:not([name="website"]), textarea')];
+  const controls = [...form.querySelectorAll('input:not([name="website"]), textarea')].filter(control => !control.disabled);
   let isSending = false;
   let submissionId = null;
 
   form.noValidate = true;
   const validate = control => {
     const error = document.getElementById(`${control.id}-error`);
-    const invalid = !control.validity.valid;
+    const value = typeof control.value === 'string' ? control.value.trim() : '';
+    const isBlankRequired = control.required && !value;
+    const isShortMessage = control.name === 'message' && value.length < 10;
+    const invalid = !control.validity.valid || isBlankRequired || isShortMessage;
     control.setAttribute('aria-invalid', String(invalid));
-    if (error) error.textContent = invalid ? (control.validity.valueMissing ? copy.required : copy.email) : '';
+    if (error) {
+      error.textContent = !invalid ? '' :
+        (isBlankRequired || control.validity.valueMissing) ? copy.required :
+        (isShortMessage || control.validity.tooShort) ? copy.messageTooShort :
+        control.validity.typeMismatch ? copy.email : copy.invalid;
+    }
     return !invalid;
   };
   controls.forEach(control => {
@@ -86,7 +100,8 @@ if (form) {
       });
       const result = await response.json().catch(() => ({}));
       if (!response.ok || result.ok !== true || result.accepted !== true) {
-        status.textContent = response.status === 503 ? copy.unavailable : copy.failed;
+        status.textContent = response.status === 429 ? copy.rateLimited :
+          response.status === 503 ? copy.unavailable : copy.failed;
         return;
       }
 
