@@ -1,6 +1,6 @@
-import { build } from 'esbuild-wasm';
+import { build } from 'esbuild';
 
-// Bundle only the BotID browser bootstrap. Leave all other site assets untouched.
+// Bundle only BotID bootstrap. All existing HTML, CSS and other JS remain static.
 await build({
   entryPoints: ['tools/botid/client-entry.mjs'],
   outfile: 'botid-client.js',
