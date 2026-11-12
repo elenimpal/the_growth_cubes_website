@@ -61,3 +61,49 @@
 
 ### Next practical checkpoint
 **Resend account readiness:** read-only comparison of the approved plan, domain strategy and Vercel ownership, then guided agency-controlled account setup. No live changes at this checkpoint.
+
+
+---
+
+## Integrated workflow scope and completion gates — 12 November 2026
+
+**Founder direction:** Handle the website inquiry, optional visitor acknowledgment, newsletter double opt-in, measurement, security, and privacy together as one coherent workstream. Avoid leaving partially specified work; preserve the existing form UX and implement only confirmed necessary changes. This addendum **supersedes outdated proposed/pending decisions above** where explicitly resolved. It is a design and QA checklist, NOT blanket approval to enable sending to visitors, publish tracking, create broad credentials or storage, or deploy to Production.
+
+### Current evidence and scope lock
+
+- **PASSED (Preview):** EN and EL direct inquiry to corporate mailbox via Resend; founder confirmed successful UI and inbox receipt in both languages. Mobile appearance accepted by founder. Resend sending-domain DNS verified. Branch-only Preview variables `RESEND_API_KEY`, `CONTACT_FROM_EMAIL`, `CONTACT_TO_EMAIL` configured; the API key is restricted to Sending access. No secret values in source or documentation.
+- **PASSED (source/read-only):** Frontend avoids mailto for submission, uses one in-flight request guard and accepted-response condition; API validates origin, MIME, size, email/fields and UUID, with honeypot and email-provider idempotency. Founder-approved `method="post"` JS-fallback safeguard on both HTML forms. Preview-only WAF applies 5 POST /api/contact requests per ten minutes per IP.
+- **OPEN:** Real 429 enforcement behavior, origin/error/timeout/retry and accessibility behavior, reply-to test, BotID/anti-abuse decision, Cookiebot withdrawal/data protection checks, current GTM container duplicate audit, lead event reception, Resend customer acknowledgment, newsletter confirmation backend, privacy policy sign-off, hosting-plan commercial eligibility and final Production go/no-go.
+- **NOT IMPLEMENTED / NOT LIVE:** Visitor acknowledgment email; active newsletter registration/confirm/unsubscribe; GTM `generate_lead` event tag; new Production contact flow. The newsletter checkbox is intentionally disabled. Draft PR #1 remains unmerged.
+
+### Stream A — GA4 / GTM event measurement
+
+1. Read current published and draft GTM tags/triggers first; do not duplicate an existing event. Container `GTM-MR7SD8HN`; website GA4 measurement `G-QXLRQTGKV3` (existing account).
+2. Existing code emits `contact_form_success` only after Resend accepts the **agency inbox** message and only when Cookiebot statistics consent is true. Payload: `form_id=contact`, `form_language=en|el`; never send name, email, company, free-text, consent token or IDs.
+3. If no existing tag, prepare exactly one GA4 event tag mapping this custom event to `generate_lead` and guard it with analytics consent; inspect potential client duplication and late Cookiebot availability. Do not count clicking Submit, a validation error, a newsletter checkbox selection, or visitor acknowledgment mail as a lead.
+4. QA deny/accept/withdraw, EN/EL, duplicate submit/retry and test in Tag Assistant plus GA4 DebugView. Publish tag and designate key event only after Founder approval. No GTM changes made in this step.
+
+### Stream B — Transactional visitor acknowledgment (design, not active)
+
+1. Keep company inquiry delivery **the source of truth**. After its provider acceptance, display the already-approved success message irrespective of an acknowledgment email failure. A visitor email is a separate best-effort transactional follow-up, not evidence of CRM acceptance or mailbox delivery.
+2. Proposed subject lines: EN "We received your message — The Growth Cubes"; EL "Λάβαμε το μήνυμά σας — The Growth Cubes". Minimal copy: thank you for contacting us; inquiry received; we'll review and respond; do not promise a specific SLA. Do not echo the confidential contents of the submitted message. Proposed reply-to is the business inbox.
+3. Use branch-scoped existing Resend Sending-only credential and verified sender on the notify subdomain; no key in browser. Derive independent idempotency keys for agency send versus visitor acknowledgment; do not claim that Resend API accepted = inbox delivered. Acknowledge only after anti-abuse review to avoid turning the public endpoint into a mechanism for emailing third parties.
+4. English and Greek templates require copy/branding and privacy approval. Enable for Preview synthetic addresses only after the Founder approves the behavior; test success, provider failure, timeout, bounce, repeat and concurrent submissions with limited test sends. Preserve source form UI unless a demonstrated issue requires change.
+
+### Stream C — Newsletter double opt-in (direction agreed, implementation pending)
+
+1. User must expressly select the optional, initially unchecked consent checkbox; it is independent from RFQ/contact processing. Do **not** infer marketing consent from a contact inquiry or a transactional acknowledgment.
+2. Until subscription is operational and checked, keep checkbox disabled. On a consented future inquiry, store a **pending, not active** signup and minimal evidence: subscriber email, checkbox copy/version, timestamp, form origin/locale, pending/confirmed/unsubscribed status and confirmed time. Set documented retention and consent-deletion rules. Avoid storing inquiry free text, GA4 identifiers or unnecessary IP/device data.
+3. Send exactly one transactional visitor acknowledgment with a conditional "Confirm newsletter subscription" link when the checkbox was selected, using a cryptographically strong, expiring, single-use token and a stateful server-side consumption record. Ensure no email address or raw token is passed into GA4, logs or referrer traffic; apply no-referrer/no-cache to confirmation responses and guard against link-scanning/prefetch inadvertently confirming the subscription. Confirm via explicit user action (e.g. landing page button) and GET should not alone opt a contact in.
+4. Only after confirmation mark subscribed and create/update an authorized Resend **contact/topic** subscription. Resend Topics support default `opt_out` to prevent unintended marketing sends. Always respect unsubscribes/suppression and give a visible unsubscribe mechanism in marketing broadcasts. Resend provides hosted unsubscribe for its Broadcasts; use it and independently record the consent audit state.
+5. **Permissions blocker:** Current `RESEND_API_KEY` has Sending access only and cannot create/update Contacts or Topics. Do not broaden or replace it. A separate, securely stored and preferably restricted-scope contacts-management credential or safer provider-managed workflow must be designed and approved; Resend's current API key choices include Full access, which is security-sensitive. A durable, TTL-capable storage path for one-time tokens and confirmation evidence is **not yet selected/approved**; do not simulate persistence with localStorage, memory, or a replayable stateless signed link. Resend itself does not yet supply a turnkey native double-opt-in flow (according to its published developer example), so application-side implementation and negative-path QA are mandatory.
+6. QA false/no consent, opt-in pending, expired/replayed/scanned token, confirmed subscription, confirmed no duplicate, unsubscribed, resubscribed via fresh consent, bounce/suppression, EN/EL and GDPR rights. No active marketing contact is to be created before verification.
+
+### Stream D — Security, privacy, costs and release
+
+- Audit existing restrictive Preview WAF and check for shared-IP false positives. Determine whether BotID adds material incremental protection in this plain HTML/JS stack, avoiding new providers/costs unless justified. Verify error paths without sending real messages as far as possible.
+- Confirm provider/processor terms and transfers, whether data retention is accurate, and revise EN/EL Privacy Policy only after qualified review and Founder signoff. Existing notice still labels Resend "proposed." Investigate previously observed Cookiebot cookie persistence after consent withdrawal; do not claim GDPR compliance based only on banner behavior.
+- The Vercel Hobby commercial-usage question remains open for a later Founder hosting decision; do not upgrade or incur charges without approval. Resend's Free transactional tier currently advertises 3,000 messages per month and 100/day, but this is not a guarantee the final multi-message contact workflow fits usage or its marketing-plan limits; assess before release.
+- Release checklist: EN/EL, mobile, accessible UX, no-JS fallback, response errors, rate limit and bot tests, confirmed actual mailbox receipt, visitor acknowledgment and newsletter verification, unsubscribe evidence, GA4 deny/grant/withdraw, privacy signoff, project plan suitability, approved cost baseline, rollback and explicit Founder Go / No-Go.
+- Release separate concerns safely: do not bundle newsletter into Production contact release if it remains unverified; complete its design/test architecture now, but it may stay behind a disabled feature switch until all conditions pass. Never describe disabled work as shipped.
+- Sources reviewed: https://resend.com/changelog/new-api-key-permissions ; https://resend.com/docs/api-reference/contacts/create-contact ; https://resend.com/docs/api-reference/topics/create-topic ; https://resend.com/blog/unsubscribe-topics ; https://resend.com/blog/launch-week-behind-the-scenes ; https://resend.com/pricing .
