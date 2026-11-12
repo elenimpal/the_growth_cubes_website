@@ -1,9 +1,22 @@
+import { cpSync, mkdirSync } from 'node:fs';
 import { build } from 'esbuild';
 
-// Bundle only BotID bootstrap for browser. Leave site HTML/CSS/JS unchanged.
+// Vercel requires an explicit static output directory when a custom build runs.
+// Preserve the existing site's public assets byte-for-byte; only BotID is bundled.
+mkdirSync('public', { recursive: true });
+for (const asset of [
+  'index.html', 'accessibility.html', 'privacy.html',
+  'styles.css', 'accessibility.css', 'a11y-widget.css', 'consent.css',
+  'a11y-widget.js', 'consent.js', 'forms.js',
+  'favicon.svg', 'growth_cubes_hero.jpg', 'visual_id_ESPA.png',
+  'el'
+]) {
+  cpSync(asset, `public/${asset}`, { recursive: true });
+}
+
 await build({
   entryPoints: ['botid-client-entry.mjs'],
-  outfile: 'botid-client.js',
+  outfile: 'public/botid-client.js',
   bundle: true,
   minify: true,
   format: 'esm',
