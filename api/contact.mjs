@@ -1,6 +1,8 @@
 // Proposed Vercel serverless contact endpoint. Do not merge until email-provider,
 // anti-abuse, privacy, environment-variable and staging checks are approved.
 const MAX_BYTES = 12_000;
+import { checkBotId } from 'botid/server';
+
 const json = (status, payload) => new Response(JSON.stringify(payload), {
   status,
   headers: { 'Content-Type': 'application/json; charset=utf-8', 'Cache-Control': 'no-store', 'X-Content-Type-Options': 'nosniff' }
@@ -61,6 +63,14 @@ export async function POST(request) {
       !validEmail(email) || message.length < 10 || message.length > 3000 ||
       !/^[0-9a-f]{8}-[0-9a-f]{4}-4[0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$/i.test(id)) {
     return json(400, { error: 'invalid_fields' });
+  }
+
+  // Basic-only BotID verification. Fail closed before invoking Resend.
+  try {
+    const verdict = await checkBotId({ advancedOptions: { checkLevel: 'basic' } });
+    if (verdict.isBot) return json(403, { error: 'bot_detected' });
+  } catch {
+    return json(503, { error: 'bot_check_unavailable' });
   }
 
   const key = process.env.RESEND_API_KEY;
