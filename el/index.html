@@ -159,7 +159,7 @@ try {
         </div>
 
         <form class="form-card on-dark" id="contact-form" aria-describedby="contact-help">
-          <p id="contact-help">Τα πεδία με την ένδειξη (υποχρεωτικό) πρέπει να συμπληρωθούν. Με την υποβολή της φόρμας, το αίτημά σας αποστέλλεται απευθείας στο The Growth Cubes. Μπορείτε επίσης να γράψετε στο <a href="mailto:info@thegrowthcubes.com">info@thegrowthcubes.com</a>.</p>
+          <p id="contact-help">Συμπληρώστε τα υποχρεωτικά πεδία για να στείλετε το αίτημά σας απευθείας στο The Growth Cubes. Εναλλακτικά, γράψτε στο <a href="mailto:info@thegrowthcubes.com">info@thegrowthcubes.com</a>.</p>
           <div class="form-grid">
             <div class="field">
               <label for="contact-name">Ονοματεπώνυμο (υποχρεωτικό)</label>
@@ -181,6 +181,15 @@ try {
               <textarea id="contact-message" name="message" minlength="10" maxlength="3000" placeholder="Περιγράψτε το έργο σας, τις υπηρεσίες που σας ενδιαφέρουν και τι θέλετε να πετύχετε..." aria-describedby="contact-message-error" required></textarea>
               <span id="contact-message-error" class="field-error"></span>
             </div>
+          </div>
+          <div class="newsletter-option" role="group" aria-labelledby="newsletter-title">
+            <p class="newsletter-title" id="newsletter-title">Μείνετε ενημερωμένοι (προαιρετικό)</p>
+            <div class="newsletter-choice">
+              <input id="newsletter-opt-in" name="newsletter_opt_in" type="checkbox" value="yes" disabled aria-describedby="newsletter-note newsletter-status">
+              <label for="newsletter-opt-in">Θέλω επίσης να λαμβάνω μέσω email marketing insights, case studies και νέα από το The Growth Cubes.</label>
+            </div>
+            <p class="newsletter-note" id="newsletter-note">Μπορείτε να διαγραφείτε οποιαδήποτε στιγμή. Διαβάστε την <a href="/el/privacy.html">Πολιτική Απορρήτου</a>.</p>
+            <p class="newsletter-preview-note" id="newsletter-status">Η εγγραφή στο newsletter δεν είναι ακόμη διαθέσιμη. Η επιλογή θα ενεργοποιηθεί μόλις ολοκληρωθεί η επιβεβαίωση και η διαδικασία διαγραφής.</p>
           </div>
           <div class="contact-honeypot" aria-hidden="true"><label for="contact-website">Leave this field empty</label><input id="contact-website" name="website" type="text" tabindex="-1" autocomplete="off"></div>
           <button type="submit" class="button">Αποστολή μηνύματος</button>
