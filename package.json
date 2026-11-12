@@ -10,16 +10,16 @@
     "test:a11y": "node tools/accessibility/audit.cjs",
     "test:lighthouse": "node tools/accessibility/lighthouse.cjs",
     "test:html": "html-validate index.html el/index.html accessibility.html el/accessibility.html privacy.html el/privacy.html",
-    "build:botid": "node tools/botid/build.mjs"
+    "build:botid": "node build-botid.mjs"
   },
   "devDependencies": {
     "axe-core": "^4.14.0",
     "html-validate": "^11.16.2",
     "lighthouse": "^13.5.0",
-    "playwright": "^1.64.0",
-    "esbuild": "0.25.12"
+    "playwright": "^1.64.0"
   },
   "dependencies": {
-    "botid": "1.5.11"
+    "botid": "1.5.11",
+    "esbuild": "0.25.12"
   }
 }
