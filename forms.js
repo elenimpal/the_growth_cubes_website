@@ -4,6 +4,7 @@ const translations = {
   en: {
     required: 'Please complete this required field.',
     email: 'Please enter a valid email address, such as name@example.com.',
+    messageTooShort: 'Please enter at least 10 characters in your message.',
     fix: count => `Please correct ${count} ${count === 1 ? 'field' : 'fields'} before continuing.`,
     sending: 'Sending your message…',
     sent: 'Your inquiry has been submitted. Thank you — we will get back to you.',
@@ -14,6 +15,7 @@ const translations = {
   el: {
     required: 'Συμπληρώστε αυτό το υποχρεωτικό πεδίο.',
     email: 'Εισαγάγετε μια έγκυρη διεύθυνση email, για παράδειγμα name@example.com.',
+    messageTooShort: 'Το μήνυμά σας πρέπει να περιέχει τουλάχιστον 10 χαρακτήρες.',
     fix: count => count === 1 ? 'Διορθώστε 1 πεδίο για να συνεχίσετε.' : `Διορθώστε ${count} πεδία για να συνεχίσετε.`,
     sending: 'Αποστολή μηνύματος…',
     sent: 'Το αίτημά σας υποβλήθηκε. Ευχαριστούμε — θα επικοινωνήσουμε μαζί σας.',
@@ -37,7 +39,7 @@ if (form) {
     const error = document.getElementById(`${control.id}-error`);
     const invalid = !control.validity.valid;
     control.setAttribute('aria-invalid', String(invalid));
-    if (error) error.textContent = invalid ? (control.validity.valueMissing ? copy.required : copy.email) : '';
+    if (error) error.textContent = invalid ? (control.validity.valueMissing ? copy.required : control.name === 'message' ? copy.messageTooShort : copy.email) : '';
     return !invalid;
   };
   controls.forEach(control => {
