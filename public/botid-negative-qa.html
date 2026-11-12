@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>TGC — BotID Basic Negative QA (Preview Only)</title>
+<style>
+:root {color-scheme:light;}
+body{font:16px/1.6 system-ui,sans-serif;max-width:680px;margin:8vh auto;padding:0 24px;color:#29151a;background:#faf8f7;}
+h1{font-size:1.6rem;}button{background:#7b2233;color:#fff;border:0;border-radius:8px;padding:13px 20px;font:inherit;cursor:pointer;}
+button:disabled{opacity:.6;cursor:wait;}
+#result{margin-top:24px;background:#eee9e7;padding:16px;border-radius:8px;white-space:pre-wrap;overflow-wrap:anywhere;}
+</style>
+</head>
+<body>
+<h1>BotID Basic — Ασφαλής δοκιμή απόρριψης</h1>
+<p>Αυτό είναι <strong>απομονωμένο Preview QA</strong>, όχι η κανονική φόρμα. Η συγκεκριμένη δοκιμαστική έκδοση <strong>δεν έχει διαπιστευτήρια Resend</strong> και δεν μπορεί να αποστείλει email.</p>
+<p>Το παρακάτω κουμπί εκτελεί ένα αίτημα `POST /api/contact` με έγκυρα συνθετικά πεδία αλλά <strong>χωρίς BotID browser initialization</strong>, ώστε να ελέγξουμε αν η πραγματική προστασία το απορρίπτει. Η Vercel αναμένει <strong>HTTP 403</strong> με <code>bot_detected</code>. Αν επιστραφεί <strong>503</strong>, ο έλεγχος δεν εμπόδισε το αίτημα, αλλά το Resend παραμένει μη διαθέσιμο.</p>
+<button type="button" id="run">Εκτέλεση μίας δοκιμής</button>
+<div id="result" role="status" aria-live="polite">Δεν έχει εκτελεστεί δοκιμή.</div>
+<script>
+const button=document.getElementById('run');
+const result=document.getElementById('result');
+button.addEventListener('click', async()=>{
+  button.disabled=true;
+  result.textContent='Έλεγχος σε εξέλιξη…';
+  try{
+    const response=await fetch('/api/contact',{
+      method:'POST',
+      credentials:'same-origin',
+      cache:'no-store',
+      headers:{'Content-Type':'application/json'},
+      body:JSON.stringify({
+        name:'TGC BotID QA',
+        company:'',
+        email:'botid-qa@example.invalid',
+        message:'Automated negative path test: do not send email.',
+        website:'',
+        submission_id:crypto.randomUUID(),
+        locale:'en'
+      })
+    });
+    let data={};
+    try{data=await response.json()}catch{}
+    const verdict=response.status===403 && data.error==='bot_detected'
+      ? 'PASS — το BotID απέρριψε το αίτημα πριν από το Resend.'
+      : response.status===503 && data.error==='not_configured'
+        ? 'NOT PASSED — το αίτημα έφτασε μετά το BotID, αλλά το Resend παραμένει απενεργοποιημένο σε αυτό το branch.'
+        : 'REVIEW REQUIRED — αποτέλεσμα εκτός του αναμενόμενου.';
+    result.textContent=verdict+'\nHTTP: '+response.status+'\nResponse: '+JSON.stringify(data);
+  }catch(e){result.textContent='Η δοκιμή δεν ολοκληρώθηκε: '+String(e?.message??e);}
+  finally{button.disabled=false;}
+});
+</script>
+</body>
+</html>
