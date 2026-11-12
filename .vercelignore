@@ -3,7 +3,6 @@
 docs
 tools
 node_modules
-package.json
 package-lock.json
 .htmlvalidate.json
 README.md
